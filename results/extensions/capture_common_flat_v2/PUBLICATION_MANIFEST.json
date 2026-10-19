@@ -1,0 +1,894 @@
+{
+  "version": "capture_common_flat_v2",
+  "state": "csvs_published_after_full_audit",
+  "protocol_sha256": "281fe1b703e0d10802d73f2f05f9ce71b8841482b22b185f6f2634bc89a398de",
+  "published_utc": "2026-10-19T02:47:38.951223+00:00",
+  "root_completion_guard": "<WORKSPACE>\\extensions\\MANUSCRIPT_HANDOFF.json",
+  "artifacts": {
+    "all_endpoint_control_comparisons.csv": {
+      "authoritative": {
+        "path": "<WORKSPACE>\\extensions\\all_endpoint_control_comparisons.csv",
+        "rows": 1204,
+        "sha256": "2ba0211848586f895e969a00fa046171ab8aca4820c30dc51f09795d55e9c522",
+        "schema": [
+          {
+            "column": "endpoint",
+            "dtype": "str"
+          },
+          {
+            "column": "seed",
+            "dtype": "int64"
+          },
+          {
+            "column": "case",
+            "dtype": "str"
+          },
+          {
+            "column": "control",
+            "dtype": "str"
+          },
+          {
+            "column": "metric",
+            "dtype": "str"
+          },
+          {
+            "column": "taxonomy_value",
+            "dtype": "float64"
+          },
+          {
+            "column": "control_value",
+            "dtype": "float64"
+          },
+          {
+            "column": "taxonomy_minus_control",
+            "dtype": "float64"
+          },
+          {
+            "column": "higher_is_better",
+            "dtype": "bool"
+          },
+          {
+            "column": "taxonomy_benefit",
+            "dtype": "float64"
+          },
+          {
+            "column": "direction",
+            "dtype": "str"
+          },
+          {
+            "column": "budget_id",
+            "dtype": "str"
+          },
+          {
+            "column": "window",
+            "dtype": "str"
+          }
+        ]
+      },
+      "versioned": {
+        "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\all_endpoint_control_comparisons.csv",
+        "rows": 1204,
+        "sha256": "2ba0211848586f895e969a00fa046171ab8aca4820c30dc51f09795d55e9c522",
+        "schema": [
+          {
+            "column": "endpoint",
+            "dtype": "str"
+          },
+          {
+            "column": "seed",
+            "dtype": "int64"
+          },
+          {
+            "column": "case",
+            "dtype": "str"
+          },
+          {
+            "column": "control",
+            "dtype": "str"
+          },
+          {
+            "column": "metric",
+            "dtype": "str"
+          },
+          {
+            "column": "taxonomy_value",
+            "dtype": "float64"
+          },
+          {
+            "column": "control_value",
+            "dtype": "float64"
+          },
+          {
+            "column": "taxonomy_minus_control",
+            "dtype": "float64"
+          },
+          {
+            "column": "higher_is_better",
+            "dtype": "bool"
+          },
+          {
+            "column": "taxonomy_benefit",
+            "dtype": "float64"
+          },
+          {
+            "column": "direction",
+            "dtype": "str"
+          },
+          {
+            "column": "budget_id",
+            "dtype": "str"
+          },
+          {
+            "column": "window",
+            "dtype": "str"
+          }
+        ]
+      },
+      "previous_archived_path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\pre_refit_all_endpoint_control_comparisons.csv",
+      "previous_sha256": "6b8a0f11cc5d963ccaa6c9ed89a6d247c6a50cea3cca95008603408576adb9eb"
+    },
+    "all_endpoint_summary.csv": {
+      "authoritative": {
+        "path": "<WORKSPACE>\\extensions\\all_endpoint_summary.csv",
+        "rows": 622,
+        "sha256": "d0a0baa7d5aaabb8ae70981bca1dfe2051de97eb56a8d5d7332dca5886a832f9",
+        "schema": [
+          {
+            "column": "endpoint",
+            "dtype": "str"
+          },
+          {
+            "column": "facet",
+            "dtype": "str"
+          },
+          {
+            "column": "metric",
+            "dtype": "str"
+          },
+          {
+            "column": "method",
+            "dtype": "str"
+          },
+          {
+            "column": "mean",
+            "dtype": "float64"
+          },
+          {
+            "column": "sample_sd",
+            "dtype": "float64"
+          },
+          {
+            "column": "n_summary_units",
+            "dtype": "int64"
+          },
+          {
+            "column": "n_seeds",
+            "dtype": "int64"
+          },
+          {
+            "column": "summary_unit",
+            "dtype": "str"
+          },
+          {
+            "column": "aggregation",
+            "dtype": "str"
+          },
+          {
+            "column": "higher_is_better",
+            "dtype": "bool"
+          },
+          {
+            "column": "inference",
+            "dtype": "str"
+          }
+        ]
+      },
+      "versioned": {
+        "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\all_endpoint_summary.csv",
+        "rows": 622,
+        "sha256": "d0a0baa7d5aaabb8ae70981bca1dfe2051de97eb56a8d5d7332dca5886a832f9",
+        "schema": [
+          {
+            "column": "endpoint",
+            "dtype": "str"
+          },
+          {
+            "column": "facet",
+            "dtype": "str"
+          },
+          {
+            "column": "metric",
+            "dtype": "str"
+          },
+          {
+            "column": "method",
+            "dtype": "str"
+          },
+          {
+            "column": "mean",
+            "dtype": "float64"
+          },
+          {
+            "column": "sample_sd",
+            "dtype": "float64"
+          },
+          {
+            "column": "n_summary_units",
+            "dtype": "int64"
+          },
+          {
+            "column": "n_seeds",
+            "dtype": "int64"
+          },
+          {
+            "column": "summary_unit",
+            "dtype": "str"
+          },
+          {
+            "column": "aggregation",
+            "dtype": "str"
+          },
+          {
+            "column": "higher_is_better",
+            "dtype": "bool"
+          },
+          {
+            "column": "inference",
+            "dtype": "str"
+          }
+        ]
+      },
+      "previous_archived_path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\pre_refit_all_endpoint_summary.csv",
+      "previous_sha256": "a939c80a281ace6131ce59d5c6a7601a284ab452d58f41ee6161e7d07d9f4e51"
+    },
+    "best_competitor_by_endpoint_metric.csv": {
+      "authoritative": {
+        "path": "<WORKSPACE>\\extensions\\best_competitor_by_endpoint_metric.csv",
+        "rows": 65,
+        "sha256": "d6bc40f14c034cdb3792627b652a571623f86a6a5638657f2c54e1955e40febc",
+        "schema": [
+          {
+            "column": "endpoint",
+            "dtype": "str"
+          },
+          {
+            "column": "facet",
+            "dtype": "str"
+          },
+          {
+            "column": "metric",
+            "dtype": "str"
+          },
+          {
+            "column": "taxonomy_blend_mean",
+            "dtype": "float64"
+          },
+          {
+            "column": "temperature_flat_blend_mean",
+            "dtype": "float64"
+          },
+          {
+            "column": "newton_flat_stacker_mean",
+            "dtype": "float64"
+          },
+          {
+            "column": "best_observed_competitor",
+            "dtype": "str"
+          },
+          {
+            "column": "best_observed_competitor_mean",
+            "dtype": "float64"
+          },
+          {
+            "column": "best_observed_competitor_ties",
+            "dtype": "str"
+          },
+          {
+            "column": "taxonomy_benefit_vs_best_competitor",
+            "dtype": "float64"
+          },
+          {
+            "column": "best_strong_flat_control",
+            "dtype": "str"
+          },
+          {
+            "column": "best_strong_flat_control_mean",
+            "dtype": "float64"
+          },
+          {
+            "column": "taxonomy_benefit_vs_best_strong_flat",
+            "dtype": "float64"
+          },
+          {
+            "column": "higher_is_better",
+            "dtype": "bool"
+          },
+          {
+            "column": "scope",
+            "dtype": "str"
+          }
+        ]
+      },
+      "versioned": {
+        "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\best_competitor_by_endpoint_metric.csv",
+        "rows": 65,
+        "sha256": "d6bc40f14c034cdb3792627b652a571623f86a6a5638657f2c54e1955e40febc",
+        "schema": [
+          {
+            "column": "endpoint",
+            "dtype": "str"
+          },
+          {
+            "column": "facet",
+            "dtype": "str"
+          },
+          {
+            "column": "metric",
+            "dtype": "str"
+          },
+          {
+            "column": "taxonomy_blend_mean",
+            "dtype": "float64"
+          },
+          {
+            "column": "temperature_flat_blend_mean",
+            "dtype": "float64"
+          },
+          {
+            "column": "newton_flat_stacker_mean",
+            "dtype": "float64"
+          },
+          {
+            "column": "best_observed_competitor",
+            "dtype": "str"
+          },
+          {
+            "column": "best_observed_competitor_mean",
+            "dtype": "float64"
+          },
+          {
+            "column": "best_observed_competitor_ties",
+            "dtype": "str"
+          },
+          {
+            "column": "taxonomy_benefit_vs_best_competitor",
+            "dtype": "float64"
+          },
+          {
+            "column": "best_strong_flat_control",
+            "dtype": "str"
+          },
+          {
+            "column": "best_strong_flat_control_mean",
+            "dtype": "float64"
+          },
+          {
+            "column": "taxonomy_benefit_vs_best_strong_flat",
+            "dtype": "float64"
+          },
+          {
+            "column": "higher_is_better",
+            "dtype": "bool"
+          },
+          {
+            "column": "scope",
+            "dtype": "str"
+          }
+        ]
+      },
+      "previous_archived_path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\pre_refit_best_competitor_by_endpoint_metric.csv",
+      "previous_sha256": "42cf5340f3b90aeaa38f6c5790240b7445f8fcde97af83b57f2d9563fd6e51e2"
+    },
+    "all_endpoint_per_seed_paired_results.csv": {
+      "authoritative": {
+        "path": "<WORKSPACE>\\extensions\\all_endpoint_per_seed_paired_results.csv",
+        "rows": 568,
+        "sha256": "8567f6f7babd5bfdc0d94c54a18be230734ef35da3e928e56ad94611e2db61c5",
+        "schema": [
+          {
+            "column": "endpoint",
+            "dtype": "str"
+          },
+          {
+            "column": "facet",
+            "dtype": "str"
+          },
+          {
+            "column": "seed",
+            "dtype": "int64"
+          },
+          {
+            "column": "control",
+            "dtype": "str"
+          },
+          {
+            "column": "metric",
+            "dtype": "str"
+          },
+          {
+            "column": "taxonomy_value",
+            "dtype": "float64"
+          },
+          {
+            "column": "control_value",
+            "dtype": "float64"
+          },
+          {
+            "column": "taxonomy_minus_control",
+            "dtype": "float64"
+          },
+          {
+            "column": "taxonomy_benefit",
+            "dtype": "float64"
+          },
+          {
+            "column": "within_seed_cases",
+            "dtype": "int64"
+          },
+          {
+            "column": "scope",
+            "dtype": "str"
+          }
+        ]
+      },
+      "versioned": {
+        "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\all_endpoint_per_seed_paired_results.csv",
+        "rows": 568,
+        "sha256": "8567f6f7babd5bfdc0d94c54a18be230734ef35da3e928e56ad94611e2db61c5",
+        "schema": [
+          {
+            "column": "endpoint",
+            "dtype": "str"
+          },
+          {
+            "column": "facet",
+            "dtype": "str"
+          },
+          {
+            "column": "seed",
+            "dtype": "int64"
+          },
+          {
+            "column": "control",
+            "dtype": "str"
+          },
+          {
+            "column": "metric",
+            "dtype": "str"
+          },
+          {
+            "column": "taxonomy_value",
+            "dtype": "float64"
+          },
+          {
+            "column": "control_value",
+            "dtype": "float64"
+          },
+          {
+            "column": "taxonomy_minus_control",
+            "dtype": "float64"
+          },
+          {
+            "column": "taxonomy_benefit",
+            "dtype": "float64"
+          },
+          {
+            "column": "within_seed_cases",
+            "dtype": "int64"
+          },
+          {
+            "column": "scope",
+            "dtype": "str"
+          }
+        ]
+      },
+      "previous_archived_path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\pre_refit_all_endpoint_per_seed_paired_results.csv",
+      "previous_sha256": "1bb2678a7754af9cd672ad81492c0310137d92bdbcde2f592c895710a46c04cc"
+    },
+    "capture_paired_deltas.csv": {
+      "authoritative": {
+        "path": "<WORKSPACE>\\extensions\\capture_paired_deltas.csv",
+        "rows": 8,
+        "sha256": "b66094ebd7e0b41db600d51fa5e387a9c30e6e5593833b2a671e1f5abdc06fef",
+        "schema": [
+          {
+            "column": "window",
+            "dtype": "str"
+          },
+          {
+            "column": "control",
+            "dtype": "str"
+          },
+          {
+            "column": "taxonomy_blend_minus_control_macro_f1",
+            "dtype": "float64"
+          },
+          {
+            "column": "taxonomy_blend_minus_control_rare_recall",
+            "dtype": "float64"
+          }
+        ]
+      },
+      "versioned": {
+        "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\capture_paired_deltas.csv",
+        "rows": 8,
+        "sha256": "b66094ebd7e0b41db600d51fa5e387a9c30e6e5593833b2a671e1f5abdc06fef",
+        "schema": [
+          {
+            "column": "window",
+            "dtype": "str"
+          },
+          {
+            "column": "control",
+            "dtype": "str"
+          },
+          {
+            "column": "taxonomy_blend_minus_control_macro_f1",
+            "dtype": "float64"
+          },
+          {
+            "column": "taxonomy_blend_minus_control_rare_recall",
+            "dtype": "float64"
+          }
+        ]
+      },
+      "previous_archived_path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\pre_refit_capture_paired_deltas.csv",
+      "previous_sha256": "e35fa0a3ce99925e844ee203b939d46ecfb5289cf206fd3bc91f355cc344ae77"
+    },
+    "capture_shared_flat_map_comparisons.csv": {
+      "authoritative": {
+        "path": "<WORKSPACE>\\extensions\\capture_shared_flat_map_comparisons.csv",
+        "rows": 16,
+        "sha256": "42a8b36a0ec17a24307d01f7b4fb0206fcc3fbe9bcddab1a5c1f81295d1561a3",
+        "schema": [
+          {
+            "column": "window",
+            "dtype": "str"
+          },
+          {
+            "column": "seed",
+            "dtype": "int64"
+          },
+          {
+            "column": "control",
+            "dtype": "str"
+          },
+          {
+            "column": "metric",
+            "dtype": "str"
+          },
+          {
+            "column": "taxonomy_value",
+            "dtype": "float64"
+          },
+          {
+            "column": "control_value",
+            "dtype": "float64"
+          },
+          {
+            "column": "taxonomy_minus_control",
+            "dtype": "float64"
+          },
+          {
+            "column": "direction",
+            "dtype": "str"
+          },
+          {
+            "column": "scope",
+            "dtype": "str"
+          }
+        ]
+      },
+      "versioned": {
+        "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\capture_shared_flat_map_comparisons.csv",
+        "rows": 16,
+        "sha256": "42a8b36a0ec17a24307d01f7b4fb0206fcc3fbe9bcddab1a5c1f81295d1561a3",
+        "schema": [
+          {
+            "column": "window",
+            "dtype": "str"
+          },
+          {
+            "column": "seed",
+            "dtype": "int64"
+          },
+          {
+            "column": "control",
+            "dtype": "str"
+          },
+          {
+            "column": "metric",
+            "dtype": "str"
+          },
+          {
+            "column": "taxonomy_value",
+            "dtype": "float64"
+          },
+          {
+            "column": "control_value",
+            "dtype": "float64"
+          },
+          {
+            "column": "taxonomy_minus_control",
+            "dtype": "float64"
+          },
+          {
+            "column": "direction",
+            "dtype": "str"
+          },
+          {
+            "column": "scope",
+            "dtype": "str"
+          }
+        ]
+      },
+      "previous_archived_path": null,
+      "previous_sha256": null
+    },
+    "endpoint_coverage.csv": {
+      "authoritative": {
+        "path": "<WORKSPACE>\\extensions\\endpoint_coverage.csv",
+        "rows": 5,
+        "sha256": "5aab28bfeffa441809af32009d79b7978bc7662dc0a4d036e0323f87f8f8ca18",
+        "schema": [
+          {
+            "column": "endpoint",
+            "dtype": "str"
+          },
+          {
+            "column": "expected_units",
+            "dtype": "int64"
+          },
+          {
+            "column": "completed_units",
+            "dtype": "int64"
+          },
+          {
+            "column": "strong_control_evaluations_completed",
+            "dtype": "int64"
+          },
+          {
+            "column": "status",
+            "dtype": "str"
+          },
+          {
+            "column": "incomplete_reason",
+            "dtype": "float64"
+          },
+          {
+            "column": "frozen_recompute",
+            "dtype": "bool"
+          },
+          {
+            "column": "result_csv",
+            "dtype": "str"
+          }
+        ]
+      },
+      "versioned": {
+        "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\endpoint_coverage.csv",
+        "rows": 5,
+        "sha256": "5aab28bfeffa441809af32009d79b7978bc7662dc0a4d036e0323f87f8f8ca18",
+        "schema": [
+          {
+            "column": "endpoint",
+            "dtype": "str"
+          },
+          {
+            "column": "expected_units",
+            "dtype": "int64"
+          },
+          {
+            "column": "completed_units",
+            "dtype": "int64"
+          },
+          {
+            "column": "strong_control_evaluations_completed",
+            "dtype": "int64"
+          },
+          {
+            "column": "status",
+            "dtype": "str"
+          },
+          {
+            "column": "incomplete_reason",
+            "dtype": "float64"
+          },
+          {
+            "column": "frozen_recompute",
+            "dtype": "bool"
+          },
+          {
+            "column": "result_csv",
+            "dtype": "str"
+          }
+        ]
+      },
+      "previous_archived_path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\pre_refit_endpoint_coverage.csv",
+      "previous_sha256": "5306ec8a7ce29394d6d827729eca00259e2436d86940bd2b43e1f2295a16550b"
+    },
+    "capture_method_registry.csv": {
+      "authoritative": {
+        "path": "<WORKSPACE>\\extensions\\capture_method_registry.csv",
+        "rows": 11,
+        "sha256": "e638e96a5f74436a62a30ebc6aa257e0b1ebd9198618146ef8a9519d50008f17",
+        "schema": [
+          {
+            "column": "method",
+            "dtype": "str"
+          },
+          {
+            "column": "formal_table_arm",
+            "dtype": "bool"
+          },
+          {
+            "column": "new_fit",
+            "dtype": "str"
+          },
+          {
+            "column": "fit_role",
+            "dtype": "str"
+          },
+          {
+            "column": "blend_weights",
+            "dtype": "str"
+          },
+          {
+            "column": "gate",
+            "dtype": "bool"
+          },
+          {
+            "column": "flat_component_sha256",
+            "dtype": "str"
+          }
+        ]
+      },
+      "versioned": {
+        "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\capture_method_registry.csv",
+        "rows": 11,
+        "sha256": "e638e96a5f74436a62a30ebc6aa257e0b1ebd9198618146ef8a9519d50008f17",
+        "schema": [
+          {
+            "column": "method",
+            "dtype": "str"
+          },
+          {
+            "column": "formal_table_arm",
+            "dtype": "bool"
+          },
+          {
+            "column": "new_fit",
+            "dtype": "str"
+          },
+          {
+            "column": "fit_role",
+            "dtype": "str"
+          },
+          {
+            "column": "blend_weights",
+            "dtype": "str"
+          },
+          {
+            "column": "gate",
+            "dtype": "bool"
+          },
+          {
+            "column": "flat_component_sha256",
+            "dtype": "str"
+          }
+        ]
+      },
+      "previous_archived_path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\pre_refit_capture_method_registry.csv",
+      "previous_sha256": "e638e96a5f74436a62a30ebc6aa257e0b1ebd9198618146ef8a9519d50008f17"
+    },
+    "capture_windows_results.csv": {
+      "authoritative": {
+        "path": "<WORKSPACE>\\extensions\\capture_windows_results.csv",
+        "rows": 36,
+        "sha256": "12622c63d77d8b2245e8894071ae69dd09f0b2b68406ba15004d38ff2e8aebbb",
+        "schema": [
+          {
+            "column": "endpoint",
+            "dtype": "str"
+          },
+          {
+            "column": "window",
+            "dtype": "str"
+          },
+          {
+            "column": "seed",
+            "dtype": "int64"
+          },
+          {
+            "column": "method",
+            "dtype": "str"
+          },
+          {
+            "column": "test_rows",
+            "dtype": "int64"
+          },
+          {
+            "column": "n_test",
+            "dtype": "int64"
+          },
+          {
+            "column": "accuracy",
+            "dtype": "float64"
+          },
+          {
+            "column": "recall_macro",
+            "dtype": "float64"
+          },
+          {
+            "column": "rare_recall",
+            "dtype": "float64"
+          },
+          {
+            "column": "worst_recall",
+            "dtype": "float64"
+          },
+          {
+            "column": "macro_f1",
+            "dtype": "float64"
+          }
+        ]
+      },
+      "versioned": {
+        "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\capture_windows_results.csv",
+        "rows": 36,
+        "sha256": "12622c63d77d8b2245e8894071ae69dd09f0b2b68406ba15004d38ff2e8aebbb",
+        "schema": [
+          {
+            "column": "endpoint",
+            "dtype": "str"
+          },
+          {
+            "column": "window",
+            "dtype": "str"
+          },
+          {
+            "column": "seed",
+            "dtype": "int64"
+          },
+          {
+            "column": "method",
+            "dtype": "str"
+          },
+          {
+            "column": "test_rows",
+            "dtype": "int64"
+          },
+          {
+            "column": "n_test",
+            "dtype": "int64"
+          },
+          {
+            "column": "accuracy",
+            "dtype": "float64"
+          },
+          {
+            "column": "recall_macro",
+            "dtype": "float64"
+          },
+          {
+            "column": "rare_recall",
+            "dtype": "float64"
+          },
+          {
+            "column": "worst_recall",
+            "dtype": "float64"
+          },
+          {
+            "column": "macro_f1",
+            "dtype": "float64"
+          }
+        ]
+      },
+      "previous_archived_path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\pre_refit_capture_windows_results.csv",
+      "previous_sha256": "b332ccfa134bf082caaeb735ee3249b848365ce63b81555d844544915088bd03"
+    }
+  },
+  "verification_report": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\verification_report.json",
+  "actual_model_constructor_audit": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\actual_model_constructor_audit.json",
+  "original_hybrid_scope": "Archived unchanged, audit only; not used for corrected model ranking"
+}

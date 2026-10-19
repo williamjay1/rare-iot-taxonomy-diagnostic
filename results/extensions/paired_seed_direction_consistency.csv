@@ -1,0 +1,9 @@
+endpoint,control,metric,seed_means_positive,seed_means_zero,seed_means_negative,seeds_available,seeds_expected,mean_of_available_seed_means,seed_level_sample_sd,scope
+lofo,newton_flat_stacker,taxonomy_blend_minus_control_macro_f1,3,0,0,3,3,0.009288073903139016,0.002016626674076987,descriptive direction only; nested cases are dependent and no population-significance claim is made
+lofo,newton_flat_stacker,taxonomy_blend_minus_control_rare_recall,3,0,0,3,3,0.06302623987068955,0.00408544299210344,descriptive direction only; nested cases are dependent and no population-significance claim is made
+lofo,temperature_flat_blend,taxonomy_blend_minus_control_macro_f1,3,0,0,3,3,0.011332070145725506,0.0017820611443206023,descriptive direction only; nested cases are dependent and no population-significance claim is made
+lofo,temperature_flat_blend,taxonomy_blend_minus_control_rare_recall,3,0,0,3,3,0.06278817098605126,0.006301152437998159,descriptive direction only; nested cases are dependent and no population-significance claim is made
+scarcity,newton_flat_stacker,taxonomy_blend_minus_control_macro_f1,0,0,3,3,3,-0.0853269629296017,0.00326670133825031,descriptive direction only; nested cases are dependent and no population-significance claim is made
+scarcity,newton_flat_stacker,taxonomy_blend_minus_control_rare_recall,3,0,0,3,3,0.07972486850997913,0.006331119587399321,descriptive direction only; nested cases are dependent and no population-significance claim is made
+scarcity,temperature_flat_blend,taxonomy_blend_minus_control_macro_f1,1,0,2,3,3,-0.0004408487317265803,0.002948130265995799,descriptive direction only; nested cases are dependent and no population-significance claim is made
+scarcity,temperature_flat_blend,taxonomy_blend_minus_control_rare_recall,0,0,3,3,3,-0.002796599141080889,0.0024370072548566104,descriptive direction only; nested cases are dependent and no population-significance claim is made

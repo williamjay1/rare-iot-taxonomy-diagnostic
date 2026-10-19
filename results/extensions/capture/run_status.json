@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "windows": [
+    "w1_55_56",
+    "w2_57_58",
+    "w3_59_60",
+    "w4_61_63"
+  ],
+  "elapsed_seconds": 9950.339690400055,
+  "shared_summary_deferred": true
+}

@@ -1,0 +1,65 @@
+{
+  "source": "NF-ToN-IoT-v3",
+  "doi": "10.48610/44d7c5e",
+  "api": "https://api.rdm.uq.edu.au/datasets/343e2e8c-6e6e-4a0c-813d-a46acea1b7f4/download",
+  "license": "Permitted Re-Use with Commercial Use Restriction",
+  "frozen_before_model_outcomes": true,
+  "chronology": "Not chronological: predictor-grouped random allocation",
+  "roles": [
+    "fit",
+    "calibration",
+    "selection",
+    "test"
+  ],
+  "duplicates": "Do not remove or relabel conflicting groups; assign a predictor group to one role without consulting labels",
+  "caps": {
+    "fit_per_attack": 25000,
+    "fit_benign": 80000,
+    "calibration_total_uniform": 60000,
+    "selection_total_uniform": 60000,
+    "test_total_uniform": 300000
+  },
+  "sampling": "Within each role deterministic hash of original row id, seed 20261018; no test label based sampling",
+  "random_fit_seeds": [
+    44
+  ],
+  "excluded_predictors": [
+    "FLOW_START_MILLISECONDS",
+    "FLOW_END_MILLISECONDS",
+    "IPV4_SRC_ADDR",
+    "IPV4_DST_ADDR",
+    "DNS_QUERY_ID",
+    "Label",
+    "Attack"
+  ],
+  "rare_rule": "attack labels at most 1 percent of pre-cap fit role; absent fit classes reported separately, not learned",
+  "interpretation": "Three grouped random allocations in one additional testbed corpus, not chronological validation, production traffic or three independent populations",
+  "models": "weighted XGBoost 520 trees, LightGBM 380 trees, equal/calibrated flat blend, converged stacker, true/cyclic/support hierarchy and equal blends; same adapter and roles",
+  "parameters": {
+    "xgb_depth": 9,
+    "learning_rate": 0.055,
+    "row_subsample": 0.9,
+    "colsample": 0.95,
+    "reg_lambda": 1.5,
+    "reg_alpha": 0.02,
+    "xgb_weight_exponent": 0.35,
+    "family_weight_exponent": 0.25,
+    "local_weight_exponent": 0.5,
+    "lgb_leaves": 127,
+    "lgb_min_child_samples": 25,
+    "threads": 2
+  },
+  "family_mapping": {
+    "Benign": "Benign",
+    "DoS": "Availability",
+    "DDoS": "Availability",
+    "Injection": "InputManipulation",
+    "XSS": "InputManipulation",
+    "MITM": "InterceptionCredential",
+    "Password": "InterceptionCredential",
+    "Backdoor": "PersistenceImpact",
+    "Ransomware": "PersistenceImpact",
+    "Scanning": "Reconnaissance"
+  },
+  "mapping_status": "Researcher grouping from official attack descriptions, not an independently validated native taxonomy or expert annotation"
+}

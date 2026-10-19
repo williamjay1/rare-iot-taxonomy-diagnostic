@@ -1,0 +1,42 @@
+{
+  "protocol_sha256": "281fe1b703e0d10802d73f2f05f9ce71b8841482b22b185f6f2634bc89a398de",
+  "rows": 87871,
+  "n_features": 39,
+  "n_classes": 3,
+  "ordered_X_sha256": "33493e1a19fbcf1674355bc562e0f0dabf6f99301edef7a2677dcf792865feed",
+  "ordered_y_sha256": "c58ced97c8555175e0f4294fa5758fd8387a3973fcdfa20cc5c9260d146774a0",
+  "kind": "local",
+  "map": "cyclic",
+  "family": "Mirai",
+  "classes": [
+    "BenignTraffic",
+    "BrowserHijacking",
+    "CommandInjection"
+  ],
+  "weight_exponent": 0.5,
+  "ordered_base_positions_sha256": "18a317d7f98448c809cf94578cadcc569e0476088f1928a23f4c4125522905bd",
+  "ordered_weight_sha256": "7f069060e85b4df0345da5aa030b8e7d9b797258ae7296a02c3a4c33f6db2aef",
+  "parameters_repr": {
+    "boosting_type": "'gbdt'",
+    "class_weight": "None",
+    "colsample_bytree": "0.95",
+    "importance_type": "'split'",
+    "learning_rate": "0.055",
+    "max_depth": "-1",
+    "min_child_samples": "25",
+    "min_child_weight": "0.001",
+    "min_split_gain": "0.0",
+    "n_estimators": "380",
+    "n_jobs": "2",
+    "num_leaves": "127",
+    "objective": "'multiclass'",
+    "random_state": "20260729",
+    "reg_alpha": "0.02",
+    "reg_lambda": "1.5",
+    "subsample": "0.9",
+    "subsample_for_bin": "200000",
+    "subsample_freq": "0",
+    "verbosity": "-1"
+  },
+  "input_sha256": "bf2ec737e171a6cfd27c25a842735f1ff3639ea2a0918f69a0ad6de46b4f93ad"
+}

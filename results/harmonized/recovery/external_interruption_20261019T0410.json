@@ -1,0 +1,225 @@
+{
+  "recorded_utc": "2026-10-18T20:11:53.955591+00:00",
+  "observed_previous_processes_absent_local_time": "2026-10-19T04:10:39+08:00",
+  "absent_previous_pids": [
+    30508,
+    52244,
+    58796,
+    7524
+  ],
+  "observation": "Win32_Process inventory contained no python.exe; previous exec sessions no longer existed",
+  "cause": "Unknown external process loss; no model exception found in available logs",
+  "completed_seed_counts": {
+    "paired46": 2,
+    "grouped37": 1
+  },
+  "metric_cell_counts": {
+    "paired46": 27,
+    "grouped37": 14
+  },
+  "checkpoint_sha256_verified_before_resume": [
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\flat_lgbm.joblib",
+      "sha256": "f6d488957284a3b9fbd9805eda43e055619822249561cf863c795a2c1f2a9288"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\flat_lgbm_probabilities.joblib",
+      "sha256": "db9fa93e4080c6d80a8fbc98180863b9ce3f41b9825448b79d3572ca3ddf6f27"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\flat_newton_stacker.joblib",
+      "sha256": "b51dbc941b9af56ccb0f8d28dbc2687485a6dc93846c41f01b21df18d19bc17e"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\flat_probabilities.joblib",
+      "sha256": "2d29447fb0945c0b3df517e5d139e627a6f98324050ca8c76e55dad451d6ba91"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\flat_temperatures.joblib",
+      "sha256": "3c380ed111451c38b8e13a5379c68a3105d45c3b0b3557c7e70f51f321ad0218"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\flat_xgb.joblib",
+      "sha256": "0ee30d3a0dcdf2a7d5d5b98099a45079cc3bd661369c75a39e4a5a0cc6289a45"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\gate_cyclic.joblib",
+      "sha256": "c7ee0befb315ff080315fb93abfbe84b50126ea7eccc30881ecfec37a567ab91"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\gate_real.joblib",
+      "sha256": "f30ace7823b8959c5881901007063e924218fae86f31328f79cd7f758b84345b"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\gate_support.joblib",
+      "sha256": "5d2446d720a26d47a8ab9f9c6bc2355ff5744d56872ac521b7fe21bd68d6aea5"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\taxonomy_cyclic.joblib",
+      "sha256": "e8743f9d4f1366b4fd5ca6da63f5d429a16ea8387ecc3e37cdabfc8226d37b2f"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\taxonomy_cyclic_probabilities.joblib",
+      "sha256": "7fa2abf7c9b0f750f69c58b078626923b7cc3676f7b168e359ac9fdc6d6a979c"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\taxonomy_real.joblib",
+      "sha256": "6accfa3e0851c69a92afd96de63476132a77f894ad7f5f031915aacde3c8ab5f"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\taxonomy_real_probabilities.joblib",
+      "sha256": "2f5c97d4ddffc1ca08f5e5640574d096acb98dda6953657fa00a719dd31b3d8c"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\taxonomy_support.joblib",
+      "sha256": "8486b9e2123dc42387bf29d24a158caaa2683597ff823254545637da8c5475a9"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\taxonomy_support_probabilities.joblib",
+      "sha256": "26bd460b50de488de8257a78c92fbb42c1059622ee35e4bf0ab2731c155befb9"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_43\\flat_lgbm.joblib",
+      "sha256": "fc26d5090fcbf9e720438f9ab778e99bf7761b36fe0310d515361895b68bbe30"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_43\\flat_lgbm_probabilities.joblib",
+      "sha256": "9f49798e5246c270726ac91460cf001a8769f55babf261ac709ae6b094d72517"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_43\\flat_newton_stacker.joblib",
+      "sha256": "823c0b7e58135852847cf4297e4c3f92451de99178b450b479cda8337b0f83ed"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_43\\flat_probabilities.joblib",
+      "sha256": "e057186c2c2da26185e2aa5893fa463d47944df9dafba06fd7b0e8fca57e1019"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_43\\flat_temperatures.joblib",
+      "sha256": "8af0cde82d4a837dd85c8e09946315d3a742193cce5d60f75b1a409f23783d6b"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_43\\flat_xgb.joblib",
+      "sha256": "09915bf2d615325d2b366342a96aac59a4e718b5fb72e0c70f13fd3aec63fc92"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_43\\gate_cyclic.joblib",
+      "sha256": "c9015dd2c92ece529aae40a27b1a2478e5e2abf838d78907e76452e4d6fed710"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_43\\gate_real.joblib",
+      "sha256": "57944855027e6608b2fa92a1b478e032568663f90d74905ef22a2ffb4b2f77bb"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_43\\gate_support.joblib",
+      "sha256": "a9fd5326fc3ff334427b0a7ca05e80484a57f68a70345e7d6c12ac457d99760d"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_43\\taxonomy_cyclic.joblib",
+      "sha256": "6dd772bb0d1933471b9ea87826afc345d87a8dd736ae42bc63a1a27042fc6648"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_43\\taxonomy_cyclic_probabilities.joblib",
+      "sha256": "2c24a0c423aa067c7cf254b17046885759544f24e5525937ed9b422ee2103530"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_43\\taxonomy_real.joblib",
+      "sha256": "771beb072cf578eb9ec65d6f459758f281cc1be7b82e0550bf37d8ffb3201c3d"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_43\\taxonomy_real_probabilities.joblib",
+      "sha256": "85e830026cf5e15612a04caa0149a5a6f364a3ee7e5724ae53f77ea2799745c0"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_43\\taxonomy_support.joblib",
+      "sha256": "0f3560579139fbdb3f7105963ec8d51b0a90a4ca5f332f2a5769c915f95bb019"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_43\\taxonomy_support_probabilities.joblib",
+      "sha256": "e5d665dfcac4769517ea4a760c984b4efcbaa4f2fb7c12d4472a0a8bd2fa1105"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_44\\flat_probabilities.joblib",
+      "sha256": "edffa78410267f2b08493d5963bf97cda38ce22409602820092003de13a26fa5"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_44\\flat_xgb.joblib",
+      "sha256": "c909835a17019e63f5e9828cd6a3faa419cd8944f2abbb8de97aa870d800de73"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_44\\taxonomy_real.joblib",
+      "sha256": "5b362a59b2505844fca423c5ecb376b1f313f4be0a0563bca6940641a634aaf5"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\grouped37\\seed_42\\flat_probabilities.joblib",
+      "sha256": "fca3218aa8c560b283d8980e49f7610838913383e2cc5adca4ce14bff6dc9cda"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\grouped37\\seed_42\\flat_xgb.joblib",
+      "sha256": "5b90346d4f2baac94b7f24cbe6c4be2a10bed3c616d6f62c99294e61fa45c2b3"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\grouped37\\seed_42\\gate_cyclic.joblib",
+      "sha256": "16aab3eebe7d142a23a5bbbb6718799402bd579c9ed2f0f9b374292108b1f88f"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\grouped37\\seed_42\\gate_real.joblib",
+      "sha256": "c2651a6b3984e708d471c34b7520b9e66d497ed9c59489904e430f5f4625b31a"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\grouped37\\seed_42\\gate_support.joblib",
+      "sha256": "2e5e64461fb9c23422cdcba440b8ff9cbba31d8c3259a329f10e3471bd0a8693"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\grouped37\\seed_42\\taxonomy_cyclic.joblib",
+      "sha256": "99cd53beb8d66396b29357871bcf655ba3f90074ef9a79183049060ee31cdf77"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\grouped37\\seed_42\\taxonomy_cyclic_probabilities.joblib",
+      "sha256": "f4a902d762acb050e188019e7c5e132ff4f194952f0106e444af1ff73bf2ddcc"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\grouped37\\seed_42\\taxonomy_real.joblib",
+      "sha256": "b9279ac472f456dda2583e8c2d23fb24818f5be7b1f667d2c0ea46af4410d3ab"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\grouped37\\seed_42\\taxonomy_real_probabilities.joblib",
+      "sha256": "887a98806b1851a3fc04fb6d602643768dc30152a6f0f665ce1570a23ebdae0f"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\grouped37\\seed_42\\taxonomy_support.joblib",
+      "sha256": "d48b25badd6376f243479938e90dad976840061afbdadf15cf4a3aba65e1d453"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\grouped37\\seed_42\\taxonomy_support_probabilities.joblib",
+      "sha256": "6dfd6a0564d865a4a645d187a2bbe130a0d3adf91661e9cad0e3b4ed31c826de"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\grouped37\\seed_43\\flat_probabilities.joblib",
+      "sha256": "ee2aabd98c2de26944868e392cb182c654d729a39007858c42b4e9f6bc4e8288"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\grouped37\\seed_43\\flat_xgb.joblib",
+      "sha256": "9599bfac9ba7e89a50f35d75603f5296005bfaa0aec8c26a4ebf8cd788b93a7b"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\grouped37\\seed_43\\gate_real.joblib",
+      "sha256": "5cdd926f0ac66573b0a9851216a0599996385a3b8cfc0ea72be31acf8fe64e80"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\grouped37\\seed_43\\taxonomy_cyclic.joblib",
+      "sha256": "fb5474bd94c83c92311cd7f6548031b24f023e6486c1bd493519f8d9b1ce11c4"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\grouped37\\seed_43\\taxonomy_real.joblib",
+      "sha256": "78efab9e78b60c7a63e05bcd20d7fe13009185d084893a82064f3f575ca9e59e"
+    },
+    {
+      "path": "<WORKSPACE>\\harmonized\\results\\grouped37\\seed_43\\taxonomy_real_probabilities.joblib",
+      "sha256": "1f9505cf6ba1a522f454b97a6749908da35b48905c9c1c8229573a25e58cae73"
+    }
+  ],
+  "completed_checkpoints_refitted": false,
+  "incomplete_unsaved_probability_stages_recomputed": true,
+  "scientific_settings_or_rows_changed": false
+}

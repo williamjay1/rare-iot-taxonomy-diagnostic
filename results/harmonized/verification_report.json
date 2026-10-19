@@ -1,0 +1,114 @@
+{
+  "results": [
+    {
+      "protocol": "paired46",
+      "status": "COMPLETE_PASS",
+      "completed_seeds": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "verified_method_rows": 78,
+      "actual_float32_groups_independently_recomputed": false,
+      "independently_verified_group_role_pairs": 0,
+      "stacker_convergence_audits": [
+        {
+          "seed": 42,
+          "n_iter": [
+            11
+          ],
+          "n_features_in": 68,
+          "solver": "newton-cholesky",
+          "n_jobs": null,
+          "runtime_threadpool_limit": 2,
+          "fit_role": "utility",
+          "checkpoint_sha256": "b51dbc941b9af56ccb0f8d28dbc2687485a6dc93846c41f01b21df18d19bc17e"
+        },
+        {
+          "seed": 43,
+          "n_iter": [
+            9
+          ],
+          "n_features_in": 68,
+          "solver": "newton-cholesky",
+          "n_jobs": null,
+          "runtime_threadpool_limit": 2,
+          "fit_role": "utility",
+          "checkpoint_sha256": "823c0b7e58135852847cf4297e4c3f92451de99178b450b479cda8337b0f83ed"
+        },
+        {
+          "seed": 44,
+          "n_iter": [
+            15
+          ],
+          "n_features_in": 68,
+          "solver": "newton-cholesky",
+          "n_jobs": null,
+          "runtime_threadpool_limit": 2,
+          "fit_role": "utility",
+          "checkpoint_sha256": "bda14bed0ba527deced69384ff8a32a843ea3405d3ad6d915437e8a8938ff9dd"
+        },
+        {
+          "seed": 45,
+          "n_iter": [
+            13
+          ],
+          "n_features_in": 68,
+          "solver": "newton-cholesky",
+          "n_jobs": null,
+          "runtime_threadpool_limit": 2,
+          "fit_role": "utility",
+          "checkpoint_sha256": "0f84db2afa43278b7853eb40b3bb29e28d24a53301f3a4d74cc47c0a9ca9fb87"
+        },
+        {
+          "seed": 46,
+          "n_iter": [
+            12
+          ],
+          "n_features_in": 68,
+          "solver": "newton-cholesky",
+          "n_jobs": null,
+          "runtime_threadpool_limit": 2,
+          "fit_role": "utility",
+          "checkpoint_sha256": "bffe4d6662d880b889e7fd1b7e5a1bac6ff5b38527e8b36a49e694bed6aef9f9"
+        },
+        {
+          "seed": 47,
+          "n_iter": [
+            14
+          ],
+          "n_features_in": 68,
+          "solver": "newton-cholesky",
+          "n_jobs": null,
+          "runtime_threadpool_limit": 2,
+          "fit_role": "utility",
+          "checkpoint_sha256": "91b40eaca9723df8f738a3644d9233ca853563aa83a4020f4bebe910d0d2d70d"
+        }
+      ],
+      "expected_method_rows": 78,
+      "missing": []
+    },
+    {
+      "protocol": "grouped37",
+      "status": "COMPLETE_PASS",
+      "completed_seeds": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "verified_method_rows": 54,
+      "actual_float32_groups_independently_recomputed": true,
+      "independently_verified_group_role_pairs": 36,
+      "stacker_convergence_audits": [],
+      "expected_method_rows": 54,
+      "missing": []
+    }
+  ],
+  "elapsed_seconds": 267.4467910999665
+}

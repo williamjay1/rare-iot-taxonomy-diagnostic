@@ -1,0 +1,15 @@
+{
+  "verified_at_utc": "2026-10-18T16:03:46.643868+00:00",
+  "version": "3.9",
+  "catalog_date_and_official_release_date": "2023-01-24",
+  "release_announcement_title": "CAPEC List Version 3.9 Now Available",
+  "release_url": "https://capec.mitre.org/news/index.html",
+  "release_snapshot": "F:\\AcademicData\\iot_ids_sci\\raw\\standards_sources_20261018_v1\\capec_release_news_20261019_v1.html",
+  "release_snapshot_bytes": 79909,
+  "release_snapshot_sha256": "60542bb210694636d66dbab91ef9c9d381499cdc867665fd368802010922eae1",
+  "catalog_url": "https://capec.mitre.org/data/xml/capec_v3.9.xml",
+  "catalog_path": "F:\\AcademicData\\iot_ids_sci\\raw\\standards_sources_20261018_v1\\capec_v3.9.xml",
+  "catalog_sha256": "70279a2dff0cb0ad79e546adb07828335a704ad5210e047e09e986172fc9e34d",
+  "apa_reference": "The MITRE Corporation. (2023, January 24). Common Attack Pattern Enumeration and Classification (CAPEC) (Version 3.9) [Attack-pattern catalog]. https://capec.mitre.org/data/xml/capec_v3.9.xml",
+  "scope": "Citation evidence added after design lock. Does not amend frozen mapping, roles, configuration, source_manifest, or experiment results."
+}

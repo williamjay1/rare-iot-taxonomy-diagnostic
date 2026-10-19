@@ -1,0 +1,2 @@
+run_id,n,accuracy,f1_macro,recall_macro,rare_recall,worst_recall,pr_auc_macro,seed,n_features,training_seconds,inference_seconds,brier_multiclass,ece_top_label,rare_ece_top_label
+calibrated_support_matched_control,286156,0.9399698066788744,0.8629235495164893,0.8485403048683438,0.5049596740278981,0.192,0.8867362834038771,43,37,1713.7955958000384,1050.1930458999705,0.0807339627803947,0.008074544354461309,0.06479342087548158

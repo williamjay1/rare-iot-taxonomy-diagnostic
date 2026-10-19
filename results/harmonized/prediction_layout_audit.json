@@ -1,0 +1,82 @@
+{
+  "probe_only": true,
+  "rows": 2048,
+  "n_features": 37,
+  "n_jobs": 2,
+  "fit_performed": false,
+  "labels_read": false,
+  "production_changes": "None; current running process is unchanged",
+  "original_C_contiguous": false,
+  "original_F_contiguous": true,
+  "input_float32_sha256": "ca0091a89cd552fb6094373ab300bf73df9dac2d4527ed7d93e5359cf30f3c4a",
+  "checkpoint": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\taxonomy_real.joblib",
+  "checkpoint_sha256_before_after": "6accfa3e0851c69a92afd96de63476132a77f894ad7f5f031915aacde3c8ab5f",
+  "estimators_parameters_unchanged": true,
+  "timings": [
+    {
+      "layout": "F",
+      "seconds": 3.202690500067547,
+      "exact_array_equality": [
+        true,
+        true
+      ],
+      "max_absolute_difference": [
+        0.0,
+        0.0
+      ],
+      "probability_sha256": [
+        "5f7365a3f2249601f7f8c5aae52071558470881f1448b1d98d196ad58b17e762",
+        "d6faaaaf9f0b522d6e3fea273f46f8c79986a735b498810d58672e8d75de3938"
+      ]
+    },
+    {
+      "layout": "C",
+      "seconds": 3.870111500029452,
+      "exact_array_equality": [
+        true,
+        true
+      ],
+      "max_absolute_difference": [
+        0.0,
+        0.0
+      ],
+      "probability_sha256": [
+        "5f7365a3f2249601f7f8c5aae52071558470881f1448b1d98d196ad58b17e762",
+        "d6faaaaf9f0b522d6e3fea273f46f8c79986a735b498810d58672e8d75de3938"
+      ]
+    },
+    {
+      "layout": "C",
+      "seconds": 3.8887818000512198,
+      "exact_array_equality": [
+        true,
+        true
+      ],
+      "max_absolute_difference": [
+        0.0,
+        0.0
+      ],
+      "probability_sha256": [
+        "5f7365a3f2249601f7f8c5aae52071558470881f1448b1d98d196ad58b17e762",
+        "d6faaaaf9f0b522d6e3fea273f46f8c79986a735b498810d58672e8d75de3938"
+      ]
+    },
+    {
+      "layout": "F",
+      "seconds": 4.314168100012466,
+      "exact_array_equality": [
+        true,
+        true
+      ],
+      "max_absolute_difference": [
+        0.0,
+        0.0
+      ],
+      "probability_sha256": [
+        "5f7365a3f2249601f7f8c5aae52071558470881f1448b1d98d196ad58b17e762",
+        "d6faaaaf9f0b522d6e3fea273f46f8c79986a735b498810d58672e8d75de3938"
+      ]
+    }
+  ],
+  "caveat": "Bounded 2048-row probe; not a full-role throughput benchmark"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE_PASS",
+  "rows": 33,
+  "protocol_sha256": "297d4916ec47a4d02298161de9269d530e7da974a0417523d70e9756673221a6",
+  "post_review_secondary": true,
+  "fit_changed": false,
+  "time_roles_changed": false,
+  "assessment_selected_threshold": false,
+  "scope": "Three model seeds share one future period; not rare class recall."
+}

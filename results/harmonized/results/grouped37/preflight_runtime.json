@@ -1,0 +1,10 @@
+{
+  "elapsed_seconds": 74.83919299999252,
+  "preflight_only": true,
+  "python": "<LEGACY_PROJECT>\\.venv\\Scripts\\python.exe",
+  "command": [
+    "<WORKSPACE>\\harmonized\\run_grouped37_confirmation.py",
+    "--preflight-only"
+  ],
+  "finished_utc": "2026-10-18T15:05:25.766825+00:00"
+}

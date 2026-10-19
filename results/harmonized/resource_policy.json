@@ -1,0 +1,8 @@
+{
+  "minimum_free_ram_gib_before_launch": 8,
+  "maximum_actual_python_runtimes_before_launch": 5,
+  "maximum_grouped_workers": 2,
+  "poll_seconds": 60,
+  "estimator_n_jobs": 2,
+  "note": "Operational admission limits only; frozen models, roles, rows and precision are unchanged."
+}

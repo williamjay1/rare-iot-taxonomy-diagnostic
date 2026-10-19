@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "completed_units": 55,
+  "expected_units": 55,
+  "checks": 47,
+  "probability_matrices_checked": true,
+  "nested_seed_aggregation_checked": true,
+  "script_sha256": {
+    "audit_capture_flat_reproduction.py": "c70aa381aafd7ae98eaa848b08a2ad574732bc5840dcb23ec1e4af9cffdc123d",
+    "audit_frozen_sources.py": "1b3cdd549af068da2d35ade66f0d0855d392e424d0be641da57ca8a9dc7e91e4",
+    "build_manuscript_handoff.py": "d21b5f2c7bd20eb75af9564a56241a2ffed4550bb77ff2f7658f4bcb96794522",
+    "run_capture_controls.py": "0ad5f35c8d3fc7b7649d5b438003542ebfacfa06e6293942dc230a54f2365880",
+    "run_matched_extensions.py": "f644b567c35ec439bd31b33fcb2e02b7be59c6429e4d49ad8f8b3b8fc1e33b7e",
+    "seed_worker_handoff.py": "d7464277fc3d0271c535afd4e7b6dba73066a0acf5bf461e9a62b9edf626d299",
+    "test_matched_extensions.py": "828fe17c4ca6b85ec04f79b6d9ec22de6fe7180475104cfa4ae25e7b7a1beb20",
+    "verify_extension_outputs.py": "50ff9f3d95a663e73fa4424875ccdcc2bdfed831d96f5c52b140304c6c06c48a"
+  },
+  "config_sha256": "363b512827ad871e7cce09fe76dbf503776ff113c6020762705dcbabc209f04f"
+}

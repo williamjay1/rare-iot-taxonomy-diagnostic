@@ -1,0 +1,1229 @@
+Diagnosing Attack Taxonomy Utility in Rare
+IoT Intrusion Detection
+ABSTRACT
+Attack taxonomies may improve rare class detection, but gains can reflect added capacity
+rather than useful grouping. We evaluate a diagnostic protocol using grouped validation, equally
+privileged wrong mappings, calibrated flat ensembles, a converged stacker, and external tests.
+Across six CICIoT2023 public subsample holdouts, equal taxonomy blending improved Macro
+F1 by 0.0218 and rare recall by 0.0827. Approximate intervals allowing for repeated holdout
+overlap were 0.0208 to 0.0229 and 0.0769 to 0.0885. All six effects were positive, although
+multiplicity adjusted sign references were inconclusive. Feature induced partitions recovered
+some gain; generic descriptions did not. IoTID20 and archive controls did not reproduce
+assignment superiority. Grouped NetFlow allocations favoured stacking on Macro F1;
+chronological label shift prevented rare class assessment. The contribution is an auditable local
+assessment protocol, not a universally superior classifier or proof of semantic causation.
+Keywords: Internet of Things; intrusion detection; attack taxonomy; class imbalance; rare
+class recall; grouped validation; probability calibration; diagnostic protocol.
+INTRODUCTION
+Internet of Things (IoT) deployments combine heterogeneous sensors, gateways, and services,
+creating an uneven attack surface (Al-Fuqaha et al., 2015). Fine attack labels can require
+different responses, yet high accuracy can conceal rare class misses. Macro F1, class recall, and
+precision recall analysis complement accuracy under imbalance (Davis & Goadrich, 2006; He &
+Garcia, 2009).
+Weighting, resampling, and focal objectives address class imbalance (Chawla et al., 2002;
+Han et al., 2005; Mulyanto et al., 2020). Hierarchies add label structure but also capacity and
+error propagation (Han et al., 2026; Silla & Freitas, 2011; Uddin et al., 2025). Duplicates, label
+conflicts, and capture artefacts further complicate attribution (Arp et al., 2024; Kapoor &
+Narayanan, 2023; Kaufman et al., 2012).
+We assess whether a supplied taxonomy adds predictive value beyond learner capacity and
+decomposition, using matched wrong maps, flat ensembles, feature partitions and mapping
+similarity diagnostics.
+Discovery uses 1,429,753 CICIoT2023 public subsample rows, 34 labels and 46 numeric
+predictors, not the full corpus. IoTID20, official archive files and an independent timestamped
+corpus test transfer; N-BaIoT assesses device difficulty, not taxonomy utility.
+RQ1 tests Macro F1 and rare recall against weighted flat, ordinary and calibrated blends and a
+converged stacker. RQ2 tests assignment specificity against equally privileged wrong maps,
+feature and random partitions, generic descriptions and mapping similarity. RQ3 examines
+predictor projection, external sources, chronology, conflicts and costs.
+The contribution is a controlled local assessment protocol with competitive controls and
+explicit adoption boundaries; label consistency and feature alignment remain candidate
+moderators, not established sufficient conditions.
+RELATED WORK
+IoT intrusion detection benchmarks and data provenance
+CICIoT2023 (Neto et al., 2023), IoTID20 (Ullah & Mahmoud, 2020), N-BaIoT (Meidan et
+al., 2018), and timestamped NF-ToN-IoT-v3 (Luay, 2025; Luay et al., 2026) differ in capture
+and validation units. Their aggregate scores are not interchangeable; predictive contrasts require
+common assessment records, predictors, roles, and metrics.
+Provenance affects apparent difficulty and model ranking: leakage and label errors are
+documented across intrusion benchmarks (Arp et al., 2024; Bouke & Abdullah, 2023; Cantone et
+al., 2024; Engelen et al., 2021; Kapoor & Narayanan, 2023; Kaufman et al., 2012; Liu et al.,
+2022; Zhao et al., 2026). We audit representation, conflicts, and role assignment before
+interpreting a map effect.
+Learning from class imbalance
+Imbalance handling changes sample support or training objectives, including in offline sensor
+monitoring (Fu & Han, 2025). Network monitoring also uses semi supervised and active learning
+(Pan, 2022). These approaches address different bottlenecks from testing whether a supplied
+label grouping adds predictive information beyond ordinary blending.
+Hierarchical and modular intrusion detection
+Hierarchical classifiers exploit label trees (Silla & Freitas, 2011); intrusion models use family
+to class staging (Han et al., 2026; Uddin et al., 2025). Extra parameters and routing can improve
+predictions independently of an assignment. General classification therefore uses permuted
+hierarchies as controls (del Moral et al., 2022; del Moral et al., 2023; Ojala & Garriga, 2009).
+Our application combines those controls with rare class error accounting and grouped
+assessment.
+Taxonomy and ontology engineering
+Taxonomy engineering evaluates structural quality (Kundisch et al., 2022; Nickerson et al.,
+2013; Sampson et al., 2011). IoT security taxonomies organise overlapping threats differently
+(Makhdoom et al., 2019; Xenofontos et al., 2022). Coherence or expert acceptance is not a
+predictive test; we assess downstream rare detection utility.
+Representation and deployment trends
+Information systems applications include health data modeling (Cheng, 2022) and topology
+based sinkhole detection (Mondal et al., 2022). Here numeric flow summaries permit controlled
+assignment comparisons, but omit payloads, encrypted context, device identity, and online
+adaptation. Application specific success alone does not validate taxonomy utility.
+Validation, uncertainty, and evaluation practice
+Evaluation must separate tuning from assessment and respect dependence among records
+(López et al., 2014; Roberts et al., 2017). Permutation and mapping controls require their own
+bias analysis (Golland et al., 2005; Ojala & Garriga, 2009). Effect sizes and intervals come
+before test probabilities, and the holdout is the limiting unit of generalisation.
+Operational evaluation adds calibration, alert budget, training cost, and edge constraints
+(Alsubhi et al., 2008; Axelsson, 2000; Jamshidi et al., 2025; Roelofs et al., 2022; Tariq et al.,
+2025). These are supporting evidence, not a production claim.
+Benchmark context and research gap
+We contribute a controlled rare IoT detection assessment, not hierarchy, permutation or
+ensemble learning itself.
+METHODOLOGY
+Flat and taxonomy probabilities
+Let x denote a traffic record, c∈C a fine class, including benign, and g(c)∈G its assigned
+family. The principal flat predictor returns
+p (c∣x).
+F
+q (c∣x)=p {g(c)∣x}p {c∣g(c),x}.
+T G L
+q (c∣x)
+p (c∣x)= T .
+T ∑ q ( j∣x)
+T
+j∈C
+1 1
+p (c∣x)= p (c∣x)+ p (c∣x).
+E 2 F 2 T
+1 1
+p (c∣x)= p (c∣x)+ p (c∣x).
+D 2 XGB 2 LGBM
+Both flat learners share outer roles. Real, cyclic and support matched maps differ only in
+assignment under the same factorisation (notation in Table 1).
+Z (x)=∑ p ( j∣x)τ.
+τ T
+j∈C
+p (c∣x)τ
+~ p (c∣x;τ)= T .
+T Z (x)
+τ
+Notation
+Table 1. Notation
+Symbol Meaning
+x traffic record
+c fine class, including benign
+C, G class and family sets
+g(c) family assigned to class c
+p_F(c|x) weighted flat posterior
+p_G{g(c)|x} family posterior
+p_L{c|g(c),x} within family local posterior
+q_T(c|x) unnormalised taxonomy score
+p_T(c|x) taxonomy probability
+p_E(c|x) equal flat and taxonomy blend
+p_D(c|x) flat probability blend
+τ probability power, not temperature
+Symbol Meaning
+ĉ_F, ĉ_T, y flat and taxonomy predictions; label
+u*(x) utility target: +1 repair, -1 harm, 0 neither
+n_c, n_max class support; largest class support
+w_c utility class weight
+t activation threshold
+a(x) gate activation indicator
+β correction strength
+d(c|x;τ), p_R(c|x) proposed change; corrected probability
+N_B, C_R fitting pool; rare class set
+û(x) predicted correction utility
+p_XGB, p_LGBM flat XGBoost and LightGBM probabilities
+Z_τ(x) normaliser of powered taxonomy scores
+J selection objective: Macro F1 plus 0.04 rare recall
+r_j within within family to total variation ratio for predictor j
+x_ij, x<_gj, x<_j predictor value; family mean; overall mean
+TP_c, FN_c true positives; false negatives for class c
+Correction utility and gate selection
+The secondary gate ablation tests whether learned disagreement repair improves on equal
+blending.
+Let c^ =argmax p (c∣x) and c^ =argmax p (c∣x). Only records whose predictions
+F c F T c T
+differ enter utility model training. Given observed class y, the utility target is
+{ 1, c^ =y,c^ ≠ y,
+T F
+u*(x)= −1, c^ =y,c^ ≠ y,
+F T
+0, c^ ≠ y,c^ ≠ y.
+F T
+Agreeing predictions cannot be changed; disagreement targets distinguish repairs from
+harmful replacements.
+Gate inputs are proposed classes and families, confidence, margins, entropies, distances,
+support and agreement, excluding raw traffic predictors.
+Class c receives utility training weight
+{ [ √ n ]}
+w =min 10,max 1, max ,
+c max(n ,1)
+c
+A histogram gradient boosting regressor estimates utility û(x) with 150 iterations, learning
+rate 0.05, at most 15 leaves, minimum leaf support 50, L2 penalty 0.5, and no early stopping.
+The proposed fine classes and families are categorical inputs; weights use uncapped fitting
+support.
+For threshold t, define
+a(x)=1{c^ ≠c^ }1{u^(x)≥t}.
+F T
+~
+d(c∣x;τ)=p (c∣x;τ)−p (c∣x).
+T F
+p (c∣x)=p (c∣x)+a(x)βd(c∣x;τ).
+R F
+The selection role chooses threshold, correction strength, and probability power, not a
+temperature. The frozen selection objective below weights rare recall by 0.04; its grid is retained
+as a sensitivity analysis, not an engineering pass threshold. Outer scores select no operating
+point.
+J=MacroF1+0.04RareRecall.
+Selection ties favour Macro F1, rare recall, fewer introduced errors, then lower activation.
+Equal blending at one half and the one percent rare rule are fixed before outer assessment; the
+gate grid is a separate sensitivity.
+Condition diagnostics
+Label conflict, within family feature variation, and cross family residual errors are candidate
+moderators, not causal tests.
+∑ ∑ (x −x´ )2
+ij gj
+rwithin= g∈Gi:g i =g .
+j ∑(x −x´ )2
+ij j
+i
+The variance ratio averages across predictors. Its numerator sums squared deviations from
+each family mean; its denominator uses the overall mean. Lower ratios indicate greater between
+family separation. This and residual error alignment are descriptive, not causal.
+Wrong taxonomy controls
+The cyclic map preserves family cardinalities while reassigning fine classes; support matching
+preserves fitting support profiles. Controls receive the same models, roles, caps, grid, and
+blending permissions.
+Exceeding both controls supports local assignment value beyond tested hierarchy and support
+alternatives, without excluding every flat ensemble or establishing semantic causation.
+Pseudo taxonomy null controls
+For each discovery holdout, ten pseudo mappings comprise four random size preserving
+partitions, three KMeans partitions, and three diagonal Gaussian mixture partitions of fitting role
+class centroids. Feature subsets have 8, 16, or 32 predictors. The adjusted Rand index measures
+agreement with the real mapping. Similarity associations are descriptive within holdouts because
+mappings share fitted data and assessment records.
+The 60 nested maps are not independent datasets. A post review expansion adds 15 random
+draws to seed 42's four existing maps. Each metric uses (1 + draws at least as large as the real
+effect) / 20. Its minimum 0.05 is a finite conditional reference, not a population p value. The
+draw family and model budget were fixed before observing added outcomes.
+Data sources and roles
+The Neto CICIoT2023 public subsample is distributed through Hugging Face from a Kaggle
+mirror (Neto et al., 2023). Appendix A records provenance and vocabulary; packet to mirror
+lineage was not independently reconstructed.
+IoTID20 is the external replication corpus: 625,783 rows, 22 numeric predictors, and nine fine
+labels (Ullah & Mahmoud, 2020). Its five family groups (Benign, Mirai, Scan, DoS, and
+Spoofing) are obtained by grouping the fine labels on their documented attack family prefix; the
+mapping adds no new semantic content and is supplied only to taxonomy models. Flat
+comparators never see it.
+The official archive contains 63 merged files with 45,019,234 valid rows, 34 labels, and 39
+numeric predictors. It shares 37 predictors with the public subsample, adds two, and lacks nine
+mirror only variables. Because vocabulary and processing differ, results from the two
+distributions are never pooled (Table 2).
+CICIoT2023 and IoTID20 remove nonfinite records before role assignment by exact predictor
+group; session, campaign and device identifiers are unavailable. NF-ToN-IoT-v3 converts
+nonfinite predictors to zero before hashing and modelling, so grouping matches classifier inputs.
+N-BaIoT excludes device identity from predictors and holds out one device after uniform per file
+sampling.
+Appendix A contains the integral protocol and provenance.
+Table 2. Data and validation roles
+Predic Clas
+Source Rows Assessment
+tors ses
+CICIoT2023 public Six holdouts separated by exact
+1,429,753 46 34
+subsample vector group
+Official CICIoT2023 45,019,23
+39 34 Fixed file role provenance audit
+archive 4
+131,259 to Ten holdouts under three conflict
+IoTID20 vectors 22 9
+134,795 rules
+N-BaIoT uniform 3,967,570 Nine leave one device out folds at
+115 9
+device samples / 6,253,800 50k / 100k caps
+27,520,26 Three grouped allocations; one
+NF-ToN-IoT-v3 48 10
+0 chronology
+Repeated validation
+Seeds 42 to 47 allocate predictor groups to 20 percent assessment, then divide development
+70/15/15 into fitting, utility and calibration, and selection.
+Fitting alone determines caps, weights, transformations, maps, and base models (Figure 1).
+Utility and calibration fit gates and flat meta controls. Selection chooses settings and unknown
+thresholds. Assessment outcomes determine none of them.
+Fitting caps are 25,000 per attack class and 80,000 benign rows; uncapped fitting counts
+freeze the rare set before caps.
+IoTID20 uses ten 70/30 grouped holdouts under strict, modal, and modal 80 percent conflict
+rules. Its rare set contains every class tied for minimum positive fitting support, not the
+CICIoT2023 one percent set.
+Figure 1. Study design
+Experimental design and analysis tiers
+Table 3 separates primary, mechanism, robustness, boundary, and exploratory tests. Negative
+evidence from any category can constrain conclusions. Post review additions are identified rather
+than described as preregistered.
+Table 3. Evidence tiers and analysis plan
+Role and
+Tests Assessment units Primary contrast
+question
+Discovery; matched flat
+Primary RQ1 Six grouped holdouts F1 and rare recall
+controls
+Mechanism Wrong, pseudo, language and Nested maps; six
+Assignment specificity
+RQ2 standard informed maps holdouts
+Robustness Resampling; 37 predictor Six overlapping Dependence and
+RQ1/2 paired and regrouped fits holdouts projection
+Boundary IoTID20; archive; NF-ToN; Distinct sources, roles Transfer and
+RQ3 device check and support chronology
+Role and
+Tests Assessment units Primary contrast
+question
+Exploratory Family exclusion; scarcity; 21 cells; 18 cells; six Classification, flagging
+RQ3 calibration; budgets holdouts and retrieval
+Models and comparators
+Weighted multiclass XGBoost is the principal flat model (Chen & Guestrin, 2016);
+LightGBM supplies family and local components (Ke et al., 2017). Appendix A lists frozen
+constructors.
+Comparators include weighted and unweighted trees, ordinary and temperature calibrated flat
+blends, a converged Newton Cholesky stacker, hard and soft taxonomy models, and resampling
+variants. Convergence diagnostics are retained. Tree budgets are matched only where stated,
+without implying equal parameter counts.
+Focal XGBoost uses 420 trees, focal exponent 2, and class weights with exponent 0.35.
+Resampling variants target 5,000 eligible records per class before a LightGBM fit and are
+tuned on the selection role (Ke et al., 2017).
+Forests use 300 entropy trees. Histogram boosting selects iteration limits 20, 80, or 200 on
+selection data; internal early stopping uses ten percent of fitting data. CatBoost uses selection
+role stopping. The multilayer perceptron has 256 and 128 hidden units, a 50 iteration ceiling, and
+internal fitting role stopping. Appendix A and the archived constructors specify the remaining
+settings.
+Metrics and inference
+Primary metrics are Macro F1 and mean rare recall. Accuracy, Macro recall, Macro average
+precision (AP), worst class recall, calibration, and alert budget results are secondary. All metrics
+use frozen outer predictions.
+For each outer split, let N be the uncapped base fitting pool size and n its record count for
+B c
+class c. The rare class set is
+C ={c:0<n ≤⌈0.01N ⌉}.
+R c B
+Discovery needs no rare fallback. IoTID20 retains all minimum positive support ties; NF-
+ToN-IoT-v3 returns undefined rare recall for an empty fitting rare set or absent assessment
+support.
+1 TP
+RareRecall= ∑ c .
+TP +FN
+|C | c∈C c c
+R R
+The estimand averages six paired split effects, not pooled row metrics. Conditional intervals
+average six effects in each of 5,000 class stratified paired resamples of frozen predictions per
+holdout (Efron, 1979). A second interval resamples contiguous 2,000 row blocks sorted by
+original row identifier. Both condition on fitted models and observed assessment roles, not
+unseen training sets or unavailable session clusters.
+Approximate repeated holdout t intervals multiply the effect standard deviation by the square
+root of 1/6 + 0.2/0.8, with five degrees of freedom (Nadeau & Bengio, 2003); unknown
+campaign dependence remains unresolved. Overlapping holdouts are not independent signs: all
+positive exact two sided binomial sign references are 0.03125. Holm adjustment covers eight
+metric by contrast references. Exact McNemar correctness tests use four contrasts per holdout
+and separate within holdout Holm adjustment (Ernst, 2004; McNemar, 1947), without pooling
+minimum p values.
+Macro average precision (AP) averages one versus rest average precision, using scikit learn
+average_precision_score rather than trapezoidal PR area. Expected calibration error uses ten
+equal width, right closed confidence bins, including zero in the first bin. Each occupied bin
+contributes its row fraction multiplied by the absolute gap between top label accuracy and mean
+confidence. Rare row ECE restricts the same calculation to true rare rows; it remains between
+zero and one. Bin sensitivity and sparse rare support limit its interpretation (Roelofs et al., 2022;
+Silva Filho et al., 2023). Multiclass Brier score sums squared class probability errors per row.
+Repeated assessment counts are prediction instances, not unique records.
+Implementation and reproducibility
+The Windows workstation has eight physical CPU cores and 31.3 GB memory. Archived
+versions are Python 3.12, XGBoost 3.3.0, LightGBM 4.6.0, CatBoost 1.2.10, scikit learn 1.9,
+SciPy 1.18, and imbalanced learn 0.14.2. Added workers use two threads each; concurrent refit
+durations are not deployment benchmarks.
+Open set and label scarcity protocols
+The added leave one family out analysis removes each of seven attack families from fitting,
+utility and calibration, and known selection roles. Three grouped allocations give 21 cells.
+Known class Macro F1 and rare recall assess classification; maximum softmax probability
+assesses unknown flagging (Corsini & Yang, 2023; Geng et al., 2021; Scheirer et al., 2013).
+Selection known rows determine thresholds for target false alarm rates of 1, 5, and 10 percent;
+realised test false alarm rates are also reported. The held out family is never supplied as a fitted
+output class.
+The added scarcity experiment caps each fine class at 10, 25, 50, 100, 250, or 500 base fitting
+rows across three grouped allocations. Both family exclusion and scarcity use 420 flat trees and
+300 hierarchy trees, fixed before fitting. Utility and calibration labels remain available to every
+arm, so caps are not total annotation budgets. Rare sets and assessment rows remain fixed.
+Calibration and budget checks additionally reconstruct six frozen discovery holdouts with ten bin
+ECE.
+Sequential windows and drift protocol
+The official files expose no timestamps. File order is therefore a disclosed capture order
+proxy, not a chronological or concept drift evaluation.
+Archive refits use files 1 through 45 for fitting, 46 through 54 for development, and windows
+55 to 56, 57 to 58, 59 to 60, and 61 to 63 for assessment. Matched flat blends and stacking are
+refitted on the archive's 39 predictors, never applied from a 46 predictor mirror model. Conflict
+removal uses complete labels and is therefore a transductive integrity audit, not a prospective
+cleaning procedure. Class and family Jensen Shannon divergence and population stability index
+describe file order changes, not genuine temporal drift.
+Language derived taxonomy prior
+Qwen2.5 1.5B Instruct generated fixed technical descriptions at temperature zero; MPNet and
+BGE sentence encoders converted them to 34 by 8 class to family cosine affinities at
+temperatures 0.2, 0.5, and 1.0 (Song et al., 2020; Yang et al., 2025). These priors modify frozen
+flat probabilities without retraining. This tests generic descriptions, not expert curation or threat
+intelligence.
+Encoder identifiers are all-mpnet-base-v2 and bge-small-en-v1.5; archived prompts and
+outputs fix the description construction.
+Independent source and genuine chronology
+NF-ToN-IoT-v3 supplies 27,520,260 testbed flows with ten labels (Luay, 2025; Luay et al.,
+2026). Its 53 nonlabel fields yield 48 predictors after excluding absolute start and end times, both
+host addresses, and DNS transaction identifier. Nonfinite values become zero before hashing and
+fitting; labels undergo no global consistency cleaning.
+Seeds 42 to 44 allocate predictor hash groups, without labels, to fitting, calibration, selection,
+and assessment with probabilities 0.56/0.12/0.12/0.20. Unequal groups change row fractions.
+Fitting caps remain 25,000 per attack and 80,000 benign; deterministic label blind samples
+bound calibration and selection at 60,000 each and assessment at 300,000 rows. All six role pairs
+have zero shared hashes. Each allocation has one fitted seed.
+A separate chronology splits genuine start times at their 60th, 75th, and 85th percentiles,
+keeps ties together, and excludes flows crossing boundaries. Later roles purge earlier predictor
+hashes without labels. Caps and samples are unchanged. Seeds 42 to 44 repeat fitting on this
+single chronology. Primary Macro F1 includes all ten source labels, assigning zero to unlearned
+classes; test supported scores are secondary. Empty fitting defined rare sets or absent test support
+yield undefined rare recall, without fallback.
+A researcher constructed partition from NF attack descriptions groups benign, availability,
+input manipulation, interception and credentials, persistence and impact, and reconnaissance. It
+is not an official dataset taxonomy or expert annotation. Each allocation rebuilds cyclic and
+support controls from fitting data. Eleven arms comprise two flat learners, ordinary and
+calibrated blends, stacking, and three hierarchies with their equal blends. Meta models use
+calibration labels present during fitting, never future classes.
+After inspecting chronological label support, a secondary frozen prediction audit uses one
+minus maximum fitted class probability for unknown AUROC and average precision. No time
+boundary, model, or threshold changes. Unknown prevalence is the constant score precision
+reference; flagging differs from fine class recognition.
+Standard informed control
+CAPEC version 3.9 informs a researcher constructed 12 group mapping (MITRE, 2023).
+Seven labels require broad or conditional matches; three web labels use an unresolved fallback.
+This is not authoritative alignment or expert annotation. The same wrong partition is fitted in all
+six holdouts, matching cardinalities and capped fitting support, not uncapped support or
+parameter counts. All eight rare labels retain their named groups; only PingSweep changes its
+companions. Credential Guessing, Input Injection, and Unresolved Web Compromise remain
+intact. The control therefore cannot isolate semantic utility for every tail class.
+RESULTS
+Primary evidence
+Weighted flat XGBoost reached Macro F1 0.8739 and rare recall 0.5511; the taxonomy blend
+reached 0.8957 and 0.6338 (Table 4). The gate reached 0.8961 and 0.6377 but remains an
+ablation because its added benefit over equal blending is not an engineering recommendation.
+The converged flat stacker reached 0.8760 and 0.5434, with lower top label calibration error as a
+separate tradeoff.
+Table 4. Discovery performance across six holdouts
+Method Macro F1 Rare recall Macro AP ECE
+0.8739 0.5511 0.9059 0.0046
+Weighted flat XGBoost
+(0.0011) (0.0030) (0.0009) (0.0003)
+0.8751 0.5396 0.9043 0.0051
+Ordinary flat probability blend
+(0.0012) (0.0024) (0.0012) (0.0002)
+Temperature calibrated flat 0.8755 0.5421 0.9043 0.0049
+blend (0.0009) (0.0019) (0.0011) (0.0003)
+0.8760 0.5434 0.9071 0.0019
+Converged flat stacker
+(0.0015) (0.0037) (0.0010) (0.0002)
+0.8869 0.6212 0.9189 0.0023
+Soft taxonomy
+(0.0018) (0.0077) (0.0020) (0.0002)
+0.8957 0.6338 0.9224 0.0067
+Taxonomy blend
+(0.0014) (0.0064) (0.0014) (0.0003)
+0.8961 0.6377 0.9218 0.0075
+Validation gate
+(0.0014) (0.0060) (0.0015) (0.0010)
+0.8857 0.5894 0.9138 0.0066
+Cyclic control
+(0.0017) (0.0073) (0.0011) (0.0008)
+0.8807 0.5640 0.9087 0.0069
+Support matched control
+(0.0011) (0.0088) (0.0012) (0.0008)
+Values are means and standard deviations across six grouped holdouts. All arms share
+assessment records. Flat temperatures and stacking use utility and calibration data. ECE entries
+use the common ten bin definition; missing entries are not silently replaced by older binning
+variants.
+Figure 2 compares holdout scores for weighted flat, converged stacking and taxonomy
+blending.
+Figure 2. Split stability
+Statistical reliability of the reported improvements
+Conditional paired intervals are +0.0218 [0.0208, 0.0228] for Macro F1 and +0.0827 [0.0788,
+0.0868] for rare recall. Block ranges are [0.0208, 0.0228] and [0.0787, 0.0868]. Approximate
+overlap adjusted intervals are wider (Table 5). Against stacking, differences are +0.0197 and
++0.0904; all four declared contrasts are positive in six of six holdouts.
+Eight unadjusted sign references of 0.03125 become 0.25 after Holm correction. Thus
+directional consistency is not adjusted sign significance. McNemar comparisons remain separate
+by holdout. Reconstructing cached stacker decisions from reduced precision probabilities
+changes Macro F1 by at most 0.000035, leaving the rounded result unchanged.
+Table 5. Paired effects
+Comparator Macro F1 effect Rare recall effect Positive splits
++0.0218 +0.0827
+Weighted flat 6/6 for both
+[0.0208, 0.0229] [0.0769, 0.0885]
++0.0197 +0.0904
+Flat stacker 6/6 for both
+[0.0169, 0.0226] [0.0799, 0.1009]
++0.0101 +0.0444
+Cyclic gate 6/6 for both
+[0.0084, 0.0117] [0.0340, 0.0548]
++0.0150 +0.0698
+Support gate 6/6 for both
+[0.0131, 0.0169] [0.0596, 0.0799]
+Leave one holdout out effects remain positive: 0.0217 to 0.0220 Macro F1 and 0.0818 to
+0.0837 rare recall. Appendix A contrasts conditional row and block intervals with Table 5's
+approximate overlap correction. Table 6 compares mappings.
+Table 6. Mapping controls
+Mapping Macro F1 Rare recall Scope
+Weighted flat 0.8739 0.5511 Six holdouts
+Mapping Macro F1 Rare recall Scope
+Real blend 0.8957 0.6338 Six holdouts
+Cyclic gate 0.8857 0.5894 Six holdouts
+Support gate 0.8807 0.5640 Six holdouts
+ATT&CK blend 0.8958 0.6334 Six holdouts
+ATT&CK cyclic 0.8799 0.5577 Six holdouts
+Random pseudo maps 0.8793 0.5534 24 nested maps
+KMeans pseudo maps 0.8872 0.5866 18 nested maps
+Gaussian mixture maps 0.8814 0.5644 18 nested maps
+Mapping rows average six overlapping holdouts; pseudo rows describe nested maps. The
+added standard control has its own matched group budget.
+Attribution: wrong taxonomy controls
+Equally privileged cyclic and support controls test assignment beyond hierarchy capacity.
+ATT&CK alignment (MITRE, n.d.) reaches similar scores while its cyclic version falls back
+(Table 6). This is another locally useful grouping, not evidence that ontology semantics caused
+the improvement.
+Error accounting locates repairs and harms rather than identifying their causes.
+Figure 3 compares original and ATT&CK assignments. In the left display, Cyclic and Support
+include their validation selected gates; in the right display, ATT&CK is the aligned equal blend
+and Wrong its cyclic control. Bars are six holdout means with sample standard deviations.
+Shading distinguishes Macro F1 from rare recall.
+Figure 3. Mapping controls
+Feature geometry and pseudo mappings
+Against the real map's +0.0218 Macro F1 and +0.0827 rare recall, 24 random maps average
++0.0053 and +0.0023. Eighteen KMeans maps average +0.0133 and +0.0356; eighteen Gaussian
+mixture maps +0.0075 and +0.0133. Feature partitions recover part, not all, of the mean margin.
+The real map ranks first among the original 11 on rare recall in six holdouts and on Macro F1
+in five. Its adjusted Rand index of one lies outside much of the pseudo map support. Weak
+within holdout associations therefore cannot exclude similarity or identify a causal geometry
+effect. The expanded reference assesses rank under one declared random mechanism. In the
+frozen seed 42 expansion, 0/19 random maps match or exceed real Macro F1 and 0/19 match or
+exceed rare recall. Their finite plus one tails are 0.05 and 0.05, respectively. The 0.05 resolution
+and two endpoints preclude a broader significance claim. Figure 4 plots these draws, sorted
+separately by Macro F1 on the left and rare recall on the right; horizontal lines mark the real map
+in this holdout.
+Figure 4. Pseudo mappings
+Generic description affinities are nearly uniform: mean row entropy is 2.067 against ln 8 =
+2.079. Their rounded metrics remain close to weighted flat predictions across temperatures and
+encoders. This language construction does not reproduce the trained hierarchy's gain. It does not
+establish that expert attack knowledge, standard ontologies, alternative prompts, or language
+representations are uninformative.
+Figure 5 shows all 34 description affinity rows on the left, with shorter display labels. On the
+right, bars are description prior minus weighted flat, cyclic language prior, and name only prior
+Macro F1; error bars are sample standard deviations across six holdouts. Cyclic here means the
+language affinity control, not the trained hierarchy control.
+Figure 5. Language prior
+Standard informed mapping
+The CAPEC informed blend differs from its matched wrong map by +0.0035 Macro F1 (6/6
+positive) and +0.0096 rare recall (6/6 positive). Table 7 reports standard deviations. This 12
+group construction is neither expert validated nor parameter matched to the eight family
+taxonomy. Original hard flat predictions are the baseline; Appendix A assesses cached
+probability rounding.
+This average improvement does not extend to every rare class. Uploading recall falls from
+0.3087 for canonical weighted flat to 0.2187 for the standard blend (6/6 decreases). The matched
+wrong partition retains eleven attack label memberships and eight of 44 original within group
+attack class pairs. It is therefore a partially overlapping control. All rare labels retain their named
+groups; one wrong partition is reused across holdouts.
+Table 7. Standard informed control
+Map Macro F1 Rare recall
+CAPEC informed 0.8813 (0.0011) 0.5708 (0.0033)
+Matched wrong 0.8777 (0.0010) 0.5612 (0.0029)
+Rare class behaviour and error transitions
+Class effects are uneven. Figure 6 separates corrected and introduced errors; repeated
+holdouts contribute prediction instances rather than unique source records.
+Across 1,716,065 aligned prediction instances, the blend makes 5,279 net corrections,
+including 2,243 in the rare set; 47 percent cross families. The ledger identifies changed
+predictions, not causes.
+Figure 6. Error transitions
+Strong flat learners
+The stacker converged within nine iterations. Its ten bin ECE was 0.0019 versus 0.0067 for
+blending, which improved both primary metrics in every holdout but not calibration. Appendix A
+reports all comparators.
+Robustness and sensitivity
+Feature vocabulary: what actually differs
+The 46 predictor mirror and 39 predictor archive share 37 variables. Their within family
+variance ratios are 0.8418 for all mirror predictors, 0.8374 for shared predictors, and 0.8561 for
+mirror only predictors. These descriptive summaries do not replace the new paired and regrouped
+refits.
+Projection merges 851 additional groups containing 2,735 rows. Across the six fixed roles,
+471 to 513 outer rows share projected predictors with development roles (0.1647 to 0.1793
+percent), although no rare row is affected. This exceeds the declared 0.1 percent trigger,
+requiring the separate regrouped confirmation. Under original roles the real blend differs from
+weighted flat by +0.0284 F1 and +0.1041 rare recall; after regrouping, by +0.0290 and +0.1076.
+Table 8 separates original roles from nine regrouped arms, which are not row paired to the 46
+predictor experiment. Regrouping omits calibrated flat meta controls and cannot exclude them.
+The original role blend also exceeds stacking by +0.0228 Macro F1. After regrouping, all row
+ECE rises from 0.0045 for flat to 0.0070 for blending. Predictive gains therefore do not imply
+improved calibration.
+Table 8. Shared predictor refits
+Protocol Method Macro F1 Rare recall ECE
+Original
+Flat XGBoost 0.8533 (0.0012) 0.4875 (0.0052) 0.0045 (0.0003)
+roles
+Original
+Flat LightGBM 0.8435 (0.0019) 0.4449 (0.0073) 0.0021 (0.0002)
+roles
+Original
+Flat equal blend 0.8558 (0.0009) 0.4843 (0.0030) 0.0051 (0.0002)
+roles
+Original
+Calibrated flat blend 0.8559 (0.0010) 0.4851 (0.0036) 0.0049 (0.0003)
+roles
+Original
+Flat stacker 0.8589 (0.0023) 0.4694 (0.0091) 0.0018 (0.0003)
+roles
+Original
+Soft real hierarchy 0.8728 (0.0017) 0.5778 (0.0061) 0.0014 (0.0004)
+roles
+Original
+Hard real hierarchy 0.8674 (0.0015) 0.5797 (0.0062) 0.0398 (0.0003)
+roles
+Original
+Real blend 0.8817 (0.0013) 0.5916 (0.0052) 0.0072 (0.0001)
+roles
+Original
+Cyclic blend 0.8675 (0.0022) 0.5265 (0.0080) 0.0063 (0.0005)
+roles
+Original
+Support blend 0.8618 (0.0013) 0.4962 (0.0050) 0.0066 (0.0004)
+roles
+Regrouped Flat XGBoost 0.8534 (0.0016) 0.4875 (0.0085) 0.0045 (0.0004)
+Regrouped Soft real hierarchy 0.8734 (0.0031) 0.5803 (0.0123) 0.0016 (0.0004)
+Regrouped Hard real hierarchy 0.8678 (0.0029) 0.5810 (0.0123) 0.0398 (0.0004)
+Regrouped Real blend 0.8824 (0.0026) 0.5950 (0.0104) 0.0070 (0.0005)
+Regrouped Cyclic blend 0.8677 (0.0011) 0.5272 (0.0058) 0.0059 (0.0004)
+Regrouped Support blend 0.8623 (0.0017) 0.4972 (0.0066) 0.0065 (0.0003)
+Blend weight, rare threshold, and conflict handling
+Equal blending and one percent rarity remain fixed. The gate grid's maximum Macro F1
+margin is approximately 0.0004, at a different threshold from maximum rare recall. These outer
+sensitivity values do not select a deployment policy.
+Transfer: IoTID20
+IoTID20 has 625,783 records, 149,971 exact vectors, and 18,712 multi label vectors. Those
+conflicts cover 302,926 rows (48.41 percent). Strict, modal, and modal 80 percent retain
+131,259, 134,795, and 131,645 vectors. These are source representation properties, not evidence
+that annotation is wrong (Natarajan et al., 2013); reporting all rules prevents one decision from
+defining the external result.
+The external rare class claim is not replicated. Under strict, modal, and modal 80 percent
+rules, real map Macro F1 changes by +0.0030, +0.0040, and +0.0028; rare recall changes by
++0.0016, 0.0000, and -0.0016. Cyclic and support maps are comparable or better on individual
+rules, so IoTID20 provides no rare margin specific to the mapping (Table 9; Figure 7).
+Table 9. External conflict rules and device holdout sensitivity
+F1 / rare
+Flat Macro Map Macro Interpretati
+Dataset and protocol recall
+F1 F1 on
+difference
+0.8602 ± 0.8632 ± +0.0030 / No rare
+IoTID20 strict
+0.0020 0.0019 +0.0016 margin
+0.8633 ± 0.8672 ± +0.0040 / No rare
+IoTID20 modal
+0.0032 0.0021 0.0000 margin
+0.8653 ± 0.8681 ± +0.0028 / No rare
+IoTID20 modal 80%
+0.0017 0.0016 −0.0016 margin
+0.9972 ± Not
+N-BaIoT 50k device holdout Not used Ceiling only
+0.0028 applicable
+0.9971 ± Not
+N-BaIoT 100k device holdout Not used Ceiling only
+0.0031 applicable
+N-BaIoT device held out Macro F1 is 0.9972 (SD 0.0028) at 50,000 rows per file and 0.9971
+(SD 0.0031) at 100,000 (Figure 8). Fold scores average test supported labels: two devices have
+six, the others nine. It is a ceiling check, not taxonomy transfer evidence.
+Figure 7. External sensitivity
+Figure 8. Condition diagnostics
+Scale and provenance: official archive
+The official archive is a scale and integrity audit, not independent transfer. It contains
+45,019,234 valid rows; 57.21 percent of rows in the final role are exact labelled repeats and
+30.60 percent link to multiple labels. Cleaning needs complete labels to identify conflicts, so this
+analysis bounds public subsample interpretation.
+The archive has no timestamps, so sequential files describe a shifted capture order regime
+rather than temporal drift. The blend remains above the flat model in four windows but does not
+exceed the cyclic control, reinforcing the boundary on a general taxonomy claim.
+Independent source and chronological boundary
+The three NF-ToN-IoT-v3 grouped allocations retain all ten labels. The real blend reaches
+Macro F1 0.8017 (0.0091) versus 0.7944 (0.0093) for weighted flat and 0.8508 (0.0034) for
+stacking. Its mean rare recall is 0.9791; the paired difference from weighted flat is -0.0029. Table
+10 includes all arms. Allocations reuse one testbed, not independent sources.
+The frozen chronology instead leaves only benign traffic shared between fitted and future test
+labels. Backdoor, interception, ransomware, and cross site scripting account for 129,183 of
+300,000 future rows; none has a fitted output class, so their closed set recall is zero. No fitted
+class satisfies the rare rule. All ten label Macro F1 is 0.09507 (0.00001) for real blending and
+0.09513 (0.00001) for cyclic blending. Rare recall is undefined. This label support failure does
+not demonstrate rare attack transfer; fit seeds share one future period.
+For unknown flagging, real blend AUROC is 0.9363 (0.0033), versus 0.9768 (0.0018) for
+stacking. Their average precision values are 0.8915 and 0.9629, against prevalence 0.4306. This
+secondary analysis favours stacking, without restoring rare recognition or establishing an
+operating false alarm rate.
+Table 10. Independent source assessment
+Grouped Future
+Method Grouped F1 Future F1
+rare AUROC
+0.7944 0.9820 0.09506 0.9405
+Flat XGBoost
+(0.0093) (0.0033) (0.00005) (0.0021)
+0.7975 0.9795 0.09488 0.9123
+Flat LightGBM
+(0.0073) (0.0046) (0.00003) (0.0024)
+0.7977 0.9805 0.09504 0.9415
+Flat equal blend
+(0.0066) (0.0046) (0.00002) (0.0022)
+0.7973 0.9805 0.09504 0.9392
+Calibrated flat blend
+(0.0068) (0.0045) (0.00001) (0.0012)
+0.8508 0.7699 0.07694 0.9768
+Flat stacker
+(0.0034) (0.0641) (0.00005) (0.0018)
+0.8043 0.9759 0.09499 0.9080
+Real hierarchy
+(0.0092) (0.0051) (0.00007) (0.0070)
+0.8017 0.9791 0.09507 0.9363
+Real blend
+(0.0091) (0.0015) (0.00001) (0.0033)
+0.7949 0.9769 0.09499 0.9401
+Cyclic hierarchy
+(0.0067) (0.0055) (0.00002) (0.0077)
+0.7969 0.9812 0.09513 0.9486
+Cyclic blend
+(0.0086) (0.0039) (0.00001) (0.0021)
+0.7994 0.9748 0.09480 0.9134
+Support hierarchy
+(0.0093) (0.0094) (0.00003) (0.0107)
+0.7999 0.9794 0.09500 0.9340
+Support blend
+(0.0105) (0.0052) (0.00005) (0.0022)
+Exploratory extensions
+Post review extensions refit matched flat probability blending, temperature calibration, and
+stacking wherever new base models are needed. Known class classification, unknown flagging,
+scarcity, calibration, and budgeted rare retrieval answer different questions; no single endpoint is
+treated as a universal victory. Family folds share their source corpus, and repeated budgets do
+not create independent experiments.
+Matched refits replace earlier exploratory values in Figure 9 and Table 11. Seven exclusions
+are averaged within each of three seeds; 21 cells are not independent replications. Unknown
+flagging differs from known class recognition.
+Known class Macro F1 is 0.8876 for real blending, 0.8763 for calibrated flat blending and
+0.8783 for stacking. Unknown AUROC instead favours cyclic blending (0.8964 versus 0.8907).
+Unknown recall and realised false alarms use a five percent selection target, not a guaranteed
+assessment false alarm rate.
+Table 11. Family exclusion controls
+Known Known Recall at False
+Method AUROC
+F1 rare 5% alarms
+0.8723 0.5496 0.8713 0.2875 0.0511
+Flat XGBoost
+(0.0004) (0.0037) (0.0013) (0.0467) (0.0009)
+0.8658 0.5106 0.8803 0.3463 0.0509
+Flat LightGBM
+(0.0010) (0.0065) (0.0018) (0.0371) (0.0011)
+0.8759 0.5455 0.8834 0.3754 0.0510
+Flat equal blend
+(0.0006) (0.0021) (0.0033) (0.0066) (0.0010)
+0.8763 0.5477 0.8840 0.3840 0.0511
+Calibrated flat blend
+(0.0009) (0.0036) (0.0031) (0.0047) (0.0010)
+0.8783 0.5475 0.8565 0.2456 0.0510
+Flat stacker
+(0.0020) (0.0071) (0.0055) (0.0103) (0.0010)
+0.8805 0.6045 0.8781 0.2999 0.0509
+Real hierarchy
+(0.0014) (0.0055) (0.0027) (0.0492) (0.0012)
+0.8876 0.6105 0.8907 0.3970 0.0510
+Real blend
+(0.0014) (0.0041) (0.0017) (0.0460) (0.0013)
+0.8725 0.5364 0.8709 0.3169 0.0508
+Cyclic hierarchy
+(0.0007) (0.0045) (0.0036) (0.0350) (0.0011)
+0.8819 0.5691 0.8964 0.4769 0.0509
+Cyclic blend
+(0.0012) (0.0036) (0.0037) (0.0229) (0.0011)
+Table 12 shares base caps and extra calibration labels, not total annotation budgets. Across
+caps, real blend Macro F1 averages 0.7679 versus 0.8532 for stacking. Thus the original flat
+comparison does not establish an advantage over stronger flat controls.
+Table 12. Base fitting scarcity
+Base cap Real blend F1 Calibrated flat F1 Stacker F1
+10 0.6643 (0.0137) 0.6693 (0.0110) 0.8035 (0.0155)
+25 0.7526 (0.0010) 0.7530 (0.0120) 0.8474 (0.0060)
+50 0.7779 (0.0050) 0.7780 (0.0030) 0.8579 (0.0038)
+100 0.7941 (0.0017) 0.7932 (0.0015) 0.8632 (0.0027)
+250 0.8047 (0.0004) 0.8037 (0.0014) 0.8712 (0.0019)
+500 0.8134 (0.0004) 0.8125 (0.0003) 0.8759 (0.0008)
+On the six frozen discovery roles, rare row ECE decreases from 0.0766 to 0.0672; rare Brier
+score falls from 0.4550 to 0.4130. All row ECE instead rises. At 5,000 alerts the blend retrieves
+86.5 additional rare rows on average relative to weighted flat; at 10,000 stacking retrieves more.
+These are row retrieval rates, not mean class recall (Table 13).
+Table 13. Calibration and retrieval
+Method Rare ECE Rare Brier 5k retrieval 10k retrieval
+Flat XGBoost 0.0766 0.4550 0.5913 0.8195
+Flat equal blend 0.0730 0.4714 0.5891 0.8160
+Calibrated flat blend 0.0716 0.4711 0.5892 0.8162
+Flat stacker 0.0914 0.4703 0.5915 0.8284
+Real blend 0.0672 0.4130 0.6021 0.8231
+Figure 9. Unknown flagging
+Figure 10. Capture order
+DISCUSSION
+What the protocol does and does not establish
+The discovery gain survives the tested ensemble, capacity, support, calibration and
+assignment controls, but six overlapping holdouts and positive conditional or approximate
+intervals support only local conclusions. Feature, language and standard informed maps
+constrain alternatives without identifying semantic causation. IoTID20 and archive reversals
+preclude general architectural advice; N-BaIoT addresses device difficulty separately.
+Maximum gate margins are approximately 0.0004 Macro F1 and 0.0039 rare recall at
+incompatible grid points. The extra policy is therefore not recommended from these data.
+Computational tradeoffs and deployment
+The original workstation protocol uses seed 42 roles, one method per process, two warmups,
+and seven timed predictions on 10,000 fixed rows (Figure 11). Training seconds and median
+inference milliseconds are 414.8 and 1,181.0 for the taxonomy blend, 344.6 and 348.0 for
+weighted flat, 674.4 and 1,955.2 for stacking, and 1,204.5 and 18,752.1 for tree budget matched
+LightGBM. The compressed blend artifact occupies 78.33 MB. These are workstation costs, not
+edge measurements.
+Local triage value depends on budget: stacking retrieves more rare rows at 10,000 alerts.
+Offline training costs do not establish gateway feasibility; a competitive flat alternative remains a
+reasonable default.
+Figure 11. Engineering cost
+Limitations
+The discovery mirror has incomplete packet lineage and differs from the official feature
+vocabulary. Exact grouping blocks identical predictors but not unavailable sessions, campaigns,
+or devices. Overlapping holdouts do not provide independent deployments, and approximate
+repeated holdout intervals depend on a variance correction. The new independent source is still a
+testbed, not operational traffic. N-BaIoT remains a device difficulty check rather than taxonomy
+replication.
+No physical edge device was available, so gateway latency, energy, memory, and throughput
+remain unmeasured. Standard informed mappings are researcher constructions, not independent
+expert annotations. Packet payloads, encrypted context, operational device metadata, multimodal
+inputs, adversarial perturbations, and analyst workflow are untested. Chronology and grouped
+random allocation answer different questions; an empty fitted rare set cannot be repaired by
+choosing convenient time cutpoints. These limits restrict deployment and mechanism claims, not
+the reporting of null or reversed effects.
+DESIGN IMPLICATIONS FOR INFORMATION SYSTEMS PRACTICE
+This assessment artifact follows design science (Akoka et al., 2023; Hevner et al., 2004;
+March & Smith, 1995). It connects structural taxonomy criteria (Boudia & Bourahla, 2022;
+Sangupamba Mwilu et al., 2024) with downstream categorisation quality (Valecha et al., 2025),
+security artifact evaluation (Ebrahimi et al., 2025) and conditional design theory (Kane et al.,
+2021). Table 14 operationalises local adoption: a competitive flat reference, useful effects
+beyond equally privileged controls, acceptable cost and validation. Plausible names alone are
+insufficient; external wrong map reversals can justify rejection. High conflict or weak alignment
+prompts diagnosis, not automatic relabelling or proof that taxonomy cannot work.
+A decision procedure for practitioners
+Table 14. Decision procedure for practitioners
+Decision Evidence Supported response Unresolved response
+Source Provenance, duplicate and Document representation Do not automatically
+integrity conflict audit and test alternatives relabel
+Mapping Paired effects against flat Assess magnitude and Retain a competitive flat
+utility and calibrated controls uncertainty locally reference
+Assignmen Equally privileged wrong Conclude only beyond Do not infer a unique
+t specificity and induced maps tested alternatives semantic cause
+Complexit Batch latency, artifact size, Test whether gains affect Simplify; gate remains
+y budgeted retrieval local triage optional
+External source and real Define supported Restrict claims and
+Transfer
+chronology conditions collect local evidence
+Deploymen Physical edge and analyst Validate before Do not substitute
+t measurements operational use workstation timing
+CONCLUSION
+For RQ1, six grouped discovery holdouts show local blending improvements in Macro F1
+from 0.8739 to 0.8957 and rare recall from 0.5511 to 0.6338; approximate overlap adjusted
+difference intervals are [0.0208, 0.0229] and [0.0769, 0.0885]. All six directions agree, but Holm
+adjusted sign references remain inconclusive. Blending exceeds stacking on both primary metrics
+but worsens all row calibration.
+For RQ2, assignment specificity is local, without excluding mapping similarity or refuting
+expert knowledge; gating adds little.
+For RQ3, external representations, chronology and workstation costs constrain adoption;
+production traffic and physical deployment remain unevaluated.
+AUTHOR CONTRIBUTIONS
+Contributions are provided on the separate title page to preserve blinded review.
+DATA AVAILABILITY
+The study uses public CICIoT2023, IoTID20, N-BaIoT, and NF-ToN-IoT-v3 corpora; no new
+captured traffic was created. Appendix A states their source and processing roles. NF-ToN-IoT-
+v3 is archived at https://doi.org/10.48610/44d7c5e. Source licences, immutable checksums, and
+derived role manifests are retained in the review archive. The mirror and official CICIoT2023
+distributions are identified separately.
+CODE AVAILABILITY
+Reproduction scripts, dependency records, result tables, mapping definitions, and source and
+prediction manifests are retained in a confidential review record available from the
+corresponding author on request. Full aligned prediction arrays are retained separately because of
+their size. This revision does not claim a new public code release or DOI; identifying public
+archive details are withheld during blinded review.
+FUNDING STATEMENT
+This research received no funding.
+CONFLICTS OF INTEREST
+The authors declare that they have no competing interests.
+ETHICS STATEMENT
+This study used publicly available network intrusion datasets and did not involve human
+participants, human tissue, or animal subjects.
+AI USE DECLARATION
+OpenAI Codex, Claude, and DeepSeek assisted Python code, candidate standard mappings,
+source organisation, English revision, and manuscript critique during 2026. Complete historical
+model identifiers and dates were not retained. Assistance covered analysis and figure scripts and
+wording in the Abstract, Introduction, Related Work, Discussion, and Conclusion. Experimental
+Qwen descriptions are documented separately, not treated as validated annotations. Authors
+checked outputs against frozen records, evaluated citations, made scientific decisions, and retain
+responsibility. Public data, manuscript text, and submission author information were supplied;
+prompt anonymity is not claimed. No confidential operational traffic or participant records were
+used.
+REFERENCES
+Akoka, J., Comyn-Wattiau, I., Prat, N., & Storey, V. C. (2023). Knowledge contributions in
+design science research: Paths of knowledge types. Decision Support Systems, 166,
+113898. https://doi.org/10.1016/j.dss.2022.113898
+Al-Fuqaha, A., Guizani, M., Mohammadi, M., Aledhari, M., & Ayyash, M. (2015). Internet of
+things: A survey on enabling technologies, protocols, and applications. IEEE
+Communications Surveys & Tutorials, 17(4), 2347-2376.
+https://doi.org/10.1109/COMST.2015.2444095
+Alsubhi, K., Al-Shaer, E., & Boutaba, R. (2008). Alert prioritization in intrusion detection
+systems. In NOMS 2008 - 2008 IEEE Network Operations and Management Symposium
+(pp. 33-40). IEEE. https://doi.org/10.1109/NOMS.2008.4575114
+Arp, D., Quiring, E., Pendlebury, F., Warnecke, A., Pierazzi, F., Wressnegger, C., Cavallaro, L.,
+& Rieck, K. (2024). Pitfalls in machine learning for computer security. Communications
+of the ACM, 67(11), 104-112. https://doi.org/10.1145/3643456
+Axelsson, S. (2000). The base-rate fallacy and the difficulty of intrusion detection. ACM
+Transactions on Information and System Security, 3(3), 186-205.
+https://doi.org/10.1145/357830.357849
+Boudia, M., & Bourahla, M. (2022). Formalization of ontology conceptualizations using model
+transformation. International Journal of Information System Modeling and Design, 13(1),
+1-21. https://doi.org/10.4018/IJISMD.305229
+Bouke, M. A., & Abdullah, A. (2023). An empirical study of pattern leakage impact during data
+preprocessing on machine-learning-based intrusion detection models reliability. Expert
+Systems with Applications, 230, 120715. https://doi.org/10.1016/j.eswa.2023.120715
+Cantone, M., Marrocco, C., & Bria, A. (2024). Machine learning in network intrusion detection:
+A cross-dataset generalization study. IEEE Access, 12, 144489-144508.
+https://doi.org/10.1109/ACCESS.2024.3472907
+Chawla, N. V., Bowyer, K. W., Hall, L. O., & Kegelmeyer, W. P. (2002). SMOTE: Synthetic
+minority over-sampling technique. Journal of Artificial Intelligence Research, 16, 321-
+357. https://doi.org/10.1613/jair.953
+Chen, T., & Guestrin, C. (2016). XGBoost: A scalable tree boosting system. In Proceedings of
+the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data
+Mining (pp. 785-794). ACM. https://doi.org/10.1145/2939672.2939785
+Cheng, N. (2022). AI for health-related data modeling: DCN application analysis. International
+Journal of Information System Modeling and Design, 13(3), 1-11.
+https://doi.org/10.4018/IJISMD.300780
+Corsini, A., & Yang, S. J. (2023). Are existing out-of-distribution techniques suitable for
+network intrusion detection? In 2023 IEEE Conference on Communications and Network
+Security (CNS) (pp. 1-9). IEEE. https://doi.org/10.1109/CNS59707.2023.10288685
+Davis, J., & Goadrich, M. (2006). The relationship between precision-recall and ROC curves. In
+Proceedings of the 23rd International Conference on Machine Learning (pp. 233-240).
+ACM. https://doi.org/10.1145/1143844.1143874
+del Moral, P., Nowaczyk, S., & Pashami, S. (2022). Why is multiclass classification hard? IEEE
+Access, 10, 80448-80462. https://doi.org/10.1109/ACCESS.2022.3192514
+del Moral, P., Nowaczyk, S., Sant'Anna, A., & Pashami, S. (2023). Pitfalls of assessing extracted
+hierarchies for multi-class classification. Pattern Recognition, 136, 109225.
+https://doi.org/10.1016/j.patcog.2022.109225
+Ebrahimi, R., Chai, Y., Li, W., Pacheco, J., & Chen, H. (2025). RADAR: A framework for
+developing adversarially robust cyber defense AI agents with deep reinforcement
+learning. MIS Quarterly, 49(4), 1385-1416. https://doi.org/10.25300/MISQ/2024/17339
+Efron, B. (1979). Bootstrap methods: Another look at the jackknife. The Annals of Statistics,
+7(1), 1-26. https://doi.org/10.1214/aos/1176344552
+Engelen, G., Rimmer, V., & Joosen, W. (2021). Troubleshooting an intrusion detection dataset:
+The CICIDS2017 case study. In 2021 IEEE Security and Privacy Workshops (SPW) (pp.
+7-12). IEEE. https://doi.org/10.1109/SPW53761.2021.00009
+Ernst, M. D. (2004). Permutation methods: A basis for exact inference. Statistical Science, 19(4),
+676-685. https://doi.org/10.1214/088342304000000396
+Fu, L., & Han, H. (2025). Deep analysis of unbalanced offline data in bridge monitoring based
+on improved upper confidence bound algorithm. International Journal of Information
+System Modeling and Design, 16(1), 1-26. https://doi.org/10.4018/IJISMD.374215
+Geng, C., Huang, S.-J., & Chen, S. (2021). Recent advances in open set recognition: A survey.
+IEEE Transactions on Pattern Analysis and Machine Intelligence, 43(10), 3614-3631.
+https://doi.org/10.1109/TPAMI.2020.2981604
+Golland, P., Liang, F., Mukherjee, S., & Panchenko, D. (2005). Permutation tests for
+classification. In Learning Theory (COLT 2005), Lecture Notes in Computer Science
+(Vol. 3559, pp. 501-515). Springer. https://doi.org/10.1007/11503415_34
+Han, H., Wang, W.-Y., & Mao, B.-H. (2005). Borderline-SMOTE: A new over-sampling method
+in imbalanced data sets learning. In Advances in Intelligent Computing (pp. 878-887).
+Springer. https://doi.org/10.1007/11538059_91
+Han, Y., Zheng, K., Huang, Q., Zhang, Y., & Wang, H. (2026). HICID: A hierarchical
+classification framework for intrusion detection under extreme class imbalance.
+Computer Networks, 287, 112532. https://doi.org/10.1016/j.comnet.2026.112532
+He, H., & Garcia, E. A. (2009). Learning from imbalanced data. IEEE Transactions on
+Knowledge and Data Engineering, 21(9), 1263-1284.
+https://doi.org/10.1109/TKDE.2008.239
+Hevner, A. R., March, S. T., Park, J., & Ram, S. (2004). Design science in information systems
+research. MIS Quarterly, 28(1), 75-105. https://doi.org/10.2307/25148625
+Jamshidi, S., Nafi, K. W., Nikanjam, A., & Khomh, F. (2025). Evaluating machine learning-
+driven intrusion detection systems in IoT: Performance and energy consumption.
+Computers & Industrial Engineering, 204, 111103.
+https://doi.org/10.1016/j.cie.2025.111103
+Kane, G. C., Young, A. G., Majchrzak, A., & Ransbotham, S. (2021). Avoiding an oppressive
+future of machine learning: A design theory for emancipatory assistants. MIS Quarterly,
+45(1), 371-396. https://doi.org/10.25300/MISQ/2021/1578
+Kapoor, S., & Narayanan, A. (2023). Leakage and the reproducibility crisis in machine-learning-
+based science. Patterns, 4(9), 100804. https://doi.org/10.1016/j.patter.2023.100804
+Kaufman, S., Rosset, S., Perlich, C., & Stitelman, O. (2012). Leakage in data mining:
+Formulation, detection, and avoidance. ACM Transactions on Knowledge Discovery from
+Data, 6(4), 1-21. https://doi.org/10.1145/2382577.2382579
+Ke, G., Meng, Q., Finley, T., Wang, T., Chen, W., Ma, W., Ye, Q., & Liu, T.-Y. (2017).
+LightGBM: A highly efficient gradient boosting decision tree. In Advances in Neural
+Information Processing Systems (Vol. 30).
+https://proceedings.neurips.cc/paper_files/paper/2017/hash/6449f44a102fde848669bdd9e
+b6b76fa-Abstract.html
+Kundisch, D., Muntermann, J., Oberländer, A. M., Rau, D., Röglinger, M., Schoormann, T., &
+Szopinski, D. (2022). An update for taxonomy designers: Methodological guidance from
+information systems research. Business & Information Systems Engineering, 64(4), 421-
+439. https://doi.org/10.1007/s12599-021-00723-x
+Liu, L., Engelen, G., Lynar, T., Essam, D., & Joosen, W. (2022). Error prevalence in NIDS
+datasets: A case study on CIC-IDS-2017 and CSE-CIC-IDS-2018. In 2022 IEEE
+Conference on Communications and Network Security (CNS) (pp. 254-262). IEEE.
+https://doi.org/10.1109/CNS56114.2022.9947235
+Luay, M. (2025). NF-ToN-IoT-v3 [Data set]. The University of Queensland.
+https://doi.org/10.48610/44d7c5e
+Luay, M., Layeghy, S., Noorbin, N., Sarhan, M., Kulatilleke, G., Moustafa, N., & Portmann, M.
+(2026). Time matters: Temporal NetFlow features for ML-based network intrusion
+detection. IEEE Access, 14, 66899-66913.
+https://doi.org/10.1109/ACCESS.2026.3688204
+López, V., Fernández, A., & Herrera, F. (2014). On the importance of the validation technique
+for classification with imbalanced datasets: Addressing covariate shift when data is
+skewed. Information Sciences, 257, 1-13. https://doi.org/10.1016/j.ins.2013.09.038
+Makhdoom, I., Abolhasan, M., Lipman, J., Liu, R. P., & Ni, W. (2019). Anatomy of threats to
+the Internet of Things. IEEE Communications Surveys & Tutorials, 21(2), 1636-1675.
+https://doi.org/10.1109/COMST.2018.2874978
+March, S. T., & Smith, G. F. (1995). Design and natural science research on information
+technology. Decision Support Systems, 15(4), 251-266. https://doi.org/10.1016/0167-
+9236(94)00041-2
+McNemar, Q. (1947). Note on the sampling error of the difference between correlated
+proportions or percentages. Psychometrika, 12(2), 153-157.
+https://doi.org/10.1007/BF02295996
+Meidan, Y., Bohadana, M., Mathov, Y., Mirsky, Y., Breitenbacher, D., Shabtai, A., & Elovici,
+Y. (2018). N-BaIoT: Network-based detection of IoT botnet attacks using deep
+autoencoders. IEEE Pervasive Computing, 17(3), 12-22.
+https://doi.org/10.1109/MPRV.2018.03367731
+MITRE. (2023). Common Attack Pattern Enumeration and Classification (CAPEC) (Version
+3.9) [Data set]. https://capec.mitre.org/data/xml/capec_v3.9.xml
+MITRE. (n.d.). Enterprise matrix. MITRE ATT&CK. Retrieved September 23, 2026, from
+https://attack.mitre.org/matrices/enterprise/
+Mondal, K., Yadav, S. S., Pal, V., Singh, A. P., Yogita, & Singh, M. (2022). Detecting sinkhole
+attacks in IoT-based wireless sensor networks using distance from base station.
+International Journal of Information System Modeling and Design, 13(6), 1-18.
+https://doi.org/10.4018/IJISMD.297628
+Mulyanto, M., Faisal, M., Prakosa, S. W., & Leu, J.-S. (2020). Effectiveness of focal loss for
+minority classification in network intrusion detection systems. Symmetry, 13(1), 4.
+https://doi.org/10.3390/sym13010004
+Nadeau, C., & Bengio, Y. (2003). Inference for the generalization error. Machine Learning,
+52(3), 239-281. https://doi.org/10.1023/A:1024068626366
+Natarajan, N., Dhillon, I. S., Ravikumar, P. K., & Tewari, A. (2013). Learning with noisy labels.
+In Advances in Neural Information Processing Systems (Vol. 26, pp. 1196-1204).
+https://papers.nips.cc/paper/2013/hash/3871bd64012152bfb53fdf04b401193f-
+Abstract.html
+Neto, E. C. P., Dadkhah, S., Ferreira, R., Zohourian, A., Lu, R., & Ghorbani, A. A. (2023).
+CICIoT2023: A real-time dataset and benchmark for large-scale attacks in IoT
+environment. Sensors, 23(13), 5941. https://doi.org/10.3390/s23135941
+Nickerson, R. C., Varshney, U., & Muntermann, J. (2013). A method for taxonomy development
+and its application in information systems. European Journal of Information Systems,
+22(3), 336-359. https://doi.org/10.1057/ejis.2012.26
+Ojala, M., & Garriga, G. C. (2009). Permutation tests for studying classifier performance. In
+2009 Ninth IEEE International Conference on Data Mining (pp. 908-913). IEEE.
+https://doi.org/10.1109/ICDM.2009.108
+Pan, Y. (2022). Network security monitoring by combining semi-supervised learning and active
+learning. International Journal of Information System Modeling and Design, 13(2), 1-9.
+https://doi.org/10.4018/IJISMD.313578
+Roberts, D. R., Bahn, V., Ciuti, S., Boyce, M. S., Elith, J., Guillera-Arroita, G., Hauenstein, S.,
+Lahoz-Monfort, J. J., Schröder, B., Thuiller, W., Warton, D. I., Wintle, B. A., Hartig, F.,
+& Dormann, C. F. (2017). Cross-validation strategies for data with temporal, spatial,
+hierarchical, or phylogenetic structure. Ecography, 40(8), 913-929.
+https://doi.org/10.1111/ecog.02881
+Roelofs, R., Cain, N., Shlens, J., & Mozer, M. C. (2022). Mitigating bias in calibration error
+estimation. In Proceedings of the 25th International Conference on Artificial Intelligence
+and Statistics (Vol. 151, pp. 4036-4054). PMLR.
+https://proceedings.mlr.press/v151/roelofs22a.html
+Sampson, J., Krogstie, J., & Veres, C. (2011). Ontology alignment quality. International Journal
+of Information System Modeling and Design, 2(3), 1-23.
+https://doi.org/10.4018/jismd.2011070101
+Sangupamba Mwilu, O., Prat, N., & Comyn-Wattiau, I. (2024). A taxonomy development
+method to define the vocabulary for rule-based guidance in complex emerging
+technologies. Business & Information Systems Engineering, 66(2), 161-180.
+https://doi.org/10.1007/s12599-023-00829-4
+Scheirer, W. J., de Rezende Rocha, A., Sapkota, A., & Boult, T. E. (2013). Toward open set
+recognition. IEEE Transactions on Pattern Analysis and Machine Intelligence, 35(7),
+1757-1772. https://doi.org/10.1109/TPAMI.2012.256
+Silla, C. N., & Freitas, A. A. (2011). A survey of hierarchical classification across different
+application domains. Data Mining and Knowledge Discovery, 22(1-2), 31-72.
+https://doi.org/10.1007/s10618-010-0175-9
+Silva Filho, T., Song, H., Perello-Nieto, M., Santos-Rodriguez, R., Kull, M., & Flach, P. (2023).
+Classifier calibration: A survey on how to assess and improve predicted class
+probabilities. Machine Learning, 112(9), 3211-3260. https://doi.org/10.1007/s10994-023-
+06336-7
+Song, K., Tan, X., Qin, T., Lu, J., & Liu, T.-Y. (2020). MPNet: Masked and permuted pre-
+training for language understanding. In Advances in Neural Information Processing
+Systems (Vol. 33, pp. 16857-16867). https://arxiv.org/abs/2004.09297
+Tariq, S., Baruwal Chhetri, M., Nepal, S., & Paris, C. (2025). Alert fatigue in security operations
+centres: Research challenges and opportunities. ACM Computing Surveys, 57(9), 1-38.
+https://doi.org/10.1145/3723158
+Uddin, M. A., Aryal, S., Bouadjenek, M. R., Al-Hawawreh, M., & Talukder, M. A. (2025).
+Hierarchical classification for intrusion detection system: Effective design and empirical
+analysis. Ad Hoc Networks, 178, 103982. https://doi.org/10.1016/j.adhoc.2025.103982
+Ullah, I., & Mahmoud, Q. H. (2020). A scheme for generating a dataset for anomalous activity
+detection in IoT networks. In Advances in Information and Communication Networks
+(pp. 508-520). Springer. https://doi.org/10.1007/978-3-030-47358-7_52
+Valecha, R., Oh, O., & Rao, H. R. (2025). Design principles for information categorization
+quality in crowdsourced crisis mapping platforms. MIS Quarterly, 49(2), 777-804.
+https://doi.org/10.25300/MISQ/2024/16610
+Xenofontos, C., Zografopoulos, I., Konstantinou, C., Jolfaei, A., Khan, M. K., & Choo, K.-K. R.
+(2022). Consumer, commercial, and industrial IoT (in)security: Attack taxonomy and
+case studies. IEEE Internet of Things Journal, 9(1), 199-221.
+https://doi.org/10.1109/JIOT.2021.3079916
+Yang, A., Yang, B., Zhang, B., Hui, B., Zheng, B., Yu, B., Li, C., Liu, D., Huang, F., Wei, H.,
+Lin, H., Yang, J., Tu, J., Zhang, J., Yang, J., Yang, J., Zhou, J., Lin, J., Dang, K., ... Qiu,
+Z. (2025). Qwen2.5 technical report (Version 2) [Preprint]. arXiv.
+https://doi.org/10.48550/arXiv.2412.15115
+Zhao, R., Ding, J., Dong, Q., & Cheng, H. (2026). Mitigating label noise in network intrusion
+detection via graph-based sample selection and purification. Scientific Reports, 16(1),
+11674. https://doi.org/10.1038/s41598-026-45988-y
+APPENDIX A
+Protocol and source detail
+Discovery development allocation uses seed offsets 10,000 and 20,000; caps and shuffle use
+the split seed. Grouping precedes sampling. IoTID20 retains one representative per unique vector
+under each conflict rule: strict removes conflicting vectors, modal assigns their modal label, and
+modal 80 percent requires that agreement. Conflicts are representation properties, not established
+annotation errors.
+The Hugging Face release lacg030175/CIC-IoT-2023-neto-subsample, random configuration,
+supplies 1,143,802 training and 285,951 test rows, retrieved in June 2026 and concatenated
+before grouping. Its source card traces Kaggle akashdogra/ciciot23csv; packet lineage remains
+unverified. IoTID20 uses third party release KathiS/IoTID20_Preprocessed_File. The official
+archive uses Merged01.csv through Merged63.csv from cicresearch.ca. Byte sizes and
+checksums remain in the review record.
+The 37 shared predictors are Header_Length, Protocol Type, Rate, fin_flag_number,
+syn_flag_number, rst_flag_number, psh_flag_number, ack_flag_number, ece_flag_number,
+cwr_flag_number, ack_count, syn_count, fin_count, rst_count, HTTP, HTTPS, DNS, Telnet,
+SMTP, SSH, IRC, TCP, UDP, DHCP, ARP, ICMP, IPv, LLC, Tot sum, Min, Max, AVG, Std,
+Tot size, IAT, Number, Variance. Mirror only variables are flow_duration, Duration, Srate,
+Drate, urg_count, Magnitue, Radius, Covariance, and Weight; archive only variables are
+Time_To_Live and IGMP. Original source spellings are retained. The 37 predictor projection is
+tested both within fixed original roles and with groups rebuilt after projection.
+XGBoost uses 520 histogram trees, depth 9, rate 0.055, minimum child weight 2 and inverse
+support exponent 0.35. Family and local LightGBM use 380 trees, 127 leaves, unrestricted depth,
+minimum child support 25, rate 0.055 and weight exponents 0.25 and 0.50. Both constructors
+specify row fraction 0.90, column fraction 0.95, L2 penalty 1.5 and L1 penalty 0.02; LightGBM
+retains its default zero subsampling frequency. Flat LightGBM has 380 trees. Fitting support
+determines weights and rarity before caps. Resampling and ranking use fitting only. The flat
+stacker uses log probabilities, Newton Cholesky optimisation, C = 1 and at most 100 iterations,
+with convergence checked. Temperatures range from 0.25 to 5.0. Identical information
+permissions do not imply equal parameter counts.
+Rare retrieval ranks rows by summed fitted rare class probability, dividing hits by true rare
+rows rather than classes. Frozen budgets span 1,000 to 100,000 alerts plus fractional budgets;
+outer benefits select none. Unknown flag thresholds and the extra calibration labels follow the
+permissions described in Methods.
+The tree budget flat comparator uses 2,660 LightGBM trees. Forests use square root feature
+sampling and balanced weights; the balanced forest resamples all classes with replacement.
+Histogram boosting uses 63 leaves, rate 0.08, L2 penalty 0.0001, and stopping patience 30.
+CatBoost uses 520 iterations, depth 8, rate 0.08, square root balanced weights, and patience 40.
+The standardised perceptron uses Adam, batches of 8,192, rate 0.001, penalty 0.0001, and
+patience six. Borderline SMOTE and SMOTE ENN target 5,000 rows per eligible class with k =
+min(5, smallest eligible support minus one); Borderline uses m = 10 and kind 1. ENN retains its
+three neighbour default.
+NF-ToN-IoT-v3 has University of Queensland noncommercial conditions, not assumed CC
+BY. Chronological boundaries are 1556236587566, 1556302503700, and 1556353755988
+milliseconds from documented NetFlow times. Immutable source, role, and label support
+manifests remain in the review record.
+Label spellings are identifiers, not per flow mechanisms. The unresolved web bucket
+combines three ambiguous labels; candidate patterns do not establish their mechanisms.
+Table 15 links every assigned class to the frozen CAPEC source. The 24 distinct patterns
+include 15 Draft and nine Stable entries. Related or conditional candidates are not exact
+annotations: ACK fragmentation does not establish filter evasion, command injection does not
+establish shell execution, and uploading does not establish a web shell. Browser control and
+backdoor mechanisms also remain unresolved.
+Table 15. Standard source crosswalk
+CAPEC
+Group Fine labels Match
+candidates
+Benign BenignTraffic None not applicable
+DDoS-PSHACK_Flood, DDoS-
+RSTFINFlood, DDoS-SYN_Flood,
+TCP Flood 482 protocol level
+DDoS-TCP_Flood, DoS-SYN_Flood,
+DoS-TCP_Flood
+DDoS-UDP_Flood, DoS-UDP_Flood,
+UDP Flood 486 protocol level
+Mirai-udpplain
+ICMP Flood DDoS-ICMP_Flood 487 explicit label
+125; 494
+DDoS-ACK_Fragmentation partial proxy
+related
+Fragmentation
+Abuse DDoS-UDP_Fragmentation 495 explicit label
+DDoS-ICMP_Fragmentation 496 explicit label
+DDoS-HTTP_Flood, DoS-
+488 explicit label
+HTTP Resource HTTP_Flood
+Exhaustion
+DDoS-SlowLoris 469 named mechanism
+Other Network DDoS-SynonymousIP_Flood, Mirai-
+125 broad mechanism
+Flood greeth_flood, Mirai-greip_flood
+Recon-HostDiscovery 292 explicit label
+292; 285
+Recon-PingSweep named mechanism
+conditional
+Active Probing
+Recon-OSScan 312 named mechanism
+Recon-PortScan 300 explicit label
+VulnerabilityScan 310 explicit label
+248; 88 label with
+CommandInjection
+conditional conditional subtype
+Input Injection
+SqlInjection 66 explicit label
+XSS 63 explicit label
+Backdoor_Malware 441 broad proxy
+Unresolved Web
+BrowserHijacking 662 conditional proxy
+Compromise
+Uploading_Attack 650 conditional proxy
+Credential
+DictionaryBruteForce 16 explicit label
+Guessing
+CAPEC
+Group Fine labels Match
+candidates
+DNS_Spoofing 598 explicit label
+Traffic
+Redirection 94 (Meta); broad CAPEC;
+MITM-ArpSpoofing
+T1557.002 named ATT&CK
+The standard blend fixes equal weights without gating. Classification uses the original hard
+flat predictions as its formal reference; cached float16 argmax is the sensitivity alternative. The
+latter changes 27 decisions across six roles, with maximum F1 difference 0.000044. Probability
+based metrics use the cache, not recovered full precision outputs.
+The original gate grid is t in {-0.50, -0.25, 0, 0.10, 0.20, 0.30, 0.40, 0.50}, beta in {0.25, 0.50,
+0.75, 1}, and probability power tau in {0.75, 1}. This is not a tuning grid for the standard control.
+Comparator detail
+Table 16 retains competitive six holdout results. Parentheses denote sample standard
+deviations, not independent dataset uncertainty. Histogram boosting and balanced forests achieve
+greater rare recall at lower Macro F1 than the taxonomy blend. Unmeasured cells are not filled
+from a different protocol.
+Table 16. Additional comparators
+Method Macro F1 Rare recall Macro AP
+Tree budget matched LightGBM 0.8644 (0.0015) 0.4927 (0.0051) 0.8891 (0.0016)
+Borderline SMOTE LightGBM 0.8867 (0.0014) 0.5754 (0.0055) 0.9143 (0.0015)
+Random Forest 0.8822 (0.0019) 0.5158 (0.0070) 0.9044 (0.0019)
+Focal XGBoost 0.8507 (0.0021) 0.4645 (0.0083) 0.8778 (0.0027)
+Extra Trees 0.8428 (0.0012) 0.4109 (0.0049) 0.8671 (0.0013)
+CatBoost 0.8387 (0.0028) 0.5445 (0.0045) 0.8782 (0.0037)
+Weighted HistGradientBoosting 0.8314 (0.0092) 0.6968 (0.0087) 0.9039 (0.0048)
+SMOTE ENN LightGBM 0.8243 (0.0036) 0.5483 (0.0116) 0.8611 (0.0028)
+Balanced Random Forest 0.8052 (0.0015) 0.6988 (0.0079) 0.8681 (0.0030)
+Multilayer Perceptron 0.6568 (0.0095) 0.1879 (0.0033) 0.6863 (0.0082)
+Conditional uncertainty
+Table 17 gives paired resampling ranges conditional on fixed predictions. They should not be
+read as future deployment intervals. McNemar probabilities compare overall correctness, not
+Macro F1 or rare recall, with four contrasts adjusted within each holdout. The eight direction
+references form another Holm family. No minimum across holdouts is interpreted as a combined
+probability.
+Table 17. Conditional resampling
+Comparator Metric Paired row range Block range
+Weighted flat Macro F1 [0.0208, 0.0228] [0.0208, 0.0228]
+Weighted flat Rare recall [0.0788, 0.0868] [0.0787, 0.0868]
+Comparator Metric Paired row range Block range
+Flat stacker Macro F1 [0.0187, 0.0208] [0.0187, 0.0207]
+Flat stacker Rare recall [0.0862, 0.0947] [0.0863, 0.0945]
+Cyclic gate Macro F1 [0.0094, 0.0108] [0.0094, 0.0108]
+Cyclic gate Rare recall [0.0416, 0.0472] [0.0418, 0.0471]
+Support gate Macro F1 [0.0140, 0.0160] [0.0140, 0.0160]
+Support gate Rare recall [0.0660, 0.0736] [0.0658, 0.0738]

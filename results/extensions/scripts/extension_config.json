@@ -1,0 +1,14 @@
+{
+  "global_trees": 420,
+  "local_trees": 300,
+  "stacker_C": 1.0,
+  "stacker_max_iter": 100,
+  "lofo_majority_cap": 20000,
+  "lofo_benign_cap": 60000,
+  "lofo_max_train_rows": 200000,
+  "lofo_known_rows": 60000,
+  "lofo_unknown_rows": 30000,
+  "lofo_families": ["BruteForce", "DDoS", "DoS", "Mirai", "Recon", "Spoofing", "Web-based"],
+  "scarcity_caps": [10, 25, 50, 100, 250, 500],
+  "scarcity_outer_rows": 120000
+}

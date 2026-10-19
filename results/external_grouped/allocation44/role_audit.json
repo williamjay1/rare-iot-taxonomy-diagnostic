@@ -1,0 +1,37 @@
+{
+  "allocation_seed": 44,
+  "overlap": [
+    {
+      "left": "fit",
+      "right": "calibration",
+      "overlap_hashes": 0
+    },
+    {
+      "left": "fit",
+      "right": "selection",
+      "overlap_hashes": 0
+    },
+    {
+      "left": "fit",
+      "right": "test",
+      "overlap_hashes": 0
+    },
+    {
+      "left": "calibration",
+      "right": "selection",
+      "overlap_hashes": 0
+    },
+    {
+      "left": "calibration",
+      "right": "test",
+      "overlap_hashes": 0
+    },
+    {
+      "left": "selection",
+      "right": "test",
+      "overlap_hashes": 0
+    }
+  ],
+  "time_fields_used_by_model": false,
+  "source_class_conflicts_label_cleaned": false
+}

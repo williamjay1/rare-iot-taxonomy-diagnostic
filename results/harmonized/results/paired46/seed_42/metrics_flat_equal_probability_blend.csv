@@ -1,0 +1,2 @@
+run_id,n,accuracy,f1_macro,recall_macro,rare_recall,worst_recall,pr_auc_macro,seed,n_features,training_seconds,inference_seconds,brier_multiclass,ece_top_label,rare_ece_top_label
+flat_equal_probability_blend,285884,0.9379258720320129,0.8543304239390327,0.8425453360983317,0.48091227161149674,0.24,0.8828775874995842,42,37,1623.75639460003,1502.4724058000138,0.08157552446668116,0.005001992711398454,0.09051036737262655

@@ -1,0 +1,17 @@
+{
+  "elapsed_seconds": 19541.461367800017,
+  "seeds_requested": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "preflight_only": false,
+  "python": "<LEGACY_PROJECT>\\.venv\\Scripts\\python.exe",
+  "command": [
+    "<WORKSPACE>\\harmonized\\resume_paired_execution.py"
+  ],
+  "finished_utc": "2026-10-19T01:37:39.571126+00:00"
+}

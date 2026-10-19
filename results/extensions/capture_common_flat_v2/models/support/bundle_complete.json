@@ -1,0 +1,67 @@
+{
+  "protocol_sha256": "281fe1b703e0d10802d73f2f05f9ce71b8841482b22b185f6f2634bc89a398de",
+  "family_classes": [
+    "Benign",
+    "BruteForce",
+    "DDoS",
+    "DoS",
+    "Mirai",
+    "Recon",
+    "Spoofing",
+    "Web-based"
+  ],
+  "local_label_sets": {
+    "Benign": [
+      "Recon-OSScan"
+    ],
+    "BruteForce": [
+      "BrowserHijacking"
+    ],
+    "DDoS": [
+      "BenignTraffic",
+      "CommandInjection",
+      "DNS_Spoofing",
+      "DoS-HTTP_Flood",
+      "DoS-SYN_Flood",
+      "DoS-TCP_Flood",
+      "DoS-UDP_Flood",
+      "MITM-ArpSpoofing",
+      "Mirai-greeth_flood",
+      "Mirai-greip_flood",
+      "Mirai-udpplain",
+      "SqlInjection"
+    ],
+    "DoS": [
+      "Backdoor_Malware",
+      "DDoS-ICMP_Flood",
+      "DDoS-ICMP_Fragmentation",
+      "DDoS-PSHACK_Flood"
+    ],
+    "Mirai": [
+      "DDoS-SYN_Flood",
+      "Recon-HostDiscovery",
+      "Recon-PortScan"
+    ],
+    "Recon": [
+      "DDoS-TCP_Flood",
+      "DDoS-UDP_Flood",
+      "DDoS-UDP_Fragmentation",
+      "Uploading_Attack",
+      "XSS"
+    ],
+    "Spoofing": [
+      "DDoS-ACK_Fragmentation",
+      "DDoS-RSTFINFlood"
+    ],
+    "Web-based": [
+      "DDoS-HTTP_Flood",
+      "DDoS-SlowLoris",
+      "DDoS-SynonymousIP_Flood",
+      "DictionaryBruteForce",
+      "Recon-PingSweep",
+      "VulnerabilityScan"
+    ]
+  },
+  "completed_components": 7,
+  "this_invocation_seconds": 159.0074230999453
+}

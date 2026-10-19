@@ -1,0 +1,962 @@
+{
+  "status": "REPRODUCED_WITH_MINIMAL_WORKAROUNDS",
+  "scope": "Only scratch artifacts under harmonized/audit; manuscript unchanged by this audit",
+  "source_snapshot_sha256": "683d6253c543f9e6baab16170fb70476e987027a49925d215e84e0f442de80bc",
+  "main_docx_sha256_at_finish": "683d6253c543f9e6baab16170fb70476e987027a49925d215e84e0f442de80bc",
+  "main_pdf_sha256_at_finish": "b1b793b2dd4170348e5f23f20e9c50711a44aef58907c4afb35a19cad6040814",
+  "libreoffice": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+  "executable": "C:\\Program Files\\LibreOffice\\program\\soffice.com",
+  "conversion_policy": "Same existing manuscript renderer for exact defect reproduction; isolated D profiles, no installed or downloaded dependencies",
+  "ooxml_import_preserves_all_10_rows_in_odt": true,
+  "probes": [
+    {
+      "probe": "baseline",
+      "seconds": 13.2920115001034,
+      "returncode": 0,
+      "pages": 34,
+      "source_copy": "<WORKSPACE>\\harmonized\\audit\\probes\\baseline\\baseline.docx",
+      "pdf": "<WORKSPACE>\\harmonized\\audit\\probes\\baseline\\baseline.pdf",
+      "labels": {
+        "Weighted flat": [
+          11,
+          12,
+          33
+        ],
+        "Real blend": [
+          17,
+          20,
+          21,
+          22
+        ],
+        "Cyclic gate": [
+          12,
+          34
+        ],
+        "Support gate": [
+          12,
+          34
+        ],
+        "ATT&CK blend": [],
+        "ATT&CK cyclic": [],
+        "Random pseudo maps": [],
+        "KMeans pseudo maps": [],
+        "Gaussian mixture maps": []
+      },
+      "numeric_needles": {
+        "0.8958": [],
+        "0.8814": []
+      },
+      "all_mapping_labels_found": false,
+      "cell_rows": [
+        {
+          "row": 1,
+          "expected_cells": [
+            "Weighted flat",
+            "0.8739",
+            "0.5511",
+            "Six holdouts"
+          ],
+          "pages": [
+            12
+          ]
+        },
+        {
+          "row": 2,
+          "expected_cells": [
+            "Real blend",
+            "0.8957",
+            "0.6338",
+            "Six holdouts"
+          ],
+          "pages": []
+        },
+        {
+          "row": 3,
+          "expected_cells": [
+            "Cyclic gate",
+            "0.8857",
+            "0.5894",
+            "Six holdouts"
+          ],
+          "pages": []
+        },
+        {
+          "row": 4,
+          "expected_cells": [
+            "Support gate",
+            "0.8807",
+            "0.5640",
+            "Six holdouts"
+          ],
+          "pages": []
+        },
+        {
+          "row": 5,
+          "expected_cells": [
+            "ATT&CK blend",
+            "0.8958",
+            "0.6334",
+            "Six holdouts"
+          ],
+          "pages": []
+        },
+        {
+          "row": 6,
+          "expected_cells": [
+            "ATT&CK cyclic",
+            "0.8799",
+            "0.5577",
+            "Six holdouts"
+          ],
+          "pages": []
+        },
+        {
+          "row": 7,
+          "expected_cells": [
+            "Random pseudo maps",
+            "0.8793",
+            "0.5534",
+            "24 nested maps"
+          ],
+          "pages": []
+        },
+        {
+          "row": 8,
+          "expected_cells": [
+            "KMeans pseudo maps",
+            "0.8872",
+            "0.5866",
+            "18 nested maps"
+          ],
+          "pages": []
+        },
+        {
+          "row": 9,
+          "expected_cells": [
+            "Gaussian mixture maps",
+            "0.8814",
+            "0.5644",
+            "18 nested maps"
+          ],
+          "pages": []
+        }
+      ],
+      "complete_exact_cell_rows": false,
+      "matched_body_cells": 4,
+      "table6_source_cells_identical": true
+    },
+    {
+      "probe": "caption_pagebreak",
+      "seconds": 10.04039159999229,
+      "returncode": 0,
+      "pages": 34,
+      "source_copy": "<WORKSPACE>\\harmonized\\audit\\probes\\caption_pagebreak\\caption_pagebreak.docx",
+      "pdf": "<WORKSPACE>\\harmonized\\audit\\probes\\caption_pagebreak\\caption_pagebreak.pdf",
+      "labels": {
+        "Weighted flat": [
+          11,
+          12,
+          13,
+          33
+        ],
+        "Real blend": [
+          13,
+          17,
+          20,
+          21,
+          22
+        ],
+        "Cyclic gate": [
+          12,
+          13,
+          34
+        ],
+        "Support gate": [
+          12,
+          13,
+          34
+        ],
+        "ATT&CK blend": [
+          13
+        ],
+        "ATT&CK cyclic": [
+          13
+        ],
+        "Random pseudo maps": [
+          13
+        ],
+        "KMeans pseudo maps": [
+          13
+        ],
+        "Gaussian mixture maps": [
+          13
+        ]
+      },
+      "numeric_needles": {
+        "0.8958": [
+          13
+        ],
+        "0.8814": [
+          13
+        ]
+      },
+      "all_mapping_labels_found": true,
+      "cell_rows": [
+        {
+          "row": 1,
+          "expected_cells": [
+            "Weighted flat",
+            "0.8739",
+            "0.5511",
+            "Six holdouts"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 2,
+          "expected_cells": [
+            "Real blend",
+            "0.8957",
+            "0.6338",
+            "Six holdouts"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 3,
+          "expected_cells": [
+            "Cyclic gate",
+            "0.8857",
+            "0.5894",
+            "Six holdouts"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 4,
+          "expected_cells": [
+            "Support gate",
+            "0.8807",
+            "0.5640",
+            "Six holdouts"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 5,
+          "expected_cells": [
+            "ATT&CK blend",
+            "0.8958",
+            "0.6334",
+            "Six holdouts"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 6,
+          "expected_cells": [
+            "ATT&CK cyclic",
+            "0.8799",
+            "0.5577",
+            "Six holdouts"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 7,
+          "expected_cells": [
+            "Random pseudo maps",
+            "0.8793",
+            "0.5534",
+            "24 nested maps"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 8,
+          "expected_cells": [
+            "KMeans pseudo maps",
+            "0.8872",
+            "0.5866",
+            "18 nested maps"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 9,
+          "expected_cells": [
+            "Gaussian mixture maps",
+            "0.8814",
+            "0.5644",
+            "18 nested maps"
+          ],
+          "pages": [
+            13
+          ]
+        }
+      ],
+      "complete_exact_cell_rows": true,
+      "matched_body_cells": 36,
+      "table6_source_cells_identical": true,
+      "only_effective_body_change_is_caption_pagebreak": true
+    },
+    {
+      "probe": "no_repeat_header",
+      "seconds": 13.176676200004295,
+      "returncode": 0,
+      "pages": 34,
+      "source_copy": "<WORKSPACE>\\harmonized\\audit\\probes\\no_repeat_header\\no_repeat_header.docx",
+      "pdf": "<WORKSPACE>\\harmonized\\audit\\probes\\no_repeat_header\\no_repeat_header.pdf",
+      "labels": {
+        "Weighted flat": [
+          11,
+          12,
+          13,
+          33
+        ],
+        "Real blend": [
+          13,
+          17,
+          20,
+          21,
+          22
+        ],
+        "Cyclic gate": [
+          12,
+          13,
+          34
+        ],
+        "Support gate": [
+          12,
+          13,
+          34
+        ],
+        "ATT&CK blend": [
+          13
+        ],
+        "ATT&CK cyclic": [
+          13
+        ],
+        "Random pseudo maps": [
+          13
+        ],
+        "KMeans pseudo maps": [
+          13
+        ],
+        "Gaussian mixture maps": [
+          13
+        ]
+      },
+      "numeric_needles": {
+        "0.8958": [
+          13
+        ],
+        "0.8814": [
+          13
+        ]
+      },
+      "all_mapping_labels_found": true,
+      "cell_rows": [
+        {
+          "row": 1,
+          "expected_cells": [
+            "Weighted flat",
+            "0.8739",
+            "0.5511",
+            "Six holdouts"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 2,
+          "expected_cells": [
+            "Real blend",
+            "0.8957",
+            "0.6338",
+            "Six holdouts"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 3,
+          "expected_cells": [
+            "Cyclic gate",
+            "0.8857",
+            "0.5894",
+            "Six holdouts"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 4,
+          "expected_cells": [
+            "Support gate",
+            "0.8807",
+            "0.5640",
+            "Six holdouts"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 5,
+          "expected_cells": [
+            "ATT&CK blend",
+            "0.8958",
+            "0.6334",
+            "Six holdouts"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 6,
+          "expected_cells": [
+            "ATT&CK cyclic",
+            "0.8799",
+            "0.5577",
+            "Six holdouts"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 7,
+          "expected_cells": [
+            "Random pseudo maps",
+            "0.8793",
+            "0.5534",
+            "24 nested maps"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 8,
+          "expected_cells": [
+            "KMeans pseudo maps",
+            "0.8872",
+            "0.5866",
+            "18 nested maps"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 9,
+          "expected_cells": [
+            "Gaussian mixture maps",
+            "0.8814",
+            "0.5644",
+            "18 nested maps"
+          ],
+          "pages": [
+            13
+          ]
+        }
+      ],
+      "complete_exact_cell_rows": true,
+      "matched_body_cells": 36,
+      "table6_source_cells_identical": true,
+      "warning": "All body cells recovered, but header remains alone on page 12 and all data rows move to page 13. Not the preferred fix."
+    },
+    {
+      "probe": "no_cant_split",
+      "seconds": 13.125404800055549,
+      "returncode": 0,
+      "pages": 34,
+      "source_copy": "<WORKSPACE>\\harmonized\\audit\\probes\\no_cant_split\\no_cant_split.docx",
+      "pdf": "<WORKSPACE>\\harmonized\\audit\\probes\\no_cant_split\\no_cant_split.pdf",
+      "labels": {
+        "Weighted flat": [
+          11,
+          12,
+          33
+        ],
+        "Real blend": [
+          13,
+          17,
+          20,
+          21,
+          22
+        ],
+        "Cyclic gate": [
+          12,
+          13,
+          34
+        ],
+        "Support gate": [
+          12,
+          13,
+          34
+        ],
+        "ATT&CK blend": [
+          13
+        ],
+        "ATT&CK cyclic": [
+          13
+        ],
+        "Random pseudo maps": [
+          13
+        ],
+        "KMeans pseudo maps": [
+          13
+        ],
+        "Gaussian mixture maps": [
+          13
+        ]
+      },
+      "numeric_needles": {
+        "0.8958": [
+          13
+        ],
+        "0.8814": [
+          13
+        ]
+      },
+      "all_mapping_labels_found": true,
+      "cell_rows": [
+        {
+          "row": 1,
+          "expected_cells": [
+            "Weighted flat",
+            "0.8739",
+            "0.5511",
+            "Six holdouts"
+          ],
+          "pages": [
+            12
+          ]
+        },
+        {
+          "row": 2,
+          "expected_cells": [
+            "Real blend",
+            "0.8957",
+            "0.6338",
+            "Six holdouts"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 3,
+          "expected_cells": [
+            "Cyclic gate",
+            "0.8857",
+            "0.5894",
+            "Six holdouts"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 4,
+          "expected_cells": [
+            "Support gate",
+            "0.8807",
+            "0.5640",
+            "Six holdouts"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 5,
+          "expected_cells": [
+            "ATT&CK blend",
+            "0.8958",
+            "0.6334",
+            "Six holdouts"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 6,
+          "expected_cells": [
+            "ATT&CK cyclic",
+            "0.8799",
+            "0.5577",
+            "Six holdouts"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 7,
+          "expected_cells": [
+            "Random pseudo maps",
+            "0.8793",
+            "0.5534",
+            "24 nested maps"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 8,
+          "expected_cells": [
+            "KMeans pseudo maps",
+            "0.8872",
+            "0.5866",
+            "18 nested maps"
+          ],
+          "pages": [
+            13
+          ]
+        },
+        {
+          "row": 9,
+          "expected_cells": [
+            "Gaussian mixture maps",
+            "0.8814",
+            "0.5644",
+            "18 nested maps"
+          ],
+          "pages": [
+            13
+          ]
+        }
+      ],
+      "complete_exact_cell_rows": true,
+      "matched_body_cells": 36,
+      "table6_source_cells_identical": true
+    },
+    {
+      "probe": "explicit_table_width",
+      "seconds": 13.280641500023194,
+      "returncode": 0,
+      "pages": 34,
+      "source_copy": "<WORKSPACE>\\harmonized\\audit\\probes\\explicit_table_width\\explicit_table_width.docx",
+      "pdf": "<WORKSPACE>\\harmonized\\audit\\probes\\explicit_table_width\\explicit_table_width.pdf",
+      "labels": {
+        "Weighted flat": [
+          11,
+          12,
+          33
+        ],
+        "Real blend": [
+          17,
+          20,
+          21,
+          22
+        ],
+        "Cyclic gate": [
+          12,
+          34
+        ],
+        "Support gate": [
+          12,
+          34
+        ],
+        "ATT&CK blend": [],
+        "ATT&CK cyclic": [],
+        "Random pseudo maps": [],
+        "KMeans pseudo maps": [],
+        "Gaussian mixture maps": []
+      },
+      "numeric_needles": {
+        "0.8958": [],
+        "0.8814": []
+      },
+      "all_mapping_labels_found": false,
+      "cell_rows": [
+        {
+          "row": 1,
+          "expected_cells": [
+            "Weighted flat",
+            "0.8739",
+            "0.5511",
+            "Six holdouts"
+          ],
+          "pages": [
+            12
+          ]
+        },
+        {
+          "row": 2,
+          "expected_cells": [
+            "Real blend",
+            "0.8957",
+            "0.6338",
+            "Six holdouts"
+          ],
+          "pages": []
+        },
+        {
+          "row": 3,
+          "expected_cells": [
+            "Cyclic gate",
+            "0.8857",
+            "0.5894",
+            "Six holdouts"
+          ],
+          "pages": []
+        },
+        {
+          "row": 4,
+          "expected_cells": [
+            "Support gate",
+            "0.8807",
+            "0.5640",
+            "Six holdouts"
+          ],
+          "pages": []
+        },
+        {
+          "row": 5,
+          "expected_cells": [
+            "ATT&CK blend",
+            "0.8958",
+            "0.6334",
+            "Six holdouts"
+          ],
+          "pages": []
+        },
+        {
+          "row": 6,
+          "expected_cells": [
+            "ATT&CK cyclic",
+            "0.8799",
+            "0.5577",
+            "Six holdouts"
+          ],
+          "pages": []
+        },
+        {
+          "row": 7,
+          "expected_cells": [
+            "Random pseudo maps",
+            "0.8793",
+            "0.5534",
+            "24 nested maps"
+          ],
+          "pages": []
+        },
+        {
+          "row": 8,
+          "expected_cells": [
+            "KMeans pseudo maps",
+            "0.8872",
+            "0.5866",
+            "18 nested maps"
+          ],
+          "pages": []
+        },
+        {
+          "row": 9,
+          "expected_cells": [
+            "Gaussian mixture maps",
+            "0.8814",
+            "0.5644",
+            "18 nested maps"
+          ],
+          "pages": []
+        }
+      ],
+      "complete_exact_cell_rows": false,
+      "matched_body_cells": 4,
+      "table6_source_cells_identical": true
+    },
+    {
+      "probe": "minimal_table",
+      "seconds": 8.311453700065613,
+      "returncode": 0,
+      "pages": 1,
+      "source_copy": "<WORKSPACE>\\harmonized\\audit\\probes\\minimal_table\\minimal_table.docx",
+      "pdf": "<WORKSPACE>\\harmonized\\audit\\probes\\minimal_table\\minimal_table.pdf",
+      "labels": {
+        "Weighted flat": [
+          1
+        ],
+        "Real blend": [
+          1
+        ],
+        "Cyclic gate": [
+          1
+        ],
+        "Support gate": [
+          1
+        ],
+        "ATT&CK blend": [
+          1
+        ],
+        "ATT&CK cyclic": [
+          1
+        ],
+        "Random pseudo maps": [
+          1
+        ],
+        "KMeans pseudo maps": [
+          1
+        ],
+        "Gaussian mixture maps": [
+          1
+        ]
+      },
+      "numeric_needles": {
+        "0.8958": [
+          1
+        ],
+        "0.8814": [
+          1
+        ]
+      },
+      "all_mapping_labels_found": true,
+      "cell_rows": [
+        {
+          "row": 1,
+          "expected_cells": [
+            "Weighted flat",
+            "0.8739",
+            "0.5511",
+            "Six holdouts"
+          ],
+          "pages": [
+            1
+          ]
+        },
+        {
+          "row": 2,
+          "expected_cells": [
+            "Real blend",
+            "0.8957",
+            "0.6338",
+            "Six holdouts"
+          ],
+          "pages": [
+            1
+          ]
+        },
+        {
+          "row": 3,
+          "expected_cells": [
+            "Cyclic gate",
+            "0.8857",
+            "0.5894",
+            "Six holdouts"
+          ],
+          "pages": [
+            1
+          ]
+        },
+        {
+          "row": 4,
+          "expected_cells": [
+            "Support gate",
+            "0.8807",
+            "0.5640",
+            "Six holdouts"
+          ],
+          "pages": [
+            1
+          ]
+        },
+        {
+          "row": 5,
+          "expected_cells": [
+            "ATT&CK blend",
+            "0.8958",
+            "0.6334",
+            "Six holdouts"
+          ],
+          "pages": [
+            1
+          ]
+        },
+        {
+          "row": 6,
+          "expected_cells": [
+            "ATT&CK cyclic",
+            "0.8799",
+            "0.5577",
+            "Six holdouts"
+          ],
+          "pages": [
+            1
+          ]
+        },
+        {
+          "row": 7,
+          "expected_cells": [
+            "Random pseudo maps",
+            "0.8793",
+            "0.5534",
+            "24 nested maps"
+          ],
+          "pages": [
+            1
+          ]
+        },
+        {
+          "row": 8,
+          "expected_cells": [
+            "KMeans pseudo maps",
+            "0.8872",
+            "0.5866",
+            "18 nested maps"
+          ],
+          "pages": [
+            1
+          ]
+        },
+        {
+          "row": 9,
+          "expected_cells": [
+            "Gaussian mixture maps",
+            "0.8814",
+            "0.5644",
+            "18 nested maps"
+          ],
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "complete_exact_cell_rows": true,
+      "matched_body_cells": 36,
+      "table6_source_cells_identical": true
+    }
+  ],
+  "diagnosis": "Reproducible page-continuation layout/export defect involving repeating header and non-splittable rows, not missing OOXML or failed data import. Exact LibreOffice internal defect not established.",
+  "minimal_recommended_fix": "Set page_break_before=True on Table 6 caption only. Keep header repetition and row non-splitting; verified all 36 body cells at page 13, total 34 pages.",
+  "alternatives": [
+    "Remove cantSplit on Table 6 rows to allow normal page continuation"
+  ],
+  "nonpreferred_workaround": "Removing tblHeader recovers all body cells, but leaves an orphan header on page 12. Prefer the caption break or removal of cantSplit.",
+  "nonfix": "Changing table preferred width from auto to explicit dxa 9360 alone still loses eight data rows"
+}

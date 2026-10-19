@@ -1,0 +1,46 @@
+{
+  "probe": "minimal_table",
+  "seconds": 8.311453700065613,
+  "returncode": 0,
+  "pages": 1,
+  "source_copy": "<WORKSPACE>\\harmonized\\audit\\probes\\minimal_table\\minimal_table.docx",
+  "pdf": "<WORKSPACE>\\harmonized\\audit\\probes\\minimal_table\\minimal_table.pdf",
+  "labels": {
+    "Weighted flat": [
+      1
+    ],
+    "Real blend": [
+      1
+    ],
+    "Cyclic gate": [
+      1
+    ],
+    "Support gate": [
+      1
+    ],
+    "ATT&CK blend": [
+      1
+    ],
+    "ATT&CK cyclic": [
+      1
+    ],
+    "Random pseudo maps": [
+      1
+    ],
+    "KMeans pseudo maps": [
+      1
+    ],
+    "Gaussian mixture maps": [
+      1
+    ]
+  },
+  "numeric_needles": {
+    "0.8958": [
+      1
+    ],
+    "0.8814": [
+      1
+    ]
+  },
+  "all_mapping_labels_found": true
+}

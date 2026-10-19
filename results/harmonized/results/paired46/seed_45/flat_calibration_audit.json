@@ -1,0 +1,13 @@
+{
+  "xgb_temperature": 0.9262416866970282,
+  "lgbm_temperature": 1.0675249789499566,
+  "xgb_utility_loss": 0.17895237187947075,
+  "lgbm_utility_loss": 0.18331052427068295,
+  "role": "utility",
+  "selection_used_for_choice": false,
+  "outer_used_for_fitting_or_choice": false,
+  "stacker_iterations": [
+    13
+  ],
+  "stacker_converged": true
+}

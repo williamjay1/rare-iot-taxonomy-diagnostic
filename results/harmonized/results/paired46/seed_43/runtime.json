@@ -1,0 +1,6 @@
+{
+  "wall_seconds_this_invocation": 7642.171651100041,
+  "wall_seconds_first_roles_to_completion_including_recovery_gap": 7642.151877,
+  "first_roles_verified_utc": "2026-10-18T17:27:30.130471+00:00",
+  "wall_interval_includes_any_external_interruption_gap": true
+}

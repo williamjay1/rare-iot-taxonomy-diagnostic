@@ -1,0 +1,15 @@
+{
+  "state": "completed_and_verified",
+  "original_computed_units": 55,
+  "accepted_matched_units": 55,
+  "capture_shared_flat_windows_complete": 4,
+  "capture_shared_flat_progress": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\progress.json",
+  "phase": "complete",
+  "pid": 61728,
+  "updated_utc": "2026-10-19T02:42:04.585031+00:00",
+  "n_jobs": 2,
+  "fitted_components_checkpointed": 21,
+  "prediction_parts_checkpointed": 28,
+  "completed_windows": 4,
+  "elapsed_seconds": 9942.683640800067
+}

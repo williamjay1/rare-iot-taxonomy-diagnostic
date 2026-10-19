@@ -1,0 +1,15 @@
+{
+  "legacy_lofo_and_scarcity_headlines": "RETIRED; do not combine with new matched controls",
+  "reason": [
+    "Legacy endpoints used original random mirrors instead of the new grouped roles.",
+    "Legacy LOFO novelty thresholds used outer-known scores; new thresholds use selection only.",
+    "Legacy scarcity rare IDs changed after capping; new rare IDs are fixed per uncapped fit pool."
+  ],
+  "replacement": "Use only complete newly paired grouped tables; scarcity is base-fit label scarcity with additional calibration labels.",
+  "calibration_role": "utility/calibration fits temperatures and stacker; selection is not the model-fitting role",
+  "ece_protocol": "10 equal-width, right-closed bins; six-seed mean and sample SD; all nine Table 4 arms, including three gate variants",
+  "coverage_units_completed": 55,
+  "coverage_units_expected": 55,
+  "endpoint_categories_completed": 5,
+  "capture_boundary": "File capture order proxy only, not actual timestamp validation."
+}

@@ -1,0 +1,30 @@
+{
+  "sha256": "bfab1c065651a41e3f6deb1d0720832a68ab26446ac296ecf8f5bd0b3183c5d6",
+  "elapsed_seconds": 283.107520999969,
+  "models": {
+    "type": "LGBMClassifier",
+    "params": {
+      "boosting_type": "gbdt",
+      "class_weight": null,
+      "colsample_bytree": 0.95,
+      "importance_type": "split",
+      "learning_rate": 0.055,
+      "max_depth": -1,
+      "min_child_samples": 25,
+      "min_child_weight": 0.001,
+      "min_split_gain": 0.0,
+      "n_estimators": 380,
+      "n_jobs": 2,
+      "num_leaves": 127,
+      "objective": "multiclass",
+      "random_state": 46,
+      "reg_alpha": 0.02,
+      "reg_lambda": 1.5,
+      "subsample": 0.9,
+      "subsample_for_bin": 200000,
+      "subsample_freq": 0,
+      "verbosity": -1
+    }
+  },
+  "saved_utc": "2026-10-19T00:08:50.640947+00:00"
+}

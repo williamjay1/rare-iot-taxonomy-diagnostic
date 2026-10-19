@@ -1,0 +1,13 @@
+endpoint,seed,control,taxonomy_blend_minus_control_macro_f1,taxonomy_blend_minus_control_rare_recall,nested_cases_completed,nested_cases_expected,seed_summary_complete,inference_scope
+lofo,42,newton_flat_stacker,0.010416027087630897,0.06769438067318603,7,7,True,"within-seed descriptive mean; three seed-level summaries, no independent-fold sign p value"
+lofo,42,temperature_flat_blend,0.011050504936733128,0.06173130483897208,7,7,True,"within-seed descriptive mean; three seed-level summaries, no independent-fold sign p value"
+lofo,43,newton_flat_stacker,0.010488346259538015,0.06128139822618834,7,7,True,"within-seed descriptive mean; three seed-level summaries, no independent-fold sign p value"
+lofo,43,temperature_flat_blend,0.01323815235564596,0.06955092820156956,7,7,True,"within-seed descriptive mean; three seed-level summaries, no independent-fold sign p value"
+lofo,44,newton_flat_stacker,0.0069598483622481345,0.06010294071269425,7,7,True,"within-seed descriptive mean; three seed-level summaries, no independent-fold sign p value"
+lofo,44,temperature_flat_blend,0.009707553144797432,0.05708227991761213,7,7,True,"within-seed descriptive mean; three seed-level summaries, no independent-fold sign p value"
+scarcity,42,newton_flat_stacker,-0.08482925214789266,0.07571257768882382,6,6,True,"within-seed descriptive mean; three seed-level summaries, no independent-fold sign p value"
+scarcity,42,temperature_flat_blend,-0.0006791935053838313,-0.005601788435390377,6,6,True,"within-seed descriptive mean; three seed-level summaries, no independent-fold sign p value"
+scarcity,43,newton_flat_stacker,-0.08881395831382499,0.07643864044499728,6,6,True,"within-seed descriptive mean; three seed-level summaries, no independent-fold sign p value"
+scarcity,43,temperature_flat_blend,-0.0032625717683928412,-0.0015868493215527302,6,6,True,"within-seed descriptive mean; three seed-level summaries, no independent-fold sign p value"
+scarcity,44,newton_flat_stacker,-0.08233767832708745,0.08702338739611631,6,6,True,"within-seed descriptive mean; three seed-level summaries, no independent-fold sign p value"
+scarcity,44,temperature_flat_blend,0.0026192190785969314,-0.0012011596662995598,6,6,True,"within-seed descriptive mean; three seed-level summaries, no independent-fold sign p value"

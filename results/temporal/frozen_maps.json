@@ -1,0 +1,27 @@
+{
+  "maps": {
+    "real": {
+      "Benign": "Benign",
+      "DoS": "Availability",
+      "DDoS": "Availability",
+      "Injection": "InputManipulation",
+      "Scanning": "Reconnaissance"
+    },
+    "cyclic": {
+      "Benign": "InputManipulation",
+      "DDoS": "Reconnaissance",
+      "DoS": "Benign",
+      "Injection": "Availability",
+      "Scanning": "Availability"
+    },
+    "support": {
+      "Benign": "Availability",
+      "DDoS": "InputManipulation",
+      "DoS": "Reconnaissance",
+      "Injection": "Availability",
+      "Scanning": "Benign"
+    }
+  },
+  "cyclic_shift": 2,
+  "constructed_from_fit_only": true
+}

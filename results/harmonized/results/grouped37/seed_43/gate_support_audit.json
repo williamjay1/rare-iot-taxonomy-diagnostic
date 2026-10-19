@@ -1,0 +1,35 @@
+{
+  "selection": {
+    "threshold": -0.25,
+    "beta": 0.5,
+    "hierarchy_power": 0.75,
+    "objective": 0.8855414021628002,
+    "f1_macro": 0.8649183629429291,
+    "rare_recall": 0.5155759804967774,
+    "worst_recall": 0.22,
+    "accuracy": 0.9401978836472124,
+    "gate_active_rows": 4181.0,
+    "gate_active_fraction": 0.024362530300205108,
+    "changed_predictions": 2132.0,
+    "corrected_errors": 848.0,
+    "introduced_errors": 481.0,
+    "net_corrected_errors": 367.0
+  },
+  "utility_counts": {
+    "disagreement_rows": 5266,
+    "taxonomy_benefit_rows": 1608,
+    "taxonomy_harm_rows": 1756,
+    "both_wrong_rows": 1902
+  },
+  "outer_counts": {
+    "gate_active_rows": 7090,
+    "gate_active_fraction": 0.02477331889096595,
+    "changed_predictions": 3643,
+    "corrected_errors": 1472,
+    "introduced_errors": 817,
+    "net_corrected_errors": 655
+  },
+  "utility_fit_role": "utility",
+  "hyperparameter_selection_role": "selection",
+  "outer_used_for_fitting_or_selection": false
+}

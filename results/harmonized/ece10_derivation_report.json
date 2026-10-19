@@ -1,0 +1,34 @@
+{
+  "results": [
+    {
+      "protocol": "paired46",
+      "status": "COMPLETE_PASS",
+      "rows": 78,
+      "expected_rows": 78,
+      "duplicate_seed_method_keys": 0,
+      "exact_frozen_seed_method_key_set": true,
+      "explicit_ece10_fields_finite": true,
+      "frozen_per_method_metric_files_unchanged": true,
+      "independent_interval_check_tolerance": 1e-15
+    },
+    {
+      "protocol": "grouped37",
+      "status": "COMPLETE_PASS",
+      "rows": 54,
+      "expected_rows": 54,
+      "duplicate_seed_method_keys": 0,
+      "exact_frozen_seed_method_key_set": true,
+      "explicit_ece10_fields_finite": true,
+      "frozen_per_method_metric_files_unchanged": true,
+      "independent_interval_check_tolerance": 1e-15
+    }
+  ],
+  "elapsed_seconds": 50.94616229995154,
+  "ece_10_definition": "np.clip(np.digitize(confidence,np.linspace(0,1,11),right=True)-1,0,9); bin weight=mask.mean()",
+  "probability_preparation": "v10 comparator normalise(saved float64 probabilities), identical to Euclid aligned_probability",
+  "reference_ece_15_definition": "unchanged comparator default 15 bins, left-closed except inclusive final upper edge",
+  "reference_frozen_endpoint_source": "<WORKSPACE>\\extensions\\scripts\\run_matched_extensions.py",
+  "reference_frozen_endpoint_source_sha256": "f644b567c35ec439bd31b33fcb2e02b7be59c6429e4d49ad8f8b3b8fc1e33b7e",
+  "script_sha256": "a717272552e88da87ccecf0fae3c6832eb7d30c72b57bcbd16ca3610114b8f32",
+  "model_refitting_or_selection": false
+}

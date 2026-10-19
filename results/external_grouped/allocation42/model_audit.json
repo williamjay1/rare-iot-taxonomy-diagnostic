@@ -1,0 +1,38 @@
+{
+  "fit_classes": [
+    "Backdoor",
+    "Benign",
+    "DDoS",
+    "DoS",
+    "Injection",
+    "MITM",
+    "Password",
+    "Ransomware",
+    "Scanning",
+    "XSS"
+  ],
+  "outer_unseen_classes": [],
+  "rare_fit_classes": [
+    "Backdoor",
+    "DoS",
+    "MITM",
+    "Ransomware"
+  ],
+  "rare_with_outer_support": [
+    "Backdoor",
+    "DoS",
+    "MITM",
+    "Ransomware"
+  ],
+  "calibration_rows_excluded_unseen_class": 0,
+  "outer_rows": 300000,
+  "role_sizes": {
+    "fit": 260542,
+    "calibration": 60000,
+    "selection": 60000,
+    "test": 300000
+  },
+  "absolute_timestamps_and_ips_excluded": true,
+  "all_methods_same_test_row_sha256": "95b7850f67fa11cf928fa0de4a02d90567a269d6ace28dcd468e10127887cbcd",
+  "seed_interpretation": "Three grouped random allocations in one additional testbed corpus, not chronological validation, production traffic or three independent populations"
+}

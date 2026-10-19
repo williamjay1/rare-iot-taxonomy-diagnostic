@@ -1,0 +1,1248 @@
+{
+  "source_docx": "<WORKSPACE>\\harmonized\\audit\\snapshot\\IJISMD_v15_editorial_working_draft.docx",
+  "source_sha256": "683d6253c543f9e6baab16170fb70476e987027a49925d215e84e0f442de80bc",
+  "pdf": "<WORKSPACE>\\harmonized\\audit\\snapshot\\IJISMD_v15_editorial_working_draft.pdf",
+  "table8_total_rows_including_header": 17,
+  "table8_protocol_data_rows": {
+    "paired46": 10,
+    "grouped37": 6
+  },
+  "table8_numeric_cells_checked": 48,
+  "table8_numeric_values_checked": 96,
+  "table8_numeric_status": "PASS",
+  "checks": [
+    {
+      "row_index": 1,
+      "protocol": "paired46",
+      "run_id": "flat_weighted_xgboost",
+      "metric": "f1_macro",
+      "actual": "0.8533 (0.0012)",
+      "expected": "0.8533 (0.0012)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.8532575786312656,
+      "sample_sd_full_precision": 0.0011738465639819517
+    },
+    {
+      "row_index": 1,
+      "protocol": "paired46",
+      "run_id": "flat_weighted_xgboost",
+      "metric": "rare_recall",
+      "actual": "0.4875 (0.0052)",
+      "expected": "0.4875 (0.0052)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.48750995662627455,
+      "sample_sd_full_precision": 0.005214686993336227
+    },
+    {
+      "row_index": 1,
+      "protocol": "paired46",
+      "run_id": "flat_weighted_xgboost",
+      "metric": "ece_10",
+      "actual": "0.0045 (0.0003)",
+      "expected": "0.0045 (0.0003)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.004515670941647546,
+      "sample_sd_full_precision": 0.00034650227625301075
+    },
+    {
+      "row_index": 2,
+      "protocol": "paired46",
+      "run_id": "flat_weighted_lightgbm",
+      "metric": "f1_macro",
+      "actual": "0.8435 (0.0019)",
+      "expected": "0.8435 (0.0019)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.84349595397995,
+      "sample_sd_full_precision": 0.0018811935975248156
+    },
+    {
+      "row_index": 2,
+      "protocol": "paired46",
+      "run_id": "flat_weighted_lightgbm",
+      "metric": "rare_recall",
+      "actual": "0.4449 (0.0073)",
+      "expected": "0.4449 (0.0073)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.44494302907945454,
+      "sample_sd_full_precision": 0.007349611760869782
+    },
+    {
+      "row_index": 2,
+      "protocol": "paired46",
+      "run_id": "flat_weighted_lightgbm",
+      "metric": "ece_10",
+      "actual": "0.0021 (0.0002)",
+      "expected": "0.0021 (0.0002)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.0020896000671092236,
+      "sample_sd_full_precision": 0.00016353389770007416
+    },
+    {
+      "row_index": 3,
+      "protocol": "paired46",
+      "run_id": "flat_equal_probability_blend",
+      "metric": "f1_macro",
+      "actual": "0.8558 (0.0009)",
+      "expected": "0.8558 (0.0009)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.8557874704705634,
+      "sample_sd_full_precision": 0.0009355912068639554
+    },
+    {
+      "row_index": 3,
+      "protocol": "paired46",
+      "run_id": "flat_equal_probability_blend",
+      "metric": "rare_recall",
+      "actual": "0.4843 (0.0030)",
+      "expected": "0.4843 (0.0030)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.48429409504422277,
+      "sample_sd_full_precision": 0.003031571423249224
+    },
+    {
+      "row_index": 3,
+      "protocol": "paired46",
+      "run_id": "flat_equal_probability_blend",
+      "metric": "ece_10",
+      "actual": "0.0051 (0.0002)",
+      "expected": "0.0051 (0.0002)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.0050930231769383124,
+      "sample_sd_full_precision": 0.00021703516650924644
+    },
+    {
+      "row_index": 4,
+      "protocol": "paired46",
+      "run_id": "flat_temperature_calibrated_blend",
+      "metric": "f1_macro",
+      "actual": "0.8559 (0.0010)",
+      "expected": "0.8559 (0.0010)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.8559360117108871,
+      "sample_sd_full_precision": 0.0009801854520073228
+    },
+    {
+      "row_index": 4,
+      "protocol": "paired46",
+      "run_id": "flat_temperature_calibrated_blend",
+      "metric": "rare_recall",
+      "actual": "0.4851 (0.0036)",
+      "expected": "0.4851 (0.0036)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.4850871848277439,
+      "sample_sd_full_precision": 0.0035741455337887007
+    },
+    {
+      "row_index": 4,
+      "protocol": "paired46",
+      "run_id": "flat_temperature_calibrated_blend",
+      "metric": "ece_10",
+      "actual": "0.0049 (0.0003)",
+      "expected": "0.0049 (0.0003)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.004934970222912992,
+      "sample_sd_full_precision": 0.0002867887620596319
+    },
+    {
+      "row_index": 5,
+      "protocol": "paired46",
+      "run_id": "flat_newton_log_probability_stacker",
+      "metric": "f1_macro",
+      "actual": "0.8589 (0.0023)",
+      "expected": "0.8589 (0.0023)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.8588737523860501,
+      "sample_sd_full_precision": 0.002318356647164356
+    },
+    {
+      "row_index": 5,
+      "protocol": "paired46",
+      "run_id": "flat_newton_log_probability_stacker",
+      "metric": "rare_recall",
+      "actual": "0.4694 (0.0091)",
+      "expected": "0.4694 (0.0091)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.46943726239279815,
+      "sample_sd_full_precision": 0.009100111052591396
+    },
+    {
+      "row_index": 5,
+      "protocol": "paired46",
+      "run_id": "flat_newton_log_probability_stacker",
+      "metric": "ece_10",
+      "actual": "0.0018 (0.0003)",
+      "expected": "0.0018 (0.0003)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.0017749734518797578,
+      "sample_sd_full_precision": 0.00029585528794154163
+    },
+    {
+      "row_index": 6,
+      "protocol": "paired46",
+      "run_id": "soft_taxonomy_factorisation",
+      "metric": "f1_macro",
+      "actual": "0.8728 (0.0017)",
+      "expected": "0.8728 (0.0017)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.8728104188746992,
+      "sample_sd_full_precision": 0.0016531529151895552
+    },
+    {
+      "row_index": 6,
+      "protocol": "paired46",
+      "run_id": "soft_taxonomy_factorisation",
+      "metric": "rare_recall",
+      "actual": "0.5778 (0.0061)",
+      "expected": "0.5778 (0.0061)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.5778368795095132,
+      "sample_sd_full_precision": 0.006125526163288737
+    },
+    {
+      "row_index": 6,
+      "protocol": "paired46",
+      "run_id": "soft_taxonomy_factorisation",
+      "metric": "ece_10",
+      "actual": "0.0014 (0.0004)",
+      "expected": "0.0014 (0.0004)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.001445714075825414,
+      "sample_sd_full_precision": 0.0003921463230259766
+    },
+    {
+      "row_index": 7,
+      "protocol": "paired46",
+      "run_id": "hard_top_down_taxonomy",
+      "metric": "f1_macro",
+      "actual": "0.8674 (0.0015)",
+      "expected": "0.8674 (0.0015)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.8673574510811232,
+      "sample_sd_full_precision": 0.001538586241005806
+    },
+    {
+      "row_index": 7,
+      "protocol": "paired46",
+      "run_id": "hard_top_down_taxonomy",
+      "metric": "rare_recall",
+      "actual": "0.5797 (0.0062)",
+      "expected": "0.5797 (0.0062)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.5797243591703397,
+      "sample_sd_full_precision": 0.006216524315604948
+    },
+    {
+      "row_index": 7,
+      "protocol": "paired46",
+      "run_id": "hard_top_down_taxonomy",
+      "metric": "ece_10",
+      "actual": "0.0398 (0.0003)",
+      "expected": "0.0398 (0.0003)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.039827312254888975,
+      "sample_sd_full_precision": 0.00028696501409468546
+    },
+    {
+      "row_index": 8,
+      "protocol": "paired46",
+      "run_id": "equal_flat_taxonomy_blend",
+      "metric": "f1_macro",
+      "actual": "0.8817 (0.0013)",
+      "expected": "0.8817 (0.0013)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.8816919410580506,
+      "sample_sd_full_precision": 0.0013314795410551447
+    },
+    {
+      "row_index": 8,
+      "protocol": "paired46",
+      "run_id": "equal_flat_taxonomy_blend",
+      "metric": "rare_recall",
+      "actual": "0.5916 (0.0052)",
+      "expected": "0.5916 (0.0052)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.5915896827810393,
+      "sample_sd_full_precision": 0.005161030222167265
+    },
+    {
+      "row_index": 8,
+      "protocol": "paired46",
+      "run_id": "equal_flat_taxonomy_blend",
+      "metric": "ece_10",
+      "actual": "0.0072 (0.0001)",
+      "expected": "0.0072 (0.0001)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.007201111863499793,
+      "sample_sd_full_precision": 0.00013172757195949053
+    },
+    {
+      "row_index": 9,
+      "protocol": "paired46",
+      "run_id": "equal_flat_cyclic_blend",
+      "metric": "f1_macro",
+      "actual": "0.8675 (0.0022)",
+      "expected": "0.8675 (0.0022)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.867492120705889,
+      "sample_sd_full_precision": 0.002190006218432473
+    },
+    {
+      "row_index": 9,
+      "protocol": "paired46",
+      "run_id": "equal_flat_cyclic_blend",
+      "metric": "rare_recall",
+      "actual": "0.5265 (0.0080)",
+      "expected": "0.5265 (0.0080)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.5265306742426367,
+      "sample_sd_full_precision": 0.007955585672826568
+    },
+    {
+      "row_index": 9,
+      "protocol": "paired46",
+      "run_id": "equal_flat_cyclic_blend",
+      "metric": "ece_10",
+      "actual": "0.0063 (0.0005)",
+      "expected": "0.0063 (0.0005)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.006257234921415892,
+      "sample_sd_full_precision": 0.0004917243353701685
+    },
+    {
+      "row_index": 10,
+      "protocol": "paired46",
+      "run_id": "equal_flat_support_matched_blend",
+      "metric": "f1_macro",
+      "actual": "0.8618 (0.0013)",
+      "expected": "0.8618 (0.0013)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.8617752013523051,
+      "sample_sd_full_precision": 0.0013426607500611292
+    },
+    {
+      "row_index": 10,
+      "protocol": "paired46",
+      "run_id": "equal_flat_support_matched_blend",
+      "metric": "rare_recall",
+      "actual": "0.4962 (0.0050)",
+      "expected": "0.4962 (0.0050)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.49621248423865594,
+      "sample_sd_full_precision": 0.00498375797658043
+    },
+    {
+      "row_index": 10,
+      "protocol": "paired46",
+      "run_id": "equal_flat_support_matched_blend",
+      "metric": "ece_10",
+      "actual": "0.0066 (0.0004)",
+      "expected": "0.0066 (0.0004)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.0066260961712797505,
+      "sample_sd_full_precision": 0.0003873826993009583
+    },
+    {
+      "row_index": 11,
+      "protocol": "grouped37",
+      "run_id": "flat_weighted_xgboost",
+      "metric": "f1_macro",
+      "actual": "0.8534 (0.0016)",
+      "expected": "0.8534 (0.0016)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.8533862052575063,
+      "sample_sd_full_precision": 0.0015706754423045824
+    },
+    {
+      "row_index": 11,
+      "protocol": "grouped37",
+      "run_id": "flat_weighted_xgboost",
+      "metric": "rare_recall",
+      "actual": "0.4875 (0.0085)",
+      "expected": "0.4875 (0.0085)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.4874835915150788,
+      "sample_sd_full_precision": 0.00845469884580414
+    },
+    {
+      "row_index": 11,
+      "protocol": "grouped37",
+      "run_id": "flat_weighted_xgboost",
+      "metric": "ece_10",
+      "actual": "0.0045 (0.0004)",
+      "expected": "0.0045 (0.0004)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.004467583150736562,
+      "sample_sd_full_precision": 0.0004266291744288613
+    },
+    {
+      "row_index": 12,
+      "protocol": "grouped37",
+      "run_id": "soft_taxonomy_factorisation",
+      "metric": "f1_macro",
+      "actual": "0.8734 (0.0031)",
+      "expected": "0.8734 (0.0031)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.8734011276586192,
+      "sample_sd_full_precision": 0.003143679221332582
+    },
+    {
+      "row_index": 12,
+      "protocol": "grouped37",
+      "run_id": "soft_taxonomy_factorisation",
+      "metric": "rare_recall",
+      "actual": "0.5803 (0.0123)",
+      "expected": "0.5803 (0.0123)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.5802720137835968,
+      "sample_sd_full_precision": 0.012338393634902122
+    },
+    {
+      "row_index": 12,
+      "protocol": "grouped37",
+      "run_id": "soft_taxonomy_factorisation",
+      "metric": "ece_10",
+      "actual": "0.0016 (0.0004)",
+      "expected": "0.0016 (0.0004)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.0015990004168898084,
+      "sample_sd_full_precision": 0.0003530965383275742
+    },
+    {
+      "row_index": 13,
+      "protocol": "grouped37",
+      "run_id": "hard_top_down_taxonomy",
+      "metric": "f1_macro",
+      "actual": "0.8678 (0.0029)",
+      "expected": "0.8678 (0.0029)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.8678053613573314,
+      "sample_sd_full_precision": 0.0029280661934008943
+    },
+    {
+      "row_index": 13,
+      "protocol": "grouped37",
+      "run_id": "hard_top_down_taxonomy",
+      "metric": "rare_recall",
+      "actual": "0.5810 (0.0123)",
+      "expected": "0.5810 (0.0123)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.5810377494669018,
+      "sample_sd_full_precision": 0.012258172228789253
+    },
+    {
+      "row_index": 13,
+      "protocol": "grouped37",
+      "run_id": "hard_top_down_taxonomy",
+      "metric": "ece_10",
+      "actual": "0.0398 (0.0004)",
+      "expected": "0.0398 (0.0004)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.03976064704723354,
+      "sample_sd_full_precision": 0.00043658814353535137
+    },
+    {
+      "row_index": 14,
+      "protocol": "grouped37",
+      "run_id": "equal_flat_taxonomy_blend",
+      "metric": "f1_macro",
+      "actual": "0.8824 (0.0026)",
+      "expected": "0.8824 (0.0026)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.8824018474523058,
+      "sample_sd_full_precision": 0.0026192701004484286
+    },
+    {
+      "row_index": 14,
+      "protocol": "grouped37",
+      "run_id": "equal_flat_taxonomy_blend",
+      "metric": "rare_recall",
+      "actual": "0.5950 (0.0104)",
+      "expected": "0.5950 (0.0104)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.595036254432847,
+      "sample_sd_full_precision": 0.01043268500899733
+    },
+    {
+      "row_index": 14,
+      "protocol": "grouped37",
+      "run_id": "equal_flat_taxonomy_blend",
+      "metric": "ece_10",
+      "actual": "0.0070 (0.0005)",
+      "expected": "0.0070 (0.0005)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.007043842985458759,
+      "sample_sd_full_precision": 0.0004874674862938586
+    },
+    {
+      "row_index": 15,
+      "protocol": "grouped37",
+      "run_id": "equal_flat_cyclic_blend",
+      "metric": "f1_macro",
+      "actual": "0.8677 (0.0011)",
+      "expected": "0.8677 (0.0011)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.8676991416018812,
+      "sample_sd_full_precision": 0.0011170462659935675
+    },
+    {
+      "row_index": 15,
+      "protocol": "grouped37",
+      "run_id": "equal_flat_cyclic_blend",
+      "metric": "rare_recall",
+      "actual": "0.5272 (0.0058)",
+      "expected": "0.5272 (0.0058)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.5272417640072053,
+      "sample_sd_full_precision": 0.005847998828522279
+    },
+    {
+      "row_index": 15,
+      "protocol": "grouped37",
+      "run_id": "equal_flat_cyclic_blend",
+      "metric": "ece_10",
+      "actual": "0.0059 (0.0004)",
+      "expected": "0.0059 (0.0004)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.0059433423763779695,
+      "sample_sd_full_precision": 0.00035661871456089576
+    },
+    {
+      "row_index": 16,
+      "protocol": "grouped37",
+      "run_id": "equal_flat_support_matched_blend",
+      "metric": "f1_macro",
+      "actual": "0.8623 (0.0017)",
+      "expected": "0.8623 (0.0017)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.8622716592216922,
+      "sample_sd_full_precision": 0.0016840945152605147
+    },
+    {
+      "row_index": 16,
+      "protocol": "grouped37",
+      "run_id": "equal_flat_support_matched_blend",
+      "metric": "rare_recall",
+      "actual": "0.4972 (0.0066)",
+      "expected": "0.4972 (0.0066)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.49724289758103285,
+      "sample_sd_full_precision": 0.006608929885815173
+    },
+    {
+      "row_index": 16,
+      "protocol": "grouped37",
+      "run_id": "equal_flat_support_matched_blend",
+      "metric": "ece_10",
+      "actual": "0.0065 (0.0003)",
+      "expected": "0.0065 (0.0003)",
+      "pass": true,
+      "csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "mean_full_precision": 0.006524180383402467,
+      "sample_sd_full_precision": 0.00030142767818177956
+    }
+  ],
+  "pdf_cell_audit": {
+    "6": {
+      "source_data_rows": 9,
+      "matched_pdf_tables": [
+        {
+          "page": 12,
+          "cells": [
+            [
+              "Mapping",
+              "Macro F1",
+              "Rare recall",
+              "Scope"
+            ],
+            [
+              "Weighted flat",
+              "0.8739",
+              "0.5511",
+              "Six holdouts"
+            ]
+          ]
+        }
+      ],
+      "row_matches": [
+        {
+          "source_row": 1,
+          "cells": [
+            "Weighted flat",
+            "0.8739",
+            "0.5511",
+            "Six holdouts"
+          ],
+          "pages": [
+            12
+          ],
+          "exact_word_spacing_pages": [
+            12
+          ]
+        },
+        {
+          "source_row": 2,
+          "cells": [
+            "Real blend",
+            "0.8957",
+            "0.6338",
+            "Six holdouts"
+          ],
+          "pages": [],
+          "exact_word_spacing_pages": []
+        },
+        {
+          "source_row": 3,
+          "cells": [
+            "Cyclic gate",
+            "0.8857",
+            "0.5894",
+            "Six holdouts"
+          ],
+          "pages": [],
+          "exact_word_spacing_pages": []
+        },
+        {
+          "source_row": 4,
+          "cells": [
+            "Support gate",
+            "0.8807",
+            "0.5640",
+            "Six holdouts"
+          ],
+          "pages": [],
+          "exact_word_spacing_pages": []
+        },
+        {
+          "source_row": 5,
+          "cells": [
+            "ATT&CK blend",
+            "0.8958",
+            "0.6334",
+            "Six holdouts"
+          ],
+          "pages": [],
+          "exact_word_spacing_pages": []
+        },
+        {
+          "source_row": 6,
+          "cells": [
+            "ATT&CK cyclic",
+            "0.8799",
+            "0.5577",
+            "Six holdouts"
+          ],
+          "pages": [],
+          "exact_word_spacing_pages": []
+        },
+        {
+          "source_row": 7,
+          "cells": [
+            "Random pseudo maps",
+            "0.8793",
+            "0.5534",
+            "24 nested maps"
+          ],
+          "pages": [],
+          "exact_word_spacing_pages": []
+        },
+        {
+          "source_row": 8,
+          "cells": [
+            "KMeans pseudo maps",
+            "0.8872",
+            "0.5866",
+            "18 nested maps"
+          ],
+          "pages": [],
+          "exact_word_spacing_pages": []
+        },
+        {
+          "source_row": 9,
+          "cells": [
+            "Gaussian mixture maps",
+            "0.8814",
+            "0.5644",
+            "18 nested maps"
+          ],
+          "pages": [],
+          "exact_word_spacing_pages": []
+        }
+      ],
+      "complete": false
+    },
+    "8": {
+      "source_data_rows": 16,
+      "matched_pdf_tables": [
+        {
+          "page": 17,
+          "cells": [
+            [
+              "Protocol",
+              "Method",
+              "Macro F1",
+              "Rare recall",
+              "ECE"
+            ],
+            [
+              "Original roles",
+              "Flat XGBoost",
+              "0.8533 (0.0012)",
+              "0.4875 (0.0052)",
+              "0.0045 (0.0003)"
+            ],
+            [
+              "Original roles",
+              "Flat LightGBM",
+              "0.8435 (0.0019)",
+              "0.4449 (0.0073)",
+              "0.0021 (0.0002)"
+            ],
+            [
+              "Original roles",
+              "Flat equal blend",
+              "0.8558 (0.0009)",
+              "0.4843 (0.0030)",
+              "0.0051 (0.0002)"
+            ],
+            [
+              "Original roles",
+              "Calibrated flat blend",
+              "0.8559 (0.0010)",
+              "0.4851 (0.0036)",
+              "0.0049 (0.0003)"
+            ],
+            [
+              "Original roles",
+              "Flat stacker",
+              "0.8589 (0.0023)",
+              "0.4694 (0.0091)",
+              "0.0018 (0.0003)"
+            ],
+            [
+              "Original roles",
+              "Soft real hierarchy",
+              "0.8728 (0.0017)",
+              "0.5778 (0.0061)",
+              "0.0014 (0.0004)"
+            ],
+            [
+              "Original roles",
+              "Hard real hierarchy",
+              "0.8674 (0.0015)",
+              "0.5797 (0.0062)",
+              "0.0398 (0.0003)"
+            ],
+            [
+              "Original roles",
+              "Real blend",
+              "0.8817 (0.0013)",
+              "0.5916 (0.0052)",
+              "0.0072 (0.0001)"
+            ],
+            [
+              "Original roles",
+              "Cyclic blend",
+              "0.8675 (0.0022)",
+              "0.5265 (0.0080)",
+              "0.0063 (0.0005)"
+            ],
+            [
+              "Original roles",
+              "Support blend",
+              "0.8618 (0.0013)",
+              "0.4962 (0.0050)",
+              "0.0066 (0.0004)"
+            ],
+            [
+              "Regrouped",
+              "Flat XGBoost",
+              "0.8534 (0.0016)",
+              "0.4875 (0.0085)",
+              "0.0045 (0.0004)"
+            ],
+            [
+              "Regrouped",
+              "Soft real hierarchy",
+              "0.8734 (0.0031)",
+              "0.5803 (0.0123)",
+              "0.0016 (0.0004)"
+            ],
+            [
+              "Regrouped",
+              "Hard real hierarchy",
+              "0.8678 (0.0029)",
+              "0.5810 (0.0123)",
+              "0.0398 (0.0004)"
+            ],
+            [
+              "Regrouped",
+              "Real blend",
+              "0.8824 (0.0026)",
+              "0.5950 (0.0104)",
+              "0.0070 (0.0005)"
+            ],
+            [
+              "Regrouped",
+              "Cyclic blend",
+              "0.8677 (0.0011)",
+              "0.5272 (0.0058)",
+              "0.0059 (0.0004)"
+            ],
+            [
+              "Regrouped",
+              "Support blend",
+              "0.8623 (0.0017)",
+              "0.4972 (0.0066)",
+              "0.0065 (0.0003)"
+            ]
+          ]
+        }
+      ],
+      "row_matches": [
+        {
+          "source_row": 1,
+          "cells": [
+            "Original roles",
+            "Flat XGBoost",
+            "0.8533 (0.0012)",
+            "0.4875 (0.0052)",
+            "0.0045 (0.0003)"
+          ],
+          "pages": [
+            17
+          ],
+          "exact_word_spacing_pages": [
+            17
+          ]
+        },
+        {
+          "source_row": 2,
+          "cells": [
+            "Original roles",
+            "Flat LightGBM",
+            "0.8435 (0.0019)",
+            "0.4449 (0.0073)",
+            "0.0021 (0.0002)"
+          ],
+          "pages": [
+            17
+          ],
+          "exact_word_spacing_pages": [
+            17
+          ]
+        },
+        {
+          "source_row": 3,
+          "cells": [
+            "Original roles",
+            "Flat equal blend",
+            "0.8558 (0.0009)",
+            "0.4843 (0.0030)",
+            "0.0051 (0.0002)"
+          ],
+          "pages": [
+            17
+          ],
+          "exact_word_spacing_pages": [
+            17
+          ]
+        },
+        {
+          "source_row": 4,
+          "cells": [
+            "Original roles",
+            "Calibrated flat blend",
+            "0.8559 (0.0010)",
+            "0.4851 (0.0036)",
+            "0.0049 (0.0003)"
+          ],
+          "pages": [
+            17
+          ],
+          "exact_word_spacing_pages": [
+            17
+          ]
+        },
+        {
+          "source_row": 5,
+          "cells": [
+            "Original roles",
+            "Flat stacker",
+            "0.8589 (0.0023)",
+            "0.4694 (0.0091)",
+            "0.0018 (0.0003)"
+          ],
+          "pages": [
+            17
+          ],
+          "exact_word_spacing_pages": [
+            17
+          ]
+        },
+        {
+          "source_row": 6,
+          "cells": [
+            "Original roles",
+            "Soft real hierarchy",
+            "0.8728 (0.0017)",
+            "0.5778 (0.0061)",
+            "0.0014 (0.0004)"
+          ],
+          "pages": [
+            17
+          ],
+          "exact_word_spacing_pages": [
+            17
+          ]
+        },
+        {
+          "source_row": 7,
+          "cells": [
+            "Original roles",
+            "Hard real hierarchy",
+            "0.8674 (0.0015)",
+            "0.5797 (0.0062)",
+            "0.0398 (0.0003)"
+          ],
+          "pages": [
+            17
+          ],
+          "exact_word_spacing_pages": [
+            17
+          ]
+        },
+        {
+          "source_row": 8,
+          "cells": [
+            "Original roles",
+            "Real blend",
+            "0.8817 (0.0013)",
+            "0.5916 (0.0052)",
+            "0.0072 (0.0001)"
+          ],
+          "pages": [
+            17
+          ],
+          "exact_word_spacing_pages": [
+            17
+          ]
+        },
+        {
+          "source_row": 9,
+          "cells": [
+            "Original roles",
+            "Cyclic blend",
+            "0.8675 (0.0022)",
+            "0.5265 (0.0080)",
+            "0.0063 (0.0005)"
+          ],
+          "pages": [
+            17
+          ],
+          "exact_word_spacing_pages": [
+            17
+          ]
+        },
+        {
+          "source_row": 10,
+          "cells": [
+            "Original roles",
+            "Support blend",
+            "0.8618 (0.0013)",
+            "0.4962 (0.0050)",
+            "0.0066 (0.0004)"
+          ],
+          "pages": [
+            17
+          ],
+          "exact_word_spacing_pages": [
+            17
+          ]
+        },
+        {
+          "source_row": 11,
+          "cells": [
+            "Regrouped",
+            "Flat XGBoost",
+            "0.8534 (0.0016)",
+            "0.4875 (0.0085)",
+            "0.0045 (0.0004)"
+          ],
+          "pages": [
+            17
+          ],
+          "exact_word_spacing_pages": [
+            17
+          ]
+        },
+        {
+          "source_row": 12,
+          "cells": [
+            "Regrouped",
+            "Soft real hierarchy",
+            "0.8734 (0.0031)",
+            "0.5803 (0.0123)",
+            "0.0016 (0.0004)"
+          ],
+          "pages": [
+            17
+          ],
+          "exact_word_spacing_pages": [
+            17
+          ]
+        },
+        {
+          "source_row": 13,
+          "cells": [
+            "Regrouped",
+            "Hard real hierarchy",
+            "0.8678 (0.0029)",
+            "0.5810 (0.0123)",
+            "0.0398 (0.0004)"
+          ],
+          "pages": [
+            17
+          ],
+          "exact_word_spacing_pages": [
+            17
+          ]
+        },
+        {
+          "source_row": 14,
+          "cells": [
+            "Regrouped",
+            "Real blend",
+            "0.8824 (0.0026)",
+            "0.5950 (0.0104)",
+            "0.0070 (0.0005)"
+          ],
+          "pages": [
+            17
+          ],
+          "exact_word_spacing_pages": [
+            17
+          ]
+        },
+        {
+          "source_row": 15,
+          "cells": [
+            "Regrouped",
+            "Cyclic blend",
+            "0.8677 (0.0011)",
+            "0.5272 (0.0058)",
+            "0.0059 (0.0004)"
+          ],
+          "pages": [
+            17
+          ],
+          "exact_word_spacing_pages": [
+            17
+          ]
+        },
+        {
+          "source_row": 16,
+          "cells": [
+            "Regrouped",
+            "Support blend",
+            "0.8623 (0.0017)",
+            "0.4972 (0.0066)",
+            "0.0065 (0.0003)"
+          ],
+          "pages": [
+            17
+          ],
+          "exact_word_spacing_pages": [
+            17
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "14": {
+      "source_data_rows": 6,
+      "matched_pdf_tables": [
+        {
+          "page": 24,
+          "cells": [
+            [
+              "Decision",
+              "Evidence",
+              "Supported response",
+              "Unresolved response"
+            ],
+            [
+              "Source integrity",
+              "Provenance, duplicate and conflict audit",
+              "Document representation and test alternatives",
+              "Do not automatically relabel"
+            ],
+            [
+              "Mapping utility",
+              "Paired effects against flat and calibrated controls",
+              "Assess magnitude and uncertainty locally",
+              "Retain a competitive flat reference"
+            ],
+            [
+              "Assignmen t specificity",
+              "Equally privileged wrong and induced maps",
+              "Conclude only beyond tested alternatives",
+              "Do not infer a unique semantic cause"
+            ],
+            [
+              "Complexit y",
+              "Batch latency, artifact size, budgeted retrieval",
+              "Test whether gains affect local triage",
+              "Simplify; gate remains optional"
+            ],
+            [
+              "Transfer",
+              "External source and real chronology",
+              "Define supported conditions",
+              "Restrict claims and collect local evidence"
+            ],
+            [
+              "Deploymen t",
+              "Physical edge and analyst measurements",
+              "Validate before operational use",
+              "Do not substitute workstation timing"
+            ]
+          ]
+        }
+      ],
+      "row_matches": [
+        {
+          "source_row": 1,
+          "cells": [
+            "Source integrity",
+            "Provenance, duplicate and conflict audit",
+            "Document representation and test alternatives",
+            "Do not automatically relabel"
+          ],
+          "pages": [
+            24
+          ],
+          "exact_word_spacing_pages": [
+            24
+          ]
+        },
+        {
+          "source_row": 2,
+          "cells": [
+            "Mapping utility",
+            "Paired effects against flat and calibrated controls",
+            "Assess magnitude and uncertainty locally",
+            "Retain a competitive flat reference"
+          ],
+          "pages": [
+            24
+          ],
+          "exact_word_spacing_pages": [
+            24
+          ]
+        },
+        {
+          "source_row": 3,
+          "cells": [
+            "Assignment specificity",
+            "Equally privileged wrong and induced maps",
+            "Conclude only beyond tested alternatives",
+            "Do not infer a unique semantic cause"
+          ],
+          "pages": [
+            24
+          ],
+          "exact_word_spacing_pages": []
+        },
+        {
+          "source_row": 4,
+          "cells": [
+            "Complexity",
+            "Batch latency, artifact size, budgeted retrieval",
+            "Test whether gains affect local triage",
+            "Simplify; gate remains optional"
+          ],
+          "pages": [
+            24
+          ],
+          "exact_word_spacing_pages": []
+        },
+        {
+          "source_row": 5,
+          "cells": [
+            "Transfer",
+            "External source and real chronology",
+            "Define supported conditions",
+            "Restrict claims and collect local evidence"
+          ],
+          "pages": [
+            24
+          ],
+          "exact_word_spacing_pages": [
+            24
+          ]
+        },
+        {
+          "source_row": 6,
+          "cells": [
+            "Deployment",
+            "Physical edge and analyst measurements",
+            "Validate before operational use",
+            "Do not substitute workstation timing"
+          ],
+          "pages": [
+            24
+          ],
+          "exact_word_spacing_pages": []
+        }
+      ],
+      "complete": true
+    }
+  }
+}

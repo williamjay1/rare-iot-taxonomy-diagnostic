@@ -1,0 +1,11 @@
+{
+  "sha256": "88efbc2302fa77118501a32b05f8a3fd17c37eb6c7daca4b25d45f6ca987d9d6",
+  "elapsed_seconds": 3.1468939000042155,
+  "models": {
+    "xgb_temperature": "0.9318730116958068",
+    "lgbm_temperature": "1.0784707245128913",
+    "xgb_utility_loss": "0.17882100441382043",
+    "lgbm_utility_loss": "0.18245018098433663"
+  },
+  "saved_utc": "2026-10-19T01:30:13.088072+00:00"
+}

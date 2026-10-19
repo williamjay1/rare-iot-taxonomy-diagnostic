@@ -1,0 +1,7 @@
+family,real_label_count,control_label_count,real_fit_support,control_fit_support,absolute_support_difference,relative_support_difference,real_labels,control_labels
+Availability,2,2,50000,50000,0,0.0,"[""DDoS"", ""DoS""]","[""Backdoor"", ""Injection""]"
+Benign,1,1,80000,25000,55000,0.6875,"[""Benign""]","[""XSS""]"
+InputManipulation,2,2,50000,50000,0,0.0,"[""Injection"", ""XSS""]","[""DDoS"", ""Scanning""]"
+InterceptionCredential,2,2,28410,27255,1155,0.04065469904963041,"[""MITM"", ""Password""]","[""DoS"", ""Ransomware""]"
+PersistenceImpact,2,2,27255,83410,56155,2.060355898000367,"[""Backdoor"", ""Ransomware""]","[""Benign"", ""MITM""]"
+Reconnaissance,1,1,25000,25000,0,0.0,"[""Scanning""]","[""Password""]"

@@ -1,0 +1,546 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          15
+        ]
+      ],
+      "date-time": "2026-10-15T20:40:09Z",
+      "timestamp": 1792096809200,
+      "version": "4.4.0"
+    },
+    "reference-count": 55,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2026-01-01T00:00:00Z",
+          "timestamp": 1767225600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/legalcode"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IEEE Access"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "DOI": "10.1109/access.2026.3688204",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          28
+        ]
+      ],
+      "date-time": "2026-04-28T19:48:59Z",
+      "timestamp": 1777405739000
+    },
+    "page": "66899-66913",
+    "source": "Crossref",
+    "is-referenced-by-count": 8,
+    "title": [
+      "Time Matters: Temporal NetFlow Features for ML-Based Network Intrusion Detection"
+    ],
+    "prefix": "10.1109",
+    "volume": "14",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0002-2103-3023",
+        "authenticated-orcid": false,
+        "given": "Majed",
+        "family": "Luay",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "School of Electrical Engineering and Computer Science, University of Queensland, Brisbane, QLD, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1229-2368",
+        "authenticated-orcid": false,
+        "given": "Siamak",
+        "family": "Layeghy",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Electrical Engineering and Computer Science, University of Queensland, Brisbane, QLD, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Niloufar",
+        "family": "Noorbin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Electrical Engineering and Computer Science, University of Queensland, Brisbane, QLD, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mohanad",
+        "family": "Sarhan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Electrical Engineering and Computer Science, University of Queensland, Brisbane, QLD, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0965-3994",
+        "authenticated-orcid": false,
+        "given": "Gayan",
+        "family": "Kulatilleke",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Electrical Engineering and Computer Science, University of Queensland, Brisbane, QLD, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6127-9349",
+        "authenticated-orcid": false,
+        "given": "Nour",
+        "family": "Moustafa",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Engineering and Information Technology, University of New South Wales, Sydney, NSW, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1852-3961",
+        "authenticated-orcid": false,
+        "given": "Marius",
+        "family": "Portmann",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Electrical Engineering and Computer Science, University of Queensland, Brisbane, QLD, Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jnca.2013.08.001"
+      },
+      {
+        "key": "ref2",
+        "volume-title": "Cloudflare’s 2025 Q1 Ddos Threat Report",
+        "author": "Yoachimik",
+        "year": "2025"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMST.2020.2989695"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.17487/rfc3954"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cose.2017.05.009"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jnca.2018.05.004"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2021.3129775"
+      },
+      {
+        "key": "ref8",
+        "first-page": "229",
+        "article-title": "Snort: Lightweight intrusion detection for networks",
+        "volume-title": "Proc. Lisa",
+        "volume": "99",
+        "author": "Roesch"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s42400-021-00103-8"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jpdc.2023.05.001"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TNSM.2022.3157344"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5120/13715-1478"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICDMW.2018.00008"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3465481.3470065"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CCST.2014.6987012"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/BADGERS.2015.014"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/jsan12050067"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s40537-023-00834-0"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.eswa.2023.122564"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-030-72802-1_9"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11036-021-01843-0"
+      },
+      {
+        "key": "ref22",
+        "volume-title": "NetFlow V3 NIDS Datasets—The University of Queensland",
+        "year": "2025"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/neco.1997.9.8.1735"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/app12167986"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.48550/ARXIV.1706.03762"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.29172/7c2a6982-6d72-4cd8-bba6-2fccb06a7011"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.heliyon.2020.e04262"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.bdr.2022.100359"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cose.2025.104536"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CISDA.2009.5356528"
+      },
+      {
+        "key": "ref31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MilCIS.2015.7348942"
+      },
+      {
+        "key": "ref32",
+        "first-page": "4765",
+        "article-title": "A unified approach to interpreting model predictions",
+        "volume-title": "Proc. Adv. Neural Inf. Process. Syst.",
+        "author": "Lundberg"
+      },
+      {
+        "key": "ref33",
+        "article-title": "Flow size difference’ can make a difference: Detecting malicious TCP network flows based on Benford’s law",
+        "author": "Iorliam",
+        "year": "2016",
+        "journal-title": "arXiv:1609.04214"
+      },
+      {
+        "key": "ref34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CNS.2014.6997492"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSYST.2014.2348567"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SADFE.2005.26"
+      },
+      {
+        "key": "ref37",
+        "volume-title": "Inter-arrival time intrusion-detection technique to provide enhanced cybersecurity, July 3 2018",
+        "author": "Gross",
+        "year": "2018"
+      },
+      {
+        "key": "ref38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1879141.1879175"
+      },
+      {
+        "key": "ref39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1644893.1644918"
+      },
+      {
+        "key": "ref40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.21236/ADA439086"
+      },
+      {
+        "key": "ref41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jnca.2012.12.020"
+      },
+      {
+        "key": "ref42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TrustCom50675.2020.00058"
+      },
+      {
+        "key": "ref43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2019.2905041"
+      },
+      {
+        "key": "ref44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMST.2021.3086475"
+      },
+      {
+        "key": "ref45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TIFS.2025.3530702"
+      },
+      {
+        "key": "ref46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/rs15143611"
+      },
+      {
+        "key": "ref47",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2020.2987977"
+      },
+      {
+        "key": "ref48",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5220/0006639801080116"
+      },
+      {
+        "key": "ref49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.scs.2021.102994"
+      },
+      {
+        "key": "ref50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.future.2019.05.041"
+      },
+      {
+        "key": "ref51",
+        "volume-title": "NProbe, an Extensible Netflow V5/V9/IPFIX Probe for IPV4/V6",
+        "year": "2017"
+      },
+      {
+        "key": "ref52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/LCN65610.2025.11146352"
+      },
+      {
+        "key": "ref53",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.2139/ssrn.4647372",
+        "volume-title": "An Evaluation of Preprocessing Methods for Machine Learning Based NIDS",
+        "author": "Manocchio",
+        "year": "2023"
+      },
+      {
+        "key": "ref54",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.dcan.2022.08.012"
+      },
+      {
+        "key": "ref55",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s13635-023-00139-y"
+      }
+    ],
+    "container-title": [
+      "IEEE Access"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/6287639/11323511/11498288.pdf?arnumber=11498288",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          8
+        ]
+      ],
+      "date-time": "2026-05-08T19:40:57Z",
+      "timestamp": 1778269257000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/11498288/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "references-count": 55,
+    "URL": "https://doi.org/10.1109/access.2026.3688204",
+    "relation": {},
+    "ISSN": [
+      "2169-3536"
+    ],
+    "issn-type": [
+      {
+        "value": "2169-3536",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    }
+  }
+}

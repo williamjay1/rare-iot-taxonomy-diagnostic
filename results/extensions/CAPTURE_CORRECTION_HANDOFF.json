@@ -1,0 +1,1225 @@
+{
+  "completion": true,
+  "version": "capture_common_flat_v2",
+  "completed_matched_units": 55,
+  "capture_common_flat_windows_completed": 4,
+  "formal_capture_methods": [
+    "flat_xgb",
+    "flat_lgbm",
+    "flat_equal_blend",
+    "temperature_flat_blend",
+    "newton_flat_stacker",
+    "real_taxonomy",
+    "taxonomy_blend",
+    "cyclic_blend",
+    "support_matched_blend"
+  ],
+  "formal_capture_result_csv": "<WORKSPACE>\\extensions\\capture_windows_results.csv",
+  "versioned_formal_capture_result_csv": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\capture_windows_results.csv",
+  "publication_manifest": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\PUBLICATION_MANIFEST.json",
+  "verification": {
+    "status": "passed",
+    "checks_passed": 601,
+    "completed_windows": 4,
+    "formal_method_rows": 36,
+    "prediction_parts": 28,
+    "hierarchy_components": 21,
+    "probability_matrices": 308,
+    "common_fitted_flat_verified": true,
+    "fixed_half_blend_verified": true,
+    "independently_recomputed_feature_hash_rows": 2616495,
+    "original_window_source_files_sha_verified": 9,
+    "maps_frozen_before_fitting": true,
+    "all_fresh_checkpoints_unchanged": true,
+    "hierarchy_component_fit_seconds_sum": 448.07225420023315,
+    "hierarchy_fit_seconds_by_map": {
+      "cyclic": 147.72408030019142,
+      "real": 147.8182951998897,
+      "support": 152.52987870015204
+    },
+    "inference_part_seconds_sum": 9386.685063299956,
+    "ece_nbins": 10,
+    "protocol_sha256": "281fe1b703e0d10802d73f2f05f9ce71b8841482b22b185f6f2634bc89a398de",
+    "package_versions": {
+      "numpy": "2.3.5",
+      "pandas": "3.0.1",
+      "scikit-learn": "1.9.0",
+      "lightgbm": "4.6.0",
+      "xgboost": "3.3.0",
+      "scipy": "1.18.0"
+    },
+    "verifier_sha256": "7cd8fbce9d229c6430940827886042efa895f9677bfe5714c067606e30b258cc",
+    "finished_utc": "2026-10-19T02:47:38.490107+00:00"
+  },
+  "protocol_json": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\protocol.json",
+  "csv_contracts": {
+    "all_endpoint_control_comparisons.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\all_endpoint_control_comparisons.csv",
+      "rows": 1204,
+      "sha256": "2ba0211848586f895e969a00fa046171ab8aca4820c30dc51f09795d55e9c522",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "seed",
+          "dtype": "int64"
+        },
+        {
+          "column": "case",
+          "dtype": "str"
+        },
+        {
+          "column": "control",
+          "dtype": "str"
+        },
+        {
+          "column": "metric",
+          "dtype": "str"
+        },
+        {
+          "column": "taxonomy_value",
+          "dtype": "float64"
+        },
+        {
+          "column": "control_value",
+          "dtype": "float64"
+        },
+        {
+          "column": "taxonomy_minus_control",
+          "dtype": "float64"
+        },
+        {
+          "column": "higher_is_better",
+          "dtype": "bool"
+        },
+        {
+          "column": "taxonomy_benefit",
+          "dtype": "float64"
+        },
+        {
+          "column": "direction",
+          "dtype": "str"
+        },
+        {
+          "column": "budget_id",
+          "dtype": "str"
+        },
+        {
+          "column": "window",
+          "dtype": "str"
+        }
+      ]
+    },
+    "all_endpoint_per_seed_paired_results.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\all_endpoint_per_seed_paired_results.csv",
+      "rows": 568,
+      "sha256": "8567f6f7babd5bfdc0d94c54a18be230734ef35da3e928e56ad94611e2db61c5",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "facet",
+          "dtype": "str"
+        },
+        {
+          "column": "seed",
+          "dtype": "int64"
+        },
+        {
+          "column": "control",
+          "dtype": "str"
+        },
+        {
+          "column": "metric",
+          "dtype": "str"
+        },
+        {
+          "column": "taxonomy_value",
+          "dtype": "float64"
+        },
+        {
+          "column": "control_value",
+          "dtype": "float64"
+        },
+        {
+          "column": "taxonomy_minus_control",
+          "dtype": "float64"
+        },
+        {
+          "column": "taxonomy_benefit",
+          "dtype": "float64"
+        },
+        {
+          "column": "within_seed_cases",
+          "dtype": "int64"
+        },
+        {
+          "column": "scope",
+          "dtype": "str"
+        }
+      ]
+    },
+    "all_endpoint_summary.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\all_endpoint_summary.csv",
+      "rows": 622,
+      "sha256": "d0a0baa7d5aaabb8ae70981bca1dfe2051de97eb56a8d5d7332dca5886a832f9",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "facet",
+          "dtype": "str"
+        },
+        {
+          "column": "metric",
+          "dtype": "str"
+        },
+        {
+          "column": "method",
+          "dtype": "str"
+        },
+        {
+          "column": "mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "sample_sd",
+          "dtype": "float64"
+        },
+        {
+          "column": "n_summary_units",
+          "dtype": "int64"
+        },
+        {
+          "column": "n_seeds",
+          "dtype": "int64"
+        },
+        {
+          "column": "summary_unit",
+          "dtype": "str"
+        },
+        {
+          "column": "aggregation",
+          "dtype": "str"
+        },
+        {
+          "column": "higher_is_better",
+          "dtype": "bool"
+        },
+        {
+          "column": "inference",
+          "dtype": "str"
+        }
+      ]
+    },
+    "best_competitor_by_endpoint_metric.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\best_competitor_by_endpoint_metric.csv",
+      "rows": 65,
+      "sha256": "d6bc40f14c034cdb3792627b652a571623f86a6a5638657f2c54e1955e40febc",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "facet",
+          "dtype": "str"
+        },
+        {
+          "column": "metric",
+          "dtype": "str"
+        },
+        {
+          "column": "taxonomy_blend_mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "temperature_flat_blend_mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "newton_flat_stacker_mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "best_observed_competitor",
+          "dtype": "str"
+        },
+        {
+          "column": "best_observed_competitor_mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "best_observed_competitor_ties",
+          "dtype": "str"
+        },
+        {
+          "column": "taxonomy_benefit_vs_best_competitor",
+          "dtype": "float64"
+        },
+        {
+          "column": "best_strong_flat_control",
+          "dtype": "str"
+        },
+        {
+          "column": "best_strong_flat_control_mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "taxonomy_benefit_vs_best_strong_flat",
+          "dtype": "float64"
+        },
+        {
+          "column": "higher_is_better",
+          "dtype": "bool"
+        },
+        {
+          "column": "scope",
+          "dtype": "str"
+        }
+      ]
+    },
+    "capture_hierarchy_component_results.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\capture_hierarchy_component_results.csv",
+      "rows": 44,
+      "sha256": "46ef9db9c8e84eb29628bd4da706e3f33792b2531a3770d5b3b271b9a5abc838",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "window",
+          "dtype": "str"
+        },
+        {
+          "column": "seed",
+          "dtype": "int64"
+        },
+        {
+          "column": "method",
+          "dtype": "str"
+        },
+        {
+          "column": "test_rows",
+          "dtype": "int64"
+        },
+        {
+          "column": "n_test",
+          "dtype": "int64"
+        },
+        {
+          "column": "accuracy",
+          "dtype": "float64"
+        },
+        {
+          "column": "recall_macro",
+          "dtype": "float64"
+        },
+        {
+          "column": "rare_recall",
+          "dtype": "float64"
+        },
+        {
+          "column": "worst_recall",
+          "dtype": "float64"
+        },
+        {
+          "column": "macro_f1",
+          "dtype": "float64"
+        }
+      ]
+    },
+    "capture_method_registry.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\capture_method_registry.csv",
+      "rows": 11,
+      "sha256": "e638e96a5f74436a62a30ebc6aa257e0b1ebd9198618146ef8a9519d50008f17",
+      "schema": [
+        {
+          "column": "method",
+          "dtype": "str"
+        },
+        {
+          "column": "formal_table_arm",
+          "dtype": "bool"
+        },
+        {
+          "column": "new_fit",
+          "dtype": "str"
+        },
+        {
+          "column": "fit_role",
+          "dtype": "str"
+        },
+        {
+          "column": "blend_weights",
+          "dtype": "str"
+        },
+        {
+          "column": "gate",
+          "dtype": "bool"
+        },
+        {
+          "column": "flat_component_sha256",
+          "dtype": "str"
+        }
+      ]
+    },
+    "capture_paired_deltas.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\capture_paired_deltas.csv",
+      "rows": 8,
+      "sha256": "b66094ebd7e0b41db600d51fa5e387a9c30e6e5593833b2a671e1f5abdc06fef",
+      "schema": [
+        {
+          "column": "window",
+          "dtype": "str"
+        },
+        {
+          "column": "control",
+          "dtype": "str"
+        },
+        {
+          "column": "taxonomy_blend_minus_control_macro_f1",
+          "dtype": "float64"
+        },
+        {
+          "column": "taxonomy_blend_minus_control_rare_recall",
+          "dtype": "float64"
+        }
+      ]
+    },
+    "capture_probability_quality_ece10.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\capture_probability_quality_ece10.csv",
+      "rows": 44,
+      "sha256": "4538c40d03eaf0f7b666b9c053ff931047d626549a6d424231aaecc8b31e082f",
+      "schema": [
+        {
+          "column": "window",
+          "dtype": "str"
+        },
+        {
+          "column": "seed",
+          "dtype": "int64"
+        },
+        {
+          "column": "method",
+          "dtype": "str"
+        },
+        {
+          "column": "rows",
+          "dtype": "int64"
+        },
+        {
+          "column": "rare_rows",
+          "dtype": "int64"
+        },
+        {
+          "column": "ece_all",
+          "dtype": "float64"
+        },
+        {
+          "column": "ece_rare_rows",
+          "dtype": "float64"
+        },
+        {
+          "column": "brier_all",
+          "dtype": "float64"
+        },
+        {
+          "column": "brier_rare_rows",
+          "dtype": "float64"
+        },
+        {
+          "column": "nbins",
+          "dtype": "int64"
+        },
+        {
+          "column": "right_closed",
+          "dtype": "bool"
+        }
+      ]
+    },
+    "capture_row_hash_audit.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\capture_row_hash_audit.csv",
+      "rows": 28,
+      "sha256": "6dece0aaa142b6e6f6d93b5c52977c5671a6527e39e6c796b72e8a8430af1f3a",
+      "schema": [
+        {
+          "column": "window",
+          "dtype": "str"
+        },
+        {
+          "column": "part",
+          "dtype": "str"
+        },
+        {
+          "column": "rows",
+          "dtype": "int64"
+        },
+        {
+          "column": "predictors",
+          "dtype": "int64"
+        },
+        {
+          "column": "independently_recomputed_feature_hash",
+          "dtype": "bool"
+        },
+        {
+          "column": "ordered_feature_hash_sha256",
+          "dtype": "str"
+        },
+        {
+          "column": "ordered_source_keys_sha256",
+          "dtype": "str"
+        },
+        {
+          "column": "source_parquet_sha256",
+          "dtype": "str"
+        }
+      ]
+    },
+    "capture_shared_flat_map_comparisons.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\capture_shared_flat_map_comparisons.csv",
+      "rows": 16,
+      "sha256": "42a8b36a0ec17a24307d01f7b4fb0206fcc3fbe9bcddab1a5c1f81295d1561a3",
+      "schema": [
+        {
+          "column": "window",
+          "dtype": "str"
+        },
+        {
+          "column": "seed",
+          "dtype": "int64"
+        },
+        {
+          "column": "control",
+          "dtype": "str"
+        },
+        {
+          "column": "metric",
+          "dtype": "str"
+        },
+        {
+          "column": "taxonomy_value",
+          "dtype": "float64"
+        },
+        {
+          "column": "control_value",
+          "dtype": "float64"
+        },
+        {
+          "column": "taxonomy_minus_control",
+          "dtype": "float64"
+        },
+        {
+          "column": "direction",
+          "dtype": "str"
+        },
+        {
+          "column": "scope",
+          "dtype": "str"
+        }
+      ]
+    },
+    "capture_windows_results.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\capture_windows_results.csv",
+      "rows": 36,
+      "sha256": "12622c63d77d8b2245e8894071ae69dd09f0b2b68406ba15004d38ff2e8aebbb",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "window",
+          "dtype": "str"
+        },
+        {
+          "column": "seed",
+          "dtype": "int64"
+        },
+        {
+          "column": "method",
+          "dtype": "str"
+        },
+        {
+          "column": "test_rows",
+          "dtype": "int64"
+        },
+        {
+          "column": "n_test",
+          "dtype": "int64"
+        },
+        {
+          "column": "accuracy",
+          "dtype": "float64"
+        },
+        {
+          "column": "recall_macro",
+          "dtype": "float64"
+        },
+        {
+          "column": "rare_recall",
+          "dtype": "float64"
+        },
+        {
+          "column": "worst_recall",
+          "dtype": "float64"
+        },
+        {
+          "column": "macro_f1",
+          "dtype": "float64"
+        }
+      ]
+    },
+    "endpoint_coverage.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\endpoint_coverage.csv",
+      "rows": 5,
+      "sha256": "5aab28bfeffa441809af32009d79b7978bc7662dc0a4d036e0323f87f8f8ca18",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "expected_units",
+          "dtype": "int64"
+        },
+        {
+          "column": "completed_units",
+          "dtype": "int64"
+        },
+        {
+          "column": "strong_control_evaluations_completed",
+          "dtype": "int64"
+        },
+        {
+          "column": "status",
+          "dtype": "str"
+        },
+        {
+          "column": "incomplete_reason",
+          "dtype": "float64"
+        },
+        {
+          "column": "frozen_recompute",
+          "dtype": "bool"
+        },
+        {
+          "column": "result_csv",
+          "dtype": "str"
+        }
+      ]
+    },
+    "hierarchy_fit_audit.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\hierarchy_fit_audit.csv",
+      "rows": 21,
+      "sha256": "cc13334ea85bc9ae10769a6c418384c7dc39d4d08bd9657b0c43926660a21d50",
+      "schema": [
+        {
+          "column": "map",
+          "dtype": "str"
+        },
+        {
+          "column": "component",
+          "dtype": "str"
+        },
+        {
+          "column": "rows",
+          "dtype": "int64"
+        },
+        {
+          "column": "classes",
+          "dtype": "int64"
+        },
+        {
+          "column": "n_jobs",
+          "dtype": "int64"
+        },
+        {
+          "column": "trees",
+          "dtype": "int64"
+        },
+        {
+          "column": "fit_seconds",
+          "dtype": "float64"
+        },
+        {
+          "column": "model_sha256",
+          "dtype": "str"
+        },
+        {
+          "column": "fit_input_sha256",
+          "dtype": "str"
+        }
+      ]
+    },
+    "inference_part_timings.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\inference_part_timings.csv",
+      "rows": 28,
+      "sha256": "ec6b2259bb47b35b94495f86797a29a517452beea88178618f268400502d17b8",
+      "schema": [
+        {
+          "column": "window",
+          "dtype": "str"
+        },
+        {
+          "column": "part",
+          "dtype": "str"
+        },
+        {
+          "column": "rows",
+          "dtype": "int64"
+        },
+        {
+          "column": "elapsed_seconds",
+          "dtype": "float64"
+        },
+        {
+          "column": "finished_utc",
+          "dtype": "str"
+        }
+      ]
+    },
+    "pre_refit_all_endpoint_control_comparisons.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\pre_refit_all_endpoint_control_comparisons.csv",
+      "rows": 1204,
+      "sha256": "6b8a0f11cc5d963ccaa6c9ed89a6d247c6a50cea3cca95008603408576adb9eb",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "seed",
+          "dtype": "int64"
+        },
+        {
+          "column": "case",
+          "dtype": "str"
+        },
+        {
+          "column": "control",
+          "dtype": "str"
+        },
+        {
+          "column": "metric",
+          "dtype": "str"
+        },
+        {
+          "column": "taxonomy_value",
+          "dtype": "float64"
+        },
+        {
+          "column": "control_value",
+          "dtype": "float64"
+        },
+        {
+          "column": "taxonomy_minus_control",
+          "dtype": "float64"
+        },
+        {
+          "column": "higher_is_better",
+          "dtype": "bool"
+        },
+        {
+          "column": "taxonomy_benefit",
+          "dtype": "float64"
+        },
+        {
+          "column": "direction",
+          "dtype": "str"
+        },
+        {
+          "column": "budget_id",
+          "dtype": "str"
+        },
+        {
+          "column": "window",
+          "dtype": "str"
+        }
+      ]
+    },
+    "pre_refit_all_endpoint_per_seed_paired_results.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\pre_refit_all_endpoint_per_seed_paired_results.csv",
+      "rows": 568,
+      "sha256": "1bb2678a7754af9cd672ad81492c0310137d92bdbcde2f592c895710a46c04cc",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "facet",
+          "dtype": "str"
+        },
+        {
+          "column": "seed",
+          "dtype": "int64"
+        },
+        {
+          "column": "control",
+          "dtype": "str"
+        },
+        {
+          "column": "metric",
+          "dtype": "str"
+        },
+        {
+          "column": "taxonomy_value",
+          "dtype": "float64"
+        },
+        {
+          "column": "control_value",
+          "dtype": "float64"
+        },
+        {
+          "column": "taxonomy_minus_control",
+          "dtype": "float64"
+        },
+        {
+          "column": "taxonomy_benefit",
+          "dtype": "float64"
+        },
+        {
+          "column": "within_seed_cases",
+          "dtype": "int64"
+        },
+        {
+          "column": "scope",
+          "dtype": "str"
+        }
+      ]
+    },
+    "pre_refit_all_endpoint_summary.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\pre_refit_all_endpoint_summary.csv",
+      "rows": 622,
+      "sha256": "a939c80a281ace6131ce59d5c6a7601a284ab452d58f41ee6161e7d07d9f4e51",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "facet",
+          "dtype": "str"
+        },
+        {
+          "column": "metric",
+          "dtype": "str"
+        },
+        {
+          "column": "method",
+          "dtype": "str"
+        },
+        {
+          "column": "mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "sample_sd",
+          "dtype": "float64"
+        },
+        {
+          "column": "n_summary_units",
+          "dtype": "int64"
+        },
+        {
+          "column": "n_seeds",
+          "dtype": "int64"
+        },
+        {
+          "column": "summary_unit",
+          "dtype": "str"
+        },
+        {
+          "column": "aggregation",
+          "dtype": "str"
+        },
+        {
+          "column": "higher_is_better",
+          "dtype": "bool"
+        },
+        {
+          "column": "inference",
+          "dtype": "str"
+        }
+      ]
+    },
+    "pre_refit_best_competitor_by_endpoint_metric.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\pre_refit_best_competitor_by_endpoint_metric.csv",
+      "rows": 65,
+      "sha256": "42cf5340f3b90aeaa38f6c5790240b7445f8fcde97af83b57f2d9563fd6e51e2",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "facet",
+          "dtype": "str"
+        },
+        {
+          "column": "metric",
+          "dtype": "str"
+        },
+        {
+          "column": "taxonomy_blend_mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "temperature_flat_blend_mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "newton_flat_stacker_mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "best_observed_competitor",
+          "dtype": "str"
+        },
+        {
+          "column": "best_observed_competitor_mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "best_observed_competitor_ties",
+          "dtype": "str"
+        },
+        {
+          "column": "taxonomy_benefit_vs_best_competitor",
+          "dtype": "float64"
+        },
+        {
+          "column": "best_strong_flat_control",
+          "dtype": "str"
+        },
+        {
+          "column": "best_strong_flat_control_mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "taxonomy_benefit_vs_best_strong_flat",
+          "dtype": "float64"
+        },
+        {
+          "column": "higher_is_better",
+          "dtype": "bool"
+        },
+        {
+          "column": "scope",
+          "dtype": "str"
+        }
+      ]
+    },
+    "pre_refit_capture_method_registry.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\pre_refit_capture_method_registry.csv",
+      "rows": 11,
+      "sha256": "e638e96a5f74436a62a30ebc6aa257e0b1ebd9198618146ef8a9519d50008f17",
+      "schema": [
+        {
+          "column": "method",
+          "dtype": "str"
+        },
+        {
+          "column": "formal_table_arm",
+          "dtype": "bool"
+        },
+        {
+          "column": "new_fit",
+          "dtype": "str"
+        },
+        {
+          "column": "fit_role",
+          "dtype": "str"
+        },
+        {
+          "column": "blend_weights",
+          "dtype": "str"
+        },
+        {
+          "column": "gate",
+          "dtype": "bool"
+        },
+        {
+          "column": "flat_component_sha256",
+          "dtype": "str"
+        }
+      ]
+    },
+    "pre_refit_capture_paired_deltas.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\pre_refit_capture_paired_deltas.csv",
+      "rows": 8,
+      "sha256": "e35fa0a3ce99925e844ee203b939d46ecfb5289cf206fd3bc91f355cc344ae77",
+      "schema": [
+        {
+          "column": "window",
+          "dtype": "str"
+        },
+        {
+          "column": "control",
+          "dtype": "str"
+        },
+        {
+          "column": "taxonomy_blend_minus_control_macro_f1",
+          "dtype": "float64"
+        },
+        {
+          "column": "taxonomy_blend_minus_control_rare_recall",
+          "dtype": "float64"
+        }
+      ]
+    },
+    "pre_refit_capture_windows_results.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\pre_refit_capture_windows_results.csv",
+      "rows": 36,
+      "sha256": "b332ccfa134bf082caaeb735ee3249b848365ce63b81555d844544915088bd03",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "window",
+          "dtype": "str"
+        },
+        {
+          "column": "seed",
+          "dtype": "int64"
+        },
+        {
+          "column": "method",
+          "dtype": "str"
+        },
+        {
+          "column": "test_rows",
+          "dtype": "int64"
+        },
+        {
+          "column": "n_test",
+          "dtype": "int64"
+        },
+        {
+          "column": "accuracy",
+          "dtype": "float64"
+        },
+        {
+          "column": "recall_macro",
+          "dtype": "float64"
+        },
+        {
+          "column": "rare_recall",
+          "dtype": "float64"
+        },
+        {
+          "column": "worst_recall",
+          "dtype": "float64"
+        },
+        {
+          "column": "macro_f1",
+          "dtype": "float64"
+        }
+      ]
+    },
+    "pre_refit_endpoint_coverage.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\pre_refit_endpoint_coverage.csv",
+      "rows": 5,
+      "sha256": "5306ec8a7ce29394d6d827729eca00259e2436d86940bd2b43e1f2295a16550b",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "expected_units",
+          "dtype": "int64"
+        },
+        {
+          "column": "completed_units",
+          "dtype": "int64"
+        },
+        {
+          "column": "strong_control_evaluations_completed",
+          "dtype": "int64"
+        },
+        {
+          "column": "status",
+          "dtype": "str"
+        },
+        {
+          "column": "incomplete_reason",
+          "dtype": "float64"
+        },
+        {
+          "column": "frozen_recompute",
+          "dtype": "bool"
+        },
+        {
+          "column": "result_csv",
+          "dtype": "str"
+        }
+      ]
+    },
+    "prediction_array_audit.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\prediction_array_audit.csv",
+      "rows": 308,
+      "sha256": "e91cd3e086e579abe75d37c0b5a5e696b3d6682dd8ce09a1f3d8ab7306c36a2a",
+      "schema": [
+        {
+          "column": "window",
+          "dtype": "str"
+        },
+        {
+          "column": "part",
+          "dtype": "str"
+        },
+        {
+          "column": "method",
+          "dtype": "str"
+        },
+        {
+          "column": "rows",
+          "dtype": "int64"
+        },
+        {
+          "column": "probability_sha256",
+          "dtype": "str"
+        },
+        {
+          "column": "hard_sha256",
+          "dtype": "str"
+        },
+        {
+          "column": "row_sum_max_error",
+          "dtype": "float64"
+        }
+      ]
+    },
+    "support_map_audit.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\support_map_audit.csv",
+      "rows": 8,
+      "sha256": "b220fd0581af174dad928f7c30851f2a908d5b45e5e7e266be208e12a6aa417b",
+      "schema": [
+        {
+          "column": "family",
+          "dtype": "str"
+        },
+        {
+          "column": "real_label_count",
+          "dtype": "int64"
+        },
+        {
+          "column": "control_label_count",
+          "dtype": "int64"
+        },
+        {
+          "column": "real_fit_support",
+          "dtype": "int64"
+        },
+        {
+          "column": "control_fit_support",
+          "dtype": "int64"
+        },
+        {
+          "column": "absolute_support_difference",
+          "dtype": "int64"
+        },
+        {
+          "column": "relative_support_difference",
+          "dtype": "float64"
+        },
+        {
+          "column": "real_labels",
+          "dtype": "str"
+        },
+        {
+          "column": "control_labels",
+          "dtype": "str"
+        }
+      ]
+    },
+    "verification_checks.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\verification_checks.csv",
+      "rows": 601,
+      "sha256": "02a2fe0c76af497b86542f3f3099e9f37296f2ec2537c14c2136d8192d3625ff",
+      "schema": [
+        {
+          "column": "check",
+          "dtype": "str"
+        },
+        {
+          "column": "passed",
+          "dtype": "bool"
+        }
+      ]
+    },
+    "window_source_sha_audit.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\window_source_sha_audit.csv",
+      "rows": 9,
+      "sha256": "8c25d5712f5c3e69b324bfc99398ad3bf54b82cc9977620803d83df8400b08c5",
+      "schema": [
+        {
+          "column": "sequence",
+          "dtype": "int64"
+        },
+        {
+          "column": "member",
+          "dtype": "str"
+        },
+        {
+          "column": "raw_rows",
+          "dtype": "int64"
+        },
+        {
+          "column": "D_cached_source",
+          "dtype": "str"
+        },
+        {
+          "column": "original_read_only_source",
+          "dtype": "str"
+        },
+        {
+          "column": "bytes",
+          "dtype": "int64"
+        },
+        {
+          "column": "sha256",
+          "dtype": "str"
+        },
+        {
+          "column": "original_manifest_sha_match",
+          "dtype": "bool"
+        }
+      ]
+    }
+  },
+  "original_hybrid_audit_only": "<WORKSPACE>\\extensions\\capture_component_scope_v1\\capture_original_hybrid_audit.csv",
+  "supersedes_blocked_handoff": "<WORKSPACE>\\extensions\\capture_common_flat_v2\\pre_refit_CAPTURE_CORRECTION_HANDOFF.json",
+  "all_endpoint_summary_csv": "<WORKSPACE>\\extensions\\all_endpoint_summary.csv",
+  "all_endpoint_per_seed_paired_results_csv": "<WORKSPACE>\\extensions\\all_endpoint_per_seed_paired_results.csv",
+  "best_competitor_by_endpoint_metric_csv": "<WORKSPACE>\\extensions\\best_competitor_by_endpoint_metric.csv",
+  "review_facing_prose": [
+    "The four capture-order windows now compare three newly fitted hierarchy maps against the same existing fresh flat component. Family/local LGBM components use 380 trees and the frozen base rows; flat XGB 520, flat LGBM 380 and utility-calibrated meta-models were reused, not retrained. Each hierarchy blend uses fixed equal weights. No gate was fitted for these capture controls.",
+    "Across all four dependent capture windows, taxonomy blend macro_f1 averaged 0.621426 versus 0.620067 for temperature_flat_blend; taxonomy minus control was 0.001360. These are descriptive means from one fitted seed, not independent-replicate inference.",
+    "Across all four dependent capture windows, taxonomy blend rare_recall averaged 0.548859 versus 0.552048 for temperature_flat_blend; taxonomy minus control was -0.003189. These are descriptive means from one fitted seed, not independent-replicate inference.",
+    "Across all four dependent capture windows, taxonomy blend macro_f1 averaged 0.621426 versus 0.638285 for newton_flat_stacker; taxonomy minus control was -0.016859. These are descriptive means from one fitted seed, not independent-replicate inference.",
+    "Across all four dependent capture windows, taxonomy blend rare_recall averaged 0.548859 versus 0.519084 for newton_flat_stacker; taxonomy minus control was 0.029775. These are descriptive means from one fitted seed, not independent-replicate inference.",
+    "For the same shared-flat comparison against cyclic_blend, mean taxonomy-minus-control macro_f1 was -0.002228; taxonomy was higher in 0/4 dependent windows and lower in 4/4. These descriptive directions do not establish population significance or universal taxonomy superiority.",
+    "For the same shared-flat comparison against cyclic_blend, mean taxonomy-minus-control rare_recall was 0.002121; taxonomy was higher in 4/4 dependent windows and lower in 0/4. These descriptive directions do not establish population significance or universal taxonomy superiority.",
+    "For the same shared-flat comparison against support_matched_blend, mean taxonomy-minus-control macro_f1 was -0.000503; taxonomy was higher in 2/4 dependent windows and lower in 2/4. These descriptive directions do not establish population significance or universal taxonomy superiority.",
+    "For the same shared-flat comparison against support_matched_blend, mean taxonomy-minus-control rare_recall was 0.002369; taxonomy was higher in 2/4 dependent windows and lower in 2/4. These descriptive directions do not establish population significance or universal taxonomy superiority.",
+    "All nine Table 4 arms, including the taxonomy, cyclic and support gates, retain the original canonical-v10 six-split ECE10 results. Capture cyclic/support arms are separate fixed blends, not those gates. Capture file order is a proxy, not timestamp validation; no physical edge hardware was available."
+  ],
+  "all_nine_arms_retrained": false,
+  "method_scope_change": "The ninth formal capture arm is newly available real_taxonomy, replacing the audit-only legacy_flat_xgb; the other five fresh flat and three blend IDs remain. Cyclic/support standalone hierarchies are additional audit arms.",
+  "no_test_tuning_no_outcome_map_selection": true,
+  "no_probability_reconstruction": true,
+  "old_unresolved_flat_drift_cause_required_for_current_comparison": false
+}

@@ -1,0 +1,7 @@
+seed,development_rows,base_pool_rows_before_cap,base_fit_rows_after_cap,gate_train_rows,gate_select_rows,outer_test_rows,rare_labels,group_disjoint,base_gate_overlap,base_outer_overlap,gate_outer_overlap
+42,1143869,800674,702664,171639,171556,285884,"[""Backdoor_Malware"", ""BrowserHijacking"", ""CommandInjection"", ""DictionaryBruteForce"", ""Recon-PingSweep"", ""SqlInjection"", ""Uploading_Attack"", ""XSS""]",True,0,0,0
+43,1143597,800629,702662,171451,171517,286156,"[""Backdoor_Malware"", ""BrowserHijacking"", ""CommandInjection"", ""DictionaryBruteForce"", ""Recon-PingSweep"", ""SqlInjection"", ""Uploading_Attack"", ""XSS""]",True,0,0,0
+44,1143575,800417,702663,171591,171567,286178,"[""Backdoor_Malware"", ""BrowserHijacking"", ""CommandInjection"", ""DictionaryBruteForce"", ""Recon-PingSweep"", ""SqlInjection"", ""Uploading_Attack"", ""XSS""]",True,0,0,0
+45,1143854,800830,702661,171558,171466,285899,"[""Backdoor_Malware"", ""BrowserHijacking"", ""CommandInjection"", ""DictionaryBruteForce"", ""Recon-PingSweep"", ""SqlInjection"", ""Uploading_Attack"", ""XSS""]",True,0,0,0
+46,1143782,800731,702666,171431,171620,285971,"[""Backdoor_Malware"", ""BrowserHijacking"", ""CommandInjection"", ""DictionaryBruteForce"", ""Recon-PingSweep"", ""SqlInjection"", ""Uploading_Attack"", ""XSS""]",True,0,0,0
+47,1143776,800625,702665,171428,171723,285977,"[""Backdoor_Malware"", ""BrowserHijacking"", ""CommandInjection"", ""DictionaryBruteForce"", ""Recon-PingSweep"", ""SqlInjection"", ""Uploading_Attack"", ""XSS""]",True,0,0,0

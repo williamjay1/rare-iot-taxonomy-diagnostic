@@ -1,0 +1,5 @@
+family,real_label_count,control_label_count,real_fit_support,control_fit_support,absolute_support_difference,relative_support_difference,real_labels,control_labels
+Availability,2,2,50000,105000,55000,1.1,"[""DDoS"", ""DoS""]","[""Benign"", ""Injection""]"
+Benign,1,1,80000,25000,55000,0.6875,"[""Benign""]","[""Scanning""]"
+InputManipulation,1,1,25000,25000,0,0.0,"[""Injection""]","[""DDoS""]"
+Reconnaissance,1,1,25000,25000,0,0.0,"[""Scanning""]","[""DoS""]"

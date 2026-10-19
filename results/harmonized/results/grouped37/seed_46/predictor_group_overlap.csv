@@ -1,0 +1,7 @@
+seed,basis,left,right,overlap_groups
+46,shared37_float32_model_input,fit_pool,utility,0
+46,shared37_float32_model_input,fit_pool,selection,0
+46,shared37_float32_model_input,fit_pool,test,0
+46,shared37_float32_model_input,utility,selection,0
+46,shared37_float32_model_input,utility,test,0
+46,shared37_float32_model_input,selection,test,0

@@ -1,0 +1,34 @@
+{
+  "sha256": "b51dbc941b9af56ccb0f8d28dbc2687485a6dc93846c41f01b21df18d19bc17e",
+  "elapsed_seconds": null,
+  "models": {
+    "type": "LogisticRegression",
+    "params": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": 0.0,
+      "max_iter": 100,
+      "n_jobs": null,
+      "penalty": "deprecated",
+      "random_state": 42,
+      "solver": "newton-cholesky",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    }
+  },
+  "saved_utc": "2026-10-18T17:15:23.094608+00:00",
+  "recovered_serialized_model": true,
+  "fit_performed_during_recovery": false,
+  "n_iter": [
+    11
+  ],
+  "duration_status": "Exact perf_counter duration lost when metadata assertion raised",
+  "duration_upper_bound_seconds": 592.068014,
+  "duration_upper_bound_scope": "preceding metric log to completed serialized artifact, includes non-fit overhead",
+  "original_file_sha256_unchanged": true,
+  "convergence_evidence": "Frozen fit_converged_stacker returned before atomic joblib save; it raises on ConvergenceWarning"
+}

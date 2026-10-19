@@ -1,0 +1,43 @@
+{
+  "protocol_sha256": "281fe1b703e0d10802d73f2f05f9ce71b8841482b22b185f6f2634bc89a398de",
+  "rows": 32417,
+  "n_features": 39,
+  "n_classes": 4,
+  "ordered_X_sha256": "c072b4b8c47b69c97327b61def8be00e4db7a29c5ef88519f81303506b72affd",
+  "ordered_y_sha256": "ad077f8c40c5b47ffb7a0f032b2ed74b552f4de70e891aa808903f538210f376",
+  "kind": "local",
+  "map": "cyclic",
+  "family": "DoS",
+  "classes": [
+    "SqlInjection",
+    "Uploading_Attack",
+    "VulnerabilityScan",
+    "XSS"
+  ],
+  "weight_exponent": 0.5,
+  "ordered_base_positions_sha256": "e214ef7a8b68b11c2a49e86f0a719f2c454326902fb4df1942dbd1230ab09ead",
+  "ordered_weight_sha256": "ff02e6606e08cfa0774f04fa723a29a2263fbce38ba8bedab36fbd99085df016",
+  "parameters_repr": {
+    "boosting_type": "'gbdt'",
+    "class_weight": "None",
+    "colsample_bytree": "0.95",
+    "importance_type": "'split'",
+    "learning_rate": "0.055",
+    "max_depth": "-1",
+    "min_child_samples": "25",
+    "min_child_weight": "0.001",
+    "min_split_gain": "0.0",
+    "n_estimators": "380",
+    "n_jobs": "2",
+    "num_leaves": "127",
+    "objective": "'multiclass'",
+    "random_state": "20260729",
+    "reg_alpha": "0.02",
+    "reg_lambda": "1.5",
+    "subsample": "0.9",
+    "subsample_for_bin": "200000",
+    "subsample_freq": "0",
+    "verbosity": "-1"
+  },
+  "input_sha256": "9a86922961b5b159bfee9a0be101714ecc10164ce902bc314ee10f69931e2cca"
+}

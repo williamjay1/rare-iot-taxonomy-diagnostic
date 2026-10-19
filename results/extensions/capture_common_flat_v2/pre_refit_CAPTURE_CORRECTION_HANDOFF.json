@@ -1,0 +1,595 @@
+{
+  "completion": false,
+  "bounded_diagnostic_complete": true,
+  "version": "capture_component_scope_v1",
+  "original_computed_units": 55,
+  "expected_matched_units": 55,
+  "accepted_full_matched_units": 51,
+  "common_flat_capture_windows_complete": 0,
+  "common_flat_capture_windows_expected": 4,
+  "fresh_flat_only_windows_complete": 4,
+  "original_hybrid_windows_preserved": 4,
+  "incomplete_reason": "Original window archives contain hard predictions only. No original flat or hierarchy probability arrays or serialized estimators were found in the audited archive locations. Fresh flat predictions disagree with the old flat component. A common-flat taxonomy/control blend cannot be computed without unavailable components or a prohibited hierarchy refit.",
+  "diagnostic": "<WORKSPACE>\\extensions\\capture_component_scope_v1\\diagnostic.json",
+  "original_handoff_preserved": "<WORKSPACE>\\extensions\\capture_component_scope_v1\\original_MANUSCRIPT_HANDOFF.json",
+  "original_handoff_sha256": "012720d77ea04fb102fc7d8d25ec0a67b76f025c7906b71b8649e8397bc72d09",
+  "csv_contracts": {
+    "all_endpoint_control_comparisons.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_component_scope_v1\\all_endpoint_control_comparisons.csv",
+      "rows": 1188,
+      "sha256": "1379aba526c170f0c8cbf29f22639a3286f3ca77385667eeb8204debbca8375f",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "seed",
+          "dtype": "int64"
+        },
+        {
+          "column": "case",
+          "dtype": "str"
+        },
+        {
+          "column": "control",
+          "dtype": "str"
+        },
+        {
+          "column": "metric",
+          "dtype": "str"
+        },
+        {
+          "column": "taxonomy_value",
+          "dtype": "float64"
+        },
+        {
+          "column": "control_value",
+          "dtype": "float64"
+        },
+        {
+          "column": "taxonomy_minus_control",
+          "dtype": "float64"
+        },
+        {
+          "column": "higher_is_better",
+          "dtype": "bool"
+        },
+        {
+          "column": "taxonomy_benefit",
+          "dtype": "float64"
+        },
+        {
+          "column": "direction",
+          "dtype": "str"
+        },
+        {
+          "column": "budget_id",
+          "dtype": "str"
+        },
+        {
+          "column": "window",
+          "dtype": "float64"
+        }
+      ]
+    },
+    "all_endpoint_per_seed_paired_results.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_component_scope_v1\\all_endpoint_per_seed_paired_results.csv",
+      "rows": 552,
+      "sha256": "b88a01a537e309690a526be64aee9317d479a8c65b4a7229a30e07bf4a734410",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "facet",
+          "dtype": "str"
+        },
+        {
+          "column": "seed",
+          "dtype": "int64"
+        },
+        {
+          "column": "control",
+          "dtype": "str"
+        },
+        {
+          "column": "metric",
+          "dtype": "str"
+        },
+        {
+          "column": "taxonomy_value",
+          "dtype": "float64"
+        },
+        {
+          "column": "control_value",
+          "dtype": "float64"
+        },
+        {
+          "column": "taxonomy_minus_control",
+          "dtype": "float64"
+        },
+        {
+          "column": "taxonomy_benefit",
+          "dtype": "float64"
+        },
+        {
+          "column": "within_seed_cases",
+          "dtype": "int64"
+        },
+        {
+          "column": "scope",
+          "dtype": "str"
+        }
+      ]
+    },
+    "all_endpoint_summary.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_component_scope_v1\\all_endpoint_summary.csv",
+      "rows": 582,
+      "sha256": "3c97bf3b6ed844d9ecddb9a8082eb50ebbb4c386ba973dcbdfb5cc2292307113",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "facet",
+          "dtype": "str"
+        },
+        {
+          "column": "metric",
+          "dtype": "str"
+        },
+        {
+          "column": "method",
+          "dtype": "str"
+        },
+        {
+          "column": "mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "sample_sd",
+          "dtype": "float64"
+        },
+        {
+          "column": "n_summary_units",
+          "dtype": "int64"
+        },
+        {
+          "column": "n_seeds",
+          "dtype": "int64"
+        },
+        {
+          "column": "summary_unit",
+          "dtype": "str"
+        },
+        {
+          "column": "aggregation",
+          "dtype": "str"
+        },
+        {
+          "column": "higher_is_better",
+          "dtype": "bool"
+        },
+        {
+          "column": "inference",
+          "dtype": "str"
+        }
+      ]
+    },
+    "best_competitor_by_endpoint_metric.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_component_scope_v1\\best_competitor_by_endpoint_metric.csv",
+      "rows": 55,
+      "sha256": "9edeae9d0c14745c7a32247f3acccb559a4c44972ddd3735d6be81ffa250f15b",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "facet",
+          "dtype": "str"
+        },
+        {
+          "column": "metric",
+          "dtype": "str"
+        },
+        {
+          "column": "taxonomy_blend_mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "temperature_flat_blend_mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "newton_flat_stacker_mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "best_observed_competitor",
+          "dtype": "str"
+        },
+        {
+          "column": "best_observed_competitor_mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "best_observed_competitor_ties",
+          "dtype": "str"
+        },
+        {
+          "column": "taxonomy_benefit_vs_best_competitor",
+          "dtype": "float64"
+        },
+        {
+          "column": "best_strong_flat_control",
+          "dtype": "str"
+        },
+        {
+          "column": "best_strong_flat_control_mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "taxonomy_benefit_vs_best_strong_flat",
+          "dtype": "float64"
+        },
+        {
+          "column": "higher_is_better",
+          "dtype": "bool"
+        },
+        {
+          "column": "scope",
+          "dtype": "str"
+        }
+      ]
+    },
+    "capture_fresh_flat_paired_results.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_component_scope_v1\\capture_fresh_flat_paired_results.csv",
+      "rows": 32,
+      "sha256": "1a4ea4dbf907035be1a3ec2ec30621facd3e043d48104a05ea53e7312cdab380",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "window",
+          "dtype": "str"
+        },
+        {
+          "column": "seed",
+          "dtype": "int64"
+        },
+        {
+          "column": "method",
+          "dtype": "str"
+        },
+        {
+          "column": "reference",
+          "dtype": "str"
+        },
+        {
+          "column": "metric",
+          "dtype": "str"
+        },
+        {
+          "column": "method_value",
+          "dtype": "float64"
+        },
+        {
+          "column": "reference_value",
+          "dtype": "float64"
+        },
+        {
+          "column": "method_minus_reference",
+          "dtype": "float64"
+        },
+        {
+          "column": "scope",
+          "dtype": "str"
+        }
+      ]
+    },
+    "capture_fresh_flat_results.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_component_scope_v1\\capture_fresh_flat_results.csv",
+      "rows": 20,
+      "sha256": "c5cff955a64d18bec116a330566d0b7856577779724384ac78b0bc3413ef14ea",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "window",
+          "dtype": "str"
+        },
+        {
+          "column": "seed",
+          "dtype": "int64"
+        },
+        {
+          "column": "method",
+          "dtype": "str"
+        },
+        {
+          "column": "test_rows",
+          "dtype": "int64"
+        },
+        {
+          "column": "n_test",
+          "dtype": "int64"
+        },
+        {
+          "column": "accuracy",
+          "dtype": "float64"
+        },
+        {
+          "column": "recall_macro",
+          "dtype": "float64"
+        },
+        {
+          "column": "rare_recall",
+          "dtype": "float64"
+        },
+        {
+          "column": "worst_recall",
+          "dtype": "float64"
+        },
+        {
+          "column": "macro_f1",
+          "dtype": "float64"
+        }
+      ]
+    },
+    "capture_fresh_flat_window_summary.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_component_scope_v1\\capture_fresh_flat_window_summary.csv",
+      "rows": 10,
+      "sha256": "64bf90a31f85c1648a00020f4b6aac0c469a3fb9ce9f4ff3af24b392b27a1394",
+      "schema": [
+        {
+          "column": "method",
+          "dtype": "str"
+        },
+        {
+          "column": "metric",
+          "dtype": "str"
+        },
+        {
+          "column": "mean",
+          "dtype": "float64"
+        },
+        {
+          "column": "sample_sd_across_windows",
+          "dtype": "float64"
+        },
+        {
+          "column": "n_windows",
+          "dtype": "int64"
+        },
+        {
+          "column": "n_fitted_seeds",
+          "dtype": "int64"
+        },
+        {
+          "column": "inference",
+          "dtype": "str"
+        }
+      ]
+    },
+    "capture_method_registry.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_component_scope_v1\\capture_method_registry.csv",
+      "rows": 9,
+      "sha256": "e874c720f5f8b4c8dc6e69f4f3ed9a11231234c4c8318ace1c9759ed031d78aa",
+      "schema": [
+        {
+          "column": "original_extension_method",
+          "dtype": "str"
+        },
+        {
+          "column": "corrected_method",
+          "dtype": "str"
+        },
+        {
+          "column": "archive_key",
+          "dtype": "str"
+        },
+        {
+          "column": "actual_source_operation",
+          "dtype": "str"
+        },
+        {
+          "column": "official_fresh_flat_table_eligible",
+          "dtype": "bool"
+        },
+        {
+          "column": "common_flat_taxonomy_claim_eligible",
+          "dtype": "bool"
+        }
+      ]
+    },
+    "capture_original_hybrid_audit.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_component_scope_v1\\capture_original_hybrid_audit.csv",
+      "rows": 16,
+      "sha256": "6f0046d8f7ced334c11e86a0dbc174248e13eacf3397f3b3501b074710afb9e0",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "window",
+          "dtype": "str"
+        },
+        {
+          "column": "seed",
+          "dtype": "int64"
+        },
+        {
+          "column": "method",
+          "dtype": "str"
+        },
+        {
+          "column": "test_rows",
+          "dtype": "int64"
+        },
+        {
+          "column": "n_test",
+          "dtype": "int64"
+        },
+        {
+          "column": "accuracy",
+          "dtype": "float64"
+        },
+        {
+          "column": "recall_macro",
+          "dtype": "float64"
+        },
+        {
+          "column": "rare_recall",
+          "dtype": "float64"
+        },
+        {
+          "column": "worst_recall",
+          "dtype": "float64"
+        },
+        {
+          "column": "macro_f1",
+          "dtype": "float64"
+        },
+        {
+          "column": "original_extension_method",
+          "dtype": "str"
+        },
+        {
+          "column": "original_archive_key",
+          "dtype": "str"
+        },
+        {
+          "column": "publication_scope",
+          "dtype": "str"
+        }
+      ]
+    },
+    "common_flat_repair_coverage.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_component_scope_v1\\common_flat_repair_coverage.csv",
+      "rows": 4,
+      "sha256": "77797c91a43a12fe12f19d43c9ff36464431080eea001d337c93dafd51d4eed4",
+      "schema": [
+        {
+          "column": "window",
+          "dtype": "str"
+        },
+        {
+          "column": "computed_original_case_complete",
+          "dtype": "bool"
+        },
+        {
+          "column": "common_flat_repair_complete",
+          "dtype": "bool"
+        },
+        {
+          "column": "fresh_methods_complete",
+          "dtype": "int64"
+        },
+        {
+          "column": "required_reblends_unavailable",
+          "dtype": "int64"
+        },
+        {
+          "column": "incomplete_reason",
+          "dtype": "str"
+        }
+      ]
+    },
+    "endpoint_coverage.csv": {
+      "path": "<WORKSPACE>\\extensions\\capture_component_scope_v1\\endpoint_coverage.csv",
+      "rows": 5,
+      "sha256": "8d2e1d8ac1d829ee363e61c52aa96f41afc07fd2252675e896226ee438605e09",
+      "schema": [
+        {
+          "column": "endpoint",
+          "dtype": "str"
+        },
+        {
+          "column": "expected_units",
+          "dtype": "int64"
+        },
+        {
+          "column": "completed_units",
+          "dtype": "int64"
+        },
+        {
+          "column": "strong_control_evaluations_completed",
+          "dtype": "int64"
+        },
+        {
+          "column": "status",
+          "dtype": "str"
+        },
+        {
+          "column": "incomplete_reason",
+          "dtype": "str"
+        },
+        {
+          "column": "frozen_recompute",
+          "dtype": "bool"
+        },
+        {
+          "column": "result_csv",
+          "dtype": "str"
+        },
+        {
+          "column": "computed_original_units",
+          "dtype": "int64"
+        }
+      ]
+    }
+  },
+  "formal_capture_table": "<WORKSPACE>\\extensions\\capture_component_scope_v1\\capture_fresh_flat_results.csv",
+  "formal_capture_methods": [
+    "flat_xgb",
+    "flat_lgbm",
+    "flat_equal_blend",
+    "temperature_flat_blend",
+    "newton_flat_stacker"
+  ],
+  "original_hybrid_audit_only": "<WORKSPACE>\\extensions\\capture_component_scope_v1\\capture_original_hybrid_audit.csv",
+  "no_common_component_taxonomy_or_best_competitor_capture_claim": true,
+  "naming_resolution": {
+    "source_script": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\scripts\\run_sequential_window_drift_study.py",
+    "source_sha256": "9feb5508f97c3513051e14305e36272d57ffb228fed28ea51b01f878ef97fe31",
+    "documentation_and_code": "Module docstring: Methods without gates; lines 742-744: fixed .5 flat + .5 hierarchy",
+    "source_actual_operation": "fixed_half_flat_plus_half_hierarchy_for_real_cyclic_and_support",
+    "not_established": "A capture benefit gate cannot be inferred from the calibrated_* legacy ID",
+    "ordinary_archive_endpoint_uses_gate_but_is_not_this_capture_window_generator": true,
+    "corrected_audit_ids": [
+      "archived_flat_xgb",
+      "archived_taxonomy_control",
+      "archived_cyclic_control",
+      "archived_support_control"
+    ],
+    "formal_cyclic_gate_or_support_gate_created": false,
+    "historical_source_snapshot_at_fit_available": false
+  },
+  "review_facing_prose": [
+    "Four capture-order windows were evaluated, but the archived hierarchy composites and fresh flat controls do not share an identical fitted flat component. The common-component comparison is therefore withheld, not declared matched or complete.",
+    "Only the five internally consistent fresh flat arms are eligible for the revised capture table. The three archived hierarchy composites and archived flat remain separately available for audit, without cross-generation rankings.",
+    "Capture-window source code uses fixed equal mixtures for cyclic and support controls despite gate-like legacy identifiers. No capture gate result is established by those identifiers.",
+    "The cause of the approximately 2.3 percent old-versus-new flat hard-label disagreement is unresolved. Current nominal inputs, labels, weights and model settings match apart from thread count, but no historical as-fitted row/model fingerprint survives to establish component identity.",
+    "The four windows are dependent file-order proxies from one fitted seed, not four independent training replicates or timestamp-based temporal validation. No real edge hardware was used."
+  ],
+  "repair_requirements": [
+    "Locate original serialized estimators or independent original hierarchy probabilities with valid row/class/fit provenance",
+    "Otherwise, a separately authorized full matched hierarchy refit would be required; none was performed"
+  ],
+  "not_performed": [
+    "hierarchy refitting",
+    "flat refitting",
+    "2*oldblend-oldflat reconstruction",
+    "test-based tuning",
+    "window selection"
+  ]
+}

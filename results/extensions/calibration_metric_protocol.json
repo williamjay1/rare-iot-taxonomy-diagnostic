@@ -1,0 +1,27 @@
+{
+  "metric": "top-label expected calibration error",
+  "nbins": 10,
+  "bin_width": 0.1,
+  "bin_edges": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+  "intervals": "[0,0.1], (0.1,0.2], ..., (0.9,1.0]; right-closed, with zero included in the first bin",
+  "boundary_implementation": "np.digitize(confidence, np.linspace(0,1,nbins+1), right=True), clipped to valid zero-based bin indices",
+  "confidence": "maximum normalized probability across all fine classes",
+  "correctness": "argmax of the same probability row equals the true fine label",
+  "weighting": "each nonempty bin's absolute accuracy-confidence gap is weighted by that bin's row share",
+  "rare_row_ece": "same top-label calculation restricted to rows whose true fine label is in the fixed rare-class set; not rare-class-only probability normalization",
+  "frozen_probability_treatment": "all frozen float16 matrices are converted to float64 and renormalized consistently before metric computation",
+  "aggregation": "six seed-specific ECE values, arithmetic mean and sample standard deviation (ddof=1)",
+  "source_of_truth": "calibration_results.csv; calibration_summary.csv",
+  "table4_methods_in_order": ["flat_xgb", "flat_equal_blend", "temperature_flat_blend", "newton_flat_stacker", "real_taxonomy", "taxonomy_blend", "taxonomy_benefit_gate", "cyclic_gate", "support_matched_gate"],
+  "additional_available_method": "flat_lgbm",
+  "endpoint_scope": {
+    "calibration": "all ten available methods, all six seeds; includes all nine Table 4 arms and all three fitted gate variants",
+    "lofo": "classification and novelty endpoints do not currently report ECE; any derivative ECE calculation must use this explicit 10-bin protocol on saved probabilities",
+    "scarcity": "classification endpoints do not currently report ECE; any derivative ECE calculation must use this explicit 10-bin protocol on saved probabilities",
+    "capture_windows": "classification endpoint does not currently report ECE; any derivative ECE calculation must use this explicit 10-bin protocol. Reused legacy taxonomy controls retain hard labels only, so their ECE cannot be recovered from those checkpoints"
+  },
+  "calibrator_fit_role": "utility/calibration only; selection was reported only in the primary frozen comparisons",
+  "test_used_for_parameter_or_threshold_selection": false,
+  "training_parameters_changed_by_metric_metadata": false,
+  "no_real_edge_device_measurement": true
+}

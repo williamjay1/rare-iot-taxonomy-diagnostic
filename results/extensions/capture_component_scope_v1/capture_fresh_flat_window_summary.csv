@@ -1,0 +1,11 @@
+method,metric,mean,sample_sd_across_windows,n_windows,n_fitted_seeds,inference
+flat_equal_blend,macro_f1,0.6200496139092329,0.0018251994731236245,4,1,descriptive variation across four dependent windows; no confidence interval or independent-replicate test
+flat_equal_blend,rare_recall,0.5519809735382819,0.002976874377342832,4,1,descriptive variation across four dependent windows; no confidence interval or independent-replicate test
+flat_lgbm,macro_f1,0.6163461905882653,0.0028040533549886677,4,1,descriptive variation across four dependent windows; no confidence interval or independent-replicate test
+flat_lgbm,rare_recall,0.5491405546558996,0.004865986491544677,4,1,descriptive variation across four dependent windows; no confidence interval or independent-replicate test
+flat_xgb,macro_f1,0.6176177698996916,0.001690302362062556,4,1,descriptive variation across four dependent windows; no confidence interval or independent-replicate test
+flat_xgb,rare_recall,0.5501208546020577,0.001590361158943733,4,1,descriptive variation across four dependent windows; no confidence interval or independent-replicate test
+newton_flat_stacker,macro_f1,0.6382853850853476,0.0011904007707763014,4,1,descriptive variation across four dependent windows; no confidence interval or independent-replicate test
+newton_flat_stacker,rare_recall,0.5190840943460158,0.0011873418481100854,4,1,descriptive variation across four dependent windows; no confidence interval or independent-replicate test
+temperature_flat_blend,macro_f1,0.6200665592025087,0.0021415111185337137,4,1,descriptive variation across four dependent windows; no confidence interval or independent-replicate test
+temperature_flat_blend,rare_recall,0.5520479712077696,0.0035056064257322057,4,1,descriptive variation across four dependent windows; no confidence interval or independent-replicate test

@@ -1,0 +1,161 @@
+Process 36896: "<HOME>\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" -B <WORKSPACE>\harmonized\run_harmonized_refit.py
+Python v3.12.14 (<HOME>\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe)
+
+Thread 23924 (active): "MainThread"
+    __inner_predict_np2d (<LEGACY_PROJECT>\.venv\Lib\site-packages\lightgbm\basic.py:1320)
+        Arguments:
+            self: <_InnerPredictor at 0x1eb480488c0>
+            mat: <numpy.ndarray at 0x1eb4160fcf0>
+            start_iteration: 0
+            num_iteration: 0
+            predict_type: 0
+            preds: <numpy.ndarray at 0x1eb4160f450>
+        Locals:
+            data: <numpy.ndarray at 0x1eb4160edf0>
+            layout: 0
+            ptr_data: <LP_c_float at 0x1eb416cf050>
+            type_ptr_data: 0
+            _: <numpy.ndarray at 0x1eb4160edf0>
+            n_preds: 1715304
+            out_num_preds: <c_longlong at 0x1eb416cf4d0>
+    __pred_for_np2d (<LEGACY_PROJECT>\.venv\Lib\site-packages\lightgbm\basic.py:1361)
+        Arguments:
+            self: <_InnerPredictor at 0x1eb480488c0>
+            mat: <numpy.ndarray at 0x1eb4160fcf0>
+            start_iteration: 0
+            num_iteration: 0
+            predict_type: 0
+        Locals:
+            nrow: 285884
+    predict (<LEGACY_PROJECT>\.venv\Lib\site-packages\lightgbm\basic.py:1204)
+        Arguments:
+            self: <_InnerPredictor at 0x1eb480488c0>
+            data: <numpy.ndarray at 0x1eb4160fcf0>
+            start_iteration: 0
+            num_iteration: 0
+            raw_score: False
+            pred_leaf: False
+            pred_contrib: False
+            data_has_header: False
+            validate_features: False
+        Locals:
+            predict_type: 0
+    predict (<LEGACY_PROJECT>\.venv\Lib\site-packages\lightgbm\basic.py:4767)
+        Arguments:
+            self: <Booster at 0x1eb45dc7c50>
+            data: <numpy.ndarray at 0x1eb4160fcf0>
+            start_iteration: 0
+            num_iteration: 0
+            raw_score: False
+            pred_leaf: False
+            pred_contrib: False
+            data_has_header: False
+            validate_features: False
+        Locals:
+            kwargs: {"boosting_type": "gbdt", "colsample_bytree": 0.95, "learning_rate": 0.055, "max_depth": -1, "min_child_samples": 25, ...}
+            predictor: <_InnerPredictor at 0x1eb480488c0>
+    predict (<LEGACY_PROJECT>\.venv\Lib\site-packages\lightgbm\sklearn.py:1144)
+        Arguments:
+            self: <LGBMClassifier at 0x1eb45dc7fe0>
+            X: <numpy.ndarray at 0x1eb4160fcf0>
+            raw_score: False
+            start_iteration: 0
+            num_iteration: None
+            pred_leaf: False
+            pred_contrib: False
+            validate_features: False
+        Locals:
+            kwargs: {}
+            predict_params: {"boosting_type": "gbdt", "colsample_bytree": 0.95, "learning_rate": 0.055, "max_depth": -1, "min_child_samples": 25, ...}
+            alias: "raw_score"
+    predict_proba (<LEGACY_PROJECT>\.venv\Lib\site-packages\lightgbm\sklearn.py:1627)
+        Arguments:
+            self: <LGBMClassifier at 0x1eb45dc7fe0>
+            X: <numpy.ndarray at 0x1eb4160fcf0>
+            raw_score: False
+            start_iteration: 0
+            num_iteration: None
+            pred_leaf: False
+            pred_contrib: False
+            validate_features: False
+        Locals:
+            kwargs: {}
+    hierarchy_probabilities (<LEGACY_PROJECT>\scripts\run_ciciot_taxonomy_residual_fusion.py:176)
+        Arguments:
+            X: <numpy.ndarray at 0x1eb4160fcf0>
+            family_model: <LGBMClassifier at 0x1eb6aca4bc0>
+            family_encoder: <LabelEncoder at 0x1eb415eebd0>
+            fine_encoder: <LabelEncoder at 0x1eb6ac77c80>
+            label_to_family: {"DDoS-ACK_Fragmentation": "DDoS", "BenignTraffic": "Benign", "DNS_Spoofing": "Spoofing", ...}
+            local_models: {"Benign": (None, None, ["BenignTraffic"]), "BruteForce": (None, None, ["DictionaryBruteForce"]), "DDoS": (...), ...}
+        Locals:
+            family_probability: <numpy.ndarray at 0x1eb4160ec10>
+            fine_probability: <numpy.ndarray at 0x1eb4160eaf0>
+            family_id: 7
+            family_name: "Web-based"
+            model: <LGBMClassifier at 0x1eb45dc7fe0>
+            local_encoder: <LabelEncoder at 0x1eb45dc6d80>
+            labels: ["Backdoor_Malware", "BrowserHijacking", "CommandInjection", "SqlInjection", "Uploading_Attack", "XSS"]
+            conditional: <numpy.ndarray at 0x1eb4160ec70>
+            local_labels: ["DNS_Spoofing", "MITM-ArpSpoofing"]
+            local_id: 1
+            label: "MITM-ArpSpoofing"
+            fine_id: 22
+    predict_taxonomy (<LEGACY_PROJECT>\scripts\run_ciciot_calibrated_benefit_gate_confirmation.py:521)
+        Arguments:
+            frame: <DataFrame at 0x1eb4804ba10>
+            features: ["Header_Length", "Protocol Type", "Rate", "fin_flag_number", "syn_flag_number", "rst_flag_number", "psh_flag_number", ...]
+            family_model: <LGBMClassifier at 0x1eb6aca4bc0>
+            family_encoder: <LabelEncoder at 0x1eb415eebd0>
+            fine_encoder: <LabelEncoder at 0x1eb6ac77c80>
+            mapping: {"DDoS-ACK_Fragmentation": "DDoS", "BenignTraffic": "Benign", "DNS_Spoofing": "Spoofing", ...}
+            local_models: {"Benign": (None, None, ["BenignTraffic"]), "BruteForce": (None, None, ["DictionaryBruteForce"]), "DDoS": (...), ...}
+        Locals:
+            X: <numpy.ndarray at 0x1eb4160fcf0>
+    predict_taxonomy (<WORKSPACE>\harmonized\run_harmonized_refit.py:382)
+        Locals:
+            role: "test"
+            frame: <DataFrame at 0x1eb4804ba10>
+    checkpoint (<WORKSPACE>\harmonized\run_harmonized_refit.py:165)
+        Arguments:
+            path: <WindowsPath at 0x1eb415e7140>
+            builder: <function at 0x1eb41677600>
+        Locals:
+            meta: <WindowsPath at 0x1eb6ad12b20>
+            started: 685065.2109117
+    fit_seed (<WORKSPACE>\harmonized\run_harmonized_refit.py:386)
+        Arguments:
+            seed: <cell at 0x1eb6accc730>
+            fit: <cell at 0x1eb6ad21390>
+            utility: <DataFrame at 0x1eb4b755b50>
+            selection: <DataFrame at 0x1eb4b757ef0>
+            outer: <DataFrame at 0x1eb4804ba10>
+            class_support: <cell at 0x1eb4beecd90>
+            rare: <cell at 0x1eb4beeebc0>
+            encoder: <cell at 0x1eb4beec220>
+            features: <cell at 0x1eb4beee950>
+            proof: {"seed": 42, "development_rows": 1143869, "base_pool_rows_before_cap": 800674, "base_fit_rows_after_cap": 702664, ...}
+        Locals:
+            flat_seconds: 1131.0736135999905
+            predict_flat: <function at 0x1eb41676840>
+            flat_pred_seconds: 149.30323219997808
+            equal_name: "equal_flat_taxonomy_blend"
+            gate_name: "calibrated_taxonomy_benefit_gate"
+            build_taxonomy: <function at 0x1eb694bc720>
+            taxonomy_seconds: 197.11754190002102
+            predict_taxonomy: <function at 0x1eb41677600>
+    main (<WORKSPACE>\harmonized\run_harmonized_refit.py:519)
+        Locals:
+            parser: <ArgumentParser at 0x1eb695f3050>
+            args: <Namespace at 0x1eb6ac35490>
+            start: 683546.5302395
+            full: <DataFrame at 0x1eb6acf68d0>
+            features: ["Header_Length", "Protocol Type", "Rate", "fin_flag_number", "syn_flag_number", "rst_flag_number", "psh_flag_number", ...]
+            primary: {"purpose": "frozen calibrated benefit gate contingency", ...}
+            encoder: <LabelEncoder at 0x1eb6ac77c80>
+            cyc: {"Backdoor_Malware": "Spoofing", "BenignTraffic": "Mirai", "BrowserHijacking": "Mirai", "CommandInjection": "Mirai", ...}
+            shift: 12
+            seed: 42
+            values: (<DataFrame at 0x1eb6ac775f0>, <DataFrame at 0x1eb4b755b50>, <DataFrame at 0x1eb4b757ef0>, <DataFrame at 0x1eb4804ba10>, ...)
+            seed_start: 683561.6719849
+    <module> (<WORKSPACE>\harmonized\run_harmonized_refit.py:533)

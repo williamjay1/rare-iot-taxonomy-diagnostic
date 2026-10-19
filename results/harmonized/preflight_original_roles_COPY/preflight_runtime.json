@@ -1,0 +1,18 @@
+{
+  "elapsed_seconds": 73.02453419996891,
+  "seeds_requested": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "preflight_only": true,
+  "python": "<LEGACY_PROJECT>\\.venv\\Scripts\\python.exe",
+  "command": [
+    "<LEGACY_PROJECT>\\working\\ijismd_v15_closure_20261018\\harmonized\\run_harmonized_refit.py",
+    "--preflight-only"
+  ],
+  "finished_utc": "2026-10-18T15:00:20.844996+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "local_time": "2026-10-19T00:56:06+08:00",
+  "waiting_wrapper_restarted": 27868,
+  "only_idle_waiter_stopped": true,
+  "any_fit_process_stopped": false,
+  "seed": 44,
+  "previous_minimum_free_gib": 8,
+  "new_minimum_free_gib": 6,
+  "required_consecutive_checks": 2,
+  "check_interval_seconds": 60,
+  "observed_other_workers_peak_working_set_gib": [2.31, 2.41],
+  "observed_free_gib_before_restart": 6.13,
+  "capture_gate_unchanged_minimum_free_gib": 8,
+  "model_and_endpoint_config_changed": false,
+  "notes": "Restarted only verified idle PowerShell waiter after confirming no seed44 Python process or fit lease. Logs appended, no result removed. All future fits retain two model/numeric-pool threads. Selection-score retention changes use the same arithmetic and frozen probabilities; an exact legacy metric equivalence test covers thresholds, AUROC and recalls. No speedup is assumed in ETA."
+}

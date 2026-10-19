@@ -1,0 +1,42 @@
+{
+  "protocol_sha256": "281fe1b703e0d10802d73f2f05f9ce71b8841482b22b185f6f2634bc89a398de",
+  "rows": 75000,
+  "n_features": 39,
+  "n_classes": 3,
+  "ordered_X_sha256": "ed503e21fff86a5aa9a5a2bb2a8f5a17e914b7f863060804761d81c760c7573a",
+  "ordered_y_sha256": "a2c561b5c2d952863eff438e92c1bf699e5f22e52f68729a9833bb6269c767e6",
+  "kind": "local",
+  "map": "real",
+  "family": "Mirai",
+  "classes": [
+    "Mirai-greeth_flood",
+    "Mirai-greip_flood",
+    "Mirai-udpplain"
+  ],
+  "weight_exponent": 0.5,
+  "ordered_base_positions_sha256": "0c8b644e5aef4ffefcc095b38cd17fec9b65e32e06dec7aa86dcaadd37053178",
+  "ordered_weight_sha256": "416fd14c4c26356f673eb2c7ddc93327f8f9221689f6e662934745df954fccb6",
+  "parameters_repr": {
+    "boosting_type": "'gbdt'",
+    "class_weight": "None",
+    "colsample_bytree": "0.95",
+    "importance_type": "'split'",
+    "learning_rate": "0.055",
+    "max_depth": "-1",
+    "min_child_samples": "25",
+    "min_child_weight": "0.001",
+    "min_split_gain": "0.0",
+    "n_estimators": "380",
+    "n_jobs": "2",
+    "num_leaves": "127",
+    "objective": "'multiclass'",
+    "random_state": "20260729",
+    "reg_alpha": "0.02",
+    "reg_lambda": "1.5",
+    "subsample": "0.9",
+    "subsample_for_bin": "200000",
+    "subsample_freq": "0",
+    "verbosity": "-1"
+  },
+  "input_sha256": "792ffa0bef2280188011b2297facc4bf8c5713a22b4d4ebb9380cebcccc40f13"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "running",
+  "command": "<LEGACY_PROJECT>\\.venv\\Scripts\\python.exe -B <WORKSPACE>\\extensions\\scripts\\run_matched_extensions.py --phases lofo scarcity --seeds 42 --worker-only --lease-dir <WORKSPACE>\\extensions\\dispatch\\leases --dataset-cache-dir <WORKSPACE>\\extensions\\datasets --out-dir <WORKSPACE>\\extensions\\workers\\seed42",
+  "config_sha256": "363b512827ad871e7cce09fe76dbf503776ff113c6020762705dcbabc209f04f",
+  "n_jobs": 2,
+  "pid": 20192,
+  "worker_only": true,
+  "seeds": [
+    42
+  ]
+}

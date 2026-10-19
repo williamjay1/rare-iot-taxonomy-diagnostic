@@ -1,0 +1,42 @@
+{
+  "protocol_sha256": "281fe1b703e0d10802d73f2f05f9ce71b8841482b22b185f6f2634bc89a398de",
+  "rows": 75000,
+  "n_features": 39,
+  "n_classes": 3,
+  "ordered_X_sha256": "22a546a633ec720524b3d00bada077260712c2521730bba97f3718a66c6b77be",
+  "ordered_y_sha256": "a2c561b5c2d952863eff438e92c1bf699e5f22e52f68729a9833bb6269c767e6",
+  "kind": "local",
+  "map": "support",
+  "family": "Mirai",
+  "classes": [
+    "DDoS-SYN_Flood",
+    "Recon-HostDiscovery",
+    "Recon-PortScan"
+  ],
+  "weight_exponent": 0.5,
+  "ordered_base_positions_sha256": "af266ae674f6a9bf701bed62296cab4783c05cd15a134990220ec13b58912a9b",
+  "ordered_weight_sha256": "416fd14c4c26356f673eb2c7ddc93327f8f9221689f6e662934745df954fccb6",
+  "parameters_repr": {
+    "boosting_type": "'gbdt'",
+    "class_weight": "None",
+    "colsample_bytree": "0.95",
+    "importance_type": "'split'",
+    "learning_rate": "0.055",
+    "max_depth": "-1",
+    "min_child_samples": "25",
+    "min_child_weight": "0.001",
+    "min_split_gain": "0.0",
+    "n_estimators": "380",
+    "n_jobs": "2",
+    "num_leaves": "127",
+    "objective": "'multiclass'",
+    "random_state": "20260729",
+    "reg_alpha": "0.02",
+    "reg_lambda": "1.5",
+    "subsample": "0.9",
+    "subsample_for_bin": "200000",
+    "subsample_freq": "0",
+    "verbosity": "-1"
+  },
+  "input_sha256": "db15f81a0e63517c720d916e59f0bdf776132780b124aa1b8763103882aff87c"
+}

@@ -1,0 +1,37 @@
+{
+  "status": "completed_and_verified",
+  "snapshot_utc": "2026-10-18T23:39:12.242306+00:00",
+  "refit_cells_completed": 39,
+  "refit_cells_expected": 39,
+  "capture_windows_completed": 4,
+  "calibration_units_completed": 6,
+  "alert_budget_units_completed": 6,
+  "total_units_completed": 55,
+  "total_units_expected": 55,
+  "seeds": {
+    "42": {
+      "completed_cells": 13,
+      "expected_cells": 13,
+      "worker_root": "<WORKSPACE>\\extensions\\workers\\seed42",
+      "stage": "between cells or queue finished; inspect run_status",
+      "worker_status": "requested_queue_finished"
+    },
+    "43": {
+      "completed_cells": 13,
+      "expected_cells": 13,
+      "worker_root": "<WORKSPACE>\\extensions\\workers\\seed43",
+      "stage": "between cells or queue finished; inspect run_status",
+      "worker_status": "requested_queue_finished"
+    },
+    "44": {
+      "completed_cells": 13,
+      "expected_cells": 13,
+      "worker_root": "<WORKSPACE>\\extensions\\workers\\seed44",
+      "stage": "between cells or queue finished; inspect run_status",
+      "worker_status": "requested_queue_finished"
+    }
+  },
+  "frozen_config_sha256": "363b512827ad871e7cce09fe76dbf503776ff113c6020762705dcbabc209f04f",
+  "n_jobs_per_worker": 2,
+  "no_worker_results_are_published_to_shared_root_until_final_merge": true
+}

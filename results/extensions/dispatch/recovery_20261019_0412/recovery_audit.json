@@ -1,0 +1,127 @@
+{
+  "snapshot_utc": "2026-10-18T20:13:35.6169950Z",
+  "classification": "Previous owner PIDs and resource waiter no longer exist; checkpoint-only queue recovery",
+  "old_pids": {
+    "42": 20192,
+    "44": 25640,
+    "43": 34500
+  },
+  "completed_refit_cells": 26,
+  "completed_markers": [
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed42\\cells\\lofo_seed42_BruteForce\\completed.json",
+      "sha256": "473DCBBCF64556DE5CB2CAF16E13967675F83E61932A2467D820549318B9C50C"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed42\\cells\\lofo_seed42_DDoS\\completed.json",
+      "sha256": "C9A6E37F13F0EE4070C995AA637549F6CD6D7EC2D86E479BC3C1BDC108320823"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed42\\cells\\lofo_seed42_DoS\\completed.json",
+      "sha256": "AEE553386B3FF1DB473FA19DCAB71ACD317A1278167D50D11980E62DAA3974D5"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed42\\cells\\lofo_seed42_Mirai\\completed.json",
+      "sha256": "2074B920A18E813FC18404438455542113B637100CB49DEB606B49F086C26444"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed42\\cells\\lofo_seed42_Recon\\completed.json",
+      "sha256": "B6297C4F33598215B0C6A7F3D29039C805BC878114C345F8FB4FDF9580F39B4D"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed42\\cells\\lofo_seed42_Spoofing\\completed.json",
+      "sha256": "CDE94A85B0ED35FF3D9A2DC5ACE01BFD59EFA5E252093EF8A30D31E11FC6318D"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed42\\cells\\lofo_seed42_Web_based\\completed.json",
+      "sha256": "B7EAD6887EAA54C6CE8F43C54DBCAB0CC499D136D753FBCB5D01091D7440CE36"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed42\\cells\\scarcity_seed42_10\\completed.json",
+      "sha256": "7FF44DC6B075CD4B5C9F932128E76EB11D0D5C7E4F649FF4381C9077FA0E8EEB"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed42\\cells\\scarcity_seed42_100\\completed.json",
+      "sha256": "C1EEC0EE2A8906EF62E07D02FB820321BC01130AB843496DC5F1BCEA2004D0F1"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed42\\cells\\scarcity_seed42_25\\completed.json",
+      "sha256": "EB9DD812C5F401E3468ADF28B1A1A23F4EA6D40512009A7A5669E00F4BAA3ED4"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed42\\cells\\scarcity_seed42_250\\completed.json",
+      "sha256": "4604C349AB2CC07A035C7915A6A90F3D8ECAAC3CDB749B1B0784F0D5FAF78A03"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed42\\cells\\scarcity_seed42_50\\completed.json",
+      "sha256": "546CA90C65308CBC5C64C1761DE052EB6059AA82F05336B824FD0770CB45CB77"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed43\\cells\\lofo_seed43_BruteForce\\completed.json",
+      "sha256": "691A64F4F6AF037AF747872FE5FC74A02F6F5E0F0EF09AFAF67C0DDAEDBD6B31"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed43\\cells\\lofo_seed43_DDoS\\completed.json",
+      "sha256": "D57B45B7FBC4BD876B863073566DFC8E0DA7929CA3BB3F49724C5E240C411F44"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed43\\cells\\lofo_seed43_DoS\\completed.json",
+      "sha256": "19D6EBDCCBD9DFF8D720E9320E3AD63892899D9360DC52C4F4F416D7A015A051"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed43\\cells\\lofo_seed43_Mirai\\completed.json",
+      "sha256": "19DB22853E0288DD163FD8B3620262EE877EC48166CF3A9EADED09BADC4F6BD5"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed43\\cells\\lofo_seed43_Recon\\completed.json",
+      "sha256": "003DE7E7F9138AEA35C30B968C910FEE71C659734B1C9232A4B75588E6141BE1"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed43\\cells\\lofo_seed43_Spoofing\\completed.json",
+      "sha256": "F1AA57131DE887CEE4E09443240AF4898F6BD3B0C93D5CC9D75E0DBAC40C6D64"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed43\\cells\\lofo_seed43_Web_based\\completed.json",
+      "sha256": "8A141A29CB1EDEB6765C4452094A446E3ABCF0FE78C4DC05D4666716BBE28550"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed43\\cells\\scarcity_seed43_10\\completed.json",
+      "sha256": "AFECE68DC74638441F2C6BD54B3B8DB1333F05D024C91E759E9523435B071D3D"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed43\\cells\\scarcity_seed43_25\\completed.json",
+      "sha256": "C2893815E766BFCA53CA1218E86F8BB8DA2CF3450869DBCA4D5266754602FA24"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed44\\cells\\lofo_seed44_BruteForce\\completed.json",
+      "sha256": "A40C95A6A09A2D34AEF6EE561EB7B7AAA4A336E308899F3BDF17E819814940DB"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed44\\cells\\lofo_seed44_DDoS\\completed.json",
+      "sha256": "7A1879CC290D92F1F7E6F90983B15078A167C4F14457200F136F2FF1175F1649"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed44\\cells\\lofo_seed44_DoS\\completed.json",
+      "sha256": "801D6877E31F0F066F20E93F778AC8C0B56A28F1094F76A26788DFAB5C5B5F22"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed44\\cells\\lofo_seed44_Mirai\\completed.json",
+      "sha256": "0C1FE3DC02CA4F440497744D1B6F39AA0D8FE539BCF0B3E291C641783BCF3334"
+    },
+    {
+      "path": "<WORKSPACE>\\extensions\\workers\\seed44\\cells\\lofo_seed44_Recon\\completed.json",
+      "sha256": "1A1B1C66C7E5D0A37CF94DB7D1DD4F811AFF6BA28D3D4525D3B2443CE6D195D4"
+    }
+  ],
+  "archived_stale_seed_leases": [
+    "<WORKSPACE>\\extensions\\dispatch\\recovery_20261019_0412\\seed42.stale.lock",
+    "<WORKSPACE>\\extensions\\dispatch\\recovery_20261019_0412\\seed44.stale.lock",
+    "<WORKSPACE>\\extensions\\dispatch\\recovery_20261019_0412\\seed43.stale.lock"
+  ],
+  "completed_cells_must_be_skipped": true,
+  "existing_model_checkpoints_must_be_loaded": true,
+  "scientific_configuration_changed": false,
+  "n_jobs_per_worker": 2,
+  "capture_minimum_free_gib": 8,
+  "unfinished_calibrator_optimizer_state_not_saved": true
+}

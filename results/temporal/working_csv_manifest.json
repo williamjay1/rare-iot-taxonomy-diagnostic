@@ -1,0 +1,6 @@
+{
+  "official_csv_sha1": "24854ca3072ab7c2ade9ebfb202345a666a94cfe",
+  "official_sha1_verified": true,
+  "normalized_sha256": "c80d02f387c30478c4265e30cf5b107e6a8d6a5223024c520d5aee7ff646777f",
+  "normalization": "remove CR bytes only from work copy; raw ZIP unchanged"
+}

@@ -1,0 +1,2 @@
+run_id,n,accuracy,f1_macro,recall_macro,rare_recall,worst_recall,pr_auc_macro,seed,n_features,training_seconds,inference_seconds,brier_multiclass,ece_top_label,rare_ece_top_label
+flat_weighted_xgboost,285884,0.9371248478403829,0.8520126866923349,0.8426400646774113,0.4843725775925564,0.288,0.8833408636922647,42,37,1131.0736135999905,149.30323219997808,0.08220388498724064,0.004460164958597556,0.09919624635246728

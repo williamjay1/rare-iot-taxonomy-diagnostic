@@ -1,0 +1,12 @@
+method,formal_table_arm,new_fit,fit_role,blend_weights,gate,flat_component_sha256
+flat_xgb,True,no; reused fresh checkpoint/probability,"base files 1-45, existing checkpoint",not applicable,False,c7793b0e211167f8d0e1b1281fbbbdcd25c2cc217f4d3ec30870b9773dc8ecb7
+flat_lgbm,True,no; reused fresh checkpoint/probability,"base files 1-45, existing checkpoint",not applicable,False,not applicable
+flat_equal_blend,True,no; reused fresh checkpoint/probability,"base files 1-45, existing checkpoint",0.5/0.5,False,not applicable
+temperature_flat_blend,True,no; reused fresh checkpoint/probability,"utility files 46-50, existing checkpoint",0.5/0.5,False,not applicable
+newton_flat_stacker,True,no; reused fresh checkpoint/probability,"utility files 46-50, existing checkpoint",not applicable,False,not applicable
+real_taxonomy,True,family/local LGBM only,base files 1-45,not applicable,False,not applicable
+cyclic_taxonomy,False,family/local LGBM only,base files 1-45,not applicable,False,not applicable
+support_matched_taxonomy,False,family/local LGBM only,base files 1-45,not applicable,False,not applicable
+taxonomy_blend,True,no; derived half mixture,not applicable: fixed arithmetic,0.5/0.5,False,c7793b0e211167f8d0e1b1281fbbbdcd25c2cc217f4d3ec30870b9773dc8ecb7
+cyclic_blend,True,no; derived half mixture,not applicable: fixed arithmetic,0.5/0.5,False,c7793b0e211167f8d0e1b1281fbbbdcd25c2cc217f4d3ec30870b9773dc8ecb7
+support_matched_blend,True,no; derived half mixture,not applicable: fixed arithmetic,0.5/0.5,False,c7793b0e211167f8d0e1b1281fbbbdcd25c2cc217f4d3ec30870b9773dc8ecb7

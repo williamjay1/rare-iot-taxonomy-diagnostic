@@ -1,0 +1,28 @@
+{
+  "cell_id": "lofo_seed42_BruteForce",
+  "completed_local_time": "2026-10-18T23:35:24+08:00",
+  "elapsed_seconds_this_invocation": 1946.7721720000263,
+  "fit_rows": 200000,
+  "calibration_rows": 170071,
+  "selection_rows": 169989,
+  "known_outer_rows": 60000,
+  "unknown_outer_rows": 2613,
+  "fine_classes": 33,
+  "result_method_rows": 9,
+  "n_jobs": 2,
+  "stacker_iterations": 12,
+  "calibration_and_stacker_fit_seconds": 482.29049190005753,
+  "group_overlap_all_role_pairs": 0,
+  "verification": "verify_extension_outputs.py --check-probabilities passed after completion; all nine method probability matrices finite, nonnegative and row-normalized",
+  "evidence": "cells/lofo_seed42_BruteForce/completed.json; results.csv; paired_predictions.npz",
+  "lofo_21_same_cell_rate_hours": 11.356171003333487,
+  "planning_estimate_hours": {
+    "lofo_21": [8, 12],
+    "scarcity_18": [4, 7],
+    "capture_4": [2, 4],
+    "total_from_queue_start": [14, 23]
+  },
+  "estimate_status": "provisional planning ranges, not confidence intervals or completed runtimes; only the first LOFO cell has a complete timing benchmark at this checkpoint",
+  "estimate_assumptions": "same two-thread limit and frozen parameters; other LOFO families remove different numbers of fine classes and rows; scarcity reduces base-fit rows but retains full calibration labels; capture refits one flat pair shared by four windows, then performs all four window inferences",
+  "training_command": "& '<LEGACY_PROJECT>\\.venv\\Scripts\\python.exe' -B -u '<WORKSPACE>\\extensions\\scripts\\run_matched_extensions.py' --phases lofo scarcity 2>&1 | Tee-Object -FilePath '<WORKSPACE>\\extensions\\matched_refit_run.log'"
+}

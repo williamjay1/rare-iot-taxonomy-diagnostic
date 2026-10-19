@@ -1,0 +1,670 @@
+{
+  "scope": "Static Python import closure only; no clean environment execution claim",
+  "root_scripts": 96,
+  "legacy_modules": 19,
+  "files": [
+    {
+      "file": "legacy_project\\scripts\\analyze_ciciot_agreement_gated_trf_confirmation.py",
+      "bytes": 18478,
+      "sha256": "ac9822800a3f6494ba1814757fab1893fcc5eae50e63b50a12a1f2cb1b7fb665"
+    },
+    {
+      "file": "legacy_project\\scripts\\prepare_ciciot2023_official_confirmation_samples.py",
+      "bytes": 16792,
+      "sha256": "10d5ae69830957d5b86276e7c4ec381d0a6c6ab6b65c35afd4131c0fc796a494"
+    },
+    {
+      "file": "legacy_project\\scripts\\run_ciciot2023_official_archive_confirmation.py",
+      "bytes": 40282,
+      "sha256": "ee0683e8eb2a6fe04ef5f03f5238e3d3478e20b68b9e7fb605330cf2937d6d4e"
+    },
+    {
+      "file": "legacy_project\\scripts\\run_ciciot_agreement_gated_trf_confirmation.py",
+      "bytes": 28205,
+      "sha256": "a5d7d497e299a0a9b4a13881525fc55abb8a18584ee6d2cd170b57fec71f3ca4"
+    },
+    {
+      "file": "legacy_project\\scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py",
+      "bytes": 43204,
+      "sha256": "d25dc08bc60086a24237f8d3b56b18b64571a24c619c8f3f0c0d18ff0b6db250"
+    },
+    {
+      "file": "legacy_project\\scripts\\run_ciciot_quick_experiments.py",
+      "bytes": 30153,
+      "sha256": "bd5b40e402129c59aa59b607855d104fb39c49c133971ebfc8d783d354fb93b3"
+    },
+    {
+      "file": "legacy_project\\scripts\\run_ciciot_support_matched_control_v2.py",
+      "bytes": 12792,
+      "sha256": "d3f5b35859597ae798b95b679354ddf1d162eea24bbf261161492443aba3bc48"
+    },
+    {
+      "file": "legacy_project\\scripts\\run_ciciot_taxonomy_residual_fusion.py",
+      "bytes": 24212,
+      "sha256": "1ae1ee885477b0af5659de87a1649817ba210508c31e04ce0d167c2f3504e8af"
+    },
+    {
+      "file": "legacy_project\\scripts\\run_jit_random_pseudo_taxonomy_null.py",
+      "bytes": 33731,
+      "sha256": "00843c90fcdebde44c4aaddc585c124838366d4c9622cb8617facd0636bdfbdb"
+    },
+    {
+      "file": "legacy_project\\scripts\\run_sequential_window_drift_study.py",
+      "bytes": 40073,
+      "sha256": "9feb5508f97c3513051e14305e36272d57ffb228fed28ea51b01f878ef97fe31"
+    },
+    {
+      "file": "legacy_project\\scripts\\screen_ciciot_residual_gate_variants.py",
+      "bytes": 13978,
+      "sha256": "923fdee96a809680f4ca41ee58afdbcb9574709e1061daafe406f06984a7259e"
+    },
+    {
+      "file": "legacy_project\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_engineering_flat_benchmark.py",
+      "bytes": 11560,
+      "sha256": "37dc6ca4272b9fb99c3720b926e6b331b9e42306e7d1971a56d7053fc9a21637"
+    },
+    {
+      "file": "legacy_project\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_flat_comparators.py",
+      "bytes": 26041,
+      "sha256": "bc76f1c142d9edb63e01746bd46d9ea69802fd0bc96426e97d3dd3492d8a5162"
+    },
+    {
+      "file": "legacy_project\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+      "bytes": 11625,
+      "sha256": "f09ce7cad5c806a5042fc1615d20ea5fb144dd7289aa0f0403a2f7b6473cf7bb"
+    },
+    {
+      "file": "legacy_project\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_pseudo_taxonomy.py",
+      "bytes": 20319,
+      "sha256": "cc9d3ca8b6480c78477366fa6d09297f1791cf64b3875e1feed48b3fae1b70d1"
+    },
+    {
+      "file": "legacy_project\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_iotid20_conflict_rule_sensitivity.py",
+      "bytes": 16652,
+      "sha256": "be00cb9267227cefc0cde33255cc9c18dabeafc8d3bc9a781edd56f2ffaa5741"
+    },
+    {
+      "file": "legacy_project\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_flat_comparators.py",
+      "bytes": 26041,
+      "sha256": "bc76f1c142d9edb63e01746bd46d9ea69802fd0bc96426e97d3dd3492d8a5162"
+    },
+    {
+      "file": "legacy_project\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+      "bytes": 11625,
+      "sha256": "f09ce7cad5c806a5042fc1615d20ea5fb144dd7289aa0f0403a2f7b6473cf7bb"
+    },
+    {
+      "file": "legacy_project\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_pseudo_taxonomy.py",
+      "bytes": 20319,
+      "sha256": "cc9d3ca8b6480c78477366fa6d09297f1791cf64b3875e1feed48b3fae1b70d1"
+    }
+  ],
+  "import_edges": [
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_engineering_flat_benchmark.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_engineering_flat_benchmark.py",
+      "module": "run_ciciot_calibrated_benefit_gate_confirmation",
+      "source": "scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_engineering_flat_benchmark.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_ciciot_taxonomy_residual_fusion.py",
+      "module": "run_ciciot_quick_experiments",
+      "source": "scripts\\run_ciciot_quick_experiments.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py",
+      "module": "run_ciciot_support_matched_control_v2",
+      "source": "scripts\\run_ciciot_support_matched_control_v2.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_ciciot_support_matched_control_v2.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_ciciot_support_matched_control_v2.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_ciciot_agreement_gated_trf_confirmation.py",
+      "module": "run_ciciot_quick_experiments",
+      "source": "scripts\\run_ciciot_quick_experiments.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_ciciot_agreement_gated_trf_confirmation.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_ciciot_agreement_gated_trf_confirmation.py",
+      "module": "screen_ciciot_residual_gate_variants",
+      "source": "scripts\\screen_ciciot_residual_gate_variants.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\screen_ciciot_residual_gate_variants.py",
+      "module": "run_ciciot_quick_experiments",
+      "source": "scripts\\run_ciciot_quick_experiments.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\screen_ciciot_residual_gate_variants.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_iotid20_conflict_rule_sensitivity.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_iotid20_conflict_rule_sensitivity.py",
+      "module": "run_ciciot_calibrated_benefit_gate_confirmation",
+      "source": "scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_iotid20_conflict_rule_sensitivity.py",
+      "module": "run_ciciot_support_matched_control_v2",
+      "source": "scripts\\run_ciciot_support_matched_control_v2.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_iotid20_conflict_rule_sensitivity.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\pseudo_null\\run_expanded_reference.py",
+      "module": "run_v10_grouped_pseudo_taxonomy",
+      "source": "working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_pseudo_taxonomy.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\pseudo_null\\run_expanded_reference.py",
+      "module": "run_v10_grouped_pseudo_taxonomy",
+      "source": "working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_pseudo_taxonomy.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_pseudo_taxonomy.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_pseudo_taxonomy.py",
+      "module": "run_ciciot_calibrated_benefit_gate_confirmation",
+      "source": "scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_pseudo_taxonomy.py",
+      "module": "run_jit_random_pseudo_taxonomy_null",
+      "source": "scripts\\run_jit_random_pseudo_taxonomy_null.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_pseudo_taxonomy.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_pseudo_taxonomy.py",
+      "module": "run_ciciot_calibrated_benefit_gate_confirmation",
+      "source": "scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_pseudo_taxonomy.py",
+      "module": "run_jit_random_pseudo_taxonomy_null",
+      "source": "scripts\\run_jit_random_pseudo_taxonomy_null.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\temporal\\run_temporal_models.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\temporal\\run_temporal_models.py",
+      "module": "run_ciciot_calibrated_benefit_gate_confirmation",
+      "source": "scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\temporal\\run_temporal_models.py",
+      "module": "run_ciciot_support_matched_control_v2",
+      "source": "scripts\\run_ciciot_support_matched_control_v2.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\temporal\\run_temporal_models.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\temporal\\run_temporal_models.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "source": "working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\temporal\\run_temporal_models.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "source": "working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\temporal\\run_temporal_models.py",
+      "module": "run_v10_grouped_newton_flat_stacker",
+      "source": "working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\temporal\\run_temporal_models.py",
+      "module": "run_v10_grouped_newton_flat_stacker",
+      "source": "working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+      "module": "run_ciciot_calibrated_benefit_gate_confirmation",
+      "source": "scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "source": "working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "source": "working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+      "module": "run_ciciot_calibrated_benefit_gate_confirmation",
+      "source": "scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "source": "working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "source": "working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_flat_comparators.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_flat_comparators.py",
+      "module": "run_ciciot_calibrated_benefit_gate_confirmation",
+      "source": "scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_flat_comparators.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_flat_comparators.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_flat_comparators.py",
+      "module": "run_ciciot_calibrated_benefit_gate_confirmation",
+      "source": "scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_flat_comparators.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\external_grouped\\run_reference_models.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\external_grouped\\run_reference_models.py",
+      "module": "run_ciciot_calibrated_benefit_gate_confirmation",
+      "source": "scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\external_grouped\\run_reference_models.py",
+      "module": "run_ciciot_support_matched_control_v2",
+      "source": "scripts\\run_ciciot_support_matched_control_v2.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\external_grouped\\run_reference_models.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\external_grouped\\run_reference_models.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "source": "working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\external_grouped\\run_reference_models.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "source": "working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\external_grouped\\run_reference_models.py",
+      "module": "run_v10_grouped_newton_flat_stacker",
+      "source": "working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\external_grouped\\run_reference_models.py",
+      "module": "run_v10_grouped_newton_flat_stacker",
+      "source": "working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\standards\\run_standards_control.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\standards\\run_standards_control.py",
+      "module": "run_ciciot_calibrated_benefit_gate_confirmation",
+      "source": "scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\standards\\run_standards_control.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\extensions\\scripts\\run_matched_extensions.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\extensions\\scripts\\run_matched_extensions.py",
+      "module": "run_ciciot_calibrated_benefit_gate_confirmation",
+      "source": "scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\extensions\\scripts\\run_matched_extensions.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\extensions\\scripts\\run_matched_extensions.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "source": "working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\extensions\\scripts\\run_matched_extensions.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "source": "working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\extensions\\scripts\\run_matched_extensions.py",
+      "module": "run_v10_grouped_newton_flat_stacker",
+      "source": "working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\extensions\\scripts\\run_matched_extensions.py",
+      "module": "run_v10_grouped_newton_flat_stacker",
+      "source": "working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\extensions\\scripts\\run_capture_controls.py",
+      "module": "prepare_ciciot2023_official_confirmation_samples",
+      "source": "scripts\\prepare_ciciot2023_official_confirmation_samples.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\extensions\\scripts\\run_capture_controls.py",
+      "module": "run_ciciot2023_official_archive_confirmation",
+      "source": "scripts\\run_ciciot2023_official_archive_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_ciciot2023_official_archive_confirmation.py",
+      "module": "prepare_ciciot2023_official_confirmation_samples",
+      "source": "scripts\\prepare_ciciot2023_official_confirmation_samples.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_ciciot2023_official_archive_confirmation.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_ciciot2023_official_archive_confirmation.py",
+      "module": "run_ciciot_calibrated_benefit_gate_confirmation",
+      "source": "scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_ciciot2023_official_archive_confirmation.py",
+      "module": "run_ciciot_support_matched_control_v2",
+      "source": "scripts\\run_ciciot_support_matched_control_v2.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_ciciot2023_official_archive_confirmation.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\prepare_ciciot2023_official_confirmation_samples.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\extensions\\scripts\\run_capture_common_flat.py",
+      "module": "run_ciciot_support_matched_control_v2",
+      "source": "scripts\\run_ciciot_support_matched_control_v2.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\extensions\\scripts\\diagnose_capture_component_scope.py",
+      "module": "run_sequential_window_drift_study",
+      "source": "scripts\\run_sequential_window_drift_study.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_sequential_window_drift_study.py",
+      "module": "analyze_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\analyze_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_sequential_window_drift_study.py",
+      "module": "prepare_ciciot2023_official_confirmation_samples",
+      "source": "scripts\\prepare_ciciot2023_official_confirmation_samples.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_sequential_window_drift_study.py",
+      "module": "run_ciciot2023_official_archive_confirmation",
+      "source": "scripts\\run_ciciot2023_official_archive_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_sequential_window_drift_study.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_sequential_window_drift_study.py",
+      "module": "run_ciciot_calibrated_benefit_gate_confirmation",
+      "source": "scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_sequential_window_drift_study.py",
+      "module": "run_ciciot_support_matched_control_v2",
+      "source": "scripts\\run_ciciot_support_matched_control_v2.py"
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\scripts\\run_sequential_window_drift_study.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\harmonized\\run_harmonized_refit.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\harmonized\\run_harmonized_refit.py",
+      "module": "run_ciciot_calibrated_benefit_gate_confirmation",
+      "source": "scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\harmonized\\run_harmonized_refit.py",
+      "module": "run_ciciot_support_matched_control_v2",
+      "source": "scripts\\run_ciciot_support_matched_control_v2.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\harmonized\\run_harmonized_refit.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\harmonized\\run_harmonized_refit.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "source": "working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\harmonized\\run_harmonized_refit.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "source": "working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\harmonized\\run_harmonized_refit.py",
+      "module": "run_v10_grouped_newton_flat_stacker",
+      "source": "working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\harmonized\\run_harmonized_refit.py",
+      "module": "run_v10_grouped_newton_flat_stacker",
+      "source": "working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\harmonized\\audit_projection_collisions.py",
+      "module": "run_ciciot_agreement_gated_trf_confirmation",
+      "source": "scripts\\run_ciciot_agreement_gated_trf_confirmation.py"
+    },
+    {
+      "importer": "<WORKSPACE>\\harmonized\\audit_projection_collisions.py",
+      "module": "run_ciciot_taxonomy_residual_fusion",
+      "source": "scripts\\run_ciciot_taxonomy_residual_fusion.py"
+    }
+  ],
+  "path_ambiguities": [
+    {
+      "importer": "<WORKSPACE>\\pseudo_null\\run_expanded_reference.py",
+      "module": "run_v10_grouped_pseudo_taxonomy",
+      "candidates": [
+        "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_pseudo_taxonomy.py",
+        "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_pseudo_taxonomy.py"
+      ]
+    },
+    {
+      "importer": "<WORKSPACE>\\temporal\\run_temporal_models.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "candidates": [
+        "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_flat_comparators.py",
+        "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+      ]
+    },
+    {
+      "importer": "<WORKSPACE>\\temporal\\run_temporal_models.py",
+      "module": "run_v10_grouped_newton_flat_stacker",
+      "candidates": [
+        "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+        "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py"
+      ]
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "candidates": [
+        "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_flat_comparators.py",
+        "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+      ]
+    },
+    {
+      "importer": "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "candidates": [
+        "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_flat_comparators.py",
+        "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+      ]
+    },
+    {
+      "importer": "<WORKSPACE>\\external_grouped\\run_reference_models.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "candidates": [
+        "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_flat_comparators.py",
+        "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+      ]
+    },
+    {
+      "importer": "<WORKSPACE>\\external_grouped\\run_reference_models.py",
+      "module": "run_v10_grouped_newton_flat_stacker",
+      "candidates": [
+        "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+        "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py"
+      ]
+    },
+    {
+      "importer": "<WORKSPACE>\\extensions\\scripts\\run_matched_extensions.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "candidates": [
+        "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_flat_comparators.py",
+        "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+      ]
+    },
+    {
+      "importer": "<WORKSPACE>\\extensions\\scripts\\run_matched_extensions.py",
+      "module": "run_v10_grouped_newton_flat_stacker",
+      "candidates": [
+        "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+        "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py"
+      ]
+    },
+    {
+      "importer": "<WORKSPACE>\\harmonized\\run_harmonized_refit.py",
+      "module": "run_v10_grouped_flat_comparators",
+      "candidates": [
+        "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_flat_comparators.py",
+        "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_flat_comparators.py"
+      ]
+    },
+    {
+      "importer": "<WORKSPACE>\\harmonized\\run_harmonized_refit.py",
+      "module": "run_v10_grouped_newton_flat_stacker",
+      "candidates": [
+        "<LEGACY_PROJECT>\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py",
+        "<LEGACY_PROJECT>\\working\\ijismd_v11_mechanical_completion_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py"
+      ]
+    }
+  ],
+  "unresolved_project_imports": []
+}

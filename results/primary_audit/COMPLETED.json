@@ -1,0 +1,9 @@
+{
+  "contrasts": 4,
+  "metric_rows": 8,
+  "seeds": 6,
+  "replicates": 5000,
+  "block_rows": 2000,
+  "all_metric_code_checks_passed": true,
+  "source_protocol_sha256": "dacb0ba82f6a265abe1e9ce01c13ebc6003a9e9d7bc9cf99b77d0037e347c012"
+}

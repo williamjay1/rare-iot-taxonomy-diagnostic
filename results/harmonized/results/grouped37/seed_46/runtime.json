@@ -1,0 +1,12 @@
+{
+  "wall_seconds_this_invocation": 4170.597147800028,
+  "worker_total_seconds_including_setup": 4187.928222500021,
+  "started_utc": "2026-10-18T21:50:56.547484+00:00",
+  "finished_utc": "2026-10-18T23:00:44.474949+00:00",
+  "first_started_utc": "2026-10-18T21:50:56.547484+00:00",
+  "prior_attempt_records": [],
+  "execution_mode": "exclusively_leased_single_seed_worker",
+  "pid": 22392,
+  "wall_seconds_first_roles_to_completion_including_recovery_gap": 4170.695777,
+  "worker_wall_seconds_first_start_to_finish_including_gaps": 4187.928989
+}

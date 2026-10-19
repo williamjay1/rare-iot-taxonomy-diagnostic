@@ -1,0 +1,42 @@
+{
+  "maps": {
+    "real": {
+      "Benign": "Benign",
+      "DoS": "Availability",
+      "DDoS": "Availability",
+      "Injection": "InputManipulation",
+      "XSS": "InputManipulation",
+      "MITM": "InterceptionCredential",
+      "Password": "InterceptionCredential",
+      "Backdoor": "PersistenceImpact",
+      "Ransomware": "PersistenceImpact",
+      "Scanning": "Reconnaissance"
+    },
+    "cyclic": {
+      "Backdoor": "Reconnaissance",
+      "Benign": "InputManipulation",
+      "DDoS": "PersistenceImpact",
+      "DoS": "Benign",
+      "Injection": "Availability",
+      "MITM": "Availability",
+      "Password": "InputManipulation",
+      "Ransomware": "InterceptionCredential",
+      "Scanning": "InterceptionCredential",
+      "XSS": "PersistenceImpact"
+    },
+    "support": {
+      "Backdoor": "Availability",
+      "Benign": "PersistenceImpact",
+      "DDoS": "InputManipulation",
+      "DoS": "InterceptionCredential",
+      "Injection": "Availability",
+      "MITM": "PersistenceImpact",
+      "Password": "Reconnaissance",
+      "Ransomware": "InterceptionCredential",
+      "Scanning": "InputManipulation",
+      "XSS": "Benign"
+    }
+  },
+  "cyclic_shift": 2,
+  "constructed_from_fit_only": true
+}

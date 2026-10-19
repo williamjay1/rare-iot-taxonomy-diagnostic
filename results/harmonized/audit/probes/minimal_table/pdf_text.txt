@@ -1,0 +1,10 @@
+Mapping Macro F1 Rare recall Scope
+Weighted flat 0.8739 0.5511 Six holdouts
+Real blend 0.8957 0.6338 Six holdouts
+Cyclic gate 0.8857 0.5894 Six holdouts
+Support gate 0.8807 0.5640 Six holdouts
+ATT&CK blend 0.8958 0.6334 Six holdouts
+ATT&CK cyclic 0.8799 0.5577 Six holdouts
+Random pseudo maps 0.8793 0.5534 24 nested maps
+KMeans pseudo maps 0.8872 0.5866 18 nested maps
+Gaussian mixture maps 0.8814 0.5644 18 nested maps

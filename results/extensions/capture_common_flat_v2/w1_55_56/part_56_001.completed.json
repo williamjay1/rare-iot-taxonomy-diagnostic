@@ -1,0 +1,126 @@
+{
+  "protocol_sha256": "281fe1b703e0d10802d73f2f05f9ce71b8841482b22b185f6f2634bc89a398de",
+  "rows": 103730,
+  "ordered_y_sha256": "9c7463e7391e0adb42b319e73e9cf1d0ef988bc87452f723b44dd68b89c0cccd",
+  "input_source": {
+    "parquet": "<WORKSPACE>\\extensions\\capture\\w1_55_56\\part_56_001.parquet",
+    "sha256": "839e411c682721bfe0b5f68bdf782f3bc0500966fb210c3a5103668d4643ecdc",
+    "fresh_predictions": "<WORKSPACE>\\extensions\\capture\\w1_55_56\\part_56_001.npz",
+    "fresh_prediction_sha256": "8ef3b8d1232499fdf537ef94dc46e3eb64576ac1f42e9cf4624dfdccf24046a3"
+  },
+  "prediction_file_sha256": "485691749517ce2ac752cfe87e42f6f1ee8a5bba4e8794db2b67f7ea68218899",
+  "probabilities": {
+    "flat_xgb": {
+      "shape": [
+        103730,
+        34
+      ],
+      "dtype": "float64",
+      "max_row_sum_error": 4.440892098500626e-16,
+      "sha256": "1ff5e598c19fd3f876bb38a7db7afbe6038fa00da733555fb493e528fdf5536b",
+      "hard_sha256": "adbfbf28a9fdc5386118df80be4ee6761f4ffefa7c7ef9e2886bd75f23b6d7c5"
+    },
+    "flat_lgbm": {
+      "shape": [
+        103730,
+        34
+      ],
+      "dtype": "float64",
+      "max_row_sum_error": 4.440892098500626e-16,
+      "sha256": "09a5c1dd3d2efb3870ee9e3d4cc42f252b15f7bc02839d802921b696eb966c68",
+      "hard_sha256": "478b9d7a06be54e25312d9b350299b0c6ebc66841ca7de274a4038b23b6f9d67"
+    },
+    "flat_equal_blend": {
+      "shape": [
+        103730,
+        34
+      ],
+      "dtype": "float64",
+      "max_row_sum_error": 4.440892098500626e-16,
+      "sha256": "382f06b877e3a7be545832f64fd5a6494e5e92f20a4abe82bc9a18d91ed4c335",
+      "hard_sha256": "f3b4151550c7acf9b8dcfba20edfe1e78c8043bad81c61068c94d89e0051cc68"
+    },
+    "temperature_flat_blend": {
+      "shape": [
+        103730,
+        34
+      ],
+      "dtype": "float32",
+      "max_row_sum_error": 2.384185791015625e-07,
+      "sha256": "8f837e53e332126920d6d04735eb612d026b40b62baa2f532d5b20b5a2533e0d",
+      "hard_sha256": "bcdf47f803bd985576ac2e18a9f6c951b63418f7ff93bf863a2f8bb0a7c919fd"
+    },
+    "newton_flat_stacker": {
+      "shape": [
+        103730,
+        34
+      ],
+      "dtype": "float32",
+      "max_row_sum_error": 2.384185791015625e-07,
+      "sha256": "304633b4d9db0d96582d503828e0f165ef847f7af2a247525c84c041940f464e",
+      "hard_sha256": "6bf3613d6c0a48a0a62a445be03f5eef54f56584cc5eb3e3e0b28ff4a5d91b13"
+    },
+    "real_taxonomy": {
+      "shape": [
+        103730,
+        34
+      ],
+      "dtype": "float64",
+      "max_row_sum_error": 4.440892098500626e-16,
+      "sha256": "b71ef3533db28f70f7a14a90b9264cd7428d3315449889199e381cbe827ca29a",
+      "hard_sha256": "2c1d8037fb22852a23c74e6fd3df4f33ab0d035aa111a3187433ab69c66ae41a"
+    },
+    "taxonomy_blend": {
+      "shape": [
+        103730,
+        34
+      ],
+      "dtype": "float64",
+      "max_row_sum_error": 4.440892098500626e-16,
+      "sha256": "0be2b035b625e374b8a0f7b35fc3c71d8764f8d9ecd06c0df4c08474655fe727",
+      "hard_sha256": "ee5ca9845102b97051e0e05f95cf76c89a5a663ac7220e53617e2714468a883b"
+    },
+    "cyclic_taxonomy": {
+      "shape": [
+        103730,
+        34
+      ],
+      "dtype": "float64",
+      "max_row_sum_error": 4.440892098500626e-16,
+      "sha256": "662505ada2a68cdc7ae0acc31060634e8fabb5edb64ea2882ca2a0d82fe16778",
+      "hard_sha256": "6264e68a3fcecb2178ff4045ef51f8f4ee0075c9ffa8b80623660c3cd767835e"
+    },
+    "cyclic_blend": {
+      "shape": [
+        103730,
+        34
+      ],
+      "dtype": "float64",
+      "max_row_sum_error": 4.440892098500626e-16,
+      "sha256": "6160f1e7fadc18cafbac1e2b1b1e0b507766f793a6681b04cee93a521464f57d",
+      "hard_sha256": "a34623a852a766bc394ce2c644d30571ac69d4ef55294f4492913a0b3b961e4b"
+    },
+    "support_matched_taxonomy": {
+      "shape": [
+        103730,
+        34
+      ],
+      "dtype": "float64",
+      "max_row_sum_error": 4.440892098500626e-16,
+      "sha256": "e6de17d67fa83e0e9f44a93e6d3ff96dac047cf94cd1ed1fa940c7097ed0f0fa",
+      "hard_sha256": "43ee02df6656c2d1ee8a46ddacaed0f309ac03093c14631e43e3ae8f68b55f1f"
+    },
+    "support_matched_blend": {
+      "shape": [
+        103730,
+        34
+      ],
+      "dtype": "float64",
+      "max_row_sum_error": 4.440892098500626e-16,
+      "sha256": "89b1520ae140da2411325996c665783733de74e84d8afa7d33bf4ca83c5dc37e",
+      "hard_sha256": "42344586509e4c42c0e1171975918643239abaffbd45163072a22d8fef65c101"
+    }
+  },
+  "elapsed_seconds": 421.5246616000077,
+  "finished_utc": "2026-10-19T00:40:01.268354+00:00"
+}

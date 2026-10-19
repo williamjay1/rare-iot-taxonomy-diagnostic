@@ -1,0 +1,20 @@
+{
+  "protocol_sha256": "9f93204a4a76ab8e86e6ed7ad425bc1382d2873afd625a66082690e3d2685967",
+  "audit": {
+    "raw_rows": 1498620,
+    "crossed_rows": 873592,
+    "conflict_rows": 459729,
+    "repeated_rows": 513965,
+    "kept_rows": 622816
+  },
+  "ordered_y_sha256": "6f2293affc2c2d23a0a128d5eb6186f6b64e34dc4731322de9ea2767023e938a",
+  "parts": [
+    "part_55_000.parquet",
+    "part_55_001.parquet",
+    "part_55_002.parquet",
+    "part_55_003.parquet",
+    "part_56_000.parquet",
+    "part_56_001.parquet",
+    "part_56_002.parquet"
+  ]
+}

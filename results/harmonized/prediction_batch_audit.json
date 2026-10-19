@@ -1,0 +1,69 @@
+{
+  "probe_only": true,
+  "rows": 8192,
+  "n_features": 37,
+  "n_jobs": 2,
+  "fit_performed": false,
+  "labels_read": false,
+  "production_changes": "None; current running process is unchanged",
+  "original_C_contiguous": false,
+  "original_F_contiguous": true,
+  "input_float32_sha256": "7a054b82ec6270fc1a7adb4a579472f6ce0410a179535a78e8ee4e0c5fbb3f64",
+  "checkpoint": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\taxonomy_real.joblib",
+  "checkpoint_sha256_before_after": "6accfa3e0851c69a92afd96de63476132a77f894ad7f5f031915aacde3c8ab5f",
+  "estimators_parameters_unchanged": true,
+  "timings": [
+    {
+      "layout": "F",
+      "batch_rows": 8192,
+      "seconds": 20.554482400068082,
+      "exact_array_equality": [
+        true,
+        true
+      ],
+      "max_absolute_difference": [
+        0.0,
+        0.0
+      ],
+      "probability_sha256": [
+        "dae5964df08cc994bda771a7ce241a7ebed1ee1fe29185ed6f0b41f58f86bcd6",
+        "0957270c3b5e2e19bd80b2bc91feed73ceca6e52649ffccff7387e0323dfd17f"
+      ]
+    },
+    {
+      "layout": "F",
+      "batch_rows": 2048,
+      "seconds": 20.25314819999039,
+      "exact_array_equality": [
+        true,
+        true
+      ],
+      "max_absolute_difference": [
+        0.0,
+        0.0
+      ],
+      "probability_sha256": [
+        "dae5964df08cc994bda771a7ce241a7ebed1ee1fe29185ed6f0b41f58f86bcd6",
+        "0957270c3b5e2e19bd80b2bc91feed73ceca6e52649ffccff7387e0323dfd17f"
+      ]
+    },
+    {
+      "layout": "F",
+      "batch_rows": 512,
+      "seconds": 18.886667000013404,
+      "exact_array_equality": [
+        true,
+        true
+      ],
+      "max_absolute_difference": [
+        0.0,
+        0.0
+      ],
+      "probability_sha256": [
+        "dae5964df08cc994bda771a7ce241a7ebed1ee1fe29185ed6f0b41f58f86bcd6",
+        "0957270c3b5e2e19bd80b2bc91feed73ceca6e52649ffccff7387e0323dfd17f"
+      ]
+    }
+  ],
+  "caveat": "Bounded read-only probe; not a full-role throughput benchmark"
+}

@@ -1,0 +1,35 @@
+{
+  "started_elapsed_seconds": 9601.176980699995,
+  "completed_at_utc": "2026-10-18T17:52:30.904738+00:00",
+  "parameters": {
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "outer_test_frac": 0.2,
+    "base_fraction": 0.7,
+    "gate_train_fraction": 0.15,
+    "gate_select_fraction": 0.15,
+    "majority_cap": 25000,
+    "benign_cap": 80000,
+    "local_trees": 380,
+    "blend_weight": 0.5,
+    "n_jobs": 2,
+    "wrong_solver_seconds": 120
+  },
+  "frozen_prepared_sha256": "a34ad868e1d645b08f6c9e1fedacce5741832d32b7e41f83278e621a34573dfb",
+  "package_versions": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "lightgbm": "4.6.0",
+    "xgboost": "3.3.0"
+  },
+  "uncertainty": "Six overlapping grouped random splits: report descriptive mean/SD; not six independent datasets or time-held-out cohorts.",
+  "cost_scope": "new hierarchy only; flat training/inference cost excluded because predictions reused; no physical-edge or energy experiment"
+}

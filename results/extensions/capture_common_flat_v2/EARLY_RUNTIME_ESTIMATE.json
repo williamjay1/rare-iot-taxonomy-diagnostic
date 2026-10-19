@@ -1,0 +1,19 @@
+{
+  "estimated_utc": "2026-10-19T00:12:07+00:00",
+  "status": "interim_estimate_not_completion",
+  "fitted_hierarchy_components": 21,
+  "expected_hierarchy_components": 21,
+  "completed_prediction_parts": 1,
+  "expected_prediction_parts": 28,
+  "completed_windows": 0,
+  "expected_windows": 4,
+  "first_prediction_part_rows": 103993,
+  "first_prediction_part_seconds": 436.136,
+  "all_window_rows": 2616495,
+  "remaining_rows_after_first_part": 2512502,
+  "remaining_prediction_hours_first_part_extrapolation": 2.93,
+  "remaining_total_hours_including_audit_estimate": [3, 4],
+  "assumptions": "Same two-thread worker and similar row throughput; no memory admission delay or external contention. Revise using later checkpoints. The earlier 20-45 minute estimate was too optimistic.",
+  "fit_scope": "Only the three hierarchy family/local bundles were newly fitted; existing fresh-flat and utility meta-model checkpoints are reused unchanged.",
+  "scientific_settings_changed_for_speed": false
+}

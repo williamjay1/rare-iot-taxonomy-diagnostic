@@ -1,0 +1,11 @@
+{
+  "protocol_sha256": "9f93204a4a76ab8e86e6ed7ad425bc1382d2873afd625a66082690e3d2685967",
+  "window": "w4_61_63",
+  "rows": 765487,
+  "method_rows": 9,
+  "ordered_y_sha256": "b81f54b21b6d235ef891f12e58901bfe8e238f104a75aad7c9c0f5c485161d83",
+  "flat_xgb_agreement_with_original": 0.9769323319664475,
+  "stacker_iterations": 17,
+  "xgb_temperature": 0.9759515557096741,
+  "lgbm_temperature": 1.0866930548494216
+}

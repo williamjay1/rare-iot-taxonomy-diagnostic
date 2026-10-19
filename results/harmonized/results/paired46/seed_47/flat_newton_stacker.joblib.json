@@ -1,0 +1,24 @@
+{
+  "sha256": "91b40eaca9723df8f738a3644d9233ca853563aa83a4020f4bebe910d0d2d70d",
+  "elapsed_seconds": 436.62661330006085,
+  "models": {
+    "type": "LogisticRegression",
+    "params": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": 0.0,
+      "max_iter": 100,
+      "n_jobs": null,
+      "penalty": "deprecated",
+      "random_state": 47,
+      "solver": "newton-cholesky",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    }
+  },
+  "saved_utc": "2026-10-19T01:37:34.534205+00:00"
+}

@@ -1,0 +1,60 @@
+{
+  "sha256": "a4ea6734441fca2e86cd84205f0fe696bb976fdd3b6721e96c44e054adcf65fc",
+  "elapsed_seconds": 8.59586339991074,
+  "models": {
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "params": {
+        "categorical_features": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "early_stopping": false,
+        "interaction_cst": null,
+        "l2_regularization": 0.5,
+        "learning_rate": 0.05,
+        "loss": "squared_error",
+        "max_bins": 255,
+        "max_depth": null,
+        "max_features": 1.0,
+        "max_iter": 150,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 50,
+        "monotonic_cst": null,
+        "n_iter_no_change": 10,
+        "quantile": null,
+        "random_state": 44,
+        "scoring": "loss",
+        "tol": 1e-07,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": false
+      }
+    },
+    "selection": {
+      "threshold": "-0.25",
+      "beta": "0.5",
+      "hierarchy_power": "1.0",
+      "objective": "0.8848070124583505",
+      "f1_macro": "0.8643852862775883",
+      "rare_recall": "0.510543154519056",
+      "worst_recall": "0.2866666666666667",
+      "accuracy": "0.9401749753740521",
+      "gate_active_rows": "4359.0",
+      "gate_active_fraction": "0.02540698386053262",
+      "changed_predictions": "2663.0",
+      "corrected_errors": "1009.0",
+      "introduced_errors": "638.0",
+      "net_corrected_errors": "371.0"
+    },
+    "utility_counts": {
+      "disagreement_rows": "5139",
+      "taxonomy_benefit_rows": "1592",
+      "taxonomy_harm_rows": "1710",
+      "both_wrong_rows": "1837"
+    }
+  },
+  "saved_utc": "2026-10-18T21:07:59.077484+00:00"
+}

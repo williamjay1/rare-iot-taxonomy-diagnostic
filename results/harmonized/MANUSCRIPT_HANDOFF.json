@@ -1,0 +1,4307 @@
+{
+  "completion": true,
+  "status": "COMPLETE_VERIFIED",
+  "physical_work_directory": "<WORKSPACE>\\harmonized",
+  "protocols": {
+    "paired46": {
+      "completion": true,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "completed_cells": 78,
+      "calibrated_flat_meta_controls_included": true,
+      "calibrated_flat_meta_control_ids": [
+        "flat_temperature_calibrated_blend",
+        "flat_newton_log_probability_stacker"
+      ],
+      "calibrated_flat_meta_control_scope": "Frozen utility-fit flat temperature and Newton controls are present",
+      "result_csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results_ece10.csv",
+      "original_15bin_result_csv": "<WORKSPACE>\\harmonized\\results\\paired46\\harmonized_results.csv",
+      "metric_schema": [
+        {
+          "field": "run_id",
+          "pandas_dtype": "str",
+          "definition": "Frozen method identifier; no test-based model selection"
+        },
+        {
+          "field": "n",
+          "pandas_dtype": "int64",
+          "definition": "Number of held-out outer-test rows"
+        },
+        {
+          "field": "accuracy",
+          "pandas_dtype": "float64",
+          "definition": "Fraction of outer-test rows classified correctly by argmax"
+        },
+        {
+          "field": "f1_macro",
+          "pandas_dtype": "float64",
+          "definition": "Macro F1 over the frozen fine-class universe"
+        },
+        {
+          "field": "recall_macro",
+          "pandas_dtype": "float64",
+          "definition": "Macro recall over the frozen fine-class universe"
+        },
+        {
+          "field": "rare_recall",
+          "pandas_dtype": "float64",
+          "definition": "Macro recall over fit-pool-defined rare fine classes"
+        },
+        {
+          "field": "worst_recall",
+          "pandas_dtype": "float64",
+          "definition": "Minimum per-class recall over the frozen fine-class universe"
+        },
+        {
+          "field": "pr_auc_macro",
+          "pandas_dtype": "float64",
+          "definition": "Macro one-vs-rest average precision, frozen reference implementation"
+        },
+        {
+          "field": "seed",
+          "pandas_dtype": "int64",
+          "definition": "Holdout seed; 42,43,44,45,46,47; not independent corpus replications"
+        },
+        {
+          "field": "n_features",
+          "pandas_dtype": "int64",
+          "definition": "37 shared predictors"
+        },
+        {
+          "field": "training_seconds",
+          "pandas_dtype": "float64",
+          "definition": "Composed method builder times; do not sum shared models. Missing for seed42 Newton because exact builder time was lost during metadata-only recovery"
+        },
+        {
+          "field": "inference_seconds",
+          "pandas_dtype": "float64",
+          "definition": "Composed utility+selection+test times, not test-only deployment latency"
+        },
+        {
+          "field": "brier_multiclass",
+          "pandas_dtype": "float64",
+          "definition": "Mean row sum of squared class-probability errors, not divided by class count"
+        },
+        {
+          "field": "ece_top_label",
+          "pandas_dtype": "float64",
+          "definition": "Original 15-bin comparator ECE, retained unchanged for audit"
+        },
+        {
+          "field": "rare_ece_top_label",
+          "pandas_dtype": "float64",
+          "definition": "Original 15-bin comparator rare-row ECE, retained unchanged"
+        },
+        {
+          "field": "ece_15",
+          "pandas_dtype": "float64",
+          "definition": "Audit alias of unchanged original comparator 15-bin top-label ECE"
+        },
+        {
+          "field": "rare_ece_15",
+          "pandas_dtype": "float64",
+          "definition": "Audit alias of unchanged original 15-bin rare-row ECE"
+        },
+        {
+          "field": "ece_10",
+          "pandas_dtype": "float64",
+          "definition": "Primary top-label ECE; exact Euclid right-closed 10-bin endpoint"
+        },
+        {
+          "field": "rare_ece_10",
+          "pandas_dtype": "float64",
+          "definition": "Same ECE10 restricted to test rows with a fit-defined rare true label"
+        }
+      ],
+      "summary_csv": "<WORKSPACE>\\harmonized\\results\\paired46\\manuscript_summary.csv",
+      "delta_csv": "<WORKSPACE>\\harmonized\\results\\paired46\\real_blend_delta_summary.csv",
+      "ranges_csv": "<WORKSPACE>\\harmonized\\results\\paired46\\metric_ranges.csv",
+      "summary": [
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "seeds": 6,
+          "f1_macro_mean": 0.8687873483989582,
+          "f1_macro_sd": 0.0015467641586113,
+          "rare_recall_mean": 0.535308726041351,
+          "rare_recall_sd": 0.0037686605782709,
+          "accuracy_mean": 0.9397235871555308,
+          "pr_auc_macro_mean": 0.8938196429512179,
+          "brier_mean": 0.080733440826507,
+          "ece_15_mean": 0.0077403994526005,
+          "ece_10_mean": 0.0077381690406618,
+          "ece_10_sd": 0.0009492768887303,
+          "rare_ece_10_mean": 0.0749010662313868,
+          "rare_ece_10_sd": 0.0073211396466015
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "seeds": 6,
+          "f1_macro_mean": 0.8627533397787553,
+          "f1_macro_sd": 0.0016830409612857,
+          "rare_recall_mean": 0.5053330934136211,
+          "rare_recall_sd": 0.0053700835287103,
+          "accuracy_mean": 0.9398826904990852,
+          "pr_auc_macro_mean": 0.8875493782273929,
+          "brier_mean": 0.0806763156286105,
+          "ece_15_mean": 0.0078949132120639,
+          "ece_10_mean": 0.0078892524975902,
+          "ece_10_sd": 0.0002630411017667,
+          "rare_ece_10_mean": 0.0692218974052632,
+          "rare_ece_10_sd": 0.0037448083162649
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "seeds": 6,
+          "f1_macro_mean": 0.8816454187016239,
+          "f1_macro_sd": 0.0012769003349427,
+          "rare_recall_mean": 0.5941409566639505,
+          "rare_recall_sd": 0.007360751156464,
+          "accuracy_mean": 0.94107099301729,
+          "pr_auc_macro_mean": 0.9047445679054164,
+          "brier_mean": 0.0794679604899949,
+          "ece_15_mean": 0.0090122886199475,
+          "ece_10_mean": 0.0090098710127621,
+          "ece_10_sd": 0.0011083625490195,
+          "rare_ece_10_mean": 0.075607545382895,
+          "rare_ece_10_sd": 0.0081429322424537
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "seeds": 6,
+          "f1_macro_mean": 0.8674921207058889,
+          "f1_macro_sd": 0.0021900062184324,
+          "rare_recall_mean": 0.5265306742426367,
+          "rare_recall_sd": 0.0079555856728265,
+          "accuracy_mean": 0.9399094692950856,
+          "pr_auc_macro_mean": 0.8936652671325552,
+          "brier_mean": 0.0799782569733608,
+          "ece_15_mean": 0.0062363164607637,
+          "ece_10_mean": 0.0062572349214158,
+          "ece_10_sd": 0.0004917243353701,
+          "rare_ece_10_mean": 0.0721570291493177,
+          "rare_ece_10_sd": 0.0092463013778303
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "seeds": 6,
+          "f1_macro_mean": 0.8617752013523051,
+          "f1_macro_sd": 0.0013426607500611,
+          "rare_recall_mean": 0.4962124842386559,
+          "rare_recall_sd": 0.0049837579765804,
+          "accuracy_mean": 0.9399025281229348,
+          "pr_auc_macro_mean": 0.8862063643001735,
+          "brier_mean": 0.0798927471590745,
+          "ece_15_mean": 0.0065950525399966,
+          "ece_10_mean": 0.0066260961712797,
+          "ece_10_sd": 0.0003873826993009,
+          "rare_ece_10_mean": 0.0748662960273006,
+          "rare_ece_10_sd": 0.0048362735067282
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "seeds": 6,
+          "f1_macro_mean": 0.8816919410580506,
+          "f1_macro_sd": 0.0013314795410551,
+          "rare_recall_mean": 0.5915896827810393,
+          "rare_recall_sd": 0.0051610302221673,
+          "accuracy_mean": 0.9412189153390524,
+          "pr_auc_macro_mean": 0.9058009953902686,
+          "brier_mean": 0.0783867336629269,
+          "ece_15_mean": 0.0071991085951022,
+          "ece_10_mean": 0.0072011118634997,
+          "ece_10_sd": 0.0001317275719594,
+          "rare_ece_10_mean": 0.086541290410846,
+          "rare_ece_10_sd": 0.0066004280541831
+        },
+        {
+          "run_id": "flat_equal_probability_blend",
+          "seeds": 6,
+          "f1_macro_mean": 0.8557874704705634,
+          "f1_macro_sd": 0.0009355912068639,
+          "rare_recall_mean": 0.4842940950442227,
+          "rare_recall_sd": 0.0030315714232492,
+          "accuracy_mean": 0.9385435802898168,
+          "pr_auc_macro_mean": 0.8824872588347056,
+          "brier_mean": 0.0811618024634503,
+          "ece_15_mean": 0.0051049590255784,
+          "ece_10_mean": 0.0050930231769383,
+          "ece_10_sd": 0.0002170351665092,
+          "rare_ece_10_mean": 0.0838473855745645,
+          "rare_ece_10_sd": 0.0047146366242589
+        },
+        {
+          "run_id": "flat_newton_log_probability_stacker",
+          "seeds": 6,
+          "f1_macro_mean": 0.8588737523860502,
+          "f1_macro_sd": 0.0023183566471643,
+          "rare_recall_mean": 0.4694372623927981,
+          "rare_recall_sd": 0.0091001110525914,
+          "accuracy_mean": 0.939781308012954,
+          "pr_auc_macro_mean": 0.8867153595886991,
+          "brier_mean": 0.0791680166979676,
+          "ece_15_mean": 0.001784427244807,
+          "ece_10_mean": 0.0017749734518797,
+          "ece_10_sd": 0.0002958552879415,
+          "rare_ece_10_mean": 0.1216064009582216,
+          "rare_ece_10_sd": 0.0032007442419725
+        },
+        {
+          "run_id": "flat_temperature_calibrated_blend",
+          "seeds": 6,
+          "f1_macro_mean": 0.8559360117108871,
+          "f1_macro_sd": 0.0009801854520073,
+          "rare_recall_mean": 0.4850871848277438,
+          "rare_recall_sd": 0.0035741455337887,
+          "accuracy_mean": 0.9386082620799652,
+          "pr_auc_macro_mean": 0.8824707491586716,
+          "brier_mean": 0.0811209998504816,
+          "ece_15_mean": 0.00495277769643,
+          "ece_10_mean": 0.0049349702229129,
+          "ece_10_sd": 0.0002867887620596,
+          "rare_ece_10_mean": 0.0834325786237164,
+          "rare_ece_10_sd": 0.004143934618534
+        },
+        {
+          "run_id": "flat_weighted_lightgbm",
+          "seeds": 6,
+          "f1_macro_mean": 0.84349595397995,
+          "f1_macro_sd": 0.0018811935975247,
+          "rare_recall_mean": 0.4449430290794545,
+          "rare_recall_sd": 0.0073496117608697,
+          "accuracy_mean": 0.9358701256151551,
+          "pr_auc_macro_mean": 0.8684468461575258,
+          "brier_mean": 0.0841418727274555,
+          "ece_15_mean": 0.002188408964204,
+          "ece_10_mean": 0.0020896000671092,
+          "ece_10_sd": 0.0001635338977,
+          "rare_ece_10_mean": 0.1374244054674286,
+          "rare_ece_10_sd": 0.003240444295584
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "seeds": 6,
+          "f1_macro_mean": 0.8532575786312656,
+          "f1_macro_sd": 0.0011738465639819,
+          "rare_recall_mean": 0.4875099566262745,
+          "rare_recall_sd": 0.0052146869933362,
+          "accuracy_mean": 0.9374870217379584,
+          "pr_auc_macro_mean": 0.8834088232666436,
+          "brier_mean": 0.0821510827462532,
+          "ece_15_mean": 0.0045178977716955,
+          "ece_10_mean": 0.0045156709416475,
+          "ece_10_sd": 0.000346502276253,
+          "rare_ece_10_mean": 0.0973277177702771,
+          "rare_ece_10_sd": 0.0043947156891935
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "seeds": 6,
+          "f1_macro_mean": 0.8673574510811232,
+          "f1_macro_sd": 0.0015385862410058,
+          "rare_recall_mean": 0.5797243591703397,
+          "rare_recall_sd": 0.0062165243156049,
+          "accuracy_mean": 0.9373682754398563,
+          "pr_auc_macro_mean": 0.8630080583279313,
+          "brier_mean": 0.1029681880411891,
+          "ece_15_mean": 0.0398276240446154,
+          "ece_10_mean": 0.0398273122548889,
+          "ece_10_sd": 0.0002869650140946,
+          "rare_ece_10_mean": 0.2777494814029128,
+          "rare_ece_10_sd": 0.0042878807693033
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "seeds": 6,
+          "f1_macro_mean": 0.8728104188746992,
+          "f1_macro_sd": 0.0016531529151895,
+          "rare_recall_mean": 0.5778368795095132,
+          "rare_recall_sd": 0.0061255261632887,
+          "accuracy_mean": 0.939146745888672,
+          "pr_auc_macro_mean": 0.9007681207454964,
+          "brier_mean": 0.0797240307693425,
+          "ece_15_mean": 0.0015429941520812,
+          "ece_10_mean": 0.0014457140758254,
+          "ece_10_sd": 0.0003921463230259,
+          "rare_ece_10_mean": 0.0873862258402941,
+          "rare_ece_10_sd": 0.0048875270229848
+        }
+      ],
+      "deltas_real_equal_blend_minus_control": [
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_xgboost",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.028434362426784987,
+          "sample_sd_delta": 0.0014234617008073082,
+          "minimum_delta": 0.026562164479629113,
+          "maximum_delta": 0.03054814832160524,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_xgboost",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.10407972615476473,
+          "sample_sd_delta": 0.0069082332157947525,
+          "minimum_delta": 0.09770369282580676,
+          "maximum_delta": 0.11507999373010569,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_xgboost",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.02239217212362493,
+          "sample_sd_delta": 0.000983487987321495,
+          "minimum_delta": 0.021242990821484065,
+          "maximum_delta": 0.023581820307416956,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_xgboost",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.0037318936010940864,
+          "sample_sd_delta": 0.0003589771375782195,
+          "minimum_delta": 0.0033545555563320173,
+          "maximum_delta": 0.00422526836400261,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_xgboost",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": 0.0026854409218522468,
+          "sample_sd_delta": 0.000312382695957,
+          "minimum_delta": 0.002339907320859833,
+          "maximum_delta": 0.003136586216949978,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_xgboost",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": -0.010786427359431102,
+          "sample_sd_delta": 0.006448181139718477,
+          "minimum_delta": -0.019796010832572597,
+          "maximum_delta": -0.001969616687765907,
+          "positive_seeds": 0,
+          "zero_seeds": 0,
+          "negative_seeds": 6
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_lightgbm",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.038195987078100534,
+          "sample_sd_delta": 0.0024531265295870855,
+          "minimum_delta": 0.03434809303825592,
+          "maximum_delta": 0.040672401961645455,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_lightgbm",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.14664665370158475,
+          "sample_sd_delta": 0.009750537402187422,
+          "minimum_delta": 0.1307724045668449,
+          "maximum_delta": 0.15853176240981415,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_lightgbm",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.037354149232742793,
+          "sample_sd_delta": 0.0018515307299033965,
+          "minimum_delta": 0.03498733349348171,
+          "maximum_delta": 0.04013991892692892,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_lightgbm",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.005348789723897129,
+          "sample_sd_delta": 0.0003797652048345889,
+          "minimum_delta": 0.004874517880808504,
+          "maximum_delta": 0.006010707446288066,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_lightgbm",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": 0.00511151179639057,
+          "sample_sd_delta": 0.00023242122889705841,
+          "minimum_delta": 0.004892977678808089,
+          "maximum_delta": 0.0054977422044637115,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_lightgbm",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": -0.050883115056582516,
+          "sample_sd_delta": 0.00582953113723179,
+          "minimum_delta": -0.058475311968565785,
+          "maximum_delta": -0.042993679374122865,
+          "positive_seeds": 0,
+          "zero_seeds": 0,
+          "negative_seeds": 6
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_equal_probability_blend",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.025904470587487276,
+          "sample_sd_delta": 0.0005134800294474207,
+          "minimum_delta": 0.024973471219592702,
+          "maximum_delta": 0.026474923270192408,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_equal_probability_blend",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.10729558773681652,
+          "sample_sd_delta": 0.003623624371814324,
+          "minimum_delta": 0.10276297593752981,
+          "maximum_delta": 0.11286831592776692,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_equal_probability_blend",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.023313736555562903,
+          "sample_sd_delta": 0.0010826643377291937,
+          "minimum_delta": 0.02183015740738592,
+          "maximum_delta": 0.02497536230263897,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_equal_probability_blend",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.0026753350492356165,
+          "sample_sd_delta": 0.00022827077224871946,
+          "minimum_delta": 0.0023027626162737125,
+          "maximum_delta": 0.0029354617760941615,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_equal_probability_blend",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": 0.0021080886865614806,
+          "sample_sd_delta": 0.0002611570789340116,
+          "minimum_delta": 0.0017218890521635286,
+          "maximum_delta": 0.0024416619922693174,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_equal_probability_blend",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": 0.002693904836281534,
+          "sample_sd_delta": 0.008568711567981113,
+          "minimum_delta": -0.004441190365040981,
+          "maximum_delta": 0.018279231054564485,
+          "positive_seeds": 3,
+          "zero_seeds": 0,
+          "negative_seeds": 3
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_temperature_calibrated_blend",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.025755929347163586,
+          "sample_sd_delta": 0.0006562860521434292,
+          "minimum_delta": 0.02487405549191979,
+          "maximum_delta": 0.02680391519212444,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_temperature_calibrated_blend",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.1065024979532954,
+          "sample_sd_delta": 0.0045543048022893004,
+          "minimum_delta": 0.10167059599375011,
+          "maximum_delta": 0.114374314467244,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_temperature_calibrated_blend",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.023330246231596925,
+          "sample_sd_delta": 0.0010713374204558463,
+          "minimum_delta": 0.021845306839910927,
+          "maximum_delta": 0.024956993363648206,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_temperature_calibrated_blend",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.002610653259087159,
+          "sample_sd_delta": 0.00021613942546212976,
+          "minimum_delta": 0.0022433590282970872,
+          "maximum_delta": 0.0028376130502243413,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_temperature_calibrated_blend",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": 0.002266141640586801,
+          "sample_sd_delta": 0.0003703432463739443,
+          "minimum_delta": 0.00175787921273304,
+          "maximum_delta": 0.002897828481044951,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_temperature_calibrated_blend",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": 0.003108711787129586,
+          "sample_sd_delta": 0.00843206361897835,
+          "minimum_delta": -0.004513092158760487,
+          "maximum_delta": 0.017690541859754827,
+          "positive_seeds": 3,
+          "zero_seeds": 0,
+          "negative_seeds": 3
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_newton_log_probability_stacker",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.022818188672000455,
+          "sample_sd_delta": 0.002151685521702954,
+          "minimum_delta": 0.020086302039752923,
+          "maximum_delta": 0.026580253036259882,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_newton_log_probability_stacker",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.1221524203882411,
+          "sample_sd_delta": 0.008440111355061836,
+          "minimum_delta": 0.1149291527238322,
+          "maximum_delta": 0.13789740660732708,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_newton_log_probability_stacker",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.019085635801569467,
+          "sample_sd_delta": 0.0010973251259911623,
+          "minimum_delta": 0.017703783559607333,
+          "maximum_delta": 0.020543761701214636,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_newton_log_probability_stacker",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.0014376073260985445,
+          "sample_sd_delta": 0.0003424850563461208,
+          "minimum_delta": 0.0010210825573222504,
+          "maximum_delta": 0.0018276744153538083,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_newton_log_probability_stacker",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": 0.0054261384116200346,
+          "sample_sd_delta": 0.00030387626136592577,
+          "minimum_delta": 0.00492449541493291,
+          "maximum_delta": 0.005809156304162738,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_newton_log_probability_stacker",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": -0.03506511054737558,
+          "sample_sd_delta": 0.00782047514343399,
+          "minimum_delta": -0.0443321506931979,
+          "maximum_delta": -0.022236943546417018,
+          "positive_seeds": 0,
+          "zero_seeds": 0,
+          "negative_seeds": 6
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_cyclic_blend",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.014199820352161644,
+          "sample_sd_delta": 0.0009541413419777107,
+          "minimum_delta": 0.01259249190216749,
+          "maximum_delta": 0.015461619291000983,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_cyclic_blend",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.06505900853840263,
+          "sample_sd_delta": 0.003909116688648091,
+          "minimum_delta": 0.06005429830058395,
+          "maximum_delta": 0.07026528846155067,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_cyclic_blend",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.012135728257713327,
+          "sample_sd_delta": 0.0007178537487894808,
+          "minimum_delta": 0.010732367681629218,
+          "maximum_delta": 0.012601427191958225,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_cyclic_blend",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.0013094460439669147,
+          "sample_sd_delta": 0.00029182584393975375,
+          "minimum_delta": 0.000989590071928781,
+          "maximum_delta": 0.0016755047501784137,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_cyclic_blend",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": 0.0009438769420839011,
+          "sample_sd_delta": 0.0004633181332717313,
+          "minimum_delta": 0.00015498327786541213,
+          "maximum_delta": 0.0013614920016463503,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_cyclic_blend",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": 0.014384261261528355,
+          "sample_sd_delta": 0.006250118097190812,
+          "minimum_delta": 0.0021970727389834105,
+          "maximum_delta": 0.01918058389251627,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_support_matched_blend",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.019916739705745517,
+          "sample_sd_delta": 0.0014609746295500877,
+          "minimum_delta": 0.018037004480853214,
+          "maximum_delta": 0.022083106530703667,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_support_matched_blend",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.09537719854238332,
+          "sample_sd_delta": 0.006803520602465354,
+          "minimum_delta": 0.08634474585714935,
+          "maximum_delta": 0.10630090667816527,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_support_matched_blend",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.019594631090095144,
+          "sample_sd_delta": 0.0011696912493310164,
+          "minimum_delta": 0.0183477266612897,
+          "maximum_delta": 0.02101392646411293,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_support_matched_blend",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.0013163872161174688,
+          "sample_sd_delta": 0.00026677080694793284,
+          "minimum_delta": 0.0009574460650364491,
+          "maximum_delta": 0.001747298676246456,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_support_matched_blend",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": 0.0005750156922200421,
+          "sample_sd_delta": 0.00042369242252809366,
+          "minimum_delta": -5.587286059859954e-05,
+          "maximum_delta": 0.0012016519795438304,
+          "positive_seeds": 5,
+          "zero_seeds": 0,
+          "negative_seeds": 1
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_support_matched_blend",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": 0.011674994383545462,
+          "sample_sd_delta": 0.0038107309855399023,
+          "minimum_delta": 0.007813658510383126,
+          "maximum_delta": 0.01829461997482207,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "soft_taxonomy_factorisation",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.008881522183351384,
+          "sample_sd_delta": 0.0015399961855131856,
+          "minimum_delta": 0.007061529928820476,
+          "maximum_delta": 0.010963511440871598,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "soft_taxonomy_factorisation",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.01375280327152604,
+          "sample_sd_delta": 0.006256663146304546,
+          "minimum_delta": 0.008197281967306291,
+          "maximum_delta": 0.02450792778414468,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "soft_taxonomy_factorisation",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.005032874644772201,
+          "sample_sd_delta": 0.0015406735215675398,
+          "minimum_delta": 0.002977593798447753,
+          "maximum_delta": 0.007511598097006966,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "soft_taxonomy_factorisation",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.0020721694503806156,
+          "sample_sd_delta": 0.000318947101139071,
+          "minimum_delta": 0.0017436700235518021,
+          "maximum_delta": 0.002624442611722233,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "soft_taxonomy_factorisation",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": 0.0057553977876743795,
+          "sample_sd_delta": 0.00046905068477698874,
+          "minimum_delta": 0.004978021411320562,
+          "maximum_delta": 0.006230946402352298,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "soft_taxonomy_factorisation",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": -0.0008449354294480793,
+          "sample_sd_delta": 0.006676932987069147,
+          "minimum_delta": -0.010650313763790123,
+          "maximum_delta": 0.008126362649309007,
+          "positive_seeds": 2,
+          "zero_seeds": 0,
+          "negative_seeds": 4
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "hard_top_down_taxonomy",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.014334489976927453,
+          "sample_sd_delta": 0.001460860854496809,
+          "minimum_delta": 0.012777327507768721,
+          "maximum_delta": 0.015996469835308447,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "hard_top_down_taxonomy",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.011865323610699585,
+          "sample_sd_delta": 0.006727675971125287,
+          "minimum_delta": 0.005101267100913409,
+          "maximum_delta": 0.022886439644712375,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "hard_top_down_taxonomy",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.04279293706233733,
+          "sample_sd_delta": 0.0015394317479142186,
+          "minimum_delta": 0.04134983290791516,
+          "maximum_delta": 0.0453991124397245,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "hard_top_down_taxonomy",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.003850639899196114,
+          "sample_sd_delta": 0.000358910703162743,
+          "minimum_delta": 0.0035187890054441118,
+          "maximum_delta": 0.004487063000601088,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "hard_top_down_taxonomy",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": -0.032626200391389186,
+          "sample_sd_delta": 0.00026967078909319233,
+          "minimum_delta": -0.03299202487089495,
+          "maximum_delta": -0.032263478906092435,
+          "positive_seeds": 0,
+          "zero_seeds": 0,
+          "negative_seeds": 6
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "hard_top_down_taxonomy",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": -0.19120819099206673,
+          "sample_sd_delta": 0.006115597157794408,
+          "minimum_delta": -0.19855042880760138,
+          "maximum_delta": -0.18338161969426453,
+          "positive_seeds": 0,
+          "zero_seeds": 0,
+          "negative_seeds": 6
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_taxonomy_benefit_gate",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 4.652235642660374e-05,
+          "sample_sd_delta": 0.0004395689232767131,
+          "minimum_delta": -0.0002897076882487637,
+          "maximum_delta": 0.000829183220949492,
+          "positive_seeds": 3,
+          "zero_seeds": 0,
+          "negative_seeds": 3
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_taxonomy_benefit_gate",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": -0.0025512738829112833,
+          "sample_sd_delta": 0.0036645876677551485,
+          "minimum_delta": -0.008419724461510847,
+          "maximum_delta": 0.0011887613851689904,
+          "positive_seeds": 2,
+          "zero_seeds": 0,
+          "negative_seeds": 4
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_taxonomy_benefit_gate",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.001056427484852222,
+          "sample_sd_delta": 0.0005415006500850111,
+          "minimum_delta": 0.00041033253544686676,
+          "maximum_delta": 0.001851353874771533,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_taxonomy_benefit_gate",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.00014792232176234302,
+          "sample_sd_delta": 0.0002765615479785266,
+          "minimum_delta": -6.995844468382639e-05,
+          "maximum_delta": 0.0006499451390392652,
+          "positive_seeds": 3,
+          "zero_seeds": 0,
+          "negative_seeds": 3
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_taxonomy_benefit_gate",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": -0.001808759149262306,
+          "sample_sd_delta": 0.0010574004727588722,
+          "minimum_delta": -0.0026405022940311357,
+          "maximum_delta": 0.00025426512974576886,
+          "positive_seeds": 1,
+          "zero_seeds": 0,
+          "negative_seeds": 5
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_taxonomy_benefit_gate",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": 0.010933745027951065,
+          "sample_sd_delta": 0.005683259009937698,
+          "minimum_delta": 0.005532824943460052,
+          "maximum_delta": 0.02052580823861247,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_cyclic_taxonomy_control",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.01290459265909242,
+          "sample_sd_delta": 0.00028241070556168484,
+          "minimum_delta": 0.012432742758904491,
+          "maximum_delta": 0.013247944452546734,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_cyclic_taxonomy_control",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.05628095673968825,
+          "sample_sd_delta": 0.00360767684234698,
+          "minimum_delta": 0.04955954762708015,
+          "maximum_delta": 0.05906765935347458,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_cyclic_taxonomy_control",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.011981352439050685,
+          "sample_sd_delta": 0.001074282838514938,
+          "minimum_delta": 0.010061877073484715,
+          "maximum_delta": 0.012937075235718076,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_cyclic_taxonomy_control",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.0014953281835217158,
+          "sample_sd_delta": 0.00031143101373187694,
+          "minimum_delta": 0.0011224914414399434,
+          "maximum_delta": 0.00194824046254094,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_cyclic_taxonomy_control",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": -0.0005370571771620931,
+          "sample_sd_delta": 0.0008706625066741376,
+          "minimum_delta": -0.0013753345670366787,
+          "maximum_delta": 0.0009515590636189038,
+          "positive_seeds": 2,
+          "zero_seeds": 0,
+          "negative_seeds": 4
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_cyclic_taxonomy_control",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": 0.011640224179459183,
+          "sample_sd_delta": 0.009392365184126875,
+          "minimum_delta": -0.003475897472705519,
+          "maximum_delta": 0.024090759674949294,
+          "positive_seeds": 5,
+          "zero_seeds": 0,
+          "negative_seeds": 1
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_support_matched_control",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.01893860127929529,
+          "sample_sd_delta": 0.0009394599294907388,
+          "minimum_delta": 0.017353978782039925,
+          "maximum_delta": 0.01997047195904811,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_support_matched_control",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.0862565893674182,
+          "sample_sd_delta": 0.004268832875465482,
+          "minimum_delta": 0.07891566980654541,
+          "maximum_delta": 0.09173003243480693,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_support_matched_control",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.01825161716287575,
+          "sample_sd_delta": 0.0009115372229327172,
+          "minimum_delta": 0.017091211342718182,
+          "maximum_delta": 0.019136294707521317,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_support_matched_control",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.0013362248399670558,
+          "sample_sd_delta": 0.0002407543044553606,
+          "minimum_delta": 0.0009294914354003314,
+          "maximum_delta": 0.0016249877689092918,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_support_matched_control",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": -0.0006881406340904406,
+          "sample_sd_delta": 0.00021394275789008623,
+          "minimum_delta": -0.0009458482365771511,
+          "maximum_delta": -0.00039729941982348006,
+          "positive_seeds": 0,
+          "zero_seeds": 0,
+          "negative_seeds": 6
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_support_matched_control",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": 0.01731939300558286,
+          "sample_sd_delta": 0.007954644364857604,
+          "minimum_delta": 0.007650167291533394,
+          "maximum_delta": 0.0285875029255641,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        }
+      ],
+      "ranges": [
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9397235871555307,
+          "sample_sd": 0.0006032699881731909,
+          "minimum": 0.9389469707833885,
+          "maximum": 0.9402666703966486
+        },
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8687873483989582,
+          "sample_sd": 0.001546764158611427,
+          "minimum": 0.8660559507060787,
+          "maximum": 0.8705185750145568
+        },
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.535308726041351,
+          "sample_sd": 0.0037686605782708714,
+          "minimum": 0.5283935358106822,
+          "maximum": 0.5389026617317174
+        },
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.8938196429512179,
+          "sample_sd": 0.00144119312773087,
+          "minimum": 0.8917706696712521,
+          "maximum": 0.8962391710407946
+        },
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.08073344082650709,
+          "sample_sd": 0.0004563456862469209,
+          "minimum": 0.08025652098966077,
+          "maximum": 0.08134860930855177
+        },
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.007738169040661887,
+          "sample_sd": 0.000949276888730326,
+          "minimum": 0.006115007477773366,
+          "maximum": 0.008599470609399366
+        },
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.07490106623138688,
+          "sample_sd": 0.007321139646601557,
+          "minimum": 0.06888558371837164,
+          "maximum": 0.08931639962561334
+        },
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.0077403994526005875,
+          "sample_sd": 0.0009472544485334001,
+          "minimum": 0.006123519804386503,
+          "maximum": 0.008604340754418493
+        },
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.07492272775653858,
+          "sample_sd": 0.007414577577455488,
+          "minimum": 0.06888558371837164,
+          "maximum": 0.08953224188987258
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9398826904990853,
+          "sample_sd": 0.00043551089619275885,
+          "minimum": 0.9392515845587721,
+          "maximum": 0.9404147069306515
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8627533397787553,
+          "sample_sd": 0.0016830409612857717,
+          "minimum": 0.8594861122592699,
+          "maximum": 0.8640621590139774
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.5053330934136211,
+          "sample_sd": 0.005370083528710381,
+          "minimum": 0.4968975764444699,
+          "maximum": 0.5126970133169695
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.8875493782273929,
+          "sample_sd": 0.0007178744762875507,
+          "minimum": 0.8867362834038771,
+          "maximum": 0.8887032762719592
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.08067631562861059,
+          "sample_sd": 0.00037974638620429725,
+          "minimum": 0.08020801216096897,
+          "maximum": 0.08113748251097068
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.007889252497590234,
+          "sample_sd": 0.0002630411017667395,
+          "minimum": 0.0074638659612157494,
+          "maximum": 0.008147245889271163
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.0692218974052632,
+          "sample_sd": 0.0037448083162649913,
+          "minimum": 0.06388232301336329,
+          "maximum": 0.07383925406276601
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.007894913212063955,
+          "sample_sd": 0.00026294106635639156,
+          "minimum": 0.007472849197847728,
+          "maximum": 0.008155701597947627
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.07014442220445212,
+          "sample_sd": 0.003025571739835027,
+          "minimum": 0.06479342087548158,
+          "maximum": 0.07266994404793209
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9410709930172901,
+          "sample_sd": 0.00030276987280522516,
+          "minimum": 0.9406942532270126,
+          "maximum": 0.9414311241349648
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8816454187016239,
+          "sample_sd": 0.0012769003349427652,
+          "minimum": 0.8795478532906953,
+          "maximum": 0.88324102546171
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.5941409566639505,
+          "sample_sd": 0.007360751156463997,
+          "minimum": 0.5839260755763693,
+          "maximum": 0.6031551225507621
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.9047445679054164,
+          "sample_sd": 0.001159129588717812,
+          "minimum": 0.9031683649294364,
+          "maximum": 0.9063808015235618
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.07946796048999492,
+          "sample_sd": 0.000429551211347677,
+          "minimum": 0.07907332683814275,
+          "maximum": 0.08008173003015999
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.0090098710127621,
+          "sample_sd": 0.0011083625490195383,
+          "minimum": 0.006833104426460543,
+          "maximum": 0.009902620753024427
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.075607545382895,
+          "sample_sd": 0.008142932242453781,
+          "minimum": 0.06096361311568693,
+          "maximum": 0.08250694143534441
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.009012288619947635,
+          "sample_sd": 0.0011087337774059848,
+          "minimum": 0.0068347543781184525,
+          "maximum": 0.009908075791184124
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.07367574190418448,
+          "sample_sd": 0.006626778858030689,
+          "minimum": 0.06152314104381933,
+          "maximum": 0.07933094519706152
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9399094692950856,
+          "sample_sd": 0.0005812438806573109,
+          "minimum": 0.9390557009136573,
+          "maximum": 0.9403693304006966
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8674921207058889,
+          "sample_sd": 0.002190006218432473,
+          "minimum": 0.8638422758676244,
+          "maximum": 0.8703588258712938
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.5265306742426367,
+          "sample_sd": 0.007955585672826568,
+          "minimum": 0.5134099590874759,
+          "maximum": 0.5378700423964851
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.8936652671325551,
+          "sample_sd": 0.0011561276610188586,
+          "minimum": 0.8924985721372851,
+          "maximum": 0.8955686804326501
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.07997825697336092,
+          "sample_sd": 0.0005094041479340619,
+          "minimum": 0.07950244177325816,
+          "maximum": 0.08075856806723297
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.006257234921415892,
+          "sample_sd": 0.0004917243353701685,
+          "minimum": 0.005705074539745919,
+          "maximum": 0.007107135181127879
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.07215702914931771,
+          "sample_sd": 0.009246301377830364,
+          "minimum": 0.06273883508578694,
+          "maximum": 0.08364342941392441
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.006236316460763822,
+          "sample_sd": 0.000451783712946758,
+          "minimum": 0.005712525978865989,
+          "maximum": 0.0069275047785553314
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.07304712203496526,
+          "sample_sd": 0.008934650394481795,
+          "minimum": 0.06358885250768367,
+          "maximum": 0.08376666042529173
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9399025281229348,
+          "sample_sd": 0.00041472285671547625,
+          "minimum": 0.9392830658588798,
+          "maximum": 0.9403867523010154
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8617752013523051,
+          "sample_sd": 0.0013426607500611292,
+          "minimum": 0.8603786418511119,
+          "maximum": 0.8633791333151641
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.49621248423865594,
+          "sample_sd": 0.0049837579765804295,
+          "minimum": 0.48843449141108597,
+          "maximum": 0.5015409843170833
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.8862063643001735,
+          "sample_sd": 0.0008627712227410048,
+          "minimum": 0.8849403573502574,
+          "maximum": 0.8875839764809926
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.07989274715907461,
+          "sample_sd": 0.00043401032493413827,
+          "minimum": 0.07926947475463163,
+          "maximum": 0.08045361903924944
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.00662609617127975,
+          "sample_sd": 0.00038738269930095837,
+          "minimum": 0.006219390588639535,
+          "maximum": 0.0073179913195918905
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.07486629602730059,
+          "sample_sd": 0.0048362735067282074,
+          "minimum": 0.06836451936753593,
+          "maximum": 0.08006179210441353
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.006595052539996662,
+          "sample_sd": 0.0003282644028891654,
+          "minimum": 0.006171742386406232,
+          "maximum": 0.007096264830196717
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.07672227003053485,
+          "sample_sd": 0.005998602612128424,
+          "minimum": 0.0691376734252894,
+          "maximum": 0.08421575145057589
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9412189153390526,
+          "sample_sd": 0.0003311227314154505,
+          "minimum": 0.9407312056638357,
+          "maximum": 0.9415947944477837
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8816919410580506,
+          "sample_sd": 0.0013314795410551445,
+          "minimum": 0.8793038951586254,
+          "maximum": 0.8829513177734613
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.5915896827810393,
+          "sample_sd": 0.005161030222167265,
+          "minimum": 0.5836752475490266,
+          "maximum": 0.597924340697069
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.9058009953902686,
+          "sample_sd": 0.0007799283983405949,
+          "minimum": 0.9047077449069701,
+          "maximum": 0.9067911340590087
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.07838673366292702,
+          "sample_sd": 0.00033557027093922184,
+          "minimum": 0.07804052745455231,
+          "maximum": 0.07880008791263887
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.007201111863499793,
+          "sample_sd": 0.00013172757195949053,
+          "minimum": 0.007066566541392269,
+          "maximum": 0.007421042568183365
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.08654129041084607,
+          "sample_sd": 0.006600428054183136,
+          "minimum": 0.08001948221780282,
+          "maximum": 0.09656986762992915
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.0071991085951023,
+          "sample_sd": 0.00014793110368204772,
+          "minimum": 0.006983366428127904,
+          "maximum": 0.0074210425681835
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.08805355472594902,
+          "sample_sd": 0.008005821187281903,
+          "minimum": 0.07975789610970367,
+          "maximum": 0.09807308512160448
+        },
+        {
+          "run_id": "flat_equal_probability_blend",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9385435802898169,
+          "sample_sd": 0.00043217767408551213,
+          "minimum": 0.9379258720320129,
+          "maximum": 0.9390414357497782
+        },
+        {
+          "run_id": "flat_equal_probability_blend",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8557874704705634,
+          "sample_sd": 0.0009355912068639554,
+          "minimum": 0.8543304239390327,
+          "maximum": 0.8569762673919884
+        },
+        {
+          "run_id": "flat_equal_probability_blend",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.48429409504422277,
+          "sample_sd": 0.003031571423249224,
+          "minimum": 0.48091227161149674,
+          "maximum": 0.4886411037745354
+        },
+        {
+          "run_id": "flat_equal_probability_blend",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.8824872588347056,
+          "sample_sd": 0.0011163509041209703,
+          "minimum": 0.8808972158087595,
+          "maximum": 0.8838302981131178
+        },
+        {
+          "run_id": "flat_equal_probability_blend",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.08116180246345037,
+          "sample_sd": 0.0004576693952495859,
+          "minimum": 0.08063330073242128,
+          "maximum": 0.08168431086912371
+        },
+        {
+          "run_id": "flat_equal_probability_blend",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.0050930231769383124,
+          "sample_sd": 0.00021703516650924644,
+          "minimum": 0.004872513613132417,
+          "maximum": 0.005365671819984014
+        },
+        {
+          "run_id": "flat_equal_probability_blend",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.08384738557456455,
+          "sample_sd": 0.004714636624258907,
+          "minimum": 0.07829063657536467,
+          "maximum": 0.0899320808129302
+        },
+        {
+          "run_id": "flat_equal_probability_blend",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.005104959025578489,
+          "sample_sd": 0.0001924006503610807,
+          "minimum": 0.004908649935320017,
+          "maximum": 0.005434975349951322
+        },
+        {
+          "run_id": "flat_equal_probability_blend",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.08394376666784724,
+          "sample_sd": 0.004867341510530761,
+          "minimum": 0.07829063657536463,
+          "maximum": 0.09051036737262655
+        },
+        {
+          "run_id": "flat_newton_log_probability_stacker",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9397813080129539,
+          "sample_sd": 0.00048705610193897786,
+          "minimum": 0.9391396510472779,
+          "maximum": 0.9403680792807663
+        },
+        {
+          "run_id": "flat_newton_log_probability_stacker",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8588737523860502,
+          "sample_sd": 0.002318356647164356,
+          "minimum": 0.8563017570280979,
+          "maximum": 0.8628650157337083
+        },
+        {
+          "run_id": "flat_newton_log_probability_stacker",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.4694372623927982,
+          "sample_sd": 0.009100111052591396,
+          "minimum": 0.45683799148192417,
+          "maximum": 0.4829951879732368
+        },
+        {
+          "run_id": "flat_newton_log_probability_stacker",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.8867153595886991,
+          "sample_sd": 0.0010946600331107157,
+          "minimum": 0.8852468158339909,
+          "maximum": 0.8884366211279823
+        },
+        {
+          "run_id": "flat_newton_log_probability_stacker",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.0791680166979677,
+          "sample_sd": 0.0005549532463353474,
+          "minimum": 0.07834764213792594,
+          "maximum": 0.07973716185860284
+        },
+        {
+          "run_id": "flat_newton_log_probability_stacker",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.0017749734518797578,
+          "sample_sd": 0.00029585528794154163,
+          "minimum": 0.0012782132520435733,
+          "maximum": 0.0021420711264593588
+        },
+        {
+          "run_id": "flat_newton_log_probability_stacker",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.12160640095822166,
+          "sample_sd": 0.0032007442419725203,
+          "minimum": 0.11832179804878877,
+          "maximum": 0.12719079386440774
+        },
+        {
+          "run_id": "flat_newton_log_probability_stacker",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.0017844272448070504,
+          "sample_sd": 0.00025509529398947724,
+          "minimum": 0.001350888342032659,
+          "maximum": 0.0020135480792774774
+        },
+        {
+          "run_id": "flat_newton_log_probability_stacker",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.12165283707265018,
+          "sample_sd": 0.003252640461020569,
+          "minimum": 0.11832179804878878,
+          "maximum": 0.12734817917057548
+        },
+        {
+          "run_id": "flat_temperature_calibrated_blend",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9386082620799652,
+          "sample_sd": 0.00042019286348567674,
+          "minimum": 0.9379748429432917,
+          "maximum": 0.9391008393377548
+        },
+        {
+          "run_id": "flat_temperature_calibrated_blend",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8559360117108872,
+          "sample_sd": 0.0009801854520073228,
+          "minimum": 0.8544298396667056,
+          "maximum": 0.8574295664513653
+        },
+        {
+          "run_id": "flat_temperature_calibrated_blend",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.4850871848277439,
+          "sample_sd": 0.003574145533788701,
+          "minimum": 0.48036108362200725,
+          "maximum": 0.4903321595495579
+        },
+        {
+          "run_id": "flat_temperature_calibrated_blend",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.8824707491586716,
+          "sample_sd": 0.0010999074945438885,
+          "minimum": 0.8809155847477502,
+          "maximum": 0.8837948533347895
+        },
+        {
+          "run_id": "flat_temperature_calibrated_blend",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.08112099985048161,
+          "sample_sd": 0.0004560594443774143,
+          "minimum": 0.08057776904851491,
+          "maximum": 0.08165109147484495
+        },
+        {
+          "run_id": "flat_temperature_calibrated_blend",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.004934970222912992,
+          "sample_sd": 0.0002867887620596319,
+          "minimum": 0.004523214087138414,
+          "maximum": 0.005329490343473272
+        },
+        {
+          "run_id": "flat_temperature_calibrated_blend",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.08343257862371649,
+          "sample_sd": 0.004143934618534029,
+          "minimum": 0.07887932577017433,
+          "maximum": 0.08910463052931385
+        },
+        {
+          "run_id": "flat_temperature_calibrated_blend",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.004952777696430033,
+          "sample_sd": 0.0002792354812893191,
+          "minimum": 0.004523214087138526,
+          "maximum": 0.005306481246084707
+        },
+        {
+          "run_id": "flat_temperature_calibrated_blend",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.0836295432580665,
+          "sample_sd": 0.004481766307699802,
+          "minimum": 0.07887932577017435,
+          "maximum": 0.09028641833541388
+        },
+        {
+          "run_id": "flat_weighted_lightgbm",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9358701256151553,
+          "sample_sd": 0.0003612549750860951,
+          "minimum": 0.9355787662128695,
+          "maximum": 0.9364844025918169
+        },
+        {
+          "run_id": "flat_weighted_lightgbm",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.84349595397995,
+          "sample_sd": 0.0018811935975248154,
+          "minimum": 0.8409579603447873,
+          "maximum": 0.8453641811003606
+        },
+        {
+          "run_id": "flat_weighted_lightgbm",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.44494302907945454,
+          "sample_sd": 0.007349611760869783,
+          "minimum": 0.43437823292854033,
+          "maximum": 0.45291223605609876
+        },
+        {
+          "run_id": "flat_weighted_lightgbm",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.8684468461575258,
+          "sample_sd": 0.0020804111679480117,
+          "minimum": 0.8649263467064369,
+          "maximum": 0.8707128075572674
+        },
+        {
+          "run_id": "flat_weighted_lightgbm",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.08414187272745564,
+          "sample_sd": 0.0005507945770748022,
+          "minimum": 0.08345325651384547,
+          "maximum": 0.0848245511683386
+        },
+        {
+          "run_id": "flat_weighted_lightgbm",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.0020896000671092236,
+          "sample_sd": 0.00016353389770007416,
+          "minimum": 0.0019233003637196533,
+          "maximum": 0.0023691407801852016
+        },
+        {
+          "run_id": "flat_weighted_lightgbm",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.1374244054674286,
+          "sample_sd": 0.003240444295584087,
+          "minimum": 0.13365679599042357,
+          "maximum": 0.14133395513977562
+        },
+        {
+          "run_id": "flat_weighted_lightgbm",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.002188408964204051,
+          "sample_sd": 0.00023044434749862463,
+          "minimum": 0.001940761133478034,
+          "maximum": 0.002577373557422554
+        },
+        {
+          "run_id": "flat_weighted_lightgbm",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.1374244054674286,
+          "sample_sd": 0.0032404442955841126,
+          "minimum": 0.13365679599042357,
+          "maximum": 0.14133395513977562
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9374870217379584,
+          "sample_sd": 0.000572836328413795,
+          "minimum": 0.9366699428819268,
+          "maximum": 0.9382399809893904
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8532575786312656,
+          "sample_sd": 0.0011738465639819517,
+          "minimum": 0.8520126866923349,
+          "maximum": 0.8550636580519924
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.48750995662627455,
+          "sample_sd": 0.005214686993336227,
+          "minimum": 0.47965540435914555,
+          "maximum": 0.4927108850155628
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.8834088232666436,
+          "sample_sd": 0.0006212801587337828,
+          "minimum": 0.8824853812091721,
+          "maximum": 0.8842470016603787
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.08215108274625331,
+          "sample_sd": 0.0004238763393836027,
+          "minimum": 0.08167571860002955,
+          "maximum": 0.08286703874794889
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.004515670941647547,
+          "sample_sd": 0.0003465022762530107,
+          "minimum": 0.004008851796910857,
+          "maximum": 0.004981934500283314
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.09732771777027716,
+          "sample_sd": 0.004394715689193541,
+          "minimum": 0.08946890186383741,
+          "maximum": 0.10265465400378243
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.004517897771695597,
+          "sample_sd": 0.0003440675139340342,
+          "minimum": 0.004014555433153358,
+          "maximum": 0.004981934500283368
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.09737353875965098,
+          "sample_sd": 0.004364279682405755,
+          "minimum": 0.08958909208241564,
+          "maximum": 0.1026546540037824
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9373682754398563,
+          "sample_sd": 0.0004012165557496253,
+          "minimum": 0.936977743888576,
+          "maximum": 0.9378376582732177
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8673574510811232,
+          "sample_sd": 0.001538586241005806,
+          "minimum": 0.8657439669182265,
+          "maximum": 0.8693630994464369
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.5797243591703397,
+          "sample_sd": 0.006216524315604947,
+          "minimum": 0.5726295336602785,
+          "maximum": 0.5874864313844568
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.8630080583279313,
+          "sample_sd": 0.0017381498142491996,
+          "minimum": 0.8604734656716739,
+          "maximum": 0.8654413011510935
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.1029681880411892,
+          "sample_sd": 0.0006091002858320943,
+          "minimum": 0.10234548357898927,
+          "maximum": 0.10363378946820163
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.03982731225488897,
+          "sample_sd": 0.00028696501409468546,
+          "minimum": 0.039487614948455124,
+          "maximum": 0.0401822966719737
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.27774948140291283,
+          "sample_sd": 0.004287880769303379,
+          "minimum": 0.2692651043306422,
+          "maximum": 0.2808208184679185
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.0398276240446155,
+          "sample_sd": 0.0002870158289305356,
+          "minimum": 0.039487614948455124,
+          "maximum": 0.04018229667197379
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.27786153700553917,
+          "sample_sd": 0.0041561218378686005,
+          "minimum": 0.26964474334077226,
+          "maximum": 0.2809360485897265
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9391467458886718,
+          "sample_sd": 0.0004302540927435676,
+          "minimum": 0.9386674315456619,
+          "maximum": 0.9396005283425001
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8728104188746992,
+          "sample_sd": 0.001653152915189555,
+          "minimum": 0.8715434330900801,
+          "maximum": 0.8749595663191505
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.5778368795095132,
+          "sample_sd": 0.006125526163288737,
+          "minimum": 0.570839434331354,
+          "maximum": 0.5859638471141118
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.9007681207454964,
+          "sample_sd": 0.0017802071098860285,
+          "minimum": 0.8987894500172724,
+          "maximum": 0.9038135402605609
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.07972403076934263,
+          "sample_sd": 0.0003932058900738452,
+          "minimum": 0.07924870576499388,
+          "maximum": 0.08024646313700672
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.0014457140758254142,
+          "sample_sd": 0.0003921463230259766,
+          "minimum": 0.0011067195988087837,
+          "maximum": 0.0020885451300717076
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.08738622584029415,
+          "sample_sd": 0.004887527022984817,
+          "minimum": 0.08234224913249068,
+          "maximum": 0.09350895693499996
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.0015429941520813263,
+          "sample_sd": 0.00026547648771157794,
+          "minimum": 0.0012707689677206218,
+          "maximum": 0.0019078821150450898
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.08768378047614521,
+          "sample_sd": 0.004870861613960156,
+          "minimum": 0.08296200339630674,
+          "maximum": 0.09328061915428514
+        }
+      ],
+      "frozen_settings": {
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "outer_test_frac": 0.2,
+        "base_fraction": 0.7,
+        "gate_train_fraction": 0.15,
+        "gate_select_fraction": 0.15,
+        "majority_cap": 25000,
+        "benign_cap": 80000,
+        "global_trees": 520,
+        "local_trees": 380,
+        "rare_lambda": 0.04,
+        "n_jobs": 2,
+        "group_disjoint": true,
+        "grouping_basis": "original 46 predictors; identical PRIMARY roles",
+        "temperature_bounds": [
+          0.25,
+          5.0
+        ],
+        "temperature_xatol": 0.0001,
+        "stacker": {
+          "C": 1.0,
+          "max_iter": 100,
+          "solver": "newton-cholesky"
+        },
+        "methods": [
+          "flat_weighted_xgboost",
+          "flat_weighted_lightgbm",
+          "flat_equal_probability_blend",
+          "flat_temperature_calibrated_blend",
+          "flat_newton_log_probability_stacker",
+          "equal_flat_taxonomy_blend",
+          "soft_taxonomy_factorisation",
+          "hard_top_down_taxonomy",
+          "calibrated_taxonomy_benefit_gate",
+          "equal_flat_cyclic_blend",
+          "calibrated_cyclic_taxonomy_control",
+          "equal_flat_support_matched_blend",
+          "calibrated_support_matched_control"
+        ],
+        "metric_probability_precision": "float64 (checkpointed without quantization)",
+        "venue_route": "EI engineering empirical validation; indexing is not a method standard",
+        "flat_calibration_fit_role": "utility (same ordered rows as v10 reference calibration)",
+        "flat_stacker_fit_role": "utility (same ordered rows as v10 reference calibration)",
+        "flat_selection_role_permission": "diagnostic evaluation only, no fitting or model choice"
+      },
+      "run_contract": "<WORKSPACE>\\harmonized\\results\\paired46\\run_contract.json",
+      "run_contract_sha256": "6acf2ae44774a28e1782d2ab13c2263b27cdd6ed7df61a9b6b780f6e9e83dc3f"
+    },
+    "grouped37": {
+      "completion": true,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "completed_cells": 54,
+      "calibrated_flat_meta_controls_included": false,
+      "calibrated_flat_meta_control_ids": [],
+      "calibrated_flat_meta_control_scope": "Not included in this nine-arm grouping confirmation; cannot exclude these competing explanations to the same extent as paired46",
+      "result_csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results_ece10.csv",
+      "original_15bin_result_csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\harmonized_results.csv",
+      "metric_schema": [
+        {
+          "field": "run_id",
+          "pandas_dtype": "str",
+          "definition": "Frozen method identifier; no test-based model selection"
+        },
+        {
+          "field": "n",
+          "pandas_dtype": "int64",
+          "definition": "Number of held-out outer-test rows"
+        },
+        {
+          "field": "accuracy",
+          "pandas_dtype": "float64",
+          "definition": "Fraction of outer-test rows classified correctly by argmax"
+        },
+        {
+          "field": "f1_macro",
+          "pandas_dtype": "float64",
+          "definition": "Macro F1 over the frozen fine-class universe"
+        },
+        {
+          "field": "recall_macro",
+          "pandas_dtype": "float64",
+          "definition": "Macro recall over the frozen fine-class universe"
+        },
+        {
+          "field": "rare_recall",
+          "pandas_dtype": "float64",
+          "definition": "Macro recall over fit-pool-defined rare fine classes"
+        },
+        {
+          "field": "worst_recall",
+          "pandas_dtype": "float64",
+          "definition": "Minimum per-class recall over the frozen fine-class universe"
+        },
+        {
+          "field": "pr_auc_macro",
+          "pandas_dtype": "float64",
+          "definition": "Macro one-vs-rest average precision, frozen reference implementation"
+        },
+        {
+          "field": "seed",
+          "pandas_dtype": "int64",
+          "definition": "Holdout seed; 42,43,44,45,46,47; not independent corpus replications"
+        },
+        {
+          "field": "n_features",
+          "pandas_dtype": "int64",
+          "definition": "37 shared predictors"
+        },
+        {
+          "field": "training_seconds",
+          "pandas_dtype": "float64",
+          "definition": "Composed method builder times; do not sum shared models. Missing for seed42 Newton because exact builder time was lost during metadata-only recovery"
+        },
+        {
+          "field": "inference_seconds",
+          "pandas_dtype": "float64",
+          "definition": "Composed utility+selection+test times, not test-only deployment latency"
+        },
+        {
+          "field": "brier_multiclass",
+          "pandas_dtype": "float64",
+          "definition": "Mean row sum of squared class-probability errors, not divided by class count"
+        },
+        {
+          "field": "ece_top_label",
+          "pandas_dtype": "float64",
+          "definition": "Original 15-bin comparator ECE, retained unchanged for audit"
+        },
+        {
+          "field": "rare_ece_top_label",
+          "pandas_dtype": "float64",
+          "definition": "Original 15-bin comparator rare-row ECE, retained unchanged"
+        },
+        {
+          "field": "ece_15",
+          "pandas_dtype": "float64",
+          "definition": "Audit alias of unchanged original comparator 15-bin top-label ECE"
+        },
+        {
+          "field": "rare_ece_15",
+          "pandas_dtype": "float64",
+          "definition": "Audit alias of unchanged original 15-bin rare-row ECE"
+        },
+        {
+          "field": "ece_10",
+          "pandas_dtype": "float64",
+          "definition": "Primary top-label ECE; exact Euclid right-closed 10-bin endpoint"
+        },
+        {
+          "field": "rare_ece_10",
+          "pandas_dtype": "float64",
+          "definition": "Same ECE10 restricted to test rows with a fit-defined rare true label"
+        }
+      ],
+      "summary_csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\manuscript_summary.csv",
+      "delta_csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\real_blend_delta_summary.csv",
+      "ranges_csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\metric_ranges.csv",
+      "summary": [
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "seeds": 6,
+          "f1_macro_mean": 0.8692420119266795,
+          "f1_macro_sd": 0.0012136445915259,
+          "rare_recall_mean": 0.5402596945059788,
+          "rare_recall_sd": 0.0037925876402606,
+          "accuracy_mean": 0.9396406584793632,
+          "pr_auc_macro_mean": 0.8944079745368794,
+          "brier_mean": 0.0807861351462282,
+          "ece_15_mean": 0.007178984885979,
+          "ece_10_mean": 0.0071777149423136,
+          "ece_10_sd": 0.001105764268563,
+          "rare_ece_10_mean": 0.0726490550796466,
+          "rare_ece_10_sd": 0.0064089547867826
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "seeds": 6,
+          "f1_macro_mean": 0.8633072462762166,
+          "f1_macro_sd": 0.0017930465146567,
+          "rare_recall_mean": 0.5060536664581531,
+          "rare_recall_sd": 0.0087626031267331,
+          "accuracy_mean": 0.9401361505482694,
+          "pr_auc_macro_mean": 0.8880510663004116,
+          "brier_mean": 0.0806252167562457,
+          "ece_15_mean": 0.0078392202289986,
+          "ece_10_mean": 0.0078385429642191,
+          "ece_10_sd": 0.0003482044955415,
+          "rare_ece_10_mean": 0.0695212100777133,
+          "rare_ece_10_sd": 0.0046919291835653
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "seeds": 6,
+          "f1_macro_mean": 0.8823012628236472,
+          "f1_macro_sd": 0.0023265289786038,
+          "rare_recall_mean": 0.5987625338322363,
+          "rare_recall_sd": 0.0112304438766677,
+          "accuracy_mean": 0.9411488811008129,
+          "pr_auc_macro_mean": 0.9056405284179614,
+          "brier_mean": 0.0793920108508573,
+          "ece_15_mean": 0.0084320269262713,
+          "ece_10_mean": 0.0084275279396159,
+          "ece_10_sd": 0.0009879121897692,
+          "rare_ece_10_mean": 0.0813404189618729,
+          "rare_ece_10_sd": 0.0031241471945162
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "seeds": 6,
+          "f1_macro_mean": 0.8676991416018812,
+          "f1_macro_sd": 0.0011170462659935,
+          "rare_recall_mean": 0.5272417640072053,
+          "rare_recall_sd": 0.0058479988285222,
+          "accuracy_mean": 0.93987386699483,
+          "pr_auc_macro_mean": 0.8939495884543688,
+          "brier_mean": 0.0799262125430729,
+          "ece_15_mean": 0.0058921534285639,
+          "ece_10_mean": 0.0059433423763779,
+          "ece_10_sd": 0.0003566187145608,
+          "rare_ece_10_mean": 0.0743761743593906,
+          "rare_ece_10_sd": 0.0049818524507491
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "seeds": 6,
+          "f1_macro_mean": 0.8622716592216922,
+          "f1_macro_sd": 0.0016840945152605,
+          "rare_recall_mean": 0.4972428975810328,
+          "rare_recall_sd": 0.0066089298858151,
+          "accuracy_mean": 0.9401449270119264,
+          "pr_auc_macro_mean": 0.8868391431376286,
+          "brier_mean": 0.0798119654485389,
+          "ece_15_mean": 0.0065877298692348,
+          "ece_10_mean": 0.0065241803834024,
+          "ece_10_sd": 0.0003014276781817,
+          "rare_ece_10_mean": 0.0750553950207249,
+          "rare_ece_10_sd": 0.0034575562566899
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "seeds": 6,
+          "f1_macro_mean": 0.8824018474523058,
+          "f1_macro_sd": 0.0026192701004484,
+          "rare_recall_mean": 0.595036254432847,
+          "rare_recall_sd": 0.0104326850089973,
+          "accuracy_mean": 0.9413855963175488,
+          "pr_auc_macro_mean": 0.9064887623801412,
+          "brier_mean": 0.0782381935871285,
+          "ece_15_mean": 0.0070669837668885,
+          "ece_10_mean": 0.0070438429854587,
+          "ece_10_sd": 0.0004874674862938,
+          "rare_ece_10_mean": 0.0894478279648837,
+          "rare_ece_10_sd": 0.0058761874520958
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "seeds": 6,
+          "f1_macro_mean": 0.8533862052575062,
+          "f1_macro_sd": 0.0015706754423045,
+          "rare_recall_mean": 0.4874835915150787,
+          "rare_recall_sd": 0.0084546988458041,
+          "accuracy_mean": 0.9377456273991056,
+          "pr_auc_macro_mean": 0.8835325663276783,
+          "brier_mean": 0.0820653965789493,
+          "ece_15_mean": 0.0045208571498904,
+          "ece_10_mean": 0.0044675831507365,
+          "ece_10_sd": 0.0004266291744288,
+          "rare_ece_10_mean": 0.0996306187956812,
+          "rare_ece_10_sd": 0.0035956016616067
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "seeds": 6,
+          "f1_macro_mean": 0.8678053613573314,
+          "f1_macro_sd": 0.0029280661934008,
+          "rare_recall_mean": 0.5810377494669018,
+          "rare_recall_sd": 0.0122581722287892,
+          "accuracy_mean": 0.9376041613045312,
+          "pr_auc_macro_mean": 0.8641657183024535,
+          "brier_mean": 0.1025303671677008,
+          "ece_15_mean": 0.0397606470472334,
+          "ece_10_mean": 0.0397606470472335,
+          "ece_10_sd": 0.0004365881435353,
+          "rare_ece_10_mean": 0.276708366981248,
+          "rare_ece_10_sd": 0.0069819312001502
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "seeds": 6,
+          "f1_macro_mean": 0.8734011276586192,
+          "f1_macro_sd": 0.0031436792213325,
+          "rare_recall_mean": 0.5802720137835968,
+          "rare_recall_sd": 0.0123383936349021,
+          "accuracy_mean": 0.9394520557565884,
+          "pr_auc_macro_mean": 0.90165942002867,
+          "brier_mean": 0.0794588552896189,
+          "ece_15_mean": 0.0017417004533155,
+          "ece_10_mean": 0.0015990004168898,
+          "ece_10_sd": 0.0003530965383275,
+          "rare_ece_10_mean": 0.0893644100343977,
+          "rare_ece_10_sd": 0.0017548693821771
+        }
+      ],
+      "deltas_real_equal_blend_minus_control": [
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_xgboost",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.029015642194799518,
+          "sample_sd_delta": 0.002785043772716457,
+          "minimum_delta": 0.025018924897428185,
+          "maximum_delta": 0.032438784717914504,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_xgboost",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.10755266291776827,
+          "sample_sd_delta": 0.0127994833289019,
+          "minimum_delta": 0.08976340099376223,
+          "maximum_delta": 0.12672252837159148,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_xgboost",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.022956196052462814,
+          "sample_sd_delta": 0.0023490442741789077,
+          "minimum_delta": 0.020417766361941925,
+          "maximum_delta": 0.026773170428163073,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_xgboost",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.003639968918443204,
+          "sample_sd_delta": 0.00028280210250158753,
+          "minimum_delta": 0.0032843246869409537,
+          "maximum_delta": 0.004039204039203992,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_xgboost",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": 0.0025762598347221968,
+          "sample_sd_delta": 0.00029959958475538653,
+          "minimum_delta": 0.002249822877449059,
+          "maximum_delta": 0.002997365883383918,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "flat_weighted_xgboost",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": -0.010182790830797565,
+          "sample_sd_delta": 0.008132532151790647,
+          "minimum_delta": -0.01660196779907193,
+          "maximum_delta": 0.004287405841205932,
+          "positive_seeds": 1,
+          "zero_seeds": 0,
+          "negative_seeds": 5
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_cyclic_blend",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.014702705850424566,
+          "sample_sd_delta": 0.0020345234953364688,
+          "minimum_delta": 0.011997888432851211,
+          "maximum_delta": 0.017057271878431535,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_cyclic_blend",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.06779449042564169,
+          "sample_sd_delta": 0.008033080473875721,
+          "minimum_delta": 0.0586577186424605,
+          "maximum_delta": 0.07633378416299497,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_cyclic_blend",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.012539173925772399,
+          "sample_sd_delta": 0.0014830011429695074,
+          "minimum_delta": 0.010652305324705735,
+          "maximum_delta": 0.014151808338568217,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_cyclic_blend",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.0015117293227189799,
+          "sample_sd_delta": 0.00025390139579821544,
+          "minimum_delta": 0.0011285498658317739,
+          "maximum_delta": 0.0018099547511312153,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_cyclic_blend",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": 0.0011005006090807888,
+          "sample_sd_delta": 0.0003663221321018396,
+          "minimum_delta": 0.0007062358907115283,
+          "maximum_delta": 0.001604784532223482,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_cyclic_blend",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": 0.015071653605493103,
+          "sample_sd_delta": 0.009726413039281796,
+          "minimum_delta": 0.004728087117563798,
+          "maximum_delta": 0.03138951334322655,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_support_matched_blend",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.02013018823061352,
+          "sample_sd_delta": 0.0033150973951763646,
+          "minimum_delta": 0.015179672094786434,
+          "maximum_delta": 0.02420292551799408,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_support_matched_blend",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.09779335685181421,
+          "sample_sd_delta": 0.013315883371599158,
+          "minimum_delta": 0.0802927912003315,
+          "maximum_delta": 0.114173370689924,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_support_matched_blend",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.019649619242512517,
+          "sample_sd_delta": 0.0032486268039849855,
+          "minimum_delta": 0.014450929774063925,
+          "maximum_delta": 0.023801786732931318,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_support_matched_blend",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.0012406693056222957,
+          "sample_sd_delta": 0.0002738021807304176,
+          "minimum_delta": 0.0009865072396338936,
+          "maximum_delta": 0.0017016369957545407,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_support_matched_blend",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": 0.0005196626020562913,
+          "sample_sd_delta": 0.00019900243519410457,
+          "minimum_delta": 0.00029124628371825483,
+          "maximum_delta": 0.0008194571348666968,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "equal_flat_support_matched_blend",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": 0.014392432944158746,
+          "sample_sd_delta": 0.006725173855584101,
+          "minimum_delta": 0.006799927995288668,
+          "maximum_delta": 0.025069460644056032,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "soft_taxonomy_factorisation",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.00900071979368657,
+          "sample_sd_delta": 0.0021842770102102477,
+          "minimum_delta": 0.005690364010752069,
+          "maximum_delta": 0.011638973641293848,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "soft_taxonomy_factorisation",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.014764240649250212,
+          "sample_sd_delta": 0.007737489357066321,
+          "minimum_delta": 0.005237350102101246,
+          "maximum_delta": 0.024113122497169237,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "soft_taxonomy_factorisation",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.004829342351470996,
+          "sample_sd_delta": 0.0017567376557980803,
+          "minimum_delta": 0.0017959949653781893,
+          "maximum_delta": 0.006434261160598087,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "soft_taxonomy_factorisation",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.0019335405609604932,
+          "sample_sd_delta": 0.00022916711789545377,
+          "minimum_delta": 0.0017392765029693447,
+          "maximum_delta": 0.0023690141337199266,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "soft_taxonomy_factorisation",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": 0.005444842568568951,
+          "sample_sd_delta": 0.0003953006568816098,
+          "minimum_delta": 0.005025437712369889,
+          "maximum_delta": 0.006064748110819971,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "soft_taxonomy_factorisation",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": 8.341793048597991e-05,
+          "sample_sd_delta": 0.007355583365721744,
+          "minimum_delta": -0.007355011278705692,
+          "maximum_delta": 0.010608380982914084,
+          "positive_seeds": 3,
+          "zero_seeds": 0,
+          "negative_seeds": 3
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "hard_top_down_taxonomy",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.014596486094974362,
+          "sample_sd_delta": 0.002079241333475069,
+          "minimum_delta": 0.011770017447154446,
+          "maximum_delta": 0.016973003774491624,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "hard_top_down_taxonomy",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.013998504965945291,
+          "sample_sd_delta": 0.007796943662481661,
+          "minimum_delta": 0.0037866089370656164,
+          "maximum_delta": 0.023388294996605552,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "hard_top_down_taxonomy",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.042323044077687534,
+          "sample_sd_delta": 0.00247494235922998,
+          "minimum_delta": 0.03752780254690957,
+          "maximum_delta": 0.044444654032484765,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "hard_top_down_taxonomy",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.003781435013017661,
+          "sample_sd_delta": 0.00031131774009219876,
+          "minimum_delta": 0.0033700669463972988,
+          "maximum_delta": 0.004322227851639604,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "hard_top_down_taxonomy",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": -0.03271680406177479,
+          "sample_sd_delta": 0.0008516963891319633,
+          "minimum_delta": -0.03358400419252055,
+          "maximum_delta": -0.03156213681016893,
+          "positive_seeds": 0,
+          "zero_seeds": 0,
+          "negative_seeds": 6
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "hard_top_down_taxonomy",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": -0.18726053901636433,
+          "sample_sd_delta": 0.009749668936648387,
+          "minimum_delta": -0.19615956122119607,
+          "maximum_delta": -0.1705693821489238,
+          "positive_seeds": 0,
+          "zero_seeds": 0,
+          "negative_seeds": 6
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_taxonomy_benefit_gate",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.00010058462865862132,
+          "sample_sd_delta": 0.0006128215720642101,
+          "minimum_delta": -0.0005340359598283717,
+          "maximum_delta": 0.0011390601221340502,
+          "positive_seeds": 3,
+          "zero_seeds": 0,
+          "negative_seeds": 3
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_taxonomy_benefit_gate",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": -0.0037262793993892984,
+          "sample_sd_delta": 0.0023999766373160145,
+          "minimum_delta": -0.006798778122997562,
+          "maximum_delta": -0.0008819654751104355,
+          "positive_seeds": 0,
+          "zero_seeds": 0,
+          "negative_seeds": 6
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_taxonomy_benefit_gate",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.0008482339621797933,
+          "sample_sd_delta": 0.0011400576694050163,
+          "minimum_delta": -0.0004170283494766558,
+          "maximum_delta": 0.0026167726307257944,
+          "positive_seeds": 4,
+          "zero_seeds": 0,
+          "negative_seeds": 2
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_taxonomy_benefit_gate",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.000236715216736146,
+          "sample_sd_delta": 0.00037444590342959854,
+          "minimum_delta": -0.00011180679785327552,
+          "maximum_delta": 0.0007765007100434262,
+          "positive_seeds": 4,
+          "zero_seeds": 0,
+          "negative_seeds": 2
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_taxonomy_benefit_gate",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": -0.0013836849541571576,
+          "sample_sd_delta": 0.001057102600465755,
+          "minimum_delta": -0.0024579080530185062,
+          "maximum_delta": 0.0004714412299919469,
+          "positive_seeds": 1,
+          "zero_seeds": 0,
+          "negative_seeds": 5
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_taxonomy_benefit_gate",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": 0.00810740900301081,
+          "sample_sd_delta": 0.007834002261730106,
+          "minimum_delta": 0.0010602542162377881,
+          "maximum_delta": 0.020240874814706558,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_cyclic_taxonomy_control",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.013159835525626348,
+          "sample_sd_delta": 0.002234852534935171,
+          "minimum_delta": 0.009944745372068797,
+          "maximum_delta": 0.01660562264287524,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_cyclic_taxonomy_control",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.05477655992686827,
+          "sample_sd_delta": 0.011677212098095835,
+          "minimum_delta": 0.0406546914188618,
+          "maximum_delta": 0.07394683404839109,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_cyclic_taxonomy_control",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.012080787843261739,
+          "sample_sd_delta": 0.001212414419967166,
+          "minimum_delta": 0.010815837447863741,
+          "maximum_delta": 0.01355832252795397,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_cyclic_taxonomy_control",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.0017449378381857266,
+          "sample_sd_delta": 0.00038134498488546603,
+          "minimum_delta": 0.0011739713774597815,
+          "maximum_delta": 0.002252874689092854,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_cyclic_taxonomy_control",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": -0.0001338719568548482,
+          "sample_sd_delta": 0.0008157505525007766,
+          "minimum_delta": -0.0009377562687286969,
+          "maximum_delta": 0.0011312710502064324,
+          "positive_seeds": 2,
+          "zero_seeds": 0,
+          "negative_seeds": 4
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_cyclic_taxonomy_control",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": 0.016798772885237102,
+          "sample_sd_delta": 0.008397728893090166,
+          "minimum_delta": 0.007873053199275892,
+          "maximum_delta": 0.02753148539647743,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_support_matched_control",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean_delta": 0.01909460117608926,
+          "sample_sd_delta": 0.0030621084878778185,
+          "minimum_delta": 0.014177650921713303,
+          "maximum_delta": 0.02246669518658484,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_support_matched_control",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean_delta": 0.08898258797469394,
+          "sample_sd_delta": 0.013303566946342575,
+          "minimum_delta": 0.07008599990577791,
+          "maximum_delta": 0.10860702353550228,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_support_matched_control",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean_delta": 0.01843769607972945,
+          "sample_sd_delta": 0.002216541162647202,
+          "minimum_delta": 0.015680841877954488,
+          "maximum_delta": 0.021867789476290644,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_support_matched_control",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean_delta": 0.001249445769279563,
+          "sample_sd_delta": 0.0003221661112416804,
+          "minimum_delta": 0.0009189121198568406,
+          "maximum_delta": 0.001750554691731132,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_support_matched_control",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean_delta": -0.0007946999787604038,
+          "sample_sd_delta": 0.0002698928156361312,
+          "minimum_delta": -0.0011667781373602007,
+          "maximum_delta": -0.0004790452590860911,
+          "positive_seeds": 0,
+          "zero_seeds": 0,
+          "negative_seeds": 6
+        },
+        {
+          "treatment": "equal_flat_taxonomy_blend",
+          "control": "calibrated_support_matched_control",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean_delta": 0.019926617887170397,
+          "sample_sd_delta": 0.009568397688593274,
+          "minimum_delta": 0.00939525933057446,
+          "maximum_delta": 0.03503879107418677,
+          "positive_seeds": 6,
+          "zero_seeds": 0,
+          "negative_seeds": 0
+        }
+      ],
+      "ranges": [
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9396406584793632,
+          "sample_sd": 0.0007034876315827267,
+          "minimum": 0.9386371507432038,
+          "maximum": 0.9405719876308112
+        },
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8692420119266794,
+          "sample_sd": 0.0012136445915259446,
+          "minimum": 0.8672570120167428,
+          "maximum": 0.8710353764420448
+        },
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.5402596945059788,
+          "sample_sd": 0.0037925876402606757,
+          "minimum": 0.5368538340942922,
+          "maximum": 0.5467807371833723
+        },
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.8944079745368795,
+          "sample_sd": 0.0011602908795309728,
+          "minimum": 0.8928716854861938,
+          "maximum": 0.8962313871492356
+        },
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.08078613514622829,
+          "sample_sd": 0.0006100351915881688,
+          "minimum": 0.07998130420512825,
+          "maximum": 0.0816157911519309
+        },
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.0071777149423136065,
+          "sample_sd": 0.0011057642685630446,
+          "minimum": 0.005760526394134021,
+          "maximum": 0.00820940388384279
+        },
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.0726490550796466,
+          "sample_sd": 0.006408954786782703,
+          "minimum": 0.0633824829031825,
+          "maximum": 0.0811746807977261
+        },
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.007178984885979139,
+          "sample_sd": 0.0011066129829823087,
+          "minimum": 0.005760526394133803,
+          "maximum": 0.00820940388384274
+        },
+        {
+          "run_id": "calibrated_cyclic_taxonomy_control",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.0733260950483821,
+          "sample_sd": 0.005633023038155263,
+          "minimum": 0.0660097275770479,
+          "maximum": 0.08117468079772613
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9401361505482694,
+          "sample_sd": 0.0004154463384647712,
+          "minimum": 0.9395378771449958,
+          "maximum": 0.9406209053267877
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8633072462762166,
+          "sample_sd": 0.0017930465146567321,
+          "minimum": 0.8615940181574092,
+          "maximum": 0.8663184954614456
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.5060536664581532,
+          "sample_sd": 0.008762603126733132,
+          "minimum": 0.49303962842212373,
+          "maximum": 0.5173494286964562
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.8880510663004116,
+          "sample_sd": 0.0018402679395322587,
+          "minimum": 0.8855706902942622,
+          "maximum": 0.8901141039791272
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.08062521675624573,
+          "sample_sd": 0.00045869020381043455,
+          "minimum": 0.07992744139968913,
+          "maximum": 0.0811878912078089
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.007838542964219162,
+          "sample_sd": 0.0003482044955415525,
+          "minimum": 0.007518177457400177,
+          "maximum": 0.008262983360567421
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.0695212100777133,
+          "sample_sd": 0.004691929183565345,
+          "minimum": 0.06275105791199266,
+          "maximum": 0.0753087057348878
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.007839220228998715,
+          "sample_sd": 0.0003486347740689879,
+          "minimum": 0.007518177457400287,
+          "maximum": 0.008262983360567286
+        },
+        {
+          "run_id": "calibrated_support_matched_control",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.07012688882167205,
+          "sample_sd": 0.005632553494627269,
+          "minimum": 0.0644455478563359,
+          "maximum": 0.07718845209540784
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9411488811008127,
+          "sample_sd": 0.0006535764720643335,
+          "minimum": 0.9401709700662474,
+          "maximum": 0.9421722951134716
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8823012628236472,
+          "sample_sd": 0.0023265289786038043,
+          "minimum": 0.8795610646096261,
+          "maximum": 0.8858590499303556
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.5987625338322363,
+          "sample_sd": 0.011230443876667814,
+          "minimum": 0.5873620631163194,
+          "maximum": 0.6147578958059452
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.9056405284179614,
+          "sample_sd": 0.002737142045684642,
+          "minimum": 0.9022645985464197,
+          "maximum": 0.9100482062652087
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.07939201085085744,
+          "sample_sd": 0.0007078448279825664,
+          "minimum": 0.07817187824213863,
+          "maximum": 0.08026567822844903
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.008427527939615915,
+          "sample_sd": 0.0009879121897692072,
+          "minimum": 0.006420356214348506,
+          "maximum": 0.008921093840843929
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.0813404189618729,
+          "sample_sd": 0.0031241471945162892,
+          "minimum": 0.07514794374467808,
+          "maximum": 0.08342641316630077
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.008432026926271383,
+          "sample_sd": 0.0009897803723308122,
+          "minimum": 0.00642035621434839,
+          "maximum": 0.008928717375969512
+        },
+        {
+          "run_id": "calibrated_taxonomy_benefit_gate",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.08064137827068593,
+          "sample_sd": 0.0038845734648265667,
+          "minimum": 0.07485083439416333,
+          "maximum": 0.086446357535414
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.93987386699483,
+          "sample_sd": 0.000505900228646492,
+          "minimum": 0.9392265773107892,
+          "maximum": 0.9405615052673876
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8676991416018812,
+          "sample_sd": 0.0011170462659935675,
+          "minimum": 0.8666068462379829,
+          "maximum": 0.8696948035459259
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.5272417640072055,
+          "sample_sd": 0.005847998828522279,
+          "minimum": 0.5219914425160854,
+          "maximum": 0.5385055596247192
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.8939495884543688,
+          "sample_sd": 0.0009237506493844795,
+          "minimum": 0.8930352176093518,
+          "maximum": 0.8956379013386213
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.07992621254307297,
+          "sample_sd": 0.0005336922807712716,
+          "minimum": 0.07911772325825338,
+          "maximum": 0.08049623594503956
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.00594334237637797,
+          "sample_sd": 0.00035661871456089576,
+          "minimum": 0.005423593879647361,
+          "maximum": 0.006298856336925592
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.0743761743593906,
+          "sample_sd": 0.0049818524507491075,
+          "minimum": 0.06640033564295288,
+          "maximum": 0.07940311646788296
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.005892153428563969,
+          "sample_sd": 0.00031217236137188266,
+          "minimum": 0.00548665837984515,
+          "maximum": 0.0062626288106532955
+        },
+        {
+          "run_id": "equal_flat_cyclic_blend",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.07492279300212336,
+          "sample_sd": 0.004551294968483261,
+          "minimum": 0.06795491806108912,
+          "maximum": 0.07952955349081187
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9401449270119265,
+          "sample_sd": 0.00038758063440353226,
+          "minimum": 0.9397081842576028,
+          "maximum": 0.9406698230227643
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8622716592216922,
+          "sample_sd": 0.0016840945152605147,
+          "minimum": 0.860654283852603,
+          "maximum": 0.8653164742883724
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.49724289758103285,
+          "sample_sd": 0.006608929885815173,
+          "minimum": 0.487473281267702,
+          "maximum": 0.5071426374019026
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.8868391431376286,
+          "sample_sd": 0.0024523321737751026,
+          "minimum": 0.8841480011542628,
+          "maximum": 0.890755361573996
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.07981196544853895,
+          "sample_sd": 0.00039447047422735146,
+          "minimum": 0.07915418216527713,
+          "maximum": 0.08022777500272216
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.006524180383402467,
+          "sample_sd": 0.00030142767818177956,
+          "minimum": 0.006097494075005628,
+          "maximum": 0.006964480966614633
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.07505539502072496,
+          "sample_sd": 0.0034575562566899224,
+          "minimum": 0.07047003611519194,
+          "maximum": 0.08032614818518084
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.006587729869234849,
+          "sample_sd": 0.0003064429290312738,
+          "minimum": 0.006101193975229137,
+          "maximum": 0.006945432970688722
+        },
+        {
+          "run_id": "equal_flat_support_matched_blend",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.07461367986054136,
+          "sample_sd": 0.005673099549598284,
+          "minimum": 0.06837801324853493,
+          "maximum": 0.08421787156514242
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9413855963175489,
+          "sample_sd": 0.0006145074897027698,
+          "minimum": 0.9408542039355993,
+          "maximum": 0.9423714600185188
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8824018474523058,
+          "sample_sd": 0.0026192701004484286,
+          "minimum": 0.8791638000849872,
+          "maximum": 0.8862139208630564
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.595036254432847,
+          "sample_sd": 0.01043268500899733,
+          "minimum": 0.5857081533223361,
+          "maximum": 0.6116980869529132
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.9064887623801412,
+          "sample_sd": 0.0022732245088055514,
+          "minimum": 0.9036875229340575,
+          "maximum": 0.9097897096771895
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.07823819358712854,
+          "sample_sd": 0.0005573232402253022,
+          "minimum": 0.0773830793865159,
+          "maximum": 0.07885146640168382
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.007043842985458758,
+          "sample_sd": 0.0004874674862938586,
+          "minimum": 0.006388740358723883,
+          "maximum": 0.00778393810148133
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.0894478279648837,
+          "sample_sd": 0.0058761874520958735,
+          "minimum": 0.08413120358544676,
+          "maximum": 0.09778984898617943
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.007066983766888608,
+          "sample_sd": 0.0005001657021850035,
+          "minimum": 0.006443670190938555,
+          "maximum": 0.007828715885889178
+        },
+        {
+          "run_id": "equal_flat_taxonomy_blend",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.08927717352155433,
+          "sample_sd": 0.00555390964405874,
+          "minimum": 0.08410204314969887,
+          "maximum": 0.09730360090191145
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9377456273991056,
+          "sample_sd": 0.0005139652012130711,
+          "minimum": 0.9371049160944108,
+          "maximum": 0.9383322559793148
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8533862052575062,
+          "sample_sd": 0.0015706754423045824,
+          "minimum": 0.851422298624245,
+          "maximum": 0.8554772214857307
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.4874835915150788,
+          "sample_sd": 0.00845469884580414,
+          "minimum": 0.47492412358603453,
+          "maximum": 0.49767202760847185
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.8835325663276784,
+          "sample_sd": 0.0019013077854098896,
+          "minimum": 0.8811643335056184,
+          "maximum": 0.88562796454118
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.08206539657894933,
+          "sample_sd": 0.0005232825726512856,
+          "minimum": 0.08143447375181681,
+          "maximum": 0.08287960216259602
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.004467583150736562,
+          "sample_sd": 0.0004266291744288613,
+          "minimum": 0.0039841594192365475,
+          "maximum": 0.005051291491157895
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.09963061879568126,
+          "sample_sd": 0.003595601661606726,
+          "minimum": 0.0935024431449735,
+          "maximum": 0.1042985369304471
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.004520857149890455,
+          "sample_sd": 0.000457751237014222,
+          "minimum": 0.003984159419236564,
+          "maximum": 0.005172046343309124
+        },
+        {
+          "run_id": "flat_weighted_xgboost",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.09970016026019196,
+          "sample_sd": 0.0035632488385328063,
+          "minimum": 0.09365314268211819,
+          "maximum": 0.10432254238767605
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9376041613045313,
+          "sample_sd": 0.0005533783645642347,
+          "minimum": 0.9370629370629371,
+          "maximum": 0.9384569082872851
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8678053613573314,
+          "sample_sd": 0.0029280661934008943,
+          "minimum": 0.8645235503398,
+          "maximum": 0.8720910658950051
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.5810377494669018,
+          "sample_sd": 0.012258172228789254,
+          "minimum": 0.5666409232010465,
+          "maximum": 0.5978600430205604
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.8641657183024535,
+          "sample_sd": 0.0038203638613118285,
+          "minimum": 0.8603136565128477,
+          "maximum": 0.8704219853402846
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.10253036716770086,
+          "sample_sd": 0.0008846217593749593,
+          "minimum": 0.10131444142668435,
+          "maximum": 0.10356582184442333
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.03976064704723355,
+          "sample_sd": 0.00043658814353535137,
+          "minimum": 0.03897824340587707,
+          "maximum": 0.04008994803268003
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.276708366981248,
+          "sample_sd": 0.0069819312001502,
+          "minimum": 0.26835923113510324,
+          "maximum": 0.2871800967035296
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.03976064704723351,
+          "sample_sd": 0.00043658814353541566,
+          "minimum": 0.03897824340587694,
+          "maximum": 0.04008994803268004
+        },
+        {
+          "run_id": "hard_top_down_taxonomy",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.27670836698124807,
+          "sample_sd": 0.006981931200150239,
+          "minimum": 0.26835923113510324,
+          "maximum": 0.28718009670352973
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "accuracy",
+          "seeds": 6,
+          "mean": 0.9394520557565884,
+          "sample_sd": 0.0005295342816701883,
+          "minimum": 0.9389170109530289,
+          "maximum": 0.9400876987307131
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "f1_macro",
+          "seeds": 6,
+          "mean": 0.8734011276586192,
+          "sample_sd": 0.003143679221332582,
+          "minimum": 0.8700055038238307,
+          "maximum": 0.8781707193314074
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "rare_recall",
+          "seeds": 6,
+          "mean": 0.5802720137835968,
+          "sample_sd": 0.012338393634902122,
+          "minimum": 0.5659205240906549,
+          "maximum": 0.5964093018555248
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "pr_auc_macro",
+          "seeds": 6,
+          "mean": 0.9016594200286701,
+          "sample_sd": 0.0032366045972543746,
+          "minimum": 0.8982483952966918,
+          "maximum": 0.906153792921816
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "brier_multiclass",
+          "seeds": 6,
+          "mean": 0.07945885528961895,
+          "sample_sd": 0.0006411592453584194,
+          "minimum": 0.07860870067926418,
+          "maximum": 0.08028101984002861
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "ece_10",
+          "seeds": 6,
+          "mean": 0.0015990004168898082,
+          "sample_sd": 0.0003530965383275742,
+          "minimum": 0.0011013645094523116,
+          "maximum": 0.001980265359337252
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "rare_ece_10",
+          "seeds": 6,
+          "mean": 0.08936441003439773,
+          "sample_sd": 0.0017548693821771797,
+          "minimum": 0.08718146800326534,
+          "maximum": 0.09149178290291117
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "ece_15",
+          "seeds": 6,
+          "mean": 0.0017417004533156145,
+          "sample_sd": 0.0003829801809747808,
+          "minimum": 0.00131230318738327,
+          "maximum": 0.002293848693463162
+        },
+        {
+          "run_id": "soft_taxonomy_factorisation",
+          "metric": "rare_ece_15",
+          "seeds": 6,
+          "mean": 0.08947574693775118,
+          "sample_sd": 0.001979456502165384,
+          "minimum": 0.08718146800326534,
+          "maximum": 0.09253018514084063
+        }
+      ],
+      "frozen_settings": {
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "outer_test_frac": 0.2,
+        "base_fraction": 0.7,
+        "gate_train_fraction": 0.15,
+        "gate_select_fraction": 0.15,
+        "majority_cap": 25000,
+        "benign_cap": 80000,
+        "global_trees": 520,
+        "local_trees": 380,
+        "rare_lambda": 0.04,
+        "n_jobs": 2,
+        "group_disjoint": true,
+        "grouping_basis": "37 cleaned float32 predictor values (the actual model input)",
+        "temperature_bounds": [
+          0.25,
+          5.0
+        ],
+        "temperature_xatol": 0.0001,
+        "stacker": {
+          "C": 1.0,
+          "max_iter": 100,
+          "solver": "newton-cholesky"
+        },
+        "methods": [
+          "flat_weighted_xgboost",
+          "equal_flat_taxonomy_blend",
+          "equal_flat_cyclic_blend",
+          "equal_flat_support_matched_blend",
+          "calibrated_taxonomy_benefit_gate",
+          "calibrated_cyclic_taxonomy_control",
+          "calibrated_support_matched_control",
+          "soft_taxonomy_factorisation",
+          "hard_top_down_taxonomy"
+        ],
+        "metric_probability_precision": "float64 (checkpointed without quantization)",
+        "venue_route": "EI engineering empirical validation; indexing is not a method standard",
+        "flat_calibration_fit_role": "utility (same ordered rows as v10 reference calibration)",
+        "flat_stacker_fit_role": "utility (same ordered rows as v10 reference calibration)",
+        "flat_selection_role_permission": "diagnostic evaluation only, no fitting or model choice",
+        "stratification": "group modal fine label, ties lexicographic; observed labels never altered",
+        "observed_conflicting_groups": 0,
+        "roles_are_paired_with_original_PRIMARY": false,
+        "calibrated_flat_controls": "not part of this additional core confirmation"
+      },
+      "run_contract": "<WORKSPACE>\\harmonized\\results\\grouped37\\run_contract.json",
+      "run_contract_sha256": "e572149a9123d0bdcd0a87e1e7e4b49368b23b6c9b903277dd44f61719cf5991"
+    }
+  },
+  "verification": {
+    "report": "<WORKSPACE>\\harmonized\\verification_report.json",
+    "sha256": "4443105abc2395d5e800504a20145b310c8d501964f7e87bd33920195953ea63",
+    "results": [
+      {
+        "protocol": "paired46",
+        "status": "COMPLETE_PASS",
+        "completed_seeds": [
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "verified_method_rows": 78,
+        "actual_float32_groups_independently_recomputed": false,
+        "independently_verified_group_role_pairs": 0,
+        "stacker_convergence_audits": [
+          {
+            "seed": 42,
+            "n_iter": [
+              11
+            ],
+            "n_features_in": 68,
+            "solver": "newton-cholesky",
+            "n_jobs": null,
+            "runtime_threadpool_limit": 2,
+            "fit_role": "utility",
+            "checkpoint_sha256": "b51dbc941b9af56ccb0f8d28dbc2687485a6dc93846c41f01b21df18d19bc17e"
+          },
+          {
+            "seed": 43,
+            "n_iter": [
+              9
+            ],
+            "n_features_in": 68,
+            "solver": "newton-cholesky",
+            "n_jobs": null,
+            "runtime_threadpool_limit": 2,
+            "fit_role": "utility",
+            "checkpoint_sha256": "823c0b7e58135852847cf4297e4c3f92451de99178b450b479cda8337b0f83ed"
+          },
+          {
+            "seed": 44,
+            "n_iter": [
+              15
+            ],
+            "n_features_in": 68,
+            "solver": "newton-cholesky",
+            "n_jobs": null,
+            "runtime_threadpool_limit": 2,
+            "fit_role": "utility",
+            "checkpoint_sha256": "bda14bed0ba527deced69384ff8a32a843ea3405d3ad6d915437e8a8938ff9dd"
+          },
+          {
+            "seed": 45,
+            "n_iter": [
+              13
+            ],
+            "n_features_in": 68,
+            "solver": "newton-cholesky",
+            "n_jobs": null,
+            "runtime_threadpool_limit": 2,
+            "fit_role": "utility",
+            "checkpoint_sha256": "0f84db2afa43278b7853eb40b3bb29e28d24a53301f3a4d74cc47c0a9ca9fb87"
+          },
+          {
+            "seed": 46,
+            "n_iter": [
+              12
+            ],
+            "n_features_in": 68,
+            "solver": "newton-cholesky",
+            "n_jobs": null,
+            "runtime_threadpool_limit": 2,
+            "fit_role": "utility",
+            "checkpoint_sha256": "bffe4d6662d880b889e7fd1b7e5a1bac6ff5b38527e8b36a49e694bed6aef9f9"
+          },
+          {
+            "seed": 47,
+            "n_iter": [
+              14
+            ],
+            "n_features_in": 68,
+            "solver": "newton-cholesky",
+            "n_jobs": null,
+            "runtime_threadpool_limit": 2,
+            "fit_role": "utility",
+            "checkpoint_sha256": "91b40eaca9723df8f738a3644d9233ca853563aa83a4020f4bebe910d0d2d70d"
+          }
+        ],
+        "expected_method_rows": 78,
+        "missing": []
+      },
+      {
+        "protocol": "grouped37",
+        "status": "COMPLETE_PASS",
+        "completed_seeds": [
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "verified_method_rows": 54,
+        "actual_float32_groups_independently_recomputed": true,
+        "independently_verified_group_role_pairs": 36,
+        "stacker_convergence_audits": [],
+        "expected_method_rows": 54,
+        "missing": []
+      }
+    ],
+    "ece10_report": "<WORKSPACE>\\harmonized\\ece10_derivation_report.json",
+    "ece10_results": [
+      {
+        "protocol": "paired46",
+        "status": "COMPLETE_PASS",
+        "rows": 78,
+        "expected_rows": 78,
+        "duplicate_seed_method_keys": 0,
+        "exact_frozen_seed_method_key_set": true,
+        "explicit_ece10_fields_finite": true,
+        "frozen_per_method_metric_files_unchanged": true,
+        "independent_interval_check_tolerance": 1e-15
+      },
+      {
+        "protocol": "grouped37",
+        "status": "COMPLETE_PASS",
+        "rows": 54,
+        "expected_rows": 54,
+        "duplicate_seed_method_keys": 0,
+        "exact_frozen_seed_method_key_set": true,
+        "explicit_ece10_fields_finite": true,
+        "frozen_per_method_metric_files_unchanged": true,
+        "independent_interval_check_tolerance": 1e-15
+      }
+    ],
+    "grouped_actual_input_hash_role_overlap_csv": "<WORKSPACE>\\harmonized\\results\\grouped37\\independent_actual37_role_overlap.csv",
+    "model_input_representation_report": "<WORKSPACE>\\harmonized\\representation_verification.json",
+    "model_input_dtype": "float32",
+    "raw_and_clean_group_partitions_identical": true,
+    "read_only_reference_sources_rechecked": 1506
+  },
+  "frozen_settings": {
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "outer_test_frac": 0.2,
+    "base_fraction": 0.7,
+    "gate_train_fraction": 0.15,
+    "gate_select_fraction": 0.15,
+    "majority_cap": 25000,
+    "benign_cap": 80000,
+    "global_trees": 520,
+    "local_trees": 380,
+    "rare_lambda": 0.04,
+    "n_jobs": 2,
+    "group_disjoint": true,
+    "grouping_basis": "original 46 predictors; identical PRIMARY roles",
+    "temperature_bounds": [
+      0.25,
+      5.0
+    ],
+    "temperature_xatol": 0.0001,
+    "stacker": {
+      "C": 1.0,
+      "max_iter": 100,
+      "solver": "newton-cholesky"
+    },
+    "methods": [
+      "flat_weighted_xgboost",
+      "flat_weighted_lightgbm",
+      "flat_equal_probability_blend",
+      "flat_temperature_calibrated_blend",
+      "flat_newton_log_probability_stacker",
+      "equal_flat_taxonomy_blend",
+      "soft_taxonomy_factorisation",
+      "hard_top_down_taxonomy",
+      "calibrated_taxonomy_benefit_gate",
+      "equal_flat_cyclic_blend",
+      "calibrated_cyclic_taxonomy_control",
+      "equal_flat_support_matched_blend",
+      "calibrated_support_matched_control"
+    ],
+    "metric_probability_precision": "float64 (checkpointed without quantization)",
+    "venue_route": "EI engineering empirical validation; indexing is not a method standard",
+    "flat_calibration_fit_role": "utility (same ordered rows as v10 reference calibration)",
+    "flat_stacker_fit_role": "utility (same ordered rows as v10 reference calibration)",
+    "flat_selection_role_permission": "diagnostic evaluation only, no fitting or model choice"
+  },
+  "full_frozen_settings_sources": [
+    "<WORKSPACE>\\harmonized\\EXPERIMENT_PROTOCOL.md",
+    "<WORKSPACE>\\harmonized\\all_checkpoint_manifest.csv"
+  ],
+  "operational_resource_policy": "<WORKSPACE>\\harmonized\\resource_policy.json",
+  "inference_execution_audit": {
+    "report": "<WORKSPACE>\\harmonized\\prediction_execution_audit.json",
+    "status": "EXACT_PASS",
+    "production_batching_installed": false,
+    "production_live_processes_modified": false,
+    "worker_execution_records": "<WORKSPACE>\\harmonized\\all_grouped_worker_execution.json"
+  },
+  "ece10_endpoint": {
+    "bins": 10,
+    "equal_width": true,
+    "right_closed": true,
+    "formula": "clip(digitize(confidence, linspace(0,1,11), right=True)-1,0,9)",
+    "bin_weight": "mask.mean()",
+    "normalization": "frozen v10 comparator.normalise",
+    "original_15bin_outputs_preserved": true,
+    "model_reselection": false
+  },
+  "data_role_proof_csv": "<WORKSPACE>\\harmonized\\all_data_roles.csv",
+  "collision_report": "<WORKSPACE>\\harmonized\\projection_collision_audit.json",
+  "runtime_csv": "<WORKSPACE>\\harmonized\\all_seed_runtimes.csv",
+  "execution_recovery": {
+    "audit": "<WORKSPACE>\\harmonized\\recovery\\seed42_stacker_recovery.json",
+    "external_interruption_audit": "<WORKSPACE>\\harmonized\\recovery\\external_interruption_20261019T0410.json",
+    "pre_interruption_checkpoints_reverified_unchanged": 50,
+    "cache_preflight": "<WORKSPACE>\\harmonized\\recovery\\cache_only_resume_preflight.json",
+    "no_stacker_refit": true,
+    "scientific_parameters_changed": false,
+    "seed42_exact_stacker_builder_seconds": null,
+    "seed42_stacker_wall_upper_bound_seconds": 592.068014
+  },
+  "known_measurement_limits": [
+    "No actual edge device measurement or deployment claim",
+    "Method inference times cover utility+selection+test, not test-only latency",
+    "Concurrent jobs and n_jobs=2 preclude direct historical timing comparisons",
+    "Seed42 Newton exact builder duration is unavailable after metadata-only recovery; its training_seconds is missing, while all prediction metrics remain complete",
+    "External worker loss observed at 04:10 has unknown cause/duration; unchanged checkpoints were reused, unsaved inference recomputed, and wall intervals retain interruption gaps",
+    "Original training-source hash drifted after the one-time copy; all fits use unchanged, frozen-SHA256 verified D caches",
+    "Six overlapping holdouts from one subsample are descriptive, not independent replications",
+    "Fixed-role paired37 retains measured projection collisions; grouped37 is a separate grouping confirmation",
+    "Grouped37 changes row roles and is not paired to the original 46-feature PRIMARY results",
+    "Grouped37 has nine core arms including taxonomy gates, but no flat temperature or Newton meta controls; it cannot equally exclude those competing explanations",
+    "No causal explanation of cross-corpus performance differences is identified",
+    "No independent-holdout p-values or confidence intervals are inferred from these six means",
+    "The 2660-tree budget-matched flat control is not part of this refit"
+  ],
+  "manuscript_edited": false,
+  "abandoned_harmonised_results_used": false
+}

@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "checks_passed": 601,
+  "completed_windows": 4,
+  "formal_method_rows": 36,
+  "prediction_parts": 28,
+  "hierarchy_components": 21,
+  "probability_matrices": 308,
+  "common_fitted_flat_verified": true,
+  "fixed_half_blend_verified": true,
+  "independently_recomputed_feature_hash_rows": 2616495,
+  "original_window_source_files_sha_verified": 9,
+  "maps_frozen_before_fitting": true,
+  "all_fresh_checkpoints_unchanged": true,
+  "hierarchy_component_fit_seconds_sum": 448.07225420023315,
+  "hierarchy_fit_seconds_by_map": {
+    "cyclic": 147.72408030019142,
+    "real": 147.8182951998897,
+    "support": 152.52987870015204
+  },
+  "inference_part_seconds_sum": 9386.685063299956,
+  "ece_nbins": 10,
+  "protocol_sha256": "281fe1b703e0d10802d73f2f05f9ce71b8841482b22b185f6f2634bc89a398de",
+  "package_versions": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scikit-learn": "1.9.0",
+    "lightgbm": "4.6.0",
+    "xgboost": "3.3.0",
+    "scipy": "1.18.0"
+  },
+  "verifier_sha256": "7cd8fbce9d229c6430940827886042efa895f9677bfe5714c067606e30b258cc",
+  "finished_utc": "2026-10-19T02:47:38.490107+00:00"
+}

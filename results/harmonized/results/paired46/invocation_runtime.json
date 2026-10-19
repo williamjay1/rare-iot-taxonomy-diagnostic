@@ -1,0 +1,22 @@
+{
+  "elapsed_seconds": 38096.744635,
+  "seeds_requested": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "preflight_only": false,
+  "python": "<LEGACY_PROJECT>\\.venv\\Scripts\\python.exe",
+  "command": [
+    "<WORKSPACE>\\harmonized\\resume_paired_execution.py"
+  ],
+  "finished_utc": "2026-10-19T01:37:39.571126+00:00",
+  "elapsed_seconds_resume_invocation": 19541.461367800017,
+  "timing_scope": "First original seed42 roles-verified event through final resumed finish; includes metadata recovery and external interruption gaps",
+  "startup_before_first_role_event_included": false,
+  "first_original_role_event_utc": "2026-10-18T15:02:42.826491+00:00",
+  "recovery_report": "<WORKSPACE>\\harmonized\\recovery\\seed42_stacker_recovery.json"
+}

@@ -1,0 +1,122 @@
+{
+  "config": {
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "outer_test_frac": 0.2,
+    "base_fraction": 0.7,
+    "gate_train_fraction": 0.15,
+    "gate_select_fraction": 0.15,
+    "majority_cap": 25000,
+    "benign_cap": 80000,
+    "global_trees": 520,
+    "local_trees": 380,
+    "rare_lambda": 0.04,
+    "n_jobs": 2,
+    "group_disjoint": true,
+    "grouping_basis": "37 cleaned float32 predictor values (the actual model input)",
+    "temperature_bounds": [
+      0.25,
+      5.0
+    ],
+    "temperature_xatol": 0.0001,
+    "stacker": {
+      "C": 1.0,
+      "max_iter": 100,
+      "solver": "newton-cholesky"
+    },
+    "methods": [
+      "flat_weighted_xgboost",
+      "equal_flat_taxonomy_blend",
+      "equal_flat_cyclic_blend",
+      "equal_flat_support_matched_blend",
+      "calibrated_taxonomy_benefit_gate",
+      "calibrated_cyclic_taxonomy_control",
+      "calibrated_support_matched_control",
+      "soft_taxonomy_factorisation",
+      "hard_top_down_taxonomy"
+    ],
+    "metric_probability_precision": "float64 (checkpointed without quantization)",
+    "venue_route": "EI engineering empirical validation; indexing is not a method standard",
+    "flat_calibration_fit_role": "utility (same ordered rows as v10 reference calibration)",
+    "flat_stacker_fit_role": "utility (same ordered rows as v10 reference calibration)",
+    "flat_selection_role_permission": "diagnostic evaluation only, no fitting or model choice",
+    "stratification": "group modal fine label, ties lexicographic; observed labels never altered",
+    "observed_conflicting_groups": 0,
+    "roles_are_paired_with_original_PRIMARY": false,
+    "calibrated_flat_controls": "not part of this additional core confirmation"
+  },
+  "inputs": [
+    {
+      "source_path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\data\\raw\\ciciot2023_hf_neto_subsample\\random\\train-00000-of-00001.parquet",
+      "source_resolved": "E:\\science\\IoT_Intrusion_Detection_Scientific_Reports\\raw\\iot_ids_raw\\ciciot2023_hf_neto_subsample\\random\\train-00000-of-00001.parquet",
+      "training_cache_path": "<WORKSPACE>\\harmonized\\datasets\\source_inputs\\train-00000-of-00001.parquet",
+      "training_cache_resolved": "<WORKSPACE>\\harmonized\\datasets\\source_inputs\\train-00000-of-00001.parquet",
+      "sha256": "bcc477f125aa7cecbeba50cd3b9641e20dcf521e882c437a704f73c30c96b353",
+      "bytes": 60118689
+    },
+    {
+      "source_path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\data\\raw\\ciciot2023_hf_neto_subsample\\random\\test-00000-of-00001.parquet",
+      "source_resolved": "E:\\science\\IoT_Intrusion_Detection_Scientific_Reports\\raw\\iot_ids_raw\\ciciot2023_hf_neto_subsample\\random\\test-00000-of-00001.parquet",
+      "training_cache_path": "<WORKSPACE>\\harmonized\\datasets\\source_inputs\\test-00000-of-00001.parquet",
+      "training_cache_resolved": "<WORKSPACE>\\harmonized\\datasets\\source_inputs\\test-00000-of-00001.parquet",
+      "sha256": "16eb6b12e6443a270a09a90c08adf90279d0bcb374f2346f143ac069df99ac6b",
+      "bytes": 15039323
+    }
+  ],
+  "features": [
+    "Header_Length",
+    "Protocol Type",
+    "Rate",
+    "fin_flag_number",
+    "syn_flag_number",
+    "rst_flag_number",
+    "psh_flag_number",
+    "ack_flag_number",
+    "ece_flag_number",
+    "cwr_flag_number",
+    "ack_count",
+    "syn_count",
+    "fin_count",
+    "rst_count",
+    "HTTP",
+    "HTTPS",
+    "DNS",
+    "Telnet",
+    "SMTP",
+    "SSH",
+    "IRC",
+    "TCP",
+    "UDP",
+    "DHCP",
+    "ARP",
+    "ICMP",
+    "IPv",
+    "LLC",
+    "Tot sum",
+    "Min",
+    "Max",
+    "AVG",
+    "Std",
+    "Tot size",
+    "IAT",
+    "Number",
+    "Variance"
+  ],
+  "parent_reference_contract_sha256": "6acf2ae44774a28e1782d2ab13c2263b27cdd6ed7df61a9b6b780f6e9e83dc3f",
+  "script_sha256": "831158d2c220d0380e370b468832591548e86026b33cf5359e62a98c1f484f3a",
+  "base_script_sha256": "086cce012ba141739a0307dcd5fda7330b07ec59ac47c9f9533b941cf7c25698",
+  "package_versions": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scikit-learn": "1.9.0",
+    "lightgbm": "4.6.0",
+    "xgboost": "3.3.0",
+    "scipy": "1.18.0"
+  }
+}

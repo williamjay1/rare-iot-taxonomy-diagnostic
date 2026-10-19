@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "original_55_unit_handoff_preserved",
+      "passed": true
+    },
+    {
+      "check": "corrected_handoff_fails_closed",
+      "passed": true
+    },
+    {
+      "check": "counts_distinguish_computed_from_matched",
+      "passed": true
+    },
+    {
+      "check": "all_original_artifacts_unchanged",
+      "passed": true
+    },
+    {
+      "check": "fresh_numeric_rows_preserved",
+      "passed": true
+    },
+    {
+      "check": "archived_numeric_rows_preserved",
+      "passed": true
+    },
+    {
+      "check": "all_four_fresh_windows_present",
+      "passed": true
+    },
+    {
+      "check": "all_four_archived_windows_preserved",
+      "passed": true
+    },
+    {
+      "check": "no_archived_control_renamed_to_an_unproven_gate",
+      "passed": true
+    },
+    {
+      "check": "no_cross_generation_capture_comparison_in_handoff",
+      "passed": true
+    },
+    {
+      "check": "taxonomy_paired_inference_excludes_capture",
+      "passed": true
+    },
+    {
+      "check": "summary_keys_unique",
+      "passed": true
+    },
+    {
+      "check": "capture_summary_fresh_only",
+      "passed": true
+    },
+    {
+      "check": "no_mixed_capture_best_competitor",
+      "passed": true
+    },
+    {
+      "check": "four_missing_reblends_explicit",
+      "passed": true
+    },
+    {
+      "check": "all_current_contract_hashes_valid",
+      "passed": true
+    },
+    {
+      "check": "unaffected_contract_lofo_results.csv",
+      "passed": true
+    },
+    {
+      "check": "unaffected_contract_scarcity_results.csv",
+      "passed": true
+    },
+    {
+      "check": "unaffected_contract_calibration_results.csv",
+      "passed": true
+    },
+    {
+      "check": "unaffected_contract_alert_budget_results.csv",
+      "passed": true
+    },
+    {
+      "check": "unaffected_contract_table4_nine_arm_ece10.csv",
+      "passed": true
+    }
+  ],
+  "checks_passed": 21,
+  "common_flat_repair_complete": false,
+  "no_additional_fit": true,
+  "root_handoff_sha256": "c207b1f83c10ebf45fc262544ae7aa1ff62556e90cc60b3618f9e55e2cf774d2",
+  "correction_handoff_sha256": "18897028eccb14f2b577e6ad4bf583b2d9a8222fcd5401c772fb149f3cb133ef"
+}

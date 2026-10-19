@@ -1,0 +1,43 @@
+{
+  "protocol_sha256": "281fe1b703e0d10802d73f2f05f9ce71b8841482b22b185f6f2634bc89a398de",
+  "rows": 77295,
+  "n_features": 39,
+  "n_classes": 4,
+  "ordered_X_sha256": "a343537d76b09665c3ebf77d9edd37673c3b9389c6e6e43917f2f1064fa8e7b4",
+  "ordered_y_sha256": "17946a6837770fb19afed845f4653bb2b780e7d79662d7f27a4ce488bd6a9448",
+  "kind": "local",
+  "map": "support",
+  "family": "DoS",
+  "classes": [
+    "Backdoor_Malware",
+    "DDoS-ICMP_Flood",
+    "DDoS-ICMP_Fragmentation",
+    "DDoS-PSHACK_Flood"
+  ],
+  "weight_exponent": 0.5,
+  "ordered_base_positions_sha256": "2c5bcf7b280551c4db3be6839865f7e477d0e6ff8a36bb393c01318ca1fec928",
+  "ordered_weight_sha256": "58b9a61b6586b21e8f854ce8713cdc6620fece1151665813e6906bfeaf69a98e",
+  "parameters_repr": {
+    "boosting_type": "'gbdt'",
+    "class_weight": "None",
+    "colsample_bytree": "0.95",
+    "importance_type": "'split'",
+    "learning_rate": "0.055",
+    "max_depth": "-1",
+    "min_child_samples": "25",
+    "min_child_weight": "0.001",
+    "min_split_gain": "0.0",
+    "n_estimators": "380",
+    "n_jobs": "2",
+    "num_leaves": "127",
+    "objective": "'multiclass'",
+    "random_state": "20260729",
+    "reg_alpha": "0.02",
+    "reg_lambda": "1.5",
+    "subsample": "0.9",
+    "subsample_for_bin": "200000",
+    "subsample_freq": "0",
+    "verbosity": "-1"
+  },
+  "input_sha256": "9a40b4eec794ec2e3a5a386b4a7f9c1b9977d40f69cd22abd38e1a061f1f46d7"
+}

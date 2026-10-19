@@ -1,0 +1,6 @@
+endpoint,expected_units,completed_units,strong_control_evaluations_completed,status,incomplete_reason,frozen_recompute,result_csv
+lofo,21,21,42,completed,,False,<WORKSPACE>\extensions\lofo_results.csv
+scarcity,18,18,36,completed,,False,<WORKSPACE>\extensions\scarcity_results.csv
+calibration,6,6,12,completed,,True,<WORKSPACE>\extensions\calibration_results.csv
+alert_budget,6,6,12,completed,,True,<WORKSPACE>\extensions\alert_budget_results.csv
+capture_windows,4,4,8,completed,,False,<WORKSPACE>\extensions\capture_windows_results.csv

@@ -1,0 +1,9 @@
+{
+  "protocol_sha256": "281fe1b703e0d10802d73f2f05f9ce71b8841482b22b185f6f2634bc89a398de",
+  "window": "w2_57_58",
+  "rows": 654266,
+  "method_rows": 9,
+  "component_audit_rows": 11,
+  "ordered_y_sha256": "0df6e77fe2612029fe33a1a4655f3c7b60332b661737f7206850b01cf2fc911f",
+  "finished_utc": "2026-10-19T01:31:32.970623+00:00"
+}

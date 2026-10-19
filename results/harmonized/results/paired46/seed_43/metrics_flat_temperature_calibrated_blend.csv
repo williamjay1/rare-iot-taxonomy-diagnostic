@@ -1,0 +1,2 @@
+run_id,n,accuracy,f1_macro,recall_macro,rare_recall,worst_recall,pr_auc_macro,seed,n_features,training_seconds,inference_seconds,brier_multiclass,ece_top_label,rare_ece_top_label
+flat_temperature_calibrated_blend,286156,0.9387571813975594,0.8554954573326976,0.8441894678953548,0.48675326520613044,0.2,0.8809155847477502,43,37,1848.22595620004,1474.0358836000087,0.08134893093997174,0.004523214087138526,0.08028130887514054

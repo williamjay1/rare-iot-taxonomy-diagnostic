@@ -1,0 +1,43 @@
+{
+  "status": "schema_contract_only_not_a_completion_claim",
+  "base_directory": "<WORKSPACE>\\extensions",
+  "release_gate": "MANUSCRIPT_HANDOFF.json exists with completion=true only after all 55 units and probability verification pass",
+  "lofo_results.csv": {
+    "expected_rows_when_complete": 189,
+    "key": ["cell_id", "method"],
+    "columns": ["cell_id", "endpoint", "case", "seed", "method", "macro_f1", "rare_recall", "test_rows", "test_rare_rows", "rare_labels_without_test_support"],
+    "additional_columns": "For score=msp,entropy: {score}_unknown_auroc, and {score}_selection_fpr_{q}_{suffix}, q=0.01,0.05,0.1; suffix=threshold,selection_realized_fpr,outer_known_fpr,unknown_recall",
+    "case": "held-out family; seven families nested within each of three seeds",
+    "runtime_schema_verified": "base and novelty columns verified from actual first complete LOFO cells"
+  },
+  "scarcity_results.csv": {
+    "expected_rows_when_complete": 162,
+    "key": ["cell_id", "method"],
+    "columns": ["cell_id", "endpoint", "case", "seed", "method", "macro_f1", "rare_recall", "test_rows", "test_rare_rows", "rare_labels_without_test_support"],
+    "case": "base-fitting labels per class: 10,25,50,100,250,500; six caps nested within each of three seeds; calibration labels additional",
+    "runtime_schema_verified": false
+  },
+  "capture_windows_results.csv": {
+    "expected_rows_when_complete": 36,
+    "key": ["window", "method"],
+    "columns": ["endpoint", "window", "seed", "method", "test_rows", "n_test", "accuracy", "recall_macro", "rare_recall", "worst_recall", "macro_f1"],
+    "window": "w1_55_56,w2_57_58,w3_59_60,w4_61_63; dependent file-order windows, not timestamp validation",
+    "runtime_schema_verified": false
+  },
+  "classification_rare_recall": "unweighted mean recall over declared rare classes, not rare-row retrieval",
+  "alert_budget_retrieval_results.csv": {
+    "expected_rows_when_complete": 660,
+    "semantic_rename_from_raw_alert_budget_results": {"rare_recall": "rare_row_retrieval_recall", "rare_precision": "rare_row_retrieval_precision"}
+  },
+  "final_summary_files": {
+    "all_endpoint_summary.csv": ["endpoint", "facet", "metric", "method", "mean", "sample_sd", "n_summary_units", "n_seeds", "summary_unit", "aggregation", "higher_is_better", "inference"],
+    "best_competitor_by_endpoint_metric.csv": "Metric-specific observed non-target best; temperature and stacker means always shown; reversals retained; no test-set tuning",
+    "all_endpoint_per_seed_paired_results.csv": ["endpoint", "facet", "seed", "control", "metric", "taxonomy_value", "control_value", "taxonomy_minus_control", "taxonomy_benefit", "within_seed_cases", "scope"],
+    "nested_control_comparisons_per_seed.csv": "Three seed summaries per endpoint/control/metric after equal-weight within-seed family/cap averaging",
+    "nested_control_comparisons_per_family_or_cap.csv": "Mean, sample SD and count across three seeds for each family/cap/control/metric",
+    "nested_control_seed_directions.csv": "Descriptive seed-level directions; no p values over 21/18 dependent cells"
+  },
+  "all_summary_paths_are_future_outputs_until_release_gate_passes": true,
+  "ece_protocol": "10 equal-width right-closed bins, zero included in first bin; all nine core Table4 arms including gate variants",
+  "real_edge_device_available": false
+}

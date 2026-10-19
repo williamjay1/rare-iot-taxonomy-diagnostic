@@ -1,0 +1,6 @@
+endpoint,expected_units,completed_units,strong_control_evaluations_completed,status,incomplete_reason,frozen_recompute,result_csv,computed_original_units
+lofo,21,21,42,completed,,False,<WORKSPACE>\extensions\lofo_results.csv,21
+scarcity,18,18,36,completed,,False,<WORKSPACE>\extensions\scarcity_results.csv,18
+calibration,6,6,12,completed,,True,<WORKSPACE>\extensions\calibration_results.csv,6
+alert_budget,6,6,12,completed,,True,<WORKSPACE>\extensions\alert_budget_results.csv,6
+capture_windows,4,0,0,blocked_common_component,Original window archives contain hard predictions only. No original flat or hierarchy probability arrays or serialized estimators were found in the audited archive locations. Fresh flat predictions disagree with the old flat component. A common-flat taxonomy/control blend cannot be computed without unavailable components or a prohibited hierarchy refit.,False,<WORKSPACE>\extensions\capture_component_scope_v1\capture_fresh_flat_results.csv,4

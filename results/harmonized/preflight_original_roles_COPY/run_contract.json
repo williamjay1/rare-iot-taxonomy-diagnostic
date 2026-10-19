@@ -1,0 +1,123 @@
+{
+  "config": {
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "outer_test_frac": 0.2,
+    "base_fraction": 0.7,
+    "gate_train_fraction": 0.15,
+    "gate_select_fraction": 0.15,
+    "majority_cap": 25000,
+    "benign_cap": 80000,
+    "global_trees": 520,
+    "local_trees": 380,
+    "rare_lambda": 0.04,
+    "n_jobs": 2,
+    "group_disjoint": true,
+    "grouping_basis": "original 46 predictors; identical PRIMARY roles",
+    "temperature_bounds": [
+      0.25,
+      5.0
+    ],
+    "temperature_xatol": 0.0001,
+    "stacker": {
+      "C": 1.0,
+      "max_iter": 100,
+      "solver": "newton-cholesky"
+    },
+    "methods": [
+      "flat_weighted_xgboost",
+      "flat_weighted_lightgbm",
+      "flat_equal_probability_blend",
+      "flat_temperature_calibrated_blend",
+      "flat_newton_log_probability_stacker",
+      "equal_flat_taxonomy_blend",
+      "soft_taxonomy_factorisation",
+      "hard_top_down_taxonomy",
+      "calibrated_taxonomy_benefit_gate",
+      "equal_flat_cyclic_blend",
+      "calibrated_cyclic_taxonomy_control",
+      "equal_flat_support_matched_blend",
+      "calibrated_support_matched_control"
+    ],
+    "metric_probability_precision": "float64 (checkpointed without quantization)"
+  },
+  "features": [
+    "Header_Length",
+    "Protocol Type",
+    "Rate",
+    "fin_flag_number",
+    "syn_flag_number",
+    "rst_flag_number",
+    "psh_flag_number",
+    "ack_flag_number",
+    "ece_flag_number",
+    "cwr_flag_number",
+    "ack_count",
+    "syn_count",
+    "fin_count",
+    "rst_count",
+    "HTTP",
+    "HTTPS",
+    "DNS",
+    "Telnet",
+    "SMTP",
+    "SSH",
+    "IRC",
+    "TCP",
+    "UDP",
+    "DHCP",
+    "ARP",
+    "ICMP",
+    "IPv",
+    "LLC",
+    "Tot sum",
+    "Min",
+    "Max",
+    "AVG",
+    "Std",
+    "Tot size",
+    "IAT",
+    "Number",
+    "Variance"
+  ],
+  "inputs": [
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\data\\raw\\ciciot2023_hf_neto_subsample\\random\\train-00000-of-00001.parquet",
+      "sha256": "bcc477f125aa7cecbeba50cd3b9641e20dcf521e882c437a704f73c30c96b353",
+      "bytes": 60118689
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\data\\raw\\ciciot2023_hf_neto_subsample\\random\\test-00000-of-00001.parquet",
+      "sha256": "16eb6b12e6443a270a09a90c08adf90279d0bcb374f2346f143ac069df99ac6b",
+      "bytes": 15039323
+    }
+  ],
+  "sources": {
+    "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\scripts\\run_ciciot_quick_experiments.py": "bd5b40e402129c59aa59b607855d104fb39c49c133971ebfc8d783d354fb93b3",
+    "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\scripts\\run_ciciot_taxonomy_residual_fusion.py": "1ae1ee885477b0af5659de87a1649817ba210508c31e04ce0d167c2f3504e8af",
+    "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\scripts\\screen_ciciot_residual_gate_variants.py": "923fdee96a809680f4ca41ee58afdbcb9574709e1061daafe406f06984a7259e",
+    "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\scripts\\run_ciciot_agreement_gated_trf_confirmation.py": "a5d7d497e299a0a9b4a13881525fc55abb8a18584ee6d2cd170b57fec71f3ca4",
+    "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\scripts\\run_ciciot_support_matched_control_v2.py": "d3f5b35859597ae798b95b679354ddf1d162eea24bbf261161492443aba3bc48",
+    "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py": "d25dc08bc60086a24237f8d3b56b18b64571a24c619c8f3f0c0d18ff0b6db250",
+    "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_flat_comparators.py": "bc76f1c142d9edb63e01746bd46d9ea69802fd0bc96426e97d3dd3492d8a5162",
+    "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\ijismd_v10_risk_closure_20260923\\scripts\\run_v10_grouped_newton_flat_stacker.py": "f09ce7cad5c806a5042fc1615d20ea5fb144dd7289aa0f0403a2f7b6473cf7bb",
+    "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\ijismd_v15_closure_20261018\\harmonized\\run_harmonized_refit.py": "53f3e13f913ad95e9f9a81f0fe0e50eef757647f0a6ae9367e7ec3fffb8c0d74"
+  },
+  "package_versions": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scikit-learn": "1.9.0",
+    "lightgbm": "4.6.0",
+    "xgboost": "3.3.0",
+    "scipy": "1.18.0"
+  },
+  "primary_metadata_sha256": "0d33093363c921d2cb6d2d4de800fd25bb013052f03902e5eb39f31f42d39cf1",
+  "primary_role_audit_sha256": "e256b09e698d8f2352249c7e06b254a20b1b6ba573de3bbd49798cff39ee2dc1",
+  "overlap_report_sha256": "ddeb7bcdd23bca98e3e25959efbeb4ca165adc88208d9b3f52807ba7cf57a251"
+}

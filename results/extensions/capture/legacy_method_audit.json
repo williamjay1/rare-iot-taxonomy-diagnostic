@@ -1,0 +1,11 @@
+{
+  "audit_type": "read-only source-to-endpoint verification",
+  "source_script": "<LEGACY_PROJECT>\\scripts\\run_sequential_window_drift_study.py",
+  "source_logic": "All three taxonomy variants use blend_probability = 0.5 * flat_probability + 0.5 * taxonomy_probability in the window inference loop.",
+  "legacy_names_are_not_actual_gate_fitting": {
+    "calibrated_cyclic_taxonomy_control": "cyclic_blend",
+    "calibrated_support_matched_control": "support_matched_blend"
+  },
+  "new_strong_control_fit_role": "gate_train/utility calibration only; gate_select and all four capture windows are excluded from temperature/stacker fitting",
+  "headline_rule": "Do not describe the original capture cyclic/support controls as fitted calibrated gates. Use the actual fixed-blend implementation."
+}

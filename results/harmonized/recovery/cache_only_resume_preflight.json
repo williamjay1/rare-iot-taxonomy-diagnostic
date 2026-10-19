@@ -1,0 +1,27 @@
+{
+  "checked_utc": "2026-10-18T20:11:58.848431+00:00",
+  "inputs": [
+    {
+      "frozen_source_path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\data\\raw\\ciciot2023_hf_neto_subsample\\random\\train-00000-of-00001.parquet",
+      "frozen_sha256": "bcc477f125aa7cecbeba50cd3b9641e20dcf521e882c437a704f73c30c96b353",
+      "current_original_source_sha256": "153dbaf63160622c387a4e9b79f9044e40d3914abc593540118274207e70106c",
+      "original_source_matches_frozen": false,
+      "training_cache_path": "<WORKSPACE>\\harmonized\\datasets\\source_inputs\\train-00000-of-00001.parquet",
+      "cache_matches_frozen": true,
+      "source_recopied": false
+    },
+    {
+      "frozen_source_path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\data\\raw\\ciciot2023_hf_neto_subsample\\random\\test-00000-of-00001.parquet",
+      "frozen_sha256": "16eb6b12e6443a270a09a90c08adf90279d0bcb374f2346f143ac069df99ac6b",
+      "current_original_source_sha256": "b7826d915178724d604f6528f042e8bd2b22e3278eb1e2559d79ee352e74f37a",
+      "original_source_matches_frozen": false,
+      "training_cache_path": "<WORKSPACE>\\harmonized\\datasets\\source_inputs\\test-00000-of-00001.parquet",
+      "cache_matches_frozen": true,
+      "source_recopied": false
+    }
+  ],
+  "scientific_training_inputs_changed": false,
+  "original_contract_preserved": true,
+  "D_free_bytes": 181820215296,
+  "resume_script_sha256": "4a59e9b5ab9fc2dfca051c01d794ae30764d3fe234280c4e6120d922e41f1309"
+}

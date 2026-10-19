@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code or the derived results, please cite the accompanying article and the Zenodo archive. Author identities are withheld during double-blind review."
+title: "Reproducibility package for Diagnosing Attack Taxonomy Utility in Rare IoT Intrusion Detection"
+type: software
+version: 1.0.0
+date-released: 2026-10-19
+license: MIT
+repository-code: "https://github.com/williamjay1/rare-iot-taxonomy-diagnostic"
+keywords:
+  - IoT intrusion detection
+  - attack taxonomy
+  - rare class recall
+  - grouped validation
+  - reproducibility
+authors:
+  - name: "The Authors"

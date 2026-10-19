@@ -1,0 +1,2 @@
+run_id,n,accuracy,f1_macro,recall_macro,rare_recall,worst_recall,pr_auc_macro,seed,n_features,training_seconds,inference_seconds,brier_multiclass,ece_top_label,rare_ece_top_label
+calibrated_cyclic_taxonomy_control,285977,0.9401035747630054,0.8699456217230095,0.8552029377372782,0.5356677387357767,0.40748898678414097,0.8941459860104128,47,37,997.5249982000096,450.5080051998375,0.08054683080592895,0.008604340754418493,0.07148054923485389

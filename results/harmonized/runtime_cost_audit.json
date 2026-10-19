@@ -1,0 +1,35 @@
+{
+  "fit_or_model_choice_performed": false,
+  "probe_cache_source": "<WORKSPACE>\\harmonized\\datasets\\source_inputs\\train-00000-of-00001.parquet",
+  "probe_rows": 200000,
+  "probe_clean_seconds": [
+    0.012116699945181608,
+    0.011771699995733798,
+    0.011012199916876853,
+    0.011012000031769276,
+    0.012271299958229065
+  ],
+  "probe_clean_median_seconds": 0.011771699995733798,
+  "probe_float32_exact_repeat_equality": true,
+  "seed42_real_three_role_rows": 629079,
+  "linear_clean_cost_proxy_seconds": 0.037026646308081106,
+  "linear_proxy_caveat": "A read-only 200k-row cost probe, not a direct profile of every production conversion",
+  "actual_real_probability_builder_seconds": 917.9197591999546,
+  "wall_real_model_save_to_probabilities_save_seconds": 926.519132,
+  "non_builder_overhead_upper_proxy_seconds": 8.599372800045444,
+  "overhead_caveat": "Includes setup, joblib compression, digest, metadata and log writes; not an isolated serialization benchmark",
+  "static_call_audit": {
+    "flat_xgb": "One prediction per role per seed; cached and reused across every taxonomy arm",
+    "each_hierarchy": "One prediction per role per seed; cached and reused for equal blend, soft/hard and gate",
+    "cleaning": "One clean_features call per role per hierarchy, outside the loop over local family models",
+    "family_predictions": "One family and one conditional per non-singleton family, all required for soft factorization",
+    "flat_lgbm_selection": "Selection prediction is cached although not consumed by current flat outputs; potentially avoidable in a future version",
+    "production_changes": "None: current runner and contracts remain unchanged; no skipped rows, precision changes or estimator changes"
+  },
+  "worker_plan": "One active estimator with n_jobs=2; grouped37 waits for paired completion; validation stages run sequentially",
+  "source_sha256": {
+    "<WORKSPACE>\\harmonized\\run_harmonized_refit.py": "086cce012ba141739a0307dcd5fda7330b07ec59ac47c9f9533b941cf7c25698",
+    "<LEGACY_PROJECT>\\scripts\\run_ciciot_taxonomy_residual_fusion.py": "1ae1ee885477b0af5659de87a1649817ba210508c31e04ce0d167c2f3504e8af",
+    "<LEGACY_PROJECT>\\scripts\\run_ciciot_calibrated_benefit_gate_confirmation.py": "d25dc08bc60086a24237f8d3b56b18b64571a24c619c8f3f0c0d18ff0b6db250"
+  }
+}

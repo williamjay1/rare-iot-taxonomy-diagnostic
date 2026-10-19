@@ -1,0 +1,15 @@
+{
+  "seed": 45,
+  "pid": 41092,
+  "state": "complete",
+  "started_utc": "2026-10-18T21:16:43.676330+00:00",
+  "n_jobs": 2,
+  "first_started_utc": "2026-10-18T21:16:43.676330+00:00",
+  "prior_attempt_records": [],
+  "resumed_from_immutable_checkpoints": false,
+  "shared_summary_writes": false,
+  "worker_script_sha256": "cf482726bf207ed210b6bf5e1b7bd24edbee7685d8077bcc97bd79661b38a9f0",
+  "unused_setup_tables_released_before_fit": true,
+  "finished_utc": "2026-10-18T22:32:35.547819+00:00",
+  "elapsed_seconds": 4551.8722354999045
+}

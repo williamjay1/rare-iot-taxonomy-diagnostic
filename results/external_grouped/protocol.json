@@ -1,0 +1,29 @@
+{
+  "source": "NF-ToN-IoT-v3",
+  "reason": "Chronological future contains no fitted attack label; add a separately labelled grouped replication, without changing the chronological cutpoints.",
+  "frozen_before_new_model_outcomes": true,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "group_role": "hash(predictor_hash, seed) modulo 1000000; fit <560000, calibration <680000, selection <800000, otherwise test",
+  "hash_domain": "All 48 cleaned float32 predictors, excluding absolute times, IP addresses, transaction identifier and labels",
+  "roles": [
+    "fit",
+    "calibration",
+    "selection",
+    "test"
+  ],
+  "caps": {
+    "fit_per_attack": 25000,
+    "fit_benign": 80000,
+    "calibration_total_uniform": 60000,
+    "selection_total_uniform": 60000,
+    "test_total_uniform": 300000
+  },
+  "sampling": "Hash original row ID with 20261018, label blind except prespecified fitting caps",
+  "conflicts": "Do not remove or relabel conflicting groups; assign a predictor group to one role without consulting labels",
+  "model_contract": "Same eleven arms and original 520/380 estimators as chronological experiment; ten-bin right-closed ECE; all ten labels primary Macro F1",
+  "interpretation": "Three grouped random allocations in one additional testbed corpus, not chronological validation, production traffic or three independent populations"
+}

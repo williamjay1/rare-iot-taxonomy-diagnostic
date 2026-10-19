@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "completed_at_utc": "2026-10-18T17:56:21.914001+00:00",
+  "audit_seconds": 91.49926349997986,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "result_rows": 24,
+  "new_hierarchy_fits": 12,
+  "audited_fitted_estimators": 120,
+  "prediction_checks": 18,
+  "all_source_and_frozen_hashes_verified": true,
+  "physical_D_outputs_verified": true,
+  "official_CAPEC_catalog_and_release_date_verified": "2023-01-24",
+  "all_group_sizes_and_capped_fit_support_exact": true,
+  "all_saved_predictions_order_labels_exact": true,
+  "additional_audit_all_local_fine_class_support_multisets_exact": true,
+  "canonical_role_counts_and_rare_labels_exact": true,
+  "canonical_role_audit_sha256": "e256b09e698d8f2352249c7e06b254a20b1b6ba573de3bbd49798cff39ee2dc1",
+  "all_hard_prediction_classification_metrics_recomputed": true,
+  "all_models_n_jobs_2": true,
+  "flat_float16_quantization_seeds_audited": 6,
+  "flat_original_hard_preserved_not_replaced_by_float16_argmax": true,
+  "all_models_original_fixed_hyperparameters": true,
+  "ap_precision_note": "Run metrics use float64 in-memory blends; saved blends are float32. Independent AP differences are reported, not hidden or silently overwritten.",
+  "cost_scope": "Original helper timer measures hierarchy fitting after initial feature conversion and label encoding. Prediction timer measures full outer-batch hierarchy prediction including feature conversion. Cached flat fit/inference excluded. Rows per second is workstation batch prediction only, not edge throughput or per-event latency.",
+  "serialization_field_warning": "Runner serialization_seconds includes joblib serialization AND metric computation; do not interpret as isolated serialization time. It is excluded from audited cost summary.",
+  "rss_scope": "Peak resident set is cumulative peak of the whole runner process, not incremental per-model memory.",
+  "coverage": {
+    "fine_labels": 34,
+    "attack_labels": 33,
+    "groups_including_benign_and_unresolved": 12,
+    "labels_with_some_CAPEC_reference": 33,
+    "attack_labels_without_primary_ambiguity": 26,
+    "ambiguous_attack_labels": [
+      "Backdoor_Malware",
+      "BrowserHijacking",
+      "DDoS-ACK_Fragmentation",
+      "DDoS-SynonymousIP_Flood",
+      "Mirai-greeth_flood",
+      "Mirai-greip_flood",
+      "Uploading_Attack"
+    ],
+    "primary_ambiguity_count": 7,
+    "match_counts_attack_labels": {
+      "explicit_label": 13,
+      "protocol_level": 9,
+      "named_mechanism": 3,
+      "broad_mechanism": 3,
+      "conditional_proxy": 2,
+      "broad_proxy": 1,
+      "label_with_conditional_subtype": 1,
+      "partial_proxy": 1
+    },
+    "unresolved_fallback_labels": [
+      "Backdoor_Malware",
+      "BrowserHijacking",
+      "Uploading_Attack"
+    ],
+    "official_pattern_status_counts_unique": {
+      "Draft": 15,
+      "Stable": 9
+    },
+    "unique_CAPEC_patterns": 24,
+    "claim_boundary": "Reference coverage is not exact mechanistic validity, expert agreement, per-flow evidence, or official dataset-to-CAPEC annotation. Conditional secondary candidates remain explicitly conditional.",
+    "expert_validation_performed": false
+  }
+}

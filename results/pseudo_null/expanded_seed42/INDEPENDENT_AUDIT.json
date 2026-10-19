@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE_PASS",
+  "maps": 19,
+  "new_refits": 15,
+  "existing_four_metrics_unchanged": true,
+  "all_cardinality_profiles_equal": true,
+  "all_six_role_pairs_disjoint": true,
+  "both_finite_tails_recomputed": true,
+  "scope": "One fixed holdout, two endpoints; no omnibus or independent-source significance claim."
+}

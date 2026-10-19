@@ -1,0 +1,145 @@
+seed,run_id,group,standard_sorted_fine_class_counts,actual_sorted_fine_class_counts,fine_class_support_multiset_exact
+42,standardblend,Active_Probing,"[1266, 20934, 25000, 25000, 25000]","[1266, 20934, 25000, 25000, 25000]",True
+42,standardblend,Benign,[80000],[80000],True
+42,standardblend,Credential_Guessing,[7316],[7316],True
+42,standardblend,Fragmentation_Abuse,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+42,standardblend,HTTP_Resource_Exhaustion,"[13119, 16125, 25000]","[13119, 16125, 25000]",True
+42,standardblend,ICMP_Flood,[25000],[25000],True
+42,standardblend,Input_Injection,"[2154, 2937, 3029]","[2154, 2937, 3029]",True
+42,standardblend,Other_Network_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+42,standardblend,TCP_Flood,"[25000, 25000, 25000, 25000, 25000, 25000]","[25000, 25000, 25000, 25000, 25000, 25000]",True
+42,standardblend,Traffic_Redirection,"[25000, 25000]","[25000, 25000]",True
+42,standardblend,UDP_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+42,standardblend,Unresolved_Web_Compromise,"[701, 1802, 3281]","[701, 1802, 3281]",True
+42,wrongstandardblend,Active_Probing,"[1266, 20934, 25000, 25000, 25000]","[1266, 20934, 25000, 25000, 25000]",True
+42,wrongstandardblend,Benign,[80000],[80000],True
+42,wrongstandardblend,Credential_Guessing,[7316],[7316],True
+42,wrongstandardblend,Fragmentation_Abuse,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+42,wrongstandardblend,HTTP_Resource_Exhaustion,"[13119, 16125, 25000]","[13119, 16125, 25000]",True
+42,wrongstandardblend,ICMP_Flood,[25000],[25000],True
+42,wrongstandardblend,Input_Injection,"[2154, 2937, 3029]","[2154, 2937, 3029]",True
+42,wrongstandardblend,Other_Network_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+42,wrongstandardblend,TCP_Flood,"[25000, 25000, 25000, 25000, 25000, 25000]","[25000, 25000, 25000, 25000, 25000, 25000]",True
+42,wrongstandardblend,Traffic_Redirection,"[25000, 25000]","[25000, 25000]",True
+42,wrongstandardblend,UDP_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+42,wrongstandardblend,Unresolved_Web_Compromise,"[701, 1802, 3281]","[701, 1802, 3281]",True
+43,standardblend,Active_Probing,"[1268, 20934, 25000, 25000, 25000]","[1268, 20934, 25000, 25000, 25000]",True
+43,standardblend,Benign,[80000],[80000],True
+43,standardblend,Credential_Guessing,[7316],[7316],True
+43,standardblend,Fragmentation_Abuse,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+43,standardblend,HTTP_Resource_Exhaustion,"[13119, 16121, 25000]","[13119, 16121, 25000]",True
+43,standardblend,ICMP_Flood,[25000],[25000],True
+43,standardblend,Input_Injection,"[2154, 2937, 3029]","[2154, 2937, 3029]",True
+43,standardblend,Other_Network_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+43,standardblend,TCP_Flood,"[25000, 25000, 25000, 25000, 25000, 25000]","[25000, 25000, 25000, 25000, 25000, 25000]",True
+43,standardblend,Traffic_Redirection,"[25000, 25000]","[25000, 25000]",True
+43,standardblend,UDP_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+43,standardblend,Unresolved_Web_Compromise,"[701, 1802, 3281]","[701, 1802, 3281]",True
+43,wrongstandardblend,Active_Probing,"[1268, 20934, 25000, 25000, 25000]","[1268, 20934, 25000, 25000, 25000]",True
+43,wrongstandardblend,Benign,[80000],[80000],True
+43,wrongstandardblend,Credential_Guessing,[7316],[7316],True
+43,wrongstandardblend,Fragmentation_Abuse,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+43,wrongstandardblend,HTTP_Resource_Exhaustion,"[13119, 16121, 25000]","[13119, 16121, 25000]",True
+43,wrongstandardblend,ICMP_Flood,[25000],[25000],True
+43,wrongstandardblend,Input_Injection,"[2154, 2937, 3029]","[2154, 2937, 3029]",True
+43,wrongstandardblend,Other_Network_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+43,wrongstandardblend,TCP_Flood,"[25000, 25000, 25000, 25000, 25000, 25000]","[25000, 25000, 25000, 25000, 25000, 25000]",True
+43,wrongstandardblend,Traffic_Redirection,"[25000, 25000]","[25000, 25000]",True
+43,wrongstandardblend,UDP_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+43,wrongstandardblend,Unresolved_Web_Compromise,"[701, 1802, 3281]","[701, 1802, 3281]",True
+44,standardblend,Active_Probing,"[1266, 20934, 25000, 25000, 25000]","[1266, 20934, 25000, 25000, 25000]",True
+44,standardblend,Benign,[80000],[80000],True
+44,standardblend,Credential_Guessing,[7316],[7316],True
+44,standardblend,Fragmentation_Abuse,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+44,standardblend,HTTP_Resource_Exhaustion,"[13119, 16124, 25000]","[13119, 16124, 25000]",True
+44,standardblend,ICMP_Flood,[25000],[25000],True
+44,standardblend,Input_Injection,"[2154, 2937, 3029]","[2154, 2937, 3029]",True
+44,standardblend,Other_Network_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+44,standardblend,TCP_Flood,"[25000, 25000, 25000, 25000, 25000, 25000]","[25000, 25000, 25000, 25000, 25000, 25000]",True
+44,standardblend,Traffic_Redirection,"[25000, 25000]","[25000, 25000]",True
+44,standardblend,UDP_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+44,standardblend,Unresolved_Web_Compromise,"[701, 1802, 3281]","[701, 1802, 3281]",True
+44,wrongstandardblend,Active_Probing,"[1266, 20934, 25000, 25000, 25000]","[1266, 20934, 25000, 25000, 25000]",True
+44,wrongstandardblend,Benign,[80000],[80000],True
+44,wrongstandardblend,Credential_Guessing,[7316],[7316],True
+44,wrongstandardblend,Fragmentation_Abuse,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+44,wrongstandardblend,HTTP_Resource_Exhaustion,"[13119, 16124, 25000]","[13119, 16124, 25000]",True
+44,wrongstandardblend,ICMP_Flood,[25000],[25000],True
+44,wrongstandardblend,Input_Injection,"[2154, 2937, 3029]","[2154, 2937, 3029]",True
+44,wrongstandardblend,Other_Network_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+44,wrongstandardblend,TCP_Flood,"[25000, 25000, 25000, 25000, 25000, 25000]","[25000, 25000, 25000, 25000, 25000, 25000]",True
+44,wrongstandardblend,Traffic_Redirection,"[25000, 25000]","[25000, 25000]",True
+44,wrongstandardblend,UDP_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+44,wrongstandardblend,Unresolved_Web_Compromise,"[701, 1802, 3281]","[701, 1802, 3281]",True
+45,standardblend,Active_Probing,"[1266, 20934, 25000, 25000, 25000]","[1266, 20934, 25000, 25000, 25000]",True
+45,standardblend,Benign,[80000],[80000],True
+45,standardblend,Credential_Guessing,[7316],[7316],True
+45,standardblend,Fragmentation_Abuse,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+45,standardblend,HTTP_Resource_Exhaustion,"[13119, 16122, 25000]","[13119, 16122, 25000]",True
+45,standardblend,ICMP_Flood,[25000],[25000],True
+45,standardblend,Input_Injection,"[2154, 2937, 3029]","[2154, 2937, 3029]",True
+45,standardblend,Other_Network_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+45,standardblend,TCP_Flood,"[25000, 25000, 25000, 25000, 25000, 25000]","[25000, 25000, 25000, 25000, 25000, 25000]",True
+45,standardblend,Traffic_Redirection,"[25000, 25000]","[25000, 25000]",True
+45,standardblend,UDP_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+45,standardblend,Unresolved_Web_Compromise,"[701, 1802, 3281]","[701, 1802, 3281]",True
+45,wrongstandardblend,Active_Probing,"[1266, 20934, 25000, 25000, 25000]","[1266, 20934, 25000, 25000, 25000]",True
+45,wrongstandardblend,Benign,[80000],[80000],True
+45,wrongstandardblend,Credential_Guessing,[7316],[7316],True
+45,wrongstandardblend,Fragmentation_Abuse,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+45,wrongstandardblend,HTTP_Resource_Exhaustion,"[13119, 16122, 25000]","[13119, 16122, 25000]",True
+45,wrongstandardblend,ICMP_Flood,[25000],[25000],True
+45,wrongstandardblend,Input_Injection,"[2154, 2937, 3029]","[2154, 2937, 3029]",True
+45,wrongstandardblend,Other_Network_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+45,wrongstandardblend,TCP_Flood,"[25000, 25000, 25000, 25000, 25000, 25000]","[25000, 25000, 25000, 25000, 25000, 25000]",True
+45,wrongstandardblend,Traffic_Redirection,"[25000, 25000]","[25000, 25000]",True
+45,wrongstandardblend,UDP_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+45,wrongstandardblend,Unresolved_Web_Compromise,"[701, 1802, 3281]","[701, 1802, 3281]",True
+46,standardblend,Active_Probing,"[1266, 20934, 25000, 25000, 25000]","[1266, 20934, 25000, 25000, 25000]",True
+46,standardblend,Benign,[80000],[80000],True
+46,standardblend,Credential_Guessing,[7316],[7316],True
+46,standardblend,Fragmentation_Abuse,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+46,standardblend,HTTP_Resource_Exhaustion,"[13119, 16127, 25000]","[13119, 16127, 25000]",True
+46,standardblend,ICMP_Flood,[25000],[25000],True
+46,standardblend,Input_Injection,"[2154, 2937, 3029]","[2154, 2937, 3029]",True
+46,standardblend,Other_Network_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+46,standardblend,TCP_Flood,"[25000, 25000, 25000, 25000, 25000, 25000]","[25000, 25000, 25000, 25000, 25000, 25000]",True
+46,standardblend,Traffic_Redirection,"[25000, 25000]","[25000, 25000]",True
+46,standardblend,UDP_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+46,standardblend,Unresolved_Web_Compromise,"[701, 1802, 3281]","[701, 1802, 3281]",True
+46,wrongstandardblend,Active_Probing,"[1266, 20934, 25000, 25000, 25000]","[1266, 20934, 25000, 25000, 25000]",True
+46,wrongstandardblend,Benign,[80000],[80000],True
+46,wrongstandardblend,Credential_Guessing,[7316],[7316],True
+46,wrongstandardblend,Fragmentation_Abuse,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+46,wrongstandardblend,HTTP_Resource_Exhaustion,"[13119, 16127, 25000]","[13119, 16127, 25000]",True
+46,wrongstandardblend,ICMP_Flood,[25000],[25000],True
+46,wrongstandardblend,Input_Injection,"[2154, 2937, 3029]","[2154, 2937, 3029]",True
+46,wrongstandardblend,Other_Network_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+46,wrongstandardblend,TCP_Flood,"[25000, 25000, 25000, 25000, 25000, 25000]","[25000, 25000, 25000, 25000, 25000, 25000]",True
+46,wrongstandardblend,Traffic_Redirection,"[25000, 25000]","[25000, 25000]",True
+46,wrongstandardblend,UDP_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+46,wrongstandardblend,Unresolved_Web_Compromise,"[701, 1802, 3281]","[701, 1802, 3281]",True
+47,standardblend,Active_Probing,"[1266, 20934, 25000, 25000, 25000]","[1266, 20934, 25000, 25000, 25000]",True
+47,standardblend,Benign,[80000],[80000],True
+47,standardblend,Credential_Guessing,[7316],[7316],True
+47,standardblend,Fragmentation_Abuse,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+47,standardblend,HTTP_Resource_Exhaustion,"[13119, 16126, 25000]","[13119, 16126, 25000]",True
+47,standardblend,ICMP_Flood,[25000],[25000],True
+47,standardblend,Input_Injection,"[2154, 2937, 3029]","[2154, 2937, 3029]",True
+47,standardblend,Other_Network_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+47,standardblend,TCP_Flood,"[25000, 25000, 25000, 25000, 25000, 25000]","[25000, 25000, 25000, 25000, 25000, 25000]",True
+47,standardblend,Traffic_Redirection,"[25000, 25000]","[25000, 25000]",True
+47,standardblend,UDP_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+47,standardblend,Unresolved_Web_Compromise,"[701, 1802, 3281]","[701, 1802, 3281]",True
+47,wrongstandardblend,Active_Probing,"[1266, 20934, 25000, 25000, 25000]","[1266, 20934, 25000, 25000, 25000]",True
+47,wrongstandardblend,Benign,[80000],[80000],True
+47,wrongstandardblend,Credential_Guessing,[7316],[7316],True
+47,wrongstandardblend,Fragmentation_Abuse,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+47,wrongstandardblend,HTTP_Resource_Exhaustion,"[13119, 16126, 25000]","[13119, 16126, 25000]",True
+47,wrongstandardblend,ICMP_Flood,[25000],[25000],True
+47,wrongstandardblend,Input_Injection,"[2154, 2937, 3029]","[2154, 2937, 3029]",True
+47,wrongstandardblend,Other_Network_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+47,wrongstandardblend,TCP_Flood,"[25000, 25000, 25000, 25000, 25000, 25000]","[25000, 25000, 25000, 25000, 25000, 25000]",True
+47,wrongstandardblend,Traffic_Redirection,"[25000, 25000]","[25000, 25000]",True
+47,wrongstandardblend,UDP_Flood,"[25000, 25000, 25000]","[25000, 25000, 25000]",True
+47,wrongstandardblend,Unresolved_Web_Compromise,"[701, 1802, 3281]","[701, 1802, 3281]",True

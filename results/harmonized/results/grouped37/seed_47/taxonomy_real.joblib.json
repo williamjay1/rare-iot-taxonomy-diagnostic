@@ -1,0 +1,282 @@
+{
+  "sha256": "ebec8d6e645449726efb46cf82c24095d1613a7b96af8858de5a8eca76ac6a7f",
+  "elapsed_seconds": 156.97779400006402,
+  "models": {
+    "family_model": {
+      "type": "LGBMClassifier",
+      "params": {
+        "boosting_type": "gbdt",
+        "class_weight": null,
+        "colsample_bytree": 0.95,
+        "importance_type": "split",
+        "learning_rate": 0.055,
+        "max_depth": -1,
+        "min_child_samples": 25,
+        "min_child_weight": 0.001,
+        "min_split_gain": 0.0,
+        "n_estimators": 380,
+        "n_jobs": 2,
+        "num_leaves": 127,
+        "objective": "multiclass",
+        "random_state": 47,
+        "reg_alpha": 0.02,
+        "reg_lambda": 1.5,
+        "subsample": 0.9,
+        "subsample_for_bin": 200000,
+        "subsample_freq": 0,
+        "verbosity": -1
+      }
+    },
+    "family_encoder": {
+      "type": "LabelEncoder",
+      "params": {}
+    },
+    "local_models": {
+      "Benign": [
+        "None",
+        "None",
+        [
+          "BenignTraffic"
+        ]
+      ],
+      "BruteForce": [
+        "None",
+        "None",
+        [
+          "DictionaryBruteForce"
+        ]
+      ],
+      "DDoS": [
+        {
+          "type": "LGBMClassifier",
+          "params": {
+            "boosting_type": "gbdt",
+            "class_weight": null,
+            "colsample_bytree": 0.95,
+            "importance_type": "split",
+            "learning_rate": 0.055,
+            "max_depth": -1,
+            "min_child_samples": 25,
+            "min_child_weight": 0.001,
+            "min_split_gain": 0.0,
+            "n_estimators": 380,
+            "n_jobs": 2,
+            "num_leaves": 127,
+            "objective": "multiclass",
+            "random_state": 47,
+            "reg_alpha": 0.02,
+            "reg_lambda": 1.5,
+            "subsample": 0.9,
+            "subsample_for_bin": 200000,
+            "subsample_freq": 0,
+            "verbosity": -1
+          }
+        },
+        {
+          "type": "LabelEncoder",
+          "params": {}
+        },
+        [
+          "DDoS-ACK_Fragmentation",
+          "DDoS-HTTP_Flood",
+          "DDoS-ICMP_Flood",
+          "DDoS-ICMP_Fragmentation",
+          "DDoS-PSHACK_Flood",
+          "DDoS-RSTFINFlood",
+          "DDoS-SYN_Flood",
+          "DDoS-SlowLoris",
+          "DDoS-SynonymousIP_Flood",
+          "DDoS-TCP_Flood",
+          "DDoS-UDP_Flood",
+          "DDoS-UDP_Fragmentation"
+        ]
+      ],
+      "DoS": [
+        {
+          "type": "LGBMClassifier",
+          "params": {
+            "boosting_type": "gbdt",
+            "class_weight": null,
+            "colsample_bytree": 0.95,
+            "importance_type": "split",
+            "learning_rate": 0.055,
+            "max_depth": -1,
+            "min_child_samples": 25,
+            "min_child_weight": 0.001,
+            "min_split_gain": 0.0,
+            "n_estimators": 380,
+            "n_jobs": 2,
+            "num_leaves": 127,
+            "objective": "multiclass",
+            "random_state": 47,
+            "reg_alpha": 0.02,
+            "reg_lambda": 1.5,
+            "subsample": 0.9,
+            "subsample_for_bin": 200000,
+            "subsample_freq": 0,
+            "verbosity": -1
+          }
+        },
+        {
+          "type": "LabelEncoder",
+          "params": {}
+        },
+        [
+          "DoS-HTTP_Flood",
+          "DoS-SYN_Flood",
+          "DoS-TCP_Flood",
+          "DoS-UDP_Flood"
+        ]
+      ],
+      "Mirai": [
+        {
+          "type": "LGBMClassifier",
+          "params": {
+            "boosting_type": "gbdt",
+            "class_weight": null,
+            "colsample_bytree": 0.95,
+            "importance_type": "split",
+            "learning_rate": 0.055,
+            "max_depth": -1,
+            "min_child_samples": 25,
+            "min_child_weight": 0.001,
+            "min_split_gain": 0.0,
+            "n_estimators": 380,
+            "n_jobs": 2,
+            "num_leaves": 127,
+            "objective": "multiclass",
+            "random_state": 47,
+            "reg_alpha": 0.02,
+            "reg_lambda": 1.5,
+            "subsample": 0.9,
+            "subsample_for_bin": 200000,
+            "subsample_freq": 0,
+            "verbosity": -1
+          }
+        },
+        {
+          "type": "LabelEncoder",
+          "params": {}
+        },
+        [
+          "Mirai-greeth_flood",
+          "Mirai-greip_flood",
+          "Mirai-udpplain"
+        ]
+      ],
+      "Recon": [
+        {
+          "type": "LGBMClassifier",
+          "params": {
+            "boosting_type": "gbdt",
+            "class_weight": null,
+            "colsample_bytree": 0.95,
+            "importance_type": "split",
+            "learning_rate": 0.055,
+            "max_depth": -1,
+            "min_child_samples": 25,
+            "min_child_weight": 0.001,
+            "min_split_gain": 0.0,
+            "n_estimators": 380,
+            "n_jobs": 2,
+            "num_leaves": 127,
+            "objective": "multiclass",
+            "random_state": 47,
+            "reg_alpha": 0.02,
+            "reg_lambda": 1.5,
+            "subsample": 0.9,
+            "subsample_for_bin": 200000,
+            "subsample_freq": 0,
+            "verbosity": -1
+          }
+        },
+        {
+          "type": "LabelEncoder",
+          "params": {}
+        },
+        [
+          "Recon-HostDiscovery",
+          "Recon-OSScan",
+          "Recon-PingSweep",
+          "Recon-PortScan",
+          "VulnerabilityScan"
+        ]
+      ],
+      "Spoofing": [
+        {
+          "type": "LGBMClassifier",
+          "params": {
+            "boosting_type": "gbdt",
+            "class_weight": null,
+            "colsample_bytree": 0.95,
+            "importance_type": "split",
+            "learning_rate": 0.055,
+            "max_depth": -1,
+            "min_child_samples": 25,
+            "min_child_weight": 0.001,
+            "min_split_gain": 0.0,
+            "n_estimators": 380,
+            "n_jobs": 2,
+            "num_leaves": 127,
+            "objective": "binary",
+            "random_state": 47,
+            "reg_alpha": 0.02,
+            "reg_lambda": 1.5,
+            "subsample": 0.9,
+            "subsample_for_bin": 200000,
+            "subsample_freq": 0,
+            "verbosity": -1
+          }
+        },
+        {
+          "type": "LabelEncoder",
+          "params": {}
+        },
+        [
+          "DNS_Spoofing",
+          "MITM-ArpSpoofing"
+        ]
+      ],
+      "Web-based": [
+        {
+          "type": "LGBMClassifier",
+          "params": {
+            "boosting_type": "gbdt",
+            "class_weight": null,
+            "colsample_bytree": 0.95,
+            "importance_type": "split",
+            "learning_rate": 0.055,
+            "max_depth": -1,
+            "min_child_samples": 25,
+            "min_child_weight": 0.001,
+            "min_split_gain": 0.0,
+            "n_estimators": 380,
+            "n_jobs": 2,
+            "num_leaves": 127,
+            "objective": "multiclass",
+            "random_state": 47,
+            "reg_alpha": 0.02,
+            "reg_lambda": 1.5,
+            "subsample": 0.9,
+            "subsample_for_bin": 200000,
+            "subsample_freq": 0,
+            "verbosity": -1
+          }
+        },
+        {
+          "type": "LabelEncoder",
+          "params": {}
+        },
+        [
+          "Backdoor_Malware",
+          "BrowserHijacking",
+          "CommandInjection",
+          "SqlInjection",
+          "Uploading_Attack",
+          "XSS"
+        ]
+      ]
+    }
+  },
+  "saved_utc": "2026-10-18T22:55:41.265258+00:00"
+}

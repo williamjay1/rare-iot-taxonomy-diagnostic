@@ -1,0 +1,17 @@
+{
+  "random_draws_per_split": 4,
+  "independent_exchangeable_random_draws_not_60": true,
+  "heterogeneous_feature_maps_excluded_from_random_null": true,
+  "split_dependence": "Splits reuse the source corpus; no Fisher pooling and no product or 4**6 pseudoreplicated tail probability.",
+  "interpretation": "This is a finite random-mapping reference audit. Four draws give minimum plus-one tail 0.2 and cannot establish a conventional 0.05 random-mapping test. No new hierarchy fitting occurred in this audit.",
+  "similarity": "Within-split correlations are descriptive. True mapping ARI=1 has no matching pseudo-map common support, so regression adjustment cannot identify semantics independent of similarity.",
+  "source_rows": 60,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "source_files_checked": 18,
+  "calibration_rows_reproduced": 60,
+  "alert_budget_rows_reproduced": 660,
+  "config_sha256": "363b512827ad871e7cce09fe76dbf503776ff113c6020762705dcbabc209f04f",
+  "parent_canonical_manifest": "<WORKSPACE>\\primary_audit\\canonical_v10\\input_manifest.csv",
+  "parent_manifest_sha256": "0334b88e405ec558a239861cada136473af0101ad92235b671faef00003d5dda",
+  "all_core_and_stacker_source_hashes_match_parent": true,
+  "compact_seed42_audit": {
+    "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_compact_prediction_ledgers_v1\\ciciot2023_public_subsample\\paired_predictions_seed_42.npz",
+    "sha256": "8ac6d1dd3c5dc30ad379d61df7ed538faa43e46ccbe1c9faf021d6977c320b0e",
+    "used_for_extension_calibration_or_budget": false,
+    "has_support_gate_probability": false,
+    "support_gate_hard_differences_vs_canonical": 13
+  },
+  "ece_definition_unchanged": "ten right-closed equal-width bins; correctness is argmax of the same normalized frozen probability row",
+  "canonical_probability_precision": "original v10 float16 archives, not recovered full-precision predictions",
+  "sensitivity_only_not_a_metric_switch": true,
+  "support_gate_ece10_mean_declared": 0.006944423135816284,
+  "support_gate_ece10_mean_canonical_hard_sensitivity": 0.006938595578123913,
+  "support_gate_rare_ece10_mean_declared": 0.05574171579260778,
+  "support_gate_rare_ece10_mean_canonical_hard_sensitivity": 0.055762463541477035,
+  "impact": "The discrepant compact hard labels cannot affect these endpoints: compact was never read for calibration/budget. Float16 argmax versus stored canonical hard prediction is separately tabulated. Brier scores and alert ordering use probabilities and do not depend on either saved hard-label vector."
+}

@@ -1,0 +1,10 @@
+{
+  "status": "checkpoint_copy_verified",
+  "cells_reused_without_refit": [
+    "lofo_seed42_BruteForce",
+    "lofo_seed42_DDoS"
+  ],
+  "boundary_sentinel_removed_after_original_exit": true,
+  "worker_root": "<WORKSPACE>\\extensions\\workers\\seed42",
+  "n_jobs_per_worker": 2
+}

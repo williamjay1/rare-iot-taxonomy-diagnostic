@@ -1,0 +1,233 @@
+{
+  "purpose": "drift aware sequential window evaluation on the official CICIoT2023 archive",
+  "design_lock": "docs/jit_20260810_drift_llm/EXPERIMENT_DESIGN_GATE.md",
+  "source": "<LEGACY_PROJECT>\\data\\processed\\ciciot2023_official_validated\\MERGED_CSV",
+  "manifest": "<LEGACY_PROJECT>\\results\\jit_ciciot_official_archive_audit_final\\official_member_manifest.csv",
+  "samples_dir": "<LEGACY_PROJECT>\\results\\jit_ciciot2023_official_confirmation_samples_final",
+  "duplicate_audit_dir": "<LEGACY_PROJECT>\\results\\jit_ciciot_official_split_duplicate_audit_final",
+  "frozen_archive_dir": "<LEGACY_PROJECT>\\results\\jit_ciciot2023_official_archive_confirmation",
+  "windows": {
+    "w1_55_56": [
+      55,
+      56
+    ],
+    "w2_57_58": [
+      57,
+      58
+    ],
+    "w3_59_60": [
+      59,
+      60
+    ],
+    "w4_61_63": [
+      61,
+      62,
+      63
+    ]
+  },
+  "dedup_rule": "exclude hashes observed in base, gate_train or gate_select or in the global conflicting label hash list; first occurrence per hash inside each window",
+  "methods": [
+    "flat_weighted_xgboost",
+    "equal_flat_taxonomy_blend",
+    "calibrated_cyclic_taxonomy_control",
+    "calibrated_support_matched_control"
+  ],
+  "contrasts": [
+    [
+      "equal_flat_taxonomy_blend",
+      "flat_weighted_xgboost"
+    ],
+    [
+      "equal_flat_taxonomy_blend",
+      "calibrated_cyclic_taxonomy_control"
+    ],
+    [
+      "equal_flat_taxonomy_blend",
+      "calibrated_support_matched_control"
+    ]
+  ],
+  "fine_labels": [
+    "Backdoor_Malware",
+    "BenignTraffic",
+    "BrowserHijacking",
+    "CommandInjection",
+    "DDoS-ACK_Fragmentation",
+    "DDoS-HTTP_Flood",
+    "DDoS-ICMP_Flood",
+    "DDoS-ICMP_Fragmentation",
+    "DDoS-PSHACK_Flood",
+    "DDoS-RSTFINFlood",
+    "DDoS-SYN_Flood",
+    "DDoS-SlowLoris",
+    "DDoS-SynonymousIP_Flood",
+    "DDoS-TCP_Flood",
+    "DDoS-UDP_Flood",
+    "DDoS-UDP_Fragmentation",
+    "DNS_Spoofing",
+    "DictionaryBruteForce",
+    "DoS-HTTP_Flood",
+    "DoS-SYN_Flood",
+    "DoS-TCP_Flood",
+    "DoS-UDP_Flood",
+    "MITM-ArpSpoofing",
+    "Mirai-greeth_flood",
+    "Mirai-greip_flood",
+    "Mirai-udpplain",
+    "Recon-HostDiscovery",
+    "Recon-OSScan",
+    "Recon-PingSweep",
+    "Recon-PortScan",
+    "SqlInjection",
+    "Uploading_Attack",
+    "VulnerabilityScan",
+    "XSS"
+  ],
+  "families": [
+    "Benign",
+    "BruteForce",
+    "DDoS",
+    "DoS",
+    "Mirai",
+    "Recon",
+    "Spoofing",
+    "Web-based"
+  ],
+  "label_to_family": {
+    "DDoS-ACK_Fragmentation": "DDoS",
+    "BenignTraffic": "Benign",
+    "DNS_Spoofing": "Spoofing",
+    "MITM-ArpSpoofing": "Spoofing",
+    "DDoS-UDP_Fragmentation": "DDoS",
+    "DoS-HTTP_Flood": "DoS",
+    "DDoS-ICMP_Fragmentation": "DDoS",
+    "VulnerabilityScan": "Recon",
+    "DoS-UDP_Flood": "DoS",
+    "DoS-TCP_Flood": "DoS",
+    "DDoS-PSHACK_Flood": "DDoS",
+    "DDoS-RSTFINFlood": "DDoS",
+    "DDoS-ICMP_Flood": "DDoS",
+    "DDoS-UDP_Flood": "DDoS",
+    "DDoS-HTTP_Flood": "DDoS",
+    "Recon-OSScan": "Recon",
+    "DDoS-TCP_Flood": "DDoS",
+    "Recon-HostDiscovery": "Recon",
+    "DoS-SYN_Flood": "DoS",
+    "Mirai-greip_flood": "Mirai",
+    "Mirai-greeth_flood": "Mirai",
+    "DDoS-SYN_Flood": "DDoS",
+    "Mirai-udpplain": "Mirai",
+    "DDoS-SynonymousIP_Flood": "DDoS",
+    "Backdoor_Malware": "Web-based",
+    "Recon-PortScan": "Recon",
+    "XSS": "Web-based",
+    "DictionaryBruteForce": "BruteForce",
+    "CommandInjection": "Web-based",
+    "SqlInjection": "Web-based",
+    "Recon-PingSweep": "Recon",
+    "BrowserHijacking": "Web-based",
+    "DDoS-SlowLoris": "DDoS",
+    "Uploading_Attack": "Web-based"
+  },
+  "cyclic_control_shift": 12,
+  "rare_ids": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    7,
+    11,
+    15,
+    16,
+    17,
+    18,
+    22,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33
+  ],
+  "rare_threshold": 335737,
+  "rare_definition": "fine class support at most one percent of base source rows",
+  "arguments": {
+    "source": "<LEGACY_PROJECT>\\data\\processed\\ciciot2023_official_validated\\MERGED_CSV",
+    "manifest": "<LEGACY_PROJECT>\\results\\jit_ciciot_official_archive_audit_final\\official_member_manifest.csv",
+    "samples_dir": "<LEGACY_PROJECT>\\results\\jit_ciciot2023_official_confirmation_samples_final",
+    "duplicate_audit_dir": "<LEGACY_PROJECT>\\results\\jit_ciciot_official_split_duplicate_audit_final",
+    "frozen_archive_dir": "<LEGACY_PROJECT>\\results\\jit_ciciot2023_official_archive_confirmation",
+    "seed": "20260729",
+    "chunk_size": "250000",
+    "global_trees": "520",
+    "local_trees": "380",
+    "bootstrap_reps": "5000",
+    "max_rows_per_member": "None",
+    "windows": "None",
+    "out_dir": "jit_sequential_window_drift_study_v2"
+  },
+  "training_seconds": {
+    "flat_weighted_xgboost": 335.80735039999854,
+    "real_taxonomy": 76.86409469999853,
+    "cyclic_taxonomy": 75.74354510000194,
+    "support_taxonomy": 75.92246179999711,
+    "total_training": 565.7302842999998
+  },
+  "inference_seconds": {
+    "flat_weighted_xgboost": 104.31647620000149,
+    "equal_flat_taxonomy_blend": 258.3255905000042,
+    "calibrated_cyclic_taxonomy_control": 267.38562159999856,
+    "calibrated_support_matched_control": 253.76255479999963
+  },
+  "window_audit": {
+    "w1_55_56": {
+      "raw_rows": 1498620,
+      "crossed_rows": 873592,
+      "conflict_rows": 459729,
+      "repeated_rows": 513965,
+      "kept_rows": 622816
+    },
+    "w2_57_58": {
+      "raw_rows": 1574939,
+      "crossed_rows": 918274,
+      "conflict_rows": 481820,
+      "repeated_rows": 546488,
+      "kept_rows": 654266
+    },
+    "w3_59_60": {
+      "raw_rows": 1378752,
+      "crossed_rows": 802851,
+      "conflict_rows": 421938,
+      "repeated_rows": 461537,
+      "kept_rows": 573926
+    },
+    "w4_61_63": {
+      "raw_rows": 1841245,
+      "crossed_rows": 1072734,
+      "conflict_rows": 562970,
+      "repeated_rows": 662728,
+      "kept_rows": 765487
+    }
+  },
+  "capture_order_proxy_disclosure": "no timestamp column exists in any locally available CICIoT2023 distribution; Merged file numbers follow the publication capture order and are used as a disclosed capture order proxy, not a wall clock split",
+  "started_at": "2026-08-09T23:00:09Z",
+  "finished_at": "2026-08-09T23:25:33Z",
+  "resumed_from_checkpoint": true,
+  "completed_windows": {
+    "w1_55_56": "2026-08-09T23:09:54Z",
+    "w2_57_58": "2026-08-09T23:10:11Z",
+    "w3_59_60": "2026-08-09T23:10:26Z",
+    "w4_61_63": "2026-08-09T23:25:33Z"
+  },
+  "execution_note": "per window predictions are checkpointed as window_predictions_<id>.npz together with appended derived tables, so an interrupted run resumes from the last completed window",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "package_versions": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.3.0",
+    "lightgbm": "4.6.0"
+  }
+}

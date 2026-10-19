@@ -1,0 +1,69 @@
+{
+  "status": "published_all_55_units_pending_final_probability_verifier",
+  "workers": {
+    "42": {
+      "completed_cells": 13,
+      "expected_cells": 13,
+      "worker_root": "<WORKSPACE>\\extensions\\workers\\seed42",
+      "stage": "between cells or queue finished; inspect run_status",
+      "worker_status": "requested_queue_finished"
+    },
+    "43": {
+      "completed_cells": 13,
+      "expected_cells": 13,
+      "worker_root": "<WORKSPACE>\\extensions\\workers\\seed43",
+      "stage": "between cells or queue finished; inspect run_status",
+      "worker_status": "requested_queue_finished"
+    },
+    "44": {
+      "completed_cells": 13,
+      "expected_cells": 13,
+      "worker_root": "<WORKSPACE>\\extensions\\workers\\seed44",
+      "stage": "between cells or queue finished; inspect run_status",
+      "worker_status": "requested_queue_finished"
+    }
+  },
+  "frozen_config_sha256": "363b512827ad871e7cce09fe76dbf503776ff113c6020762705dcbabc209f04f",
+  "copied_cells": [
+    "lofo_seed42_BruteForce",
+    "lofo_seed42_DDoS",
+    "lofo_seed42_DoS",
+    "lofo_seed42_Mirai",
+    "lofo_seed42_Recon",
+    "lofo_seed42_Spoofing",
+    "lofo_seed42_Web_based",
+    "lofo_seed43_BruteForce",
+    "lofo_seed43_DDoS",
+    "lofo_seed43_DoS",
+    "lofo_seed43_Mirai",
+    "lofo_seed43_Recon",
+    "lofo_seed43_Spoofing",
+    "lofo_seed43_Web_based",
+    "lofo_seed44_BruteForce",
+    "lofo_seed44_DDoS",
+    "lofo_seed44_DoS",
+    "lofo_seed44_Mirai",
+    "lofo_seed44_Recon",
+    "lofo_seed44_Spoofing",
+    "lofo_seed44_Web_based",
+    "scarcity_seed42_10",
+    "scarcity_seed42_100",
+    "scarcity_seed42_25",
+    "scarcity_seed42_250",
+    "scarcity_seed42_50",
+    "scarcity_seed42_500",
+    "scarcity_seed43_10",
+    "scarcity_seed43_100",
+    "scarcity_seed43_25",
+    "scarcity_seed43_250",
+    "scarcity_seed43_50",
+    "scarcity_seed43_500",
+    "scarcity_seed44_10",
+    "scarcity_seed44_100",
+    "scarcity_seed44_25",
+    "scarcity_seed44_250",
+    "scarcity_seed44_50",
+    "scarcity_seed44_500"
+  ],
+  "sample_or_tree_counts_reduced": false
+}

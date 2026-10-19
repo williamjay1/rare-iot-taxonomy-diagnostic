@@ -1,0 +1,10 @@
+method,ece_all_mean,ece_all_sample_sd,seeds,nbins,bin_closure,display_mean_sample_sd
+flat_xgb,0.004602999786478683,0.0002511091674453573,6,10,right; zero included in first bin,0.0046 +/- 0.0003
+flat_equal_blend,0.0051001459727507,0.00018493035003362416,6,10,right; zero included in first bin,0.0051 +/- 0.0002
+temperature_flat_blend,0.004864699376242134,0.0002872996727500641,6,10,right; zero included in first bin,0.0049 +/- 0.0003
+newton_flat_stacker,0.0019062640175671,0.00021686160344539264,6,10,right; zero included in first bin,0.0019 +/- 0.0002
+real_taxonomy,0.0023198752633258168,0.000189305910665055,6,10,right; zero included in first bin,0.0023 +/- 0.0002
+taxonomy_blend,0.00668210603659915,0.0002870542607785629,6,10,right; zero included in first bin,0.0067 +/- 0.0003
+taxonomy_benefit_gate,0.00748682941967395,0.0010156941028113945,6,10,right; zero included in first bin,0.0075 +/- 0.0010
+cyclic_gate,0.006590743698435316,0.0007691003767939005,6,10,right; zero included in first bin,0.0066 +/- 0.0008
+support_matched_gate,0.00694442313581625,0.0007681574007335695,6,10,right; zero included in first bin,0.0069 +/- 0.0008

@@ -1,0 +1,41 @@
+{
+  "protocol_sha256": "281fe1b703e0d10802d73f2f05f9ce71b8841482b22b185f6f2634bc89a398de",
+  "rows": 50000,
+  "n_features": 39,
+  "n_classes": 2,
+  "ordered_X_sha256": "c7989a711a97a378675f65a629cd424d46349849e9c28faa32877e51acfca6fb",
+  "ordered_y_sha256": "fbcec3dc460e9d691a9c85230312c758fdbfb880734b8afa8b4eb8587ac1ef0f",
+  "kind": "local",
+  "map": "real",
+  "family": "Spoofing",
+  "classes": [
+    "DNS_Spoofing",
+    "MITM-ArpSpoofing"
+  ],
+  "weight_exponent": 0.5,
+  "ordered_base_positions_sha256": "b02f80eccb86abe1f7b0ed48d611fd1ff9c2052263fdc82ee040942838cb2774",
+  "ordered_weight_sha256": "7cb5e31f1e9664b86ee75aa5b6bf9f871aa4f3fd18d2a6642dd96ca47d9a02bf",
+  "parameters_repr": {
+    "boosting_type": "'gbdt'",
+    "class_weight": "None",
+    "colsample_bytree": "0.95",
+    "importance_type": "'split'",
+    "learning_rate": "0.055",
+    "max_depth": "-1",
+    "min_child_samples": "25",
+    "min_child_weight": "0.001",
+    "min_split_gain": "0.0",
+    "n_estimators": "380",
+    "n_jobs": "2",
+    "num_leaves": "127",
+    "objective": "'binary'",
+    "random_state": "20260729",
+    "reg_alpha": "0.02",
+    "reg_lambda": "1.5",
+    "subsample": "0.9",
+    "subsample_for_bin": "200000",
+    "subsample_freq": "0",
+    "verbosity": "-1"
+  },
+  "input_sha256": "4cdd5dd3585307e786da1ea67422147b404dcb029e7ea1b7b69f2b8fa48cc21d"
+}

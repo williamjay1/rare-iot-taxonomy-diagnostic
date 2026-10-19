@@ -1,0 +1,14 @@
+{
+  "wall_seconds_this_invocation": 2309.220437999931,
+  "worker_total_seconds_including_setup": 2321.3938558000373,
+  "started_utc": "2026-10-18T20:12:16.458824+00:00",
+  "finished_utc": "2026-10-18T20:50:57.853090+00:00",
+  "first_started_utc": "2026-10-18T19:08:52.659600+00:00",
+  "prior_attempt_records": [
+    "<WORKSPACE>\\harmonized\\dispatch\\grouped37_seed_43_prior_attempt_1.json"
+  ],
+  "execution_mode": "exclusively_leased_single_seed_worker",
+  "pid": 44072,
+  "wall_seconds_first_roles_to_completion_including_recovery_gap": 6106.757231,
+  "worker_wall_seconds_first_start_to_finish_including_gaps": 6125.194485
+}

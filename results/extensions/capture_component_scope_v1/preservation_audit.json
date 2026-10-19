@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "original_artifacts_unchanged": {
+    "<WORKSPACE>\\extensions\\lofo_results.csv": "eeb5804eb95c5f18ee871fb9c432bc176fdff410a2fc8cd74531377eb0fe143c",
+    "<WORKSPACE>\\extensions\\scarcity_results.csv": "1544bf434bf8fd538062a83e44a88cd3d691fd5f2b2077cfb64ed56efd4a7dc4",
+    "<WORKSPACE>\\extensions\\calibration_results.csv": "984be0321dd8e09596d165b0161084730eb7bc1a3fe8be6715473b5b95e01753",
+    "<WORKSPACE>\\extensions\\alert_budget_results.csv": "039fe907082d5e8f22a5cc60d5b07ea07a97e7145410bec08f7f2697c43565ee",
+    "<WORKSPACE>\\extensions\\capture_windows_results.csv": "b332ccfa134bf082caaeb735ee3249b848365ce63b81555d844544915088bd03",
+    "<WORKSPACE>\\extensions\\table4_nine_arm_ece10.csv": "2dcae028a0098de9f6b5e9526cafcba6cd400ca168c6cbfd769f2777611940bb",
+    "<WORKSPACE>\\extensions\\capture\\frozen\\window_predictions_w1_55_56.npz": "95394df40e0e5d32a49d01ade16144268917a7b05d71e8541966cd85c877ff8a",
+    "<WORKSPACE>\\extensions\\capture\\frozen\\window_predictions_w2_57_58.npz": "ee0cf1ad46898f8c027d8f2d358b461bdc43569db9113ab785ef81bd15f112ea",
+    "<WORKSPACE>\\extensions\\capture\\frozen\\window_predictions_w3_59_60.npz": "a69709377d6abbbb9b6b03d06b2ce14f38959f61a90ce8c632354a26c3d18e1b",
+    "<WORKSPACE>\\extensions\\capture\\frozen\\window_predictions_w4_61_63.npz": "adc538288aa5171e26c5100b102daa3aa5708eb51791626c7636475905e98a05",
+    "<WORKSPACE>\\extensions\\capture\\calibrators.joblib": "e657f0e90590bb2b30130589b8a55427714956bbafce44b31f7f3c533bd247ed",
+    "<WORKSPACE>\\extensions\\capture\\lgbm.joblib": "4698c58f4c43071938b0573d4eace520169acac3654a0ee90dc1aa09800359e2",
+    "<WORKSPACE>\\extensions\\capture\\xgb.joblib": "c7793b0e211167f8d0e1b1281fbbbdcd25c2cc217f4d3ec30870b9773dc8ecb7"
+  },
+  "original_handoff_preserved_sha256": "012720d77ea04fb102fc7d8d25ec0a67b76f025c7906b71b8649e8397bc72d09",
+  "bounded_audit_completed": true,
+  "common_flat_repair_completed": false
+}

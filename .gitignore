@@ -1,0 +1,12 @@
+data/raw/
+workspace/
+release/
+*.npz
+*.joblib
+*.pkl
+*.parquet
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+Thumbs.db

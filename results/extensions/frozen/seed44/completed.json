@@ -1,0 +1,12 @@
+{
+  "seed": 44,
+  "status": "completed",
+  "fitting": "none; frozen probabilities only",
+  "historical_temperature_and_stacker_fit_role": "utility/calibration; selection was reported only",
+  "probability_treatment": "all frozen float16 matrices renormalized consistently to unit row sums",
+  "source_sha256": {
+    "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\ijismd_v10_ciciot_grouped_core_6split\\paired_predictions_seed_44.npz": "ec8f09f18c44a5fa437c9c23b67e606423fc0d6b8aa12a0bab8ea6d9ae6bd948",
+    "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\ijismd_v10_grouped_flat_comparators_6split\\paired_predictions_seed_44.npz": "af624ccfd0e07857b8456f90f0f9b8c576c64b16d0fb46116cea9c591042ac7a",
+    "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\ijismd_v10_grouped_newton_flat_stacker_6split\\paired_predictions_seed_44.npz": "80c4c0e42def2c780d18bd1e3b0b04449c7cbb553d67a3e07bc204077eaba6da"
+  }
+}

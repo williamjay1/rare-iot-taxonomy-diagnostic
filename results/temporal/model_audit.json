@@ -1,0 +1,28 @@
+{
+  "fit_classes": [
+    "Benign",
+    "DDoS",
+    "DoS",
+    "Injection",
+    "Scanning"
+  ],
+  "outer_unseen_classes": [
+    "Backdoor",
+    "MITM",
+    "Ransomware",
+    "XSS"
+  ],
+  "rare_fit_classes": [],
+  "rare_with_outer_support": [],
+  "calibration_rows_excluded_unseen_class": 18614,
+  "outer_rows": 300000,
+  "role_sizes": {
+    "fit": 180000,
+    "calibration": 60000,
+    "selection": 60000,
+    "test": 300000
+  },
+  "absolute_timestamps_and_ips_excluded": true,
+  "all_methods_same_test_row_sha256": "3e059af583ac61ae6cb1edea101fe288f5b6cc8f6563481900fe6c15df0ceb7a",
+  "seed_interpretation": "Three fitted-model random seeds on ONE frozen chronological role assignment; not three independent future tests"
+}

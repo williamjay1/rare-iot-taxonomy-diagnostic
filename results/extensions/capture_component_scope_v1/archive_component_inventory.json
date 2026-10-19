@@ -1,0 +1,887 @@
+{
+  "locations": [
+    "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2",
+    "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study",
+    "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation"
+  ],
+  "files": [
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\completed_windows.json",
+      "bytes": 159,
+      "modified_utc": "2026-08-09T23:25:33.588721+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\drift_diagnostics.csv",
+      "bytes": 719,
+      "modified_utc": "2026-08-09T23:25:33.529639+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\feature_psi.csv",
+      "bytes": 6055,
+      "modified_utc": "2026-08-09T23:25:33.529639+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\mix_profiles.csv",
+      "bytes": 16693,
+      "modified_utc": "2026-08-09T23:25:33.529639+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\paired_bootstrap_samples.csv",
+      "bytes": 7984103,
+      "modified_utc": "2026-08-09T23:25:33.588721+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\paired_bootstrap_summary.csv",
+      "bytes": 3758,
+      "modified_utc": "2026-08-09T23:25:33.529639+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\run_metadata.json",
+      "bytes": 7182,
+      "modified_utc": "2026-08-09T23:25:33.625239+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\sequential_window_classwise.csv",
+      "bytes": 64255,
+      "modified_utc": "2026-08-09T23:25:33.529639+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\sequential_window_results.csv",
+      "bytes": 2333,
+      "modified_utc": "2026-08-09T23:25:33.529639+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\window_audit_w1_55_56.json",
+      "bytes": 134,
+      "modified_utc": "2026-08-09T23:09:54.088026+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\window_audit_w2_57_58.json",
+      "bytes": 134,
+      "modified_utc": "2026-08-09T23:10:11.502173+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\window_audit_w3_59_60.json",
+      "bytes": 134,
+      "modified_utc": "2026-08-09T23:10:26.983217+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\window_audit_w4_61_63.json",
+      "bytes": 135,
+      "modified_utc": "2026-08-09T23:25:33.588721+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\window_dedup_audit.csv",
+      "bytes": 253,
+      "modified_utc": "2026-08-09T23:25:33.597041+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\window_predictions_w1_55_56.npz",
+      "bytes": 2335994,
+      "modified_utc": "2026-08-09T22:21:36.795877+00:00",
+      "sha256": "95394df40e0e5d32a49d01ade16144268917a7b05d71e8541966cd85c877ff8a",
+      "arrays": [
+        {
+          "key": "y_true",
+          "shape": [
+            622816
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "rare_ids",
+          "shape": [
+            20
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "flat_weighted_xgboost",
+          "shape": [
+            622816
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "equal_flat_taxonomy_blend",
+          "shape": [
+            622816
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "calibrated_cyclic_taxonomy_control",
+          "shape": [
+            622816
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "calibrated_support_matched_control",
+          "shape": [
+            622816
+          ],
+          "dtype": "int16"
+        }
+      ]
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\window_predictions_w2_57_58.npz",
+      "bytes": 2452117,
+      "modified_utc": "2026-08-09T22:31:16.221942+00:00",
+      "sha256": "ee0cf1ad46898f8c027d8f2d358b461bdc43569db9113ab785ef81bd15f112ea",
+      "arrays": [
+        {
+          "key": "y_true",
+          "shape": [
+            654266
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "rare_ids",
+          "shape": [
+            20
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "flat_weighted_xgboost",
+          "shape": [
+            654266
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "equal_flat_taxonomy_blend",
+          "shape": [
+            654266
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "calibrated_cyclic_taxonomy_control",
+          "shape": [
+            654266
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "calibrated_support_matched_control",
+          "shape": [
+            654266
+          ],
+          "dtype": "int16"
+        }
+      ]
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\window_predictions_w3_59_60.npz",
+      "bytes": 2152058,
+      "modified_utc": "2026-08-09T22:39:19.364783+00:00",
+      "sha256": "a69709377d6abbbb9b6b03d06b2ce14f38959f61a90ce8c632354a26c3d18e1b",
+      "arrays": [
+        {
+          "key": "y_true",
+          "shape": [
+            573926
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "rare_ids",
+          "shape": [
+            20
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "flat_weighted_xgboost",
+          "shape": [
+            573926
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "equal_flat_taxonomy_blend",
+          "shape": [
+            573926
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "calibrated_cyclic_taxonomy_control",
+          "shape": [
+            573926
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "calibrated_support_matched_control",
+          "shape": [
+            573926
+          ],
+          "dtype": "int16"
+        }
+      ]
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study_v2\\window_predictions_w4_61_63.npz",
+      "bytes": 2868818,
+      "modified_utc": "2026-08-09T23:25:29.672029+00:00",
+      "sha256": "adc538288aa5171e26c5100b102daa3aa5708eb51791626c7636475905e98a05",
+      "arrays": [
+        {
+          "key": "y_true",
+          "shape": [
+            765487
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "rare_ids",
+          "shape": [
+            20
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "flat_weighted_xgboost",
+          "shape": [
+            765487
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "equal_flat_taxonomy_blend",
+          "shape": [
+            765487
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "calibrated_cyclic_taxonomy_control",
+          "shape": [
+            765487
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "calibrated_support_matched_control",
+          "shape": [
+            765487
+          ],
+          "dtype": "int16"
+        }
+      ]
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study\\drift_diagnostics.csv",
+      "bytes": 730,
+      "modified_utc": "2026-08-09T21:54:28.177105+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study\\feature_psi.csv",
+      "bytes": 5986,
+      "modified_utc": "2026-08-09T21:54:28.177105+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study\\mix_profiles.csv",
+      "bytes": 16722,
+      "modified_utc": "2026-08-09T21:54:28.177105+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study\\paired_bootstrap_samples.csv",
+      "bytes": 7984071,
+      "modified_utc": "2026-08-09T21:54:28.352765+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study\\paired_bootstrap_summary.csv",
+      "bytes": 3751,
+      "modified_utc": "2026-08-09T21:54:28.177105+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study\\run_metadata.json",
+      "bytes": 6856,
+      "modified_utc": "2026-08-09T21:54:28.403872+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study\\sequential_window_classwise.csv",
+      "bytes": 64657,
+      "modified_utc": "2026-08-09T21:54:28.177105+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study\\sequential_window_results.csv",
+      "bytes": 2360,
+      "modified_utc": "2026-08-09T21:54:28.161049+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study\\window_dedup_audit.csv",
+      "bytes": 256,
+      "modified_utc": "2026-08-09T21:54:28.352765+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study\\window_predictions_w1_46_50.npz",
+      "bytes": 10975466,
+      "modified_utc": "2026-08-09T21:02:39.646791+00:00",
+      "sha256": "9e4017530f4d6e93b29e7e5efda630997ededb1200ac03b6a4931b6bd81bd171",
+      "arrays": [
+        {
+          "key": "y_true",
+          "shape": [
+            3237400
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "rare_ids",
+          "shape": [
+            20
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "flat_weighted_xgboost",
+          "shape": [
+            3237400
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "equal_flat_taxonomy_blend",
+          "shape": [
+            3237400
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "calibrated_cyclic_taxonomy_control",
+          "shape": [
+            3237400
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "calibrated_support_matched_control",
+          "shape": [
+            3237400
+          ],
+          "dtype": "int16"
+        }
+      ]
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study\\window_predictions_w2_51_55.npz",
+      "bytes": 9050450,
+      "modified_utc": "2026-08-09T21:22:06.382740+00:00",
+      "sha256": "b434e51ac75d14f7ad8949e0c04f8a93028e26ce57429a9a9131a6cade5f51aa",
+      "arrays": [
+        {
+          "key": "y_true",
+          "shape": [
+            2669429
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "rare_ids",
+          "shape": [
+            20
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "flat_weighted_xgboost",
+          "shape": [
+            2669429
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "equal_flat_taxonomy_blend",
+          "shape": [
+            2669429
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "calibrated_cyclic_taxonomy_control",
+          "shape": [
+            2669429
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "calibrated_support_matched_control",
+          "shape": [
+            2669429
+          ],
+          "dtype": "int16"
+        }
+      ]
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study\\window_predictions_w3_56_59.npz",
+      "bytes": 10189974,
+      "modified_utc": "2026-08-09T21:40:52.298717+00:00",
+      "sha256": "23cbfb4826477c983ed75b0f81dc27a1de56fdab75d85f4cc1d914b8ddc1816c",
+      "arrays": [
+        {
+          "key": "y_true",
+          "shape": [
+            3005954
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "rare_ids",
+          "shape": [
+            20
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "flat_weighted_xgboost",
+          "shape": [
+            3005954
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "equal_flat_taxonomy_blend",
+          "shape": [
+            3005954
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "calibrated_cyclic_taxonomy_control",
+          "shape": [
+            3005954
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "calibrated_support_matched_control",
+          "shape": [
+            3005954
+          ],
+          "dtype": "int16"
+        }
+      ]
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_sequential_window_drift_study\\window_predictions_w4_60_63.npz",
+      "bytes": 8590593,
+      "modified_utc": "2026-08-09T21:54:23.526304+00:00",
+      "sha256": "bcefe1fe614c517c096ee9f16eda82b2604cffa59d9d60d7930cb84a9c9869c0",
+      "arrays": [
+        {
+          "key": "y_true",
+          "shape": [
+            2532818
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "rare_ids",
+          "shape": [
+            20
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "flat_weighted_xgboost",
+          "shape": [
+            2532818
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "equal_flat_taxonomy_blend",
+          "shape": [
+            2532818
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "calibrated_cyclic_taxonomy_control",
+          "shape": [
+            2532818
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "calibrated_support_matched_control",
+          "shape": [
+            2532818
+          ],
+          "dtype": "int16"
+        }
+      ]
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\gate_selection_grid_calibrated_cyclic_taxonomy_control.csv",
+      "bytes": 11868,
+      "modified_utc": "2026-07-29T21:25:18.412472+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\gate_selection_grid_calibrated_support_matched_control.csv",
+      "bytes": 11857,
+      "modified_utc": "2026-07-29T21:27:12.833905+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\gate_selection_grid_calibrated_taxonomy_benefit_gate.csv",
+      "bytes": 11750,
+      "modified_utc": "2026-07-29T21:23:23.976768+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\gate_selections.csv",
+      "bytes": 788,
+      "modified_utc": "2026-07-29T21:27:12.834905+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\official_confirmation_classwise.csv",
+      "bytes": 43088,
+      "modified_utc": "2026-07-29T22:15:03.376029+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\official_confirmation_results.csv",
+      "bytes": 2441,
+      "modified_utc": "2026-07-29T22:15:03.372028+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\official_confirmation_results_partial.csv",
+      "bytes": 1071,
+      "modified_utc": "2026-07-29T22:14:04.634562+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\official_duplicate_free_classwise.csv",
+      "bytes": 43064,
+      "modified_utc": "2026-07-29T22:15:03.401038+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\official_duplicate_free_error_transitions.csv",
+      "bytes": 14542,
+      "modified_utc": "2026-07-29T22:15:03.381036+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\official_duplicate_free_paired_joint_counts.npz",
+      "bytes": 34470,
+      "modified_utc": "2026-07-29T22:15:03.421916+00:00",
+      "sha256": "0d3b30d28670a55ed1bc25dcb6ce8b01d561918edb0b22d957e9814d2653fbe6",
+      "arrays": [
+        {
+          "key": "rare_ids",
+          "shape": [
+            20
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "equal_flat_taxonomy_blend__vs__flat_weighted_xgboost",
+          "shape": [
+            34,
+            34,
+            34
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "calibrated_taxonomy_benefit_gate__vs__flat_weighted_xgboost",
+          "shape": [
+            34,
+            34,
+            34
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "calibrated_taxonomy_benefit_gate__vs__equal_flat_taxonomy_blend",
+          "shape": [
+            34,
+            34,
+            34
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "equal_flat_taxonomy_blend__vs__calibrated_cyclic_taxonomy_control",
+          "shape": [
+            34,
+            34,
+            34
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "equal_flat_taxonomy_blend__vs__calibrated_support_matched_control",
+          "shape": [
+            34,
+            34,
+            34
+          ],
+          "dtype": "int64"
+        }
+      ]
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\official_duplicate_free_results.csv",
+      "bytes": 2551,
+      "modified_utc": "2026-07-29T22:15:03.398376+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\official_error_transitions.csv",
+      "bytes": 14564,
+      "modified_utc": "2026-07-29T22:15:03.378026+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\official_paired_bootstrap_samples.csv",
+      "bytes": 16926055,
+      "modified_utc": "2026-07-29T22:15:31.326421+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\official_paired_bootstrap_summary.csv",
+      "bytes": 4981,
+      "modified_utc": "2026-07-29T22:15:30.736472+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\official_paired_joint_counts.npz",
+      "bytes": 34550,
+      "modified_utc": "2026-07-29T22:15:03.410916+00:00",
+      "sha256": "8450fa8f3a8d0db5da0a8f7a3b5b3dd5397dbbf117c15e8a0b7be4b3658a848b",
+      "arrays": [
+        {
+          "key": "rare_ids",
+          "shape": [
+            20
+          ],
+          "dtype": "int16"
+        },
+        {
+          "key": "equal_flat_taxonomy_blend__vs__flat_weighted_xgboost",
+          "shape": [
+            34,
+            34,
+            34
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "calibrated_taxonomy_benefit_gate__vs__flat_weighted_xgboost",
+          "shape": [
+            34,
+            34,
+            34
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "calibrated_taxonomy_benefit_gate__vs__equal_flat_taxonomy_blend",
+          "shape": [
+            34,
+            34,
+            34
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "equal_flat_taxonomy_blend__vs__calibrated_cyclic_taxonomy_control",
+          "shape": [
+            34,
+            34,
+            34
+          ],
+          "dtype": "int64"
+        },
+        {
+          "key": "equal_flat_taxonomy_blend__vs__calibrated_support_matched_control",
+          "shape": [
+            34,
+            34,
+            34
+          ],
+          "dtype": "int64"
+        }
+      ]
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\official_paired_mcnemar.csv",
+      "bytes": 1496,
+      "modified_utc": "2026-07-29T22:15:31.331381+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\official_split_audit.csv",
+      "bytes": 1108,
+      "modified_utc": "2026-07-29T22:15:03.423915+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\run_metadata.json",
+      "bytes": 5895,
+      "modified_utc": "2026-07-29T22:15:03.458534+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\support_match_audit.csv",
+      "bytes": 2090,
+      "modified_utc": "2026-07-29T20:52:19.126985+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\support_matched_map.json",
+      "bytes": 1091,
+      "modified_utc": "2026-07-29T20:52:19.127987+00:00"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\results\\jit_ciciot2023_official_archive_confirmation\\utility_training_audit.csv",
+      "bytes": 368,
+      "modified_utc": "2026-07-29T21:27:12.836910+00:00"
+    }
+  ],
+  "serialized_models_in_archive_locations": [],
+  "possible_34class_probability_matrices": [],
+  "additional_project_model_search_command": [
+    "rg",
+    "--files",
+    "--hidden",
+    "-g",
+    "*.joblib",
+    "-g",
+    "*.pkl",
+    "-g",
+    "*.pickle",
+    "-g",
+    "*.ubj",
+    "-g",
+    "*.model",
+    "-g",
+    "*.bin",
+    "-g",
+    "!**/.venv/**",
+    "-g",
+    "!**/site-packages/**",
+    "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci"
+  ],
+  "additional_project_model_candidates": [],
+  "excluded_unrelated_candidates": [
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\lo_profile_ijismd_v2f\\cache\\_nop_fsub_fsubcae63ff924034fa148b6b64425ec67-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "6d811df9bf574bb1a633cb718cee44f115c87f359bf307a2f09747b07f4810d3",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\lo_profile_ijismd_v2f\\cache\\_nop_Sqrt_fmul_fsub_fsubf628cca0fe9b781b768256844c519e5-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "4c05889a033b71a216b13ea31c1253843c1486800d77016e3dfdf44602c29656",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\lo_profile_ijismd_v2f\\cache\\_nop_fdivf4b05cc8de6347ae6fc0bc687737c283-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "2c4c2a20f7b8aba2113f29e2852ce31770c9cc038345f2cf518ffc52260b1f04",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\lo_profile_ijismd_v2f\\cache\\_nop_fsum_fsum_fsub_fsum_Var_OpNormsdist_Covar_OpPearson_Slope27fd69cdbcc3a8267a6ff779a2ec596f-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "be6e9237494718f57a30d51de585863017dfcc8a775e3eeb78a80129350e5bce",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\lo_profile_ijismd_v2f\\cache\\_nop_fsum_fsub_fsum_fmul_fdiv_Powerb32d41f39fc3d0b222b9c75a4c22ce-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "2834cc7030d9255412851c67e04090065a9b28151e586347f52eaaa09099e7c3",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\lo_profile_ijismd_v2f\\cache\\_nop_fsub_Sin_fsum_Tan_Cos_ScATane59ae302d99abf458bad42d1502bb-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "ed5efde65b6359c1b97315375bab24e9c9b92251d00be3aa5e1f3b860e6e096b",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\lo_profile_ijismd_v2f\\cache\\_nop_fsum_fsum_fsum98ee81a85f7a311192787295ed8a41cb-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "1bcc5ef2096dd26a807c189c468b820769d554216be782e05396a4251be8be91",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\lo_profile_ijismd_v2f\\cache\\_nop_fsum_fsum_Product_SumIfs_fsop765eb6d6c135fc25523327de207b361c-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "eec22eaf954401f4bd771a8148976a7ceb72f672c0aceb70d531f5be6f4d34a9",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\tmp\\lo_jit_template\\cache\\_nop_Sqrt_fmul_fsub_fsubf628cca0fe9b781b768256844c519e5-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "4c05889a033b71a216b13ea31c1253843c1486800d77016e3dfdf44602c29656",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\tmp\\lo_jit_template\\cache\\_nop_fsum_fsum_Product_SumIfs_fsop765eb6d6c135fc25523327de207b361c-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "eec22eaf954401f4bd771a8148976a7ceb72f672c0aceb70d531f5be6f4d34a9",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\tmp\\lo_jit_template\\cache\\_nop_fsum_fsum_fsum98ee81a85f7a311192787295ed8a41cb-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "1bcc5ef2096dd26a807c189c468b820769d554216be782e05396a4251be8be91",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\tmp\\lo_jit_template\\cache\\_nop_fsum_fsum_fsub_fsum_Var_OpNormsdist_Covar_OpPearson_Slope27fd69cdbcc3a8267a6ff779a2ec596f-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "be6e9237494718f57a30d51de585863017dfcc8a775e3eeb78a80129350e5bce",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\tmp\\lo_jit_template\\cache\\_nop_fsum_fsub_fsum_fmul_fdiv_Powerb32d41f39fc3d0b222b9c75a4c22ce-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "2834cc7030d9255412851c67e04090065a9b28151e586347f52eaaa09099e7c3",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\tmp\\lo_jit_template\\cache\\_nop_fsub_Sin_fsum_Tan_Cos_ScATane59ae302d99abf458bad42d1502bb-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "ed5efde65b6359c1b97315375bab24e9c9b92251d00be3aa5e1f3b860e6e096b",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\tmp\\lo_jit_template\\cache\\_nop_fsub_fsubcae63ff924034fa148b6b64425ec67-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "6d811df9bf574bb1a633cb718cee44f115c87f359bf307a2f09747b07f4810d3",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\tmp\\lo_jit_template\\cache\\_nop_fdivf4b05cc8de6347ae6fc0bc687737c283-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "2c4c2a20f7b8aba2113f29e2852ce31770c9cc038345f2cf518ffc52260b1f04",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\lo_profile_ijismd_v2f_new\\cache\\_nop_fsub_Sin_fsum_Tan_Cos_ScATane59ae302d99abf458bad42d1502bb-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "ed5efde65b6359c1b97315375bab24e9c9b92251d00be3aa5e1f3b860e6e096b",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\lo_profile_ijismd_v2f_new\\cache\\_nop_Sqrt_fmul_fsub_fsubf628cca0fe9b781b768256844c519e5-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "4c05889a033b71a216b13ea31c1253843c1486800d77016e3dfdf44602c29656",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\lo_profile_ijismd_v2f_new\\cache\\_nop_fsum_fsum_Product_SumIfs_fsop765eb6d6c135fc25523327de207b361c-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "eec22eaf954401f4bd771a8148976a7ceb72f672c0aceb70d531f5be6f4d34a9",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\lo_profile_ijismd_v2f_new\\cache\\_nop_fsub_fsubcae63ff924034fa148b6b64425ec67-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "6d811df9bf574bb1a633cb718cee44f115c87f359bf307a2f09747b07f4810d3",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\lo_profile_ijismd_v2f_new\\cache\\_nop_fsum_fsum_fsum98ee81a85f7a311192787295ed8a41cb-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "1bcc5ef2096dd26a807c189c468b820769d554216be782e05396a4251be8be91",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\lo_profile_ijismd_v2f_new\\cache\\_nop_fdivf4b05cc8de6347ae6fc0bc687737c283-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "2c4c2a20f7b8aba2113f29e2852ce31770c9cc038345f2cf518ffc52260b1f04",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\lo_profile_ijismd_v2f_new\\cache\\_nop_fsum_fsum_fsub_fsum_Var_OpNormsdist_Covar_OpPearson_Slope27fd69cdbcc3a8267a6ff779a2ec596f-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "be6e9237494718f57a30d51de585863017dfcc8a775e3eeb78a80129350e5bce",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    },
+    {
+      "path": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\working\\lo_profile_ijismd_v2f_new\\cache\\_nop_fsum_fsub_fsum_fmul_fdiv_Powerb32d41f39fc3d0b222b9c75a4c22ce-3DB12E3700CE5187C2E3AFC630C42F4C.bin",
+      "sha256": "2834cc7030d9255412851c67e04090065a9b28151e586347f52eaaa09099e7c3",
+      "reason": "LibreOffice formula OpenCL kernel profile cache, not a fitted estimator"
+    }
+  ],
+  "scope": "Local project and named original archive locations only; not a disk-wide absence proof"
+}

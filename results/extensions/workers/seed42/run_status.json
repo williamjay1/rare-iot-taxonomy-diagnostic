@@ -1,0 +1,12 @@
+{
+  "status": "requested_queue_finished",
+  "new_cells": 1,
+  "requested_cells": 13,
+  "missing_cells": [],
+  "worker_only": true,
+  "seeds": [
+    42
+  ],
+  "completed_endpoint_count": 0,
+  "capture_windows_remain_incomplete": false
+}

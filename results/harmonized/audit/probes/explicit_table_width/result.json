@@ -1,0 +1,39 @@
+{
+  "probe": "explicit_table_width",
+  "seconds": 13.280641500023194,
+  "returncode": 0,
+  "pages": 34,
+  "source_copy": "<WORKSPACE>\\harmonized\\audit\\probes\\explicit_table_width\\explicit_table_width.docx",
+  "pdf": "<WORKSPACE>\\harmonized\\audit\\probes\\explicit_table_width\\explicit_table_width.pdf",
+  "labels": {
+    "Weighted flat": [
+      11,
+      12,
+      33
+    ],
+    "Real blend": [
+      17,
+      20,
+      21,
+      22
+    ],
+    "Cyclic gate": [
+      12,
+      34
+    ],
+    "Support gate": [
+      12,
+      34
+    ],
+    "ATT&CK blend": [],
+    "ATT&CK cyclic": [],
+    "Random pseudo maps": [],
+    "KMeans pseudo maps": [],
+    "Gaussian mixture maps": []
+  },
+  "numeric_needles": {
+    "0.8958": [],
+    "0.8814": []
+  },
+  "all_mapping_labels_found": false
+}

@@ -1,0 +1,20 @@
+{
+  "resamples": 5000,
+  "seed": 20261018,
+  "source_order_block_rows": 2000,
+  "point": "Mean of six per-holdout metric differences, not metric of pooled predictions",
+  "row_interval": "Within each fixed holdout, class-stratified paired multinomial resampling of joint true/prediction cells; then average six resampled metric differences",
+  "block_interval": "Within each fixed holdout sort by original source row ID, draw contiguous 2000-row blocks with replacement; then average six metric differences",
+  "conditional_scope": "Intervals condition on fitted models and six selected holdouts; repeated source records across holdouts are not independent populations",
+  "nadeau_sensitivity": "Approximate corrected repeated-holdout t interval; variance multiplier 1/6+0.20/0.80; df=5; no claim it recovers unavailable capture dependence",
+  "sign_test": "Exact binomial direction summary under a hypothetical independent symmetric split reference; descriptive because holdouts overlap; Holm over eight metric/contrast summaries",
+  "mcnemar": "Exact paired correctness test within each split; Holm over four declared contrasts separately in each split; no minimum-p pooling across splits",
+  "contrasts": [
+    "weighted_flat",
+    "converged_stacker",
+    "cyclic_gate",
+    "support_matched_gate"
+  ],
+  "precision": "Core methods use original saved hard predictions. Stacker uses argmax of saved float16 probabilities; compare its reconstructed metrics with original full-precision CSV and record sensitivity.",
+  "canonical_core": "ijismd_v10_ciciot_grouped_core_6split; supersedes compact copy because seed42 support control had 13 discrepant hard predictions"
+}

@@ -1,0 +1,228 @@
+{
+  "status": "EXACT_PASS",
+  "created_utc": "2026-10-18T17:11:23.446634+00:00",
+  "rows": 8193,
+  "batch_rows": 8192,
+  "features": 37,
+  "input_dtype": "float32",
+  "labels_read": false,
+  "fit_performed": false,
+  "explicit_prediction_num_threads": 2,
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\.venv\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 2,
+      "prefix": "vcomp",
+      "filepath": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\.venv\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "F:\\AcademicData\\D_Project_Migration_20261001\\codex\\sci\\iot_ids_sci\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-197ee2fc9b4d071f7e048078cac74115.dll",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "adapter_sha256": "1bb4d2e5b814b90357c65c7fce8a812cc767587c6f2b39d372d1a3784e060d1a",
+  "checkpoints": [
+    {
+      "checkpoint": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\flat_lgbm.joblib",
+      "checkpoint_sha256_before_after": "f6d488957284a3b9fbd9805eda43e055619822249561cf863c795a2c1f2a9288",
+      "estimators_unchanged": true,
+      "model_details": [
+        {
+          "n_jobs": 2,
+          "booster_num_threads": 2,
+          "num_trees": 12920,
+          "num_classes": 34
+        }
+      ],
+      "cases": [
+        {
+          "mode": "reference",
+          "seconds": 21.447563000023365,
+          "exact_array_equality": [
+            true
+          ],
+          "max_absolute_difference": [
+            0.0
+          ],
+          "dtypes": [
+            "float64"
+          ]
+        },
+        {
+          "mode": "explicit_threads",
+          "seconds": 20.799069199943915,
+          "exact_array_equality": [
+            true
+          ],
+          "max_absolute_difference": [
+            0.0
+          ],
+          "dtypes": [
+            "float64"
+          ]
+        },
+        {
+          "mode": "bounded_8192",
+          "seconds": 21.671676600002684,
+          "exact_array_equality": [
+            true
+          ],
+          "max_absolute_difference": [
+            0.0
+          ],
+          "dtypes": [
+            "float64"
+          ]
+        },
+        {
+          "mode": "reference_repeat",
+          "seconds": 21.672592999995686,
+          "exact_array_equality": [
+            true
+          ],
+          "max_absolute_difference": [
+            0.0
+          ],
+          "dtypes": [
+            "float64"
+          ]
+        }
+      ]
+    },
+    {
+      "checkpoint": "<WORKSPACE>\\harmonized\\results\\paired46\\seed_42\\taxonomy_real.joblib",
+      "checkpoint_sha256_before_after": "6accfa3e0851c69a92afd96de63476132a77f894ad7f5f031915aacde3c8ab5f",
+      "estimators_unchanged": true,
+      "model_details": [
+        {
+          "n_jobs": 2,
+          "booster_num_threads": 2,
+          "num_trees": 3040,
+          "num_classes": 8
+        },
+        {
+          "n_jobs": 2,
+          "booster_num_threads": 2,
+          "num_trees": 4560,
+          "num_classes": 12
+        },
+        {
+          "n_jobs": 2,
+          "booster_num_threads": 2,
+          "num_trees": 1520,
+          "num_classes": 4
+        },
+        {
+          "n_jobs": 2,
+          "booster_num_threads": 2,
+          "num_trees": 1140,
+          "num_classes": 3
+        },
+        {
+          "n_jobs": 2,
+          "booster_num_threads": 2,
+          "num_trees": 1900,
+          "num_classes": 5
+        },
+        {
+          "n_jobs": 2,
+          "booster_num_threads": 2,
+          "num_trees": 380,
+          "num_classes": 1
+        },
+        {
+          "n_jobs": 2,
+          "booster_num_threads": 2,
+          "num_trees": 2280,
+          "num_classes": 6
+        }
+      ],
+      "cases": [
+        {
+          "mode": "reference",
+          "seconds": 18.451939100050367,
+          "exact_array_equality": [
+            true,
+            true
+          ],
+          "max_absolute_difference": [
+            0.0,
+            0.0
+          ],
+          "dtypes": [
+            "float64",
+            "float64"
+          ]
+        },
+        {
+          "mode": "explicit_threads",
+          "seconds": 17.871401899959892,
+          "exact_array_equality": [
+            true,
+            true
+          ],
+          "max_absolute_difference": [
+            0.0,
+            0.0
+          ],
+          "dtypes": [
+            "float64",
+            "float64"
+          ]
+        },
+        {
+          "mode": "bounded_8192",
+          "seconds": 18.045288100023754,
+          "exact_array_equality": [
+            true,
+            true
+          ],
+          "max_absolute_difference": [
+            0.0,
+            0.0
+          ],
+          "dtypes": [
+            "float64",
+            "float64"
+          ]
+        },
+        {
+          "mode": "reference_repeat",
+          "seconds": 18.203570700017735,
+          "exact_array_equality": [
+            true,
+            true
+          ],
+          "max_absolute_difference": [
+            0.0,
+            0.0
+          ],
+          "dtypes": [
+            "float64",
+            "float64"
+          ]
+        }
+      ]
+    }
+  ],
+  "caveat": "Bounded identity audit under shared CPU load; not a full-role speed benchmark",
+  "application": "Eligible for future grouped workers only; paired live process unchanged"
+}

@@ -1,0 +1,14 @@
+{
+  "split_seed": 42,
+  "choice": "First numerical discovery split, not a selected best split",
+  "total_random_maps": 19,
+  "existing_maps_carried_forward": 4,
+  "new_refits": 15,
+  "trees": 380,
+  "group_size_profile_unchanged": true,
+  "map_seed_base": 20260923,
+  "n_jobs": 2,
+  "comparison": "Real equal taxonomy blend versus equal blends with random size-matched class partitions",
+  "tail": "(1 + number random metric >= real metric)/(19 + 1); one split conditional random-map reference, not an independent-data significance test",
+  "inference_limits": "No Fisher pooling across reused corpus splits; heterogeneous KMeans/GMM controls not counted as exchangeable random draws. Two metric tails reported separately without an omnibus significance claim."
+}

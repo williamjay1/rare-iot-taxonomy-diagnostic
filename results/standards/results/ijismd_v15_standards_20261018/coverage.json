@@ -1,0 +1,39 @@
+{
+  "fine_labels": 34,
+  "attack_labels": 33,
+  "groups_including_benign_and_unresolved": 12,
+  "labels_with_some_CAPEC_reference": 33,
+  "attack_labels_without_primary_ambiguity": 26,
+  "ambiguous_attack_labels": [
+    "Backdoor_Malware",
+    "BrowserHijacking",
+    "DDoS-ACK_Fragmentation",
+    "DDoS-SynonymousIP_Flood",
+    "Mirai-greeth_flood",
+    "Mirai-greip_flood",
+    "Uploading_Attack"
+  ],
+  "primary_ambiguity_count": 7,
+  "match_counts_attack_labels": {
+    "explicit_label": 13,
+    "protocol_level": 9,
+    "named_mechanism": 3,
+    "broad_mechanism": 3,
+    "conditional_proxy": 2,
+    "broad_proxy": 1,
+    "label_with_conditional_subtype": 1,
+    "partial_proxy": 1
+  },
+  "unresolved_fallback_labels": [
+    "Backdoor_Malware",
+    "BrowserHijacking",
+    "Uploading_Attack"
+  ],
+  "official_pattern_status_counts_unique": {
+    "Draft": 15,
+    "Stable": 9
+  },
+  "unique_CAPEC_patterns": 24,
+  "claim_boundary": "Reference coverage is not exact mechanistic validity, expert agreement, per-flow evidence, or official dataset-to-CAPEC annotation. Conditional secondary candidates remain explicitly conditional.",
+  "expert_validation_performed": false
+}

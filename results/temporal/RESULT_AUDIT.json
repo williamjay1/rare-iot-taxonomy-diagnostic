@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE_PASS",
+  "protocol": "one genuine chronological allocation",
+  "methods": [
+    "flat_xgb",
+    "flat_lgbm",
+    "flat_equal_blend",
+    "temperature_flat_blend",
+    "newton_flat_stacker",
+    "real_hierarchy",
+    "real_blend",
+    "cyclic_hierarchy",
+    "cyclic_blend",
+    "support_hierarchy",
+    "support_blend"
+  ],
+  "rows_audited": 33,
+  "test_rows": 300000,
+  "all_ten_labels_primary": true,
+  "saved_probability_precision": "float32; maximum reconstructed margin shown in audit CSV",
+  "seed_scope": "Three model seeds on one allocation, not three independent future tests"
+}

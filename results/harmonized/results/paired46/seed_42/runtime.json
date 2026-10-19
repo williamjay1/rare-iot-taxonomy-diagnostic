@@ -1,0 +1,7 @@
+{
+  "wall_seconds_this_invocation": 33.050613799947314,
+  "wall_seconds_first_roles_to_completion_including_recovery_gap": 8667.420369,
+  "exact_original_stacker_builder_seconds_available": false,
+  "first_roles_verified_utc": "2026-10-18T15:02:42.826491+00:00",
+  "wall_interval_includes_any_external_interruption_gap": true
+}

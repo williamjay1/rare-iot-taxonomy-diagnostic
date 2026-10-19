@@ -1,0 +1,9 @@
+{
+  "temperature_xgb": 1.4407667874101993,
+  "temperature_lgbm": 1.6577131875695714,
+  "fit_role": "calibration",
+  "stacker_iterations": [
+    8
+  ],
+  "outer_labels_used": false
+}

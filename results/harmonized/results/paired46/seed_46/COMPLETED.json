@@ -1,0 +1,20 @@
+{
+  "seed": 46,
+  "methods": [
+    "flat_weighted_xgboost",
+    "flat_weighted_lightgbm",
+    "flat_equal_probability_blend",
+    "flat_temperature_calibrated_blend",
+    "flat_newton_log_probability_stacker",
+    "equal_flat_taxonomy_blend",
+    "soft_taxonomy_factorisation",
+    "hard_top_down_taxonomy",
+    "calibrated_taxonomy_benefit_gate",
+    "equal_flat_cyclic_blend",
+    "calibrated_cyclic_taxonomy_control",
+    "equal_flat_support_matched_blend",
+    "calibrated_support_matched_control"
+  ],
+  "completed_utc": "2026-10-19T00:29:41.028163+00:00",
+  "run_contract_sha256": "6acf2ae44774a28e1782d2ab13c2263b27cdd6ed7df61a9b6b780f6e9e83dc3f"
+}

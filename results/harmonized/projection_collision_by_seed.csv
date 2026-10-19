@@ -1,0 +1,7 @@
+seed,fit_rows_after_cap,test_rows,shared37_fit_test_overlap_groups,fit_rows_sharing_test_vector,test_rows_sharing_fit_vector,test_rows_sharing_fit_vector_pct,rare_test_rows,rare_test_rows_sharing_fit_vector,rare_test_rows_sharing_fit_vector_pct,rare_fit_rows_sharing_test_vector,test_rows_sharing_any_development_vector,test_rows_sharing_any_development_vector_pct,rare_test_rows_sharing_any_development_vector
+42,702664,285884,267,622,374,0.13082229155881406,8031,0,0.0,0,477,0.16685089057100083,0
+43,702662,286156,279,590,412,0.1439774109227135,8031,0,0.0,0,496,0.17333202868365505,0
+44,702663,286178,277,626,397,0.13872484956914927,8033,0,0.0,0,513,0.17925906254149515,0
+45,702661,285899,270,598,424,0.14830412138552426,8031,0,0.0,0,510,0.17838467430805982,0
+46,702666,285971,274,634,385,0.13462903581132352,8033,0,0.0,0,471,0.1647020152393075,0
+47,702665,285977,261,578,393,0.13742363896397264,8033,0,0.0,0,501,0.17518891379376664,0
